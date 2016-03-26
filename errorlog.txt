@@ -1,0 +1,327 @@
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+*** Error(s) finalizing the creature SPIDER_TUNNEL_TARANTULA_KAZOO
+undefined local creature material set to default: SPIDER_TUNNEL_TARANTULA_KAZOO EGG_YOLK_TEMPLATE
+undefined local creature material set to default: SPIDER_TUNNEL_TARANTULA_KAZOO EGG_WHITE_TEMPLATE
+*** Error(s) finalizing the creature SPIDER_CAVE_GIANT
+undefined local creature material set to default: SPIDER_CAVE_GIANT EGG_YOLK_TEMPLATE
+undefined local creature material set to default: SPIDER_CAVE_GIANT EGG_WHITE_TEMPLATE
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+*** Error(s) finalizing the creature SPIDER_TUNNEL_TARANTULA_KAZOO
+undefined local creature material set to default: SPIDER_TUNNEL_TARANTULA_KAZOO EGG_YOLK_TEMPLATE
+undefined local creature material set to default: SPIDER_TUNNEL_TARANTULA_KAZOO EGG_WHITE_TEMPLATE
+*** Error(s) finalizing the creature SPIDER_CAVE_GIANT
+undefined local creature material set to default: SPIDER_CAVE_GIANT EGG_YOLK_TEMPLATE
+undefined local creature material set to default: SPIDER_CAVE_GIANT EGG_WHITE_TEMPLATE
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
+BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
+*** Error(s) finalizing the reaction LIGNITE_TO_COKE
+Unrecognized Inorganic Token: LIGNITE
+*** Error(s) finalizing the reaction BRASS_MAKING
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction BRASS_MAKING2
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction ELECTRUM_MAKING
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction ELECTRUM_MAKING2
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction BILLON_MAKING
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction BILLON_MAKING2
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
+Unrecognized Inorganic Token: LEAD
+Unrecognized Inorganic Token: PEWTER_LAY
+*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
+Unrecognized Inorganic Token: NICKEL
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: NICKEL_SILVER
+*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
+Unrecognized Inorganic Token: BLACK_BRONZE
+*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
+Unrecognized Inorganic Token: STERLING_SILVER
+*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
+Unrecognized Inorganic Token: ROSE_GOLD
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
+BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
+*** Error(s) finalizing the reaction LIGNITE_TO_COKE
+Unrecognized Inorganic Token: LIGNITE
+*** Error(s) finalizing the reaction BRASS_MAKING
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction BRASS_MAKING2
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction ELECTRUM_MAKING
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction ELECTRUM_MAKING2
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction BILLON_MAKING
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction BILLON_MAKING2
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
+Unrecognized Inorganic Token: LEAD
+Unrecognized Inorganic Token: PEWTER_LAY
+*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
+Unrecognized Inorganic Token: NICKEL
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: NICKEL_SILVER
+*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
+Unrecognized Inorganic Token: BLACK_BRONZE
+*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
+Unrecognized Inorganic Token: STERLING_SILVER
+*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
+Unrecognized Inorganic Token: ROSE_GOLD
+CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
+BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
+*** Error(s) finalizing the reaction LIGNITE_TO_COKE
+Unrecognized Inorganic Token: LIGNITE
+*** Error(s) finalizing the reaction BRASS_MAKING
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction BRASS_MAKING2
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction ELECTRUM_MAKING
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction ELECTRUM_MAKING2
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction BILLON_MAKING
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction BILLON_MAKING2
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
+Unrecognized Inorganic Token: LEAD
+Unrecognized Inorganic Token: PEWTER_LAY
+*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
+Unrecognized Inorganic Token: NICKEL
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: NICKEL_SILVER
+*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
+Unrecognized Inorganic Token: BLACK_BRONZE
+*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
+Unrecognized Inorganic Token: STERLING_SILVER
+*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
+Unrecognized Inorganic Token: ROSE_GOLD
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
+BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
+*** Error(s) finalizing the reaction LIGNITE_TO_COKE
+Unrecognized Inorganic Token: LIGNITE
+*** Error(s) finalizing the reaction BRASS_MAKING
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction BRASS_MAKING2
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction ELECTRUM_MAKING
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction ELECTRUM_MAKING2
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction BILLON_MAKING
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction BILLON_MAKING2
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
+Unrecognized Inorganic Token: LEAD
+Unrecognized Inorganic Token: PEWTER_LAY
+*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
+Unrecognized Inorganic Token: NICKEL
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: NICKEL_SILVER
+*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
+Unrecognized Inorganic Token: BLACK_BRONZE
+*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
+Unrecognized Inorganic Token: STERLING_SILVER
+*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
+Unrecognized Inorganic Token: ROSE_GOLD
+CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
+BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
+*** Error(s) finalizing the reaction LIGNITE_TO_COKE
+Unrecognized Inorganic Token: LIGNITE
+*** Error(s) finalizing the reaction BRASS_MAKING
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction BRASS_MAKING2
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction ELECTRUM_MAKING
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction ELECTRUM_MAKING2
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction BILLON_MAKING
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction BILLON_MAKING2
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
+Unrecognized Inorganic Token: LEAD
+Unrecognized Inorganic Token: PEWTER_LAY
+*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
+Unrecognized Inorganic Token: NICKEL
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: NICKEL_SILVER
+*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
+Unrecognized Inorganic Token: BLACK_BRONZE
+*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
+Unrecognized Inorganic Token: STERLING_SILVER
+*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
+Unrecognized Inorganic Token: ROSE_GOLD
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
+BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
+*** Error(s) finalizing the reaction LIGNITE_TO_COKE
+Unrecognized Inorganic Token: LIGNITE
+*** Error(s) finalizing the reaction BRASS_MAKING
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction BRASS_MAKING2
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction ELECTRUM_MAKING
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction ELECTRUM_MAKING2
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction BILLON_MAKING
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction BILLON_MAKING2
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
+Unrecognized Inorganic Token: LEAD
+Unrecognized Inorganic Token: PEWTER_LAY
+*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
+Unrecognized Inorganic Token: NICKEL
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: NICKEL_SILVER
+*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
+Unrecognized Inorganic Token: BLACK_BRONZE
+*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
+Unrecognized Inorganic Token: STERLING_SILVER
+*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
+Unrecognized Inorganic Token: ROSE_GOLD
+CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
+BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
+*** Error(s) finalizing the reaction LIGNITE_TO_COKE
+Unrecognized Inorganic Token: LIGNITE
+*** Error(s) finalizing the reaction BRASS_MAKING
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction BRASS_MAKING2
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction ELECTRUM_MAKING
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction ELECTRUM_MAKING2
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction BILLON_MAKING
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction BILLON_MAKING2
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
+Unrecognized Inorganic Token: LEAD
+Unrecognized Inorganic Token: PEWTER_LAY
+*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
+Unrecognized Inorganic Token: NICKEL
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: NICKEL_SILVER
+*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
+Unrecognized Inorganic Token: BLACK_BRONZE
+*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
+Unrecognized Inorganic Token: STERLING_SILVER
+*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
+Unrecognized Inorganic Token: ROSE_GOLD
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
+BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
+*** Error(s) finalizing the reaction LIGNITE_TO_COKE
+Unrecognized Inorganic Token: LIGNITE
+*** Error(s) finalizing the reaction BRASS_MAKING
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction BRASS_MAKING2
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: BRASS
+*** Error(s) finalizing the reaction ELECTRUM_MAKING
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction ELECTRUM_MAKING2
+Unrecognized Inorganic Token: ELECTRUM
+*** Error(s) finalizing the reaction BILLON_MAKING
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction BILLON_MAKING2
+Unrecognized Inorganic Token: BILLON
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
+Unrecognized Inorganic Token: PEWTER_FINE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
+Unrecognized Inorganic Token: PEWTER_TRIFLE
+*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
+Unrecognized Inorganic Token: LEAD
+Unrecognized Inorganic Token: PEWTER_LAY
+*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
+Unrecognized Inorganic Token: NICKEL
+Unrecognized Inorganic Token: ZINC
+Unrecognized Inorganic Token: NICKEL_SILVER
+*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
+Unrecognized Inorganic Token: BLACK_BRONZE
+*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
+Unrecognized Inorganic Token: STERLING_SILVER
+*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
+Unrecognized Inorganic Token: ROSE_GOLD

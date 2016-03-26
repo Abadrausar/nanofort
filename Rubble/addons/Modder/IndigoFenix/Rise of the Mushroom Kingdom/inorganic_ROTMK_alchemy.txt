@@ -1,0 +1,210 @@
+inorganic_mw_alchemy
+
+[OBJECT:INORGANIC]
+
+[INORGANIC:VITRIOL_GREEN_MW]
+	[USE_MATERIAL_TEMPLATE:STONE_POWDER_TEMPLATE_MW]
+	[MATERIAL_VALUE:5]
+	[STATE_NAME_ADJ:ALL_SOLID:green vitriol]
+	[STATE_COLOR:ALL_SOLID:GREEN][DISPLAY_COLOR:2:0:1]
+	[REACTION_CLASS:SULFATE]
+	[POWDER_DYE:GREEN]
+
+[INORGANIC:VITRIOL_BLUE_MW]
+	[USE_MATERIAL_TEMPLATE:STONE_POWDER_TEMPLATE_MW]
+	[MATERIAL_VALUE:5]
+	[STATE_NAME_ADJ:ALL_SOLID:blue vitriol]
+	[STATE_COLOR:ALL_SOLID:BLUE][DISPLAY_COLOR:1:0:0]
+	[REACTION_CLASS:SULFATE]
+	[POWDER_DYE:BLUE]
+
+[INORGANIC:VITRIOL_RED_MW]
+	[USE_MATERIAL_TEMPLATE:STONE_POWDER_TEMPLATE_MW]
+	[MATERIAL_VALUE:5]
+	[STATE_NAME_ADJ:ALL_SOLID:red vitriol]
+	[STATE_COLOR:ALL_SOLID:RED][DISPLAY_COLOR:4:0:1]
+	[REACTION_CLASS:SULFATE]
+	[POWDER_DYE:RED]
+
+[INORGANIC:VITRIOL_WHITE_MW]
+	[USE_MATERIAL_TEMPLATE:STONE_POWDER_TEMPLATE_MW]
+	[MATERIAL_VALUE:5]
+	[STATE_NAME_ADJ:ALL_SOLID:white vitriol]
+	[STATE_COLOR:ALL_SOLID:WHITE][DISPLAY_COLOR:7:0:1]
+	[REACTION_CLASS:SULFATE]
+	[POWDER_DYE:WHITE]
+
+[INORGANIC:VITRIOL_YELLOW_MW]
+	[USE_MATERIAL_TEMPLATE:STONE_POWDER_TEMPLATE_MW]
+	[MATERIAL_VALUE:5]
+	[STATE_NAME_ADJ:ALL_SOLID:yellow vitriol]
+	[STATE_COLOR:ALL_SOLID:YELLOW][DISPLAY_COLOR:6:0:1]
+	[REACTION_CLASS:SULFATE]
+	[POWDER_DYE:YELLOW]
+
+[INORGANIC:QUICKSILVER_MW]
+	[STATE_COLOR:ALL:GRAY]
+	[STATE_NAME_ADJ:ALL_SOLID:frozen quicksilver]
+	[STATE_NAME_ADJ:LIQUID:quicksilver]
+	[STATE_NAME_ADJ:GAS:boiling quicksilver]
+	[STATE_NAME_ADJ:SOLID_POWDER:frozen quicksilver powder]
+	[STATE_NAME_ADJ:SOLID_PASTE:quicksilver slush]
+	[BUILD_COLOR:7:0:0]
+	[TILE_COLOR:7:7:1]
+	[MATERIAL_VALUE:5]
+	[SPEC_HEAT:4181]
+	[MELTING_POINT:9931]
+	[BOILING_POINT:10642]
+	[SOLID_DENSITY:13534]
+	[LIQUID_DENSITY:13534]
+	[LIQUID_MISC_OTHER]
+
+[INORGANIC:VITRIOL_ACID_MW]
+	[STATE_COLOR:ALL:CLEAR]
+	[STATE_NAME_ADJ:ALL_SOLID:frozen oil of vitriol]
+	[STATE_NAME_ADJ:LIQUID:oil of vitriol]
+	[STATE_NAME_ADJ:GAS:boiling oil of vitriol]
+	[STATE_NAME_ADJ:SOLID_POWDER:frozen oil of vitriol powder]
+	[STATE_NAME_ADJ:SOLID_PASTE:oil of vitriol slush]
+	[BUILD_COLOR:7:0:0]
+	[TILE_COLOR:7:7:1]
+	[MATERIAL_VALUE:5]
+	[SPEC_HEAT:4181]
+	[MELTING_POINT:9978]
+	[BOILING_POINT:10305]
+	[SOLID_DENSITY:920]
+	[LIQUID_DENSITY:1840]
+	[LIQUID_MISC_OTHER]
+	[SYNDROME]
+		[SYN_NAME:chemical burn]
+		[SYN_INGESTED]
+		[SYN_INJECTED]
+		[SYN_CONTACT]
+		[CE_PAIN:SEV:500:PROB:100:SIZE_DILUTES:LOCALIZED:START:0:END:10:ABRUPT_START:DWF_STRETCH:72]
+		[CE_BLISTERS:SEV:500:PROB:100:SIZE_DILUTES:LOCALIZED:START:0:END:10:ABRUPT_START:DWF_STRETCH:72]
+
+[INORGANIC:MURIATIC_ACID_MW]
+	[STATE_COLOR:ALL:CLEAR]
+	[STATE_NAME_ADJ:ALL_SOLID:frozen muriatic acid]
+	[STATE_NAME_ADJ:LIQUID:muriatic acid]
+	[STATE_NAME_ADJ:GAS:boiling muriatic acid]
+	[STATE_NAME_ADJ:SOLID_POWDER:frozen muriatic acid powder]
+	[STATE_NAME_ADJ:SOLID_PASTE:muriatic acid slush]
+	[BUILD_COLOR:7:0:0]
+	[TILE_COLOR:7:7:1]
+	[MATERIAL_VALUE:5]
+	[SPEC_HEAT:4181]
+	[MELTING_POINT:9978]
+	[BOILING_POINT:10305]
+	[SOLID_DENSITY:920]
+	[LIQUID_DENSITY:1840]
+	[LIQUID_MISC_OTHER]
+	[SYNDROME]
+		[SYN_NAME:chemical burn]
+		[SYN_INGESTED]
+		[SYN_INJECTED]
+		[SYN_CONTACT]
+		[CE_PAIN:SEV:10:PROB:100:SIZE_DILUTES:LOCALIZED:START:0:END:10:ABRUPT_START:DWF_STRETCH:72]
+		[CE_BLISTERS:SEV:20:PROB:100:SIZE_DILUTES:LOCALIZED:START:0:END:10:ABRUPT_START:DWF_STRETCH:72]
+
+[INORGANIC:AQUA_FORTIS_MW]
+	[STATE_COLOR:ALL:CLEAR]
+	[STATE_NAME_ADJ:ALL_SOLID:frozen aqua fortis]
+	[STATE_NAME_ADJ:LIQUID:aqua fortis]
+	[STATE_NAME_ADJ:GAS:boiling aqua fortis]
+	[STATE_NAME_ADJ:SOLID_POWDER:frozen aqua fortis powder]
+	[STATE_NAME_ADJ:SOLID_PASTE:aqua fortis slush]
+	[BUILD_COLOR:7:0:0]
+	[TILE_COLOR:7:7:1]
+	[MATERIAL_VALUE:5]
+	[SPEC_HEAT:4181]
+	[MELTING_POINT:9924]
+	[BOILING_POINT:10149]
+	[SOLID_DENSITY:1512]
+	[LIQUID_DENSITY:1512]
+	[LIQUID_MISC_OTHER]
+	[SYNDROME]
+		[SYN_NAME:chemical burn]
+		[SYN_INGESTED]
+		[SYN_INJECTED]
+		[SYN_CONTACT]
+		[CE_PAIN:SEV:500:PROB:100:SIZE_DILUTES:LOCALIZED:START:0:END:10:ABRUPT_START:DWF_STRETCH:72]
+		[CE_BLISTERS:SEV:500:PROB:100:SIZE_DILUTES:LOCALIZED:START:0:END:10:ABRUPT_START:DWF_STRETCH:72]
+
+[INORGANIC:AQUA_REGIA_MW]
+	[STATE_COLOR:ALL:RED]
+	[STATE_NAME_ADJ:ALL_SOLID:frozen aqua regia]
+	[STATE_NAME_ADJ:LIQUID:aqua regia]
+	[STATE_NAME_ADJ:GAS:boiling aqua regia]
+	[STATE_NAME_ADJ:SOLID_POWDER:frozen aqua regia powder]
+	[STATE_NAME_ADJ:SOLID_PASTE:aqua regia slush]
+	[BUILD_COLOR:4:0:0]
+	[TILE_COLOR:4:7:1]
+	[MATERIAL_VALUE:5]
+	[SPEC_HEAT:4181]
+	[MELTING_POINT:9924]
+	[BOILING_POINT:10194]
+	[SOLID_DENSITY:1210]
+	[LIQUID_DENSITY:1010]
+	[LIQUID_MISC_OTHER]
+	[SYNDROME]
+		[SYN_NAME:chemical burn]
+		[SYN_INGESTED]
+		[SYN_INJECTED]
+		[SYN_CONTACT]
+		[CE_PAIN:SEV:500:PROB:100:SIZE_DILUTES:LOCALIZED:START:0:END:10:ABRUPT_START:DWF_STRETCH:72]
+		[CE_BLISTERS:SEV:500:PROB:100:SIZE_DILUTES:LOCALIZED:START:0:END:10:ABRUPT_START:DWF_STRETCH:72]
+	
+
+
+
+Pyrite + Fire = Green Vitriol (can identify mushrooms)
+Green Vitriol + Fire = Yellow Vitriol
+Yellow Vitriol + Fire = Rust + Sulfur Trioxide
+Sulfur Trioxide + Water = Vitriol
+Green Vitriol + Fire = Vitriol
+Green Vitriol + Fire + Rock Salt = Spirit of Salt
+Saltpeter + Vitriol + Fire = Aqua Fortis (Dissolves everything except gold)
+Aqua Fortis (1) + Spirit of Salt (3) = Aqua Regia (Dissolves gold)
+Saltpeter (1) + Vitriol (2) = Aqua Regia
+Gold dissolved in Aqua Regia precipitated through potash = Fulminating Gold (explosive)
+
+Vitriol + Green Vitriol + Aqua Fortis = Yellow Vitriol
+Copper + Vitriol = Blue Vitriol
+Cobalt + Vitriol = Red Vitriol
+Zinc + Vitriol = White Vitriol
+
+Alcohol distilled = Aqua vitae
+
+(Gold + Red = Green)
+(Green + Red = Vitriol)
+
+Sulfur + Saltpeter = Vitriol
+Saltpeter (Green-like)
+Sulfur (Red-like)
+
+Potash decomposed and leached with water = Saltpeter
+Pyrite contains sulfur
+
+Spirit of Salt = Hydrochloric Acid
+Vitriol = Sulfuric Acid
+Aqua Fortis = Nitric Acid
+Aqua Regia = nitro-hydrochloric acid
+Green Vitriol = Iron(II) Sulfate
+Blue Vitriol = Copper(II) Sulfate
+Yellow Vitriol (Vitriol of Mars) = Iron(III) Sulfate
+
+Saltpeter (the Green Brother Contained)
+Sulfur (the Red Brother Contained)
+Green Vitriol (The Green Brother Revealed)
+Fire (The Red Brother Revealed)
+Vitriol (the Brothers or the Rider)
+Aqua Fortis (the Brothers Grown)
+
+
+Vim concentrated => Azoth
+S.Gold dissolved in Vitriol => Alkahest
+S.Gold is Azoth solidified
+
+
+Lime + Alchohol + Pearlash = Alkahest

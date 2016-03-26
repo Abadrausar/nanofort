@@ -1,0 +1,180 @@
+[OBJECT:ITEM]
+
+Ranged Weapons and Ammo
+====================================================================================================
+
+# The shoot velocity and ammo numbers come from Deon's Fallout mod (v1.9 for 34.11) with minor changes.
+# I am not totally happy with the gun balance, but they are a lot better than some other gun stats I
+# tried so they will do for now.
+
+# Ideal results:
+
+# skin vs lead:
+# Air rifle: Moderate damage
+# Pistol: Moderate damage
+# Shotgun: Extremely Deadly
+# Hunting/Assault Rifle: Deadly
+# Anti-material rifle: Deadly
+
+# iron vs lead:
+# Air rifle: Deflects
+# Pistol: Bruises
+# Shotgun: Deflects
+# Hunting/Assault Rifle: Minor damage
+# Anti-material rifle: Deadly
+
+# steel vs lead:
+# Air rifle: Deflects
+# Pistol: Deflects
+# Shotgun: Deflects
+# Hunting/Assault Rifle: Deflects
+# Anti-material rifle: Minor damage
+
+# Actual Results
+
+# skin vs lead:
+# Air rifle: Minor damage
+# Pistol: Minor damage
+# Shotgun: Deadly
+# Hunting/Assault Rifle: Medium damage
+# Anti-material rifle: Deadly
+
+# iron vs lead:
+# Air rifle: Deflects
+# Pistol: Deflects
+# Shotgun: Deflects
+# Hunting/Assault Rifle: Medium damage
+# Anti-material rifle: Deadly
+
+# steel vs lead:
+# Air rifle: Deflects
+# Pistol: Deflects
+# Shotgun: Deflects
+# Hunting/Assault Rifle: Deflects
+# Anti-material rifle: Medium damage
+
+{!SHARED_ITEM;WEAPON;ITEM_WEAPON_AIRGUN;
+	[NAME:air rifle:air rifles]
+	[SIZE:400]
+	[SKILL:PIKE]
+	[RANGED:CROSSBOW:PELLET]
+	[SHOOT_FORCE:1000]
+	[SHOOT_MAXVEL:60]
+	[TWO_HANDED:80000]
+	[MINIMUM_SIZE:15000]
+	[MATERIAL_SIZE:2]
+	[ATTACK:BLUNT:10000:400:bash:bashes:NO_SUB:1250]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}{!ITEM_CLASS;ADDON_HOOK_SETTLER}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_PELLETS;
+	[NAME:pellet:air rifle pellets]
+	[CLASS:PELLET]
+	[SIZE:80]
+	[ATTACK:EDGE:4:100:stab:stabs:NO_SUB:50]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}{!ITEM_CLASS;ADDON_HOOK_SETTLER}
+
+{!SHARED_ITEM;WEAPON;ITEM_WEAPON_PISTOL;
+	[NAME:pistol:pistols]
+	[SIZE:100]
+	[SKILL:MACE]
+	[RANGED:BOW:AMMO_10]
+	[SHOOT_FORCE:1000]
+	[SHOOT_MAXVEL:100]
+	[TWO_HANDED:15000]
+	[MINIMUM_SIZE:10000]
+	[MATERIAL_SIZE:1]
+	[ATTACK:BLUNT:10000:400:pistol-whip:pistol-whips:NO_SUB:1250]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}{!ITEM_CLASS;ADDON_HOOK_SETTLER}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_10;
+	[NAME:10mm bullet:10mm ammo]
+	[CLASS:AMMO_10]
+	[SIZE:80]
+	[ATTACK:EDGE:2:100:stab:stabs:NO_SUB:50]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}{!ITEM_CLASS;ADDON_HOOK_SETTLER}
+
+{!SHARED_ITEM;WEAPON;ITEM_WEAPON_SHOTGUN;
+	[NAME:shotgun:shotguns]
+	[SIZE:400]
+	[SKILL:PIKE]
+	[RANGED:CROSSBOW:SHOTSHELL]
+	[SHOOT_FORCE:100000]
+	[SHOOT_MAXVEL:100000]
+	[TWO_HANDED:80000]
+	[MINIMUM_SIZE:15000]
+	[MATERIAL_SIZE:4]
+	[ATTACK:BLUNT:10000:400:bash:bashes:NO_SUB:1250]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}{!ITEM_CLASS;ADDON_HOOK_SETTLER}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_SHOTSHELL;
+	[NAME:shotgun slug:shotgun shells]
+	[CLASS:SHOTSHELL]
+	[SIZE:25]
+	[ATTACK:EDGE:10000:500:stab:stabs:NO_SUB:3500]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}{!ITEM_CLASS;ADDON_HOOK_SETTLER}
+
+{!SHARED_ITEM;WEAPON;ITEM_WEAPON_RIFLE;
+	[NAME:hunting rifle:hunting rifles]
+	[SIZE:500]
+	[SKILL:PIKE]
+	[RANGED:CROSSBOW:AMMO_556]
+	[SHOOT_FORCE:1000]
+	[SHOOT_MAXVEL:100]
+	[TWO_HANDED:100000]
+	[MINIMUM_SIZE:15000]
+	[MATERIAL_SIZE:4]
+	[ATTACK:BLUNT:10000:400:bash:bashes:NO_SUB:1250]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}{!ITEM_CLASS;ADDON_HOOK_SETTLER}
+
+{!SHARED_ITEM;WEAPON;ITEM_WEAPON_RIFLE_BAYONET;
+	[NAME:assault rifle:assault rifles]
+	[SIZE:550]
+	[SKILL:PIKE]
+	[RANGED:CROSSBOW:AMMO_556]
+	[SHOOT_FORCE:1000]
+	[SHOOT_MAXVEL:100]
+	[TWO_HANDED:100000]
+	[MINIMUM_SIZE:15000]
+	[MATERIAL_SIZE:5]
+	[ATTACK:EDGE:20:8000:stab:stabs:bayonet:1000]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+	[ATTACK:BLUNT:10000:400:bash:bashes:NO_SUB:1250]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}{!ITEM_CLASS;ADDON_HOOK_SETTLER}{!ITEM_CLASS;ADDON_HOOK_RAIDER}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_556;
+	[NAME:5.56mm bullet:5.56mm ammo]
+	[CLASS:AMMO_556]
+	[SIZE:150]
+	[ATTACK:EDGE:2:500:stab:stabs:NO_SUB:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}{!ITEM_CLASS;ADDON_HOOK_SETTLER}{!ITEM_CLASS;ADDON_HOOK_RAIDER}
+
+{!SHARED_ITEM;WEAPON;ITEM_WEAPON_AM_RIFLE;
+	[NAME:anti-material rifle:anti-material rifles]
+	[SIZE:1500]
+	[SKILL:PIKE]
+	[RANGED:CROSSBOW:AMMO_127]
+	[SHOOT_FORCE:100000]
+	[SHOOT_MAXVEL:100000]
+	[TWO_HANDED:100000]
+	[MINIMUM_SIZE:45000]
+	[MATERIAL_SIZE:7]
+	[ATTACK:BLUNT:10000:400:bash:bashes:NO_SUB:1250]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}{!ITEM_CLASS;ADDON_HOOK_SETTLER}{!ITEM_CLASS;ADDON_HOOK_RAIDER}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_127;
+	[NAME:12.7mm bullet:12.7mm ammo]
+	[CLASS:AMMO_127]
+	[SIZE:150]
+	[ATTACK:EDGE:2:500:stab:stabs:NO_SUB:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}{!ITEM_CLASS;ADDON_HOOK_SETTLER}{!ITEM_CLASS;ADDON_HOOK_RAIDER}

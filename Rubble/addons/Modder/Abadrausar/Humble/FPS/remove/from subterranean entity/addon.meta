@@ -1,0 +1,7 @@
+{
+	"Header": "Removes all creatures from subterranean entity except AMPHIBIAN_MAN",
+	"Author": "Abadrausar",
+	"Activates": [
+		"Libs/Base"
+	]
+}

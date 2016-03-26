@@ -1,0 +1,15 @@
+[OBJECT:ITEM]
+
+# Production support for this item is in the base, as it is simpler to insert some conditional
+# special case code there than to make make a way to insert production reactions in the correct
+# spots from external addons. If i needed to do several items like this I would use an API, but
+# it's not worth it for just one.
+{!SHARED_ITEM;TRAPCOMP;DFHACK_POWERED_DRILLING_RIG_BIT;
+	[NAME:drill bit:drill bits]
+	[ADJECTIVE:hardened]
+	[SIZE:1000]
+	[HITS:1]
+	[MATERIAL_SIZE:9]
+	[METAL]
+	[ATTACK:EDGE:10:800:drill:drills:NO_SUB:1250]
+}

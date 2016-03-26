@@ -1,0 +1,6 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Adds AST documentation for metalua rubble scripting.",
+	"DescFile": "ast.md",
+	"Activates": ["Libs/Base"]
+}

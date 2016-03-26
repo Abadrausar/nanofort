@@ -1,0 +1,6 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Adds lua compiler to metalua rubble scripting.",
+	"DescFile": "README_Metalua-compiler.md",
+	"Activates": ["Libs/Base"]
+}

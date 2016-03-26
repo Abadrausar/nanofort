@@ -1,0 +1,7 @@
+{	"Tags": {"Library": true},
+	"Header": "Milo vanilla oriented minor mods library.",
+	"Activates": [
+		"Libs/Base/Milo/ThirdParty/Spatter",
+		"Libs/Base/Milo/ThirdParty/Steam Engine"
+	]
+}

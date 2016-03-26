@@ -1,0 +1,228 @@
+
+First Landing Color Definitions
+
+Primary Colors:
+
+See "aaa_color_palette.png" for a visual of the color palette (I have changed some of the color names).
+
+{!SHARED_COLOR_DEF;BLACK;0;
+	[NAME:black]
+	[WORD:BLACK]
+	[RGB:0:0:0]
+}
+
+{!SHARED_COLOR_DEF;BLUE;1;
+	[NAME:blue]
+	[WORD:BLUE]
+	[RGB:18:51:175]
+}
+
+{!SHARED_COLOR_DEF;GREEN;2;
+	[NAME:green]
+	[WORD:GREEN]
+	[RGB:0:128:0]
+}
+
+{!SHARED_COLOR_DEF;CYAN;3;
+	[NAME:cyan]
+	[WORD:CERULEAN]
+	[RGB:0:128:128]
+}
+
+{!SHARED_COLOR_DEF;BROWN;4;
+	[NAME:brown]
+	[WORD:BROWN]
+	[RGB:175:69:20]
+}
+
+{!SHARED_COLOR_DEF;PURPLE;5;
+	[NAME:purple]
+	[WORD:PURPLE]
+	[RGB:163:17:192]
+}
+
+{!SHARED_COLOR_DEF;ORANGE;6;
+	[NAME:orange]
+	[WORD:ORANGE]
+	[RGB:235:136:0]
+}
+
+{!SHARED_COLOR_DEF;LIGHT_GRAY;7;
+	[NAME:light gray]
+	[WORD:GRAY]
+	[RGB:192:192:192]
+}
+
+{!SHARED_COLOR_DEF;SLATE_GRAY;8;
+	[NAME:slate gray]
+	[WORD:GRAY]
+	[RGB:51:69:84]
+}
+
+{!SHARED_COLOR_DEF;LIGHT_BLUE;9;
+	[NAME:light blue]
+	[WORD:BLUE]
+	[RGB:0:114:255]
+}
+
+{!SHARED_COLOR_DEF;LIGHT_GREEN;10;
+	[NAME:light green]
+	[WORD:GREEN]
+	[RGB:0:255:0]
+}
+
+{!SHARED_COLOR_DEF;LIGHT_CYAN;11;
+	[NAME:aqua]
+	[WORD:AQUA]
+	[RGB:0:255:255]
+}
+
+{!SHARED_COLOR_DEF;RED;12;
+	[NAME:red]
+	[WORD:RED]
+	[RGB:200:0:0]
+}
+
+{!SHARED_COLOR_DEF;PINK;13;
+	[NAME:pink]
+	[WORD:PINK]
+	[RGB:255:66:130]
+}
+
+{!SHARED_COLOR_DEF;YELLOW;14;
+	[NAME:yellow]
+	[WORD:YELLOW]
+	[RGB:255:255:0]
+}
+
+{!SHARED_COLOR_DEF;WHITE;15;
+	[NAME:white]
+	[WORD:WHITE]
+	[RGB:255:255:255]
+}
+
+Extra Generic Colors:
+
+# Displays the same as LIGHT_GRAY, but the RGB is a little different.
+{!SHARED_COLOR_DEF;GRAY;7;
+	[NAME:gray]
+	[WORD:GRAY]
+	[RGB:128:128:128]
+}
+
+{!SHARED_COLOR_DEF;CLEAR;7;
+	[NAME:clear]
+	[WORD:CLEAR]
+	[RGB:128:128:128]
+}
+
+# Needed by Libs/Crates
+{!SHARED_COLOR_DEF;CREAM;15;
+	[NAME:cream]
+	[WORD:CREAM]
+	[RGB:255:253:208]
+}
+
+Skin Colors:
+
+{C;
+Standard human skin colors:
+{@COLOR;SKIN_TAN}:1:{@COLOR;SKIN_TAN_LIGHT}:1:{@COLOR;SKIN_PALE}:1:{@COLOR;SKIN_WHITE}:1:{@COLOR;SKIN_DUSKY}:1:{@COLOR;SKIN_BLACK}:1
+}
+
+{!SHARED_COLOR_DEF;SKIN_TAN;4;
+	[NAME:tanned]
+	[WORD:BROWN]
+	[RGB:205:133:63]
+}
+
+{!SHARED_COLOR_DEF;SKIN_TAN_LIGHT;4;
+	[NAME:lightly tanned]
+	[WORD:PEACH]
+	[RGB:155:218:185]
+}
+
+{!SHARED_COLOR_DEF;SKIN_PALE;4;
+	[NAME:pale]
+	[WORD:PEACH]
+	[RGB:255:229:180]
+}
+
+{!SHARED_COLOR_DEF;SKIN_WHITE;4;
+	[NAME:white]
+	[WORD:WHITE]
+	[RGB:255:229:180]
+}
+
+{!SHARED_COLOR_DEF;SKIN_DUSKY;4;
+	[NAME:dusky]
+	[WORD:BROWN]
+	[RGB:72:60:50]
+}
+
+{!SHARED_COLOR_DEF;SKIN_BLACK;4;
+	[NAME:black]
+	[WORD:BLACK]
+	[RGB:72:60:50]
+}
+
+Hair Colors:
+
+{C;
+Standard human hair colors:
+{@COLOR;HAIR_BLOND}:1:{@COLOR;HAIR_GOLDEN_BLOND}:1:{@COLOR;HAIR_WHITE_BLOND}:1:{@COLOR;HAIR_RED}:1:{@COLOR;HAIR_ORANGE}:1:{@COLOR;HAIR_BROWN}:2:{@COLOR;HAIR_DARK_BROWN}:2:{@COLOR;HAIR_LIGHT_BROWN}:2:{@COLOR;HAIR_BLACK}:4
+}
+
+{!SHARED_COLOR_DEF;HAIR_BLOND;14;
+	[NAME:blond]
+	[WORD:YELLOW]
+	[RGB:155:218:185]
+}
+
+{!SHARED_COLOR_DEF;HAIR_GOLDEN_BLOND;14;
+	[NAME:golden blond]
+	[WORD:YELLOW]
+	[RGB:155:218:185]
+}
+
+{!SHARED_COLOR_DEF;HAIR_WHITE_BLOND;14;
+	[NAME:white blond]
+	[WORD:YELLOW]
+	[RGB:155:218:185]
+}
+
+{!SHARED_COLOR_DEF;HAIR_RED;12;
+	[NAME:fiery red]
+	[WORD:RED]
+	[RGB:200:0:0]
+}
+
+{!SHARED_COLOR_DEF;HAIR_ORANGE;6;
+	[NAME:orange]
+	[WORD:ORANGE]
+	[RGB:235:136:0]
+}
+
+{!SHARED_COLOR_DEF;HAIR_BROWN;4;
+	[NAME:brown]
+	[WORD:BROWN]
+	[RGB:175:69:20]
+}
+
+{!SHARED_COLOR_DEF;HAIR_DARK_BROWN;4;
+	[NAME:dark brown]
+	[WORD:BROWN]
+	[RGB:175:69:20]
+}
+
+{!SHARED_COLOR_DEF;HAIR_LIGHT_BROWN;4;
+	[NAME:light brown]
+	[WORD:BROWN]
+	[RGB:175:69:20]
+}
+
+{!SHARED_COLOR_DEF;HAIR_BLACK;0;
+	[NAME:black]
+	[WORD:BLACK]
+	[RGB:0:0:0]
+}

@@ -1,0 +1,45 @@
+Dwarf Fortress Weird Text Format Tools
+======================================
+(2011-04-09)
+Release 1
+
+
+Tools
+-----
+txt2wtf:
+ * Creates a WT File from a text file.
+
+wtf2txt: 
+ * Extracts text from a WT File.
+
+
+Usage
+-----
+> txt2wtf [-x] <filename> <output file>
+
+If the -x flag is specified, output will be encoded like an index file.
+
+
+> wtf2txt [-x] <filename> [<output file>]
+
+If the -x flag is specified, input is assumed to be specially encoded.
+If no output file is specified, output will be sent to StdOut.
+
+
+History
+-------
+Release 1 (2011-04-09):
+	Initial release.
+
+
+Disclaimer
+----------
+I am not responsible for any damage done to your game or 
+computer resulting from the use or misuse of these programs.
+The program is not intended for use in atomic energy, nuclear 
+weapons, or air traffic control systems. Use at your own risk.
+This readme is made of 33% recycled materials.
+
+
+Sean Weinmann (andux@bigfoot.com)
+http://meepo.dnsalias.org/

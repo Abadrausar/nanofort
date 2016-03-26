@@ -1,0 +1,66 @@
+interaction_druidic
+
+[OBJECT:INTERACTION]
+
+===========================================================================================================
+Dark Ages: War & Mythos: 0.42.02 | r1 | Standard Creatures by GM-X | DFDarkAge.com | AdventRPG.com
+===========================================================================================================
+
+[INTERACTION:POLYMORPH_DRUIDIC_FALCON]
+	[I_SOURCE:CREATURE_ACTION]
+	[I_TARGET:A:CREATURE]
+		[IT_LOCATION:CONTEXT_CREATURE]
+		[IT_CANNOT_TARGET_IF_ALREADY_AFFECTED]
+		[I_EFFECT:ADD_SYNDROME]
+			[IE_TARGET:A]
+			[IE_IMMEDIATE]
+			[IE_ARENA_NAME:Druidic Falcon]
+			[SYNDROME]
+				[CE_BODY_TRANSFORMATION:START:0:END:2000]
+				[CE:CREATURE:DRUIDIC_FALCON:DRUIDIC]
+
+============================================================================================================
+
+[INTERACTION:POLYMORPH_DRUIDIC_BEAR_GRIZZLY]
+	[I_SOURCE:CREATURE_ACTION]
+	[I_TARGET:A:CREATURE]
+		[IT_LOCATION:CONTEXT_CREATURE]
+		[IT_CANNOT_TARGET_IF_ALREADY_AFFECTED]
+		[I_EFFECT:ADD_SYNDROME]
+			[IE_TARGET:A]
+			[IE_IMMEDIATE]
+			[IE_ARENA_NAME:Druidic Grizzly Bear]
+			[SYNDROME]
+				[CE_BODY_TRANSFORMATION:START:0:END:2000]
+				[CE:CREATURE:BEAR_DIRE_GRIZZLY:DRUIDIC]
+
+============================================================================================================
+
+[INTERACTION:POLYMORPH_DRUIDIC_GIANT_SNAPPING_TURTLE]
+	[I_SOURCE:CREATURE_ACTION]
+	[I_TARGET:A:CREATURE]
+		[IT_LOCATION:CONTEXT_CREATURE]
+		[IT_CANNOT_TARGET_IF_ALREADY_AFFECTED]
+		[I_EFFECT:ADD_SYNDROME]
+			[IE_TARGET:A]
+			[IE_IMMEDIATE]
+			[IE_ARENA_NAME:Druidic Giant Snapping Turtle]
+			[SYNDROME]
+				[CE_BODY_TRANSFORMATION:START:0:END:2000]
+				[CE:CREATURE:DRUIDIC_GIANT_SNAPPING_TURTLE:DRUIDIC]
+
+============================================================================================================
+
+[INTERACTION:RESURRECTION]
+	[I_TARGET:A:CORPSE]
+		[IT_LOCATION:CONTEXT_ITEM]
+		[IT_AFFECTED_CLASS:GENERAL_POISON]
+		[IT_REQUIRES:FIT_FOR_ANIMATION]
+		[IT_FORBIDDEN:NOT_LIVING]
+		[IT_MANUAL_INPUT:corpses]
+	[I_EFFECT:RESURRECT]
+		[IE_TARGET:A]
+		[IE_IMMEDIATE]
+		[IE_ARENA_NAME:Resurrected corpse]		
+		
+============================================================================================================		

@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css"/>
+	<title>Rubble Web UI: Log</title>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			function listener(evnt) {
+				evnt.stopPropagation()
+
+				var to = {
+					"Back": "/",
+					"Quit": "/kill",
+				}[evnt.target.id]
+
+				if (to === undefined) {
+					return
+				}
+				window.location.replace("http://" + window.location.host + to)
+			}
+
+			var Menu1 = document.getElementById("Menu1")
+			Menu1.addEventListener("click", listener, false)
+
+			var Menu2 = document.getElementById("Menu2")
+			Menu2.addEventListener("click", listener, false)
+		}
+	</script>
+</head>
+<body>
+	<div id="Menu1">
+		<p><div id="Back" class="button">Back to Menu</div></p>
+		<p><div id="Quit" class="button">Exit Rubble</div></p>
+	</div>
+
+	{{if .Header}}{{if eq .State "error"}}<p>An error has occurred or Rubble has aborted, scroll to the end of the log for details.</p>{{else if eq .State "warn"}}<p>Action completed with warnings, scroll to the end of the log for details.</p>{{else}}<p>Action completed without errors.</p>{{end}}{{end}}
+
+	<pre>{{.Log}}</pre>
+
+	<div id="Menu2">
+		<p><div id="Back" class="button">Back to Menu</div></p>
+		<p><div id="Quit" class="button">Exit Rubble</div></p>
+	</div>
+</body>
+</html>

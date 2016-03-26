@@ -1,0 +1,7 @@
+{	"Tags": {"Library": true},
+	"Header": "Adds a quality aware furnace specialized for displaying items.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base"
+	]
+}

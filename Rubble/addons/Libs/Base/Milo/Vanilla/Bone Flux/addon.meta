@@ -1,0 +1,7 @@
+{	"Tags": {"Library": true},
+	"Header": "Bake bones at the smelter to make calcite, a flux stone.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base"
+	]
+}

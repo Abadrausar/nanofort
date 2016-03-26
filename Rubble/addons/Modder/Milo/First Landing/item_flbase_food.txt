@@ -1,0 +1,13 @@
+[OBJECT:ITEM]
+
+[ITEM_FOOD:ITEM_FOOD_BASIC]
+	[NAME:basic meal]
+	[LEVEL:2]
+
+[ITEM_FOOD:ITEM_FOOD_FINE]
+	[NAME:fine meal]
+	[LEVEL:3]
+
+[ITEM_FOOD:ITEM_FOOD_LAVISH]
+	[NAME:lavish meal]
+	[LEVEL:4]

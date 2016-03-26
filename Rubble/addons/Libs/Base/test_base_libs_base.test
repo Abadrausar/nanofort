@@ -1,0 +1,79 @@
+
+>>> !TEMPLATE:
+{!TEMPLATE;FOO;bar}
+{FOO}
+{FOO}
+{!TEMPLATE;GREET;thing;Hello %{thing}!}
+{GREET;World}
+{!TEMPLATE;GREET_DWARF;dwarf=Urist;{GREET;%{dwarf}}}
+{GREET_DWARF}
+{GREET_DWARF;Led}
+{@SET;TEST;Fun}
+{GREET;$TEST}
+===
+bar
+bar
+
+Hello World!
+
+Hello Urist!
+Hello Led!
+
+Hello Fun!
+<<<
+
+>>> @SET:
+{@SET;TEST;OK!}{ECHO;$TEST}
+===
+OK!
+<<<
+
+>>> @IF and @SET:
+{@SET;A;Y}{@SET;B;N}
+{@IF;$A;Y;
+	{@IF;$B;Y;
+		Second @IF bad result.
+	;
+		OK!
+	}
+;
+	First @IF bad result.
+}
+===
+OK!
+<<<
+
+>>> @IF_ACTIVE:
+{@IF_ACTIVE;Libs/Base;OK!;Oops!}
+===
+OK!
+<<<
+
+Unlike Lua the template language is 0 based when indexing is needed.
+>>> @STORE_LIST and @READ_LIST:
+{@PARSE_TO;TEMP;{@STORE_LIST;Libs/Base:Tests;#;Testing...;true}}
+{@IF;$TEMP;0;Index OK.;Bad Index.}
+{@PARSE_TO;TEMP;{@READ_LIST;Libs/Base:Tests;0}}
+{@IF;$TEMP;Testing...;Can read key.;Could not read key.}
+===
+Index OK.
+
+Can read key.
+<<<
+
+>>> @STORE_TABLE and @READ_TABLE:
+{@STORE_TABLE;Libs/Base:Tests;TestKey;Testing...}
+{@PARSE_TO;TEMP;{@READ_TABLE;Libs/Base:Tests;TestKey}}
+{@IF;$TEMP;Testing...;Can read key.;Could not read key.}
+===
+Can read key.
+<<<
+
+This also serves as a test of quoted parameters.
+>>> @FOREACH:
+{@FOREACH;a=1|b=2|c=3;"\"%{key}\" = %{val},\n"}
+===
+"a" = 1,
+"b" = 2,
+"c" = 3,
+<<<

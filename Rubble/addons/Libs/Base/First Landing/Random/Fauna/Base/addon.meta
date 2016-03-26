@@ -1,0 +1,15 @@
+{
+	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "Base for randomly generated creatures.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Random",
+		"First Landing/Libs/Body Parts",
+		"First Landing/Libs/Random/Bodies",
+		"First Landing/Libs/Random/Names",
+		"First Landing/Libs/Random/Gaits"
+	]
+}

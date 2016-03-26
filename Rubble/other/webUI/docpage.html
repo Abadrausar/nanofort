@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css"/>
+	<title>Rubble Web UI: Documentation</title>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			// Kill the back button as best I can. There may be a better way to do this, but I don't know it.
+			function killback(evnt) {
+				if (evnt.target.href != "" && evnt.target.href != "#") {
+					evnt.preventDefault()
+					evnt.stopPropagation()
+					window.location.replace(evnt.target.href)
+				}
+			}
+			var a = document.getElementsByTagName("a")
+			for (var i = 0; i < a.length; i++) {
+				a[i].addEventListener("click", killback, false)
+			}
+
+			function listener(evnt) {
+				evnt.stopPropagation()
+
+				var to = {
+					"Back": "/doclist",
+					"ToMenu": "/",
+				}[evnt.target.id]
+
+				if (to === undefined) {
+					return
+				}
+				window.location.replace("http://" + window.location.host + to)
+			}
+
+			var Menu1 = document.getElementById("Menu1")
+			Menu1.addEventListener("click", listener, false)
+
+			var Menu2 = document.getElementById("Menu2")
+			Menu2.addEventListener("click", listener, false)
+		}
+	</script>
+</head>
+<body>
+	<div id="Menu1">
+		<p><div id="Back" class="button">Back to Documentation</div></p>
+		<p><div id="ToMenu" class="button">To Main Menu</div></p>
+	</div>
+
+	{{.}}
+
+	<div id="Menu2">
+		<p><div id="Back" class="button">Back to Documentation</div></p>
+		<p><div id="ToMenu" class="button">To Main Menu</div></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+{{with .State}}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css"/>
+	<title>Rubble Web UI: Select Addons</title>
+	<script type="text/javascript">
+		function Toggle(addon, state) {
+			var req = new XMLHttpRequest()
+			req.open("POST", "/toggle", false)
+			req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+			req.send("addon=" + encodeURIComponent(addon) + "&state=" + encodeURIComponent(state))
+		}
+
+		var addontags = { {{range .Addons}}
+			"{{.Meta.Name}}": {{.Meta.Tags}},{{end}}
+		}
+
+		window.onload = function() {
+			// Kill the back button as best I can. There may be a better way to do this, but I don't know it.
+			function killback(evnt) {
+				if (evnt.target.href != "" && evnt.target.href != "#") {
+					evnt.preventDefault()
+					evnt.stopPropagation()
+					window.location.replace(evnt.target.href)
+				}
+			}
+			var a = document.getElementsByTagName("a")
+			for (var i = 0; i < a.length; i++) {
+				a[i].addEventListener("click", killback, false)
+
+				// Fix addon links
+				if (a[i].href.indexOf("/addondata?addon=") != -1) {
+					a[i].href = a[i].href + "&fromurl=%2fgenaddons&fromname=Generation"
+				}
+			}
+
+			document.getElementById("AddonList").addEventListener("click", function(evnt) {
+				evnt.stopPropagation()
+
+				if (evnt.target.name != "") {
+					Toggle(evnt.target.name, evnt.target.checked == true)
+				}
+			}, false)
+
+			document.getElementById("Select").addEventListener("click", function(evnt) {
+				evnt.stopPropagation()
+
+				var state
+				if (evnt.target.id == "All") {
+					state = true
+				} else if (evnt.target.id == "None") {
+					state = false
+				}
+				if (state === undefined) {
+					return
+				}
+
+				var addons = document.getElementById("AddonList").getElementsByTagName("tr")
+				for (var i = 0; i < addons.length; i++) {
+					var item = addons[i].getElementsByTagName("input")[0]
+					
+					if (addons[i].style.display != "none") {
+						Toggle(item.name, state)
+						item.checked = state
+					}
+				}
+			}, false)
+
+			function ToggleTag(tag) {
+				var addons = document.getElementById("AddonList").getElementsByTagName("tr")
+				for (var i = 0; i < addons.length; i++) {
+					if (addontags[addons[i].id][tag] == true) {
+
+						if (addons[i].style.display == "none") {
+							addons[i].style.display = ""
+						} else {
+							addons[i].style.display = "none"
+						}
+
+						//if (addons[i].checked) {
+						//	Toggle(addons[i].name, false)
+						//	addons[i].checked = false
+						//}
+					}
+				}
+			}
+			ToggleTag("Dev")
+
+			document.getElementById("Hide/Show").addEventListener("click", function(evnt) {
+				evnt.stopPropagation()
+
+				if (evnt.target.innerHTML.indexOf("+") != -1) {
+					evnt.target.innerHTML = evnt.target.id + " -"
+				} else {
+					evnt.target.innerHTML = evnt.target.id + " +"
+				}
+
+				ToggleTag(evnt.target.id)
+			}, false)
+
+			document.getElementById("EditConfig").addEventListener("click", function(evnt) {
+				evnt.stopPropagation()
+
+				var to = {
+					"EditConfig": "/genvars",
+					"Generate": "/genvars?hidden=true",
+				}[evnt.target.id]
+
+				if (to === undefined) {
+					return
+				}
+				window.location.replace("http://" + window.location.host + to)
+			}, false)
+
+			{{if gt (len $.Presets) 1}}
+			var presets = { {{range $.Presets}}
+				"{{.Name}}": { {{range .Addons}}
+					"{{.}}": true,{{end}}
+				},{{end}}
+			}
+			
+			document.getElementById("Preset").addEventListener("change", function(evnt) {
+				evnt.stopPropagation()
+				
+				var addons = document.getElementById("AddonList").getElementsByTagName("tr")
+				for (var i = 0; i < addons.length; i++) {
+					var item = addons[i].getElementsByTagName("input")[0]
+					
+					if (presets[evnt.target.value][item.name] == true) {
+						if (!item.checked) {
+							Toggle(item.name, true)
+							item.checked = true
+						}
+					} else {
+						if (item.checked) {
+							Toggle(item.name, false)
+							item.checked = false
+						}
+					}
+				}
+			}, false)
+			{{end}}
+			
+			document.getElementById("Back").addEventListener("click", function(evnt) {
+				evnt.stopPropagation()
+
+				window.location.replace("http://" + window.location.host + "/")
+			}, false)
+		}
+	</script>
+</head>
+<body>
+	<table id="AddonList">{{range .Addons}}{{if and (not .Meta.Tags.Library) (not .Meta.Tags.DocPack) (not .Meta.Tags.NotNormal)}}
+		<tr id="{{.Meta.Name}}"><td nowrap>{{if .Active}}<input type="checkbox" checked name="{{.Meta.Name}}">{{else}}<input type="checkbox" name="{{.Meta.Name}}">{{end}}<a href="/addondata?addon={{.Meta.Name}}">{{.Meta.Name}}</a></td><td>{{.Meta.Header}}</td></tr>{{end}}{{end}}
+	</table>
+	{{if gt (len $.Presets) 1}}
+	<p>Preset: <select id="Preset">{{range $.Presets}}
+		<option{{if eq .Name "Default"}} selected{{end}}>{{.Name}}</option>{{end}}
+	</select></p>{{end}}
+	<p><div id="Select" class="button">
+		Select
+		<div id="All" class="nose">All</div>
+		<div id="None" class="nose">None</div>
+	</div></p>
+	<p><div id="Hide/Show" class="button">
+		Hide/Show
+		<div id="DFHack" class="nose">DFHack -</div>
+		<div id="Dev" class="nose">Dev +</div>
+	</div></p>
+	<p><div id="EditConfig" class="button">
+		Edit configuration variables
+		<div id="Generate" class="nose">Skip</div>
+	</div></p>
+	<p><div id="Back" class="button">Back to Menu</div></p>
+</body>
+</html>
+{{end}}

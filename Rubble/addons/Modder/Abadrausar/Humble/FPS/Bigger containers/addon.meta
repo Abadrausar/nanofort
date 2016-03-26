@@ -1,0 +1,7 @@
+{
+	"Header": "Bigger containers; A wellbarrow can contain 2 pots, bins or barrels, and a minecart 10, and all of them at least tenfold more than vanilla.",
+	"Author": "Abadrausar",
+	"Activates": [
+		"Libs/Base"
+	]
+}

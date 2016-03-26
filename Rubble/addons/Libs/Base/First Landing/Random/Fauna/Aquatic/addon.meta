@@ -1,0 +1,18 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "Adds randomly generated aquatic creatures.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base/First Landing/Random/Fauna/Base"
+	],
+	"Vars": {
+		"FL_RANDOM_AQUATIC_COUNT": {
+			"Name": "How many random aquatic creatures should be generated?",
+			"Values": [
+				"50"
+			]
+		}
+	}
+}

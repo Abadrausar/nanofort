@@ -1,0 +1,26 @@
+item_rhenaya_silkmoth
+
+[OBJECT:ITEM]
+[ITEM_TOOL:ITEM_TOOL_COCOONS]
+[NAME:silkworm cocoons:silkworm cocoons]
+[VALUE:10]
+[TILE:248]
+[SIZE:10]
+[MATERIAL_SIZE:1] 
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_TOOL_GREENSKIN_BANE]
+[NAME:bane spider venom:bane spider venom]
+[VALUE:10]
+[TILE:248]
+[SIZE:10]
+[MATERIAL_SIZE:1] 
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_TOOL_CARMINE]
+[NAME:bag of cochineal insects:bags of cochineal insects]
+[VALUE:10]
+[TILE:11]
+[SIZE:10]
+[MATERIAL_SIZE:1] 
+[UNIMPROVABLE]

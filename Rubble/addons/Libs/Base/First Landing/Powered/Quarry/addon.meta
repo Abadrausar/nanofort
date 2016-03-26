@@ -1,0 +1,13 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "An automatic quarry, when built over clay or sand it provides raw materials.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base",
+		"Libs/Powered",
+		"Modder/Milo/First Landing",
+		"Libs/Get Tile Material"
+	]
+}

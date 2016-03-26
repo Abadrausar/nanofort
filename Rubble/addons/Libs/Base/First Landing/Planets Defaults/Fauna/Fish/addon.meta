@@ -1,0 +1,9 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "Some generic fish and shellfish.",
+	"Activates": [
+		"Libs/Base"
+	]
+}

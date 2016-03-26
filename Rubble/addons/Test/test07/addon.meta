@@ -1,0 +1,10 @@
+{
+	"Header": "test6",
+	"Author": "Abadrausar",
+	"Activates": [
+		"Libs/Base",
+		"Libs/Base/Vanilla/INORGANIC",
+		"Libs/Base/Vanilla/Faction/Civilized/Dwarves",
+		"Libs/Base/Milo/Vanilla/Succession Nobles"
+	]
+}

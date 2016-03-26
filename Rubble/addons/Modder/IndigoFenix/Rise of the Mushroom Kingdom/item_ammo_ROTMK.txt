@@ -1,0 +1,45 @@
+item_ammo_mw
+
+[OBJECT:ITEM]
+
+[ITEM_AMMO:ITEM_AMMO_BULLET_MW]
+	[NAME:bullet:bullets]
+	[CLASS:BULLET]
+	[SIZE:30]
+	[ATTACK:BLUNT:10:50:strike:strikes:NO_SUB:1000]
+
+[ITEM_AMMO:ITEM_AMMO_HAMMER_THROWING_MW]
+	[NAME:throwing hammer:throwing hammers]
+	[CLASS:HAMMER]
+	[SIZE:150]
+	[ATTACK:BLUNT:50:200:bash:bashes:NO_SUB:1000]
+
+[ITEM_AMMO:ITEM_AMMO_MAGIC_MW]
+	[NAME:polygon:polygons]
+	[CLASS:MAGIC]
+	[SIZE:600]
+	[ATTACK:EDGE:100:2500:strike:strikes:NO_SUB:1800]
+
+[ITEM_AMMO:ITEM_AMMO_ENERGY_SMALL_MW]
+	[NAME:shot:shots]
+	[CLASS:ENERGY]
+	[SIZE:10]
+	[ATTACK:EDGE:100:2500:strike:strikes:NO_SUB:2000]
+
+[ITEM_AMMO:ITEM_AMMO_ENERGY_MW]
+	[NAME:charge:charges]
+	[CLASS:ENERGY]
+	[SIZE:100]
+	[ATTACK:EDGE:100:2500:strike:strikes:NO_SUB:2000]
+
+[ITEM_AMMO:ITEM_AMMO_BULLET_BILL_MW]
+	[NAME:bullet bill:bullet bills]
+	[CLASS:CANNON]
+	[SIZE:800]
+	[ATTACK:BLUNT:10:50:strike:strikes:NO_SUB:1000]
+
+[ITEM_AMMO:ITEM_AMMO_CANNONBALL_MW]
+	[NAME:cannonball:cannonballs]
+	[CLASS:CANNON]
+	[SIZE:1000]
+	[ATTACK:BLUNT:50:50:strike:strikes:NO_SUB:1000]

@@ -1,0 +1,7 @@
+{	"Tags": {"Library": true},
+	"Header": "Adds a reaction to resize armor without modifying it in any other way.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base"
+	]
+}

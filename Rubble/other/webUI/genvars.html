@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css"/>
+	<title>Rubble Web UI: Edit Configuration Variables</title>
+
+	<script type="text/javascript">
+		function Set(key, val) {
+			var req = new XMLHttpRequest()
+			req.open("POST", "/setvar", false)
+			req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+			req.send("key=" + encodeURIComponent(key) + "&val=" + encodeURIComponent(val))
+		}
+
+		window.onload = function() {
+			document.getElementById("VarList").addEventListener("change", function(evnt) {
+				evnt.stopPropagation()
+
+				if (evnt.target.name != "") {
+					Set(evnt.target.name, evnt.target.value)
+				}
+			}, false)
+
+			document.getElementById("Menu").addEventListener("click", function(evnt) {
+				evnt.stopPropagation()
+
+				var to = {
+					"Generate": "/pleasewait?to=/genrun",
+					"Back": "/",
+				}[evnt.target.id]
+
+				if (to === undefined) {
+					return
+				}
+				window.location.replace("http://" + window.location.host + to)
+			}, false)
+		}
+	</script>
+</head>
+<body>
+	<table id="VarList">
+		<script language="JavaScript">
+			var items = {{.Vars}}
+			var values = {{.Vals}}
+			var noitems = true
+
+			for (var i in items) {
+				if (items[i].Name == "-") {
+					continue
+				}
+
+				noitems = false
+
+				var name = i
+				if (items[i].Name != "") {
+					name = items[i].Name
+				}
+
+				document.write("<tr><td>" + name + "</td>")
+				document.write("<td>")
+				if (items[i].Values.length > 1) {
+					document.write("<select name=\"" + i + "\">")
+					for (var j in items[i].Values) {
+						if (items[i].Values[j] == values[i]) {
+							document.write("<option selected>" + items[i].Values[j])
+						} else {
+							document.write("<option>" + items[i].Values[j])
+						}
+					}
+					document.write("</select>")
+				} else {
+					document.write("<input type=\"text\" value=\"" + values[i] + "\" name=\"" + i + "\">")
+				}
+				document.write("</td></tr>")
+			}
+			if (noitems) {
+				document.write("<tr><td>No Variables listed in Meta Data.</td></tr>")
+			}
+		</script>
+	</table>
+
+	<div id="Menu">
+		<p><div id="Generate" class="button">Generate!</div></p>
+		<p><div id="Back" class="button">Back to Menu</div></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "Adds a script module for generating semi-random gait speeds.",
+	"Activates": [
+		"Libs/Random"
+	]
+}

@@ -1,0 +1,19 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "Adds randomly generated trees.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Random",
+		"Libs/Base/First Landing/Random/Names"
+	],
+	"Vars": {
+		"FL_RANDOM_TREE_COUNT": {
+			"Name": "How many random trees should be generated?",
+			"Values": [
+				"50"
+			]
+		}
+	}
+}

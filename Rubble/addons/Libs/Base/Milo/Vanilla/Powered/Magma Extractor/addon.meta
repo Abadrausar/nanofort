@@ -1,0 +1,10 @@
+{	"Tags": {"Library": true},
+	"Header": "An automatic powered version of the \"User/Magma/Extractor\" addon.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base",
+		"Libs/Powered",
+		"Libs/Base/Milo/Vanilla/Powered",
+		"Libs/Fluids"
+	]
+}

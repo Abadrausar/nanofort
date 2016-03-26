@@ -1,0 +1,7 @@
+{
+	"Header": "Removes all giants from active game, they will appears only in engravings and legends",
+	"Author": "Abadrausar",
+	"Activates": [
+		"Libs/Base"
+	]
+}

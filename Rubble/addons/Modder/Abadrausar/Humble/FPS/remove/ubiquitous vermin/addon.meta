@@ -1,0 +1,7 @@
+{
+	"Header": "Removes all ubiquitous vermin from all biomes",
+	"Author": "Abadrausar",
+	"Activates": [
+		"Libs/Base"
+	]
+}

@@ -1,0 +1,12 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "An automated still, automatic brewing!",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base",
+		"Libs/Powered",
+		"Modder/Milo/First Landing"
+	]
+}

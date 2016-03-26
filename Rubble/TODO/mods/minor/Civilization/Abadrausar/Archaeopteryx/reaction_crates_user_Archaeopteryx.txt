@@ -1,0 +1,32 @@
+[OBJECT:REACTION]
+{@IF_ACTIVE;User/Crates;
+{!VOID;
+	{!CRATE_CLASS;CLOTH_ROPE_REED;Archaeopterix}
+	{!CRATE_CLASS;CLOTHING_ROPE_REED;Archaeopterix}
+	
+	{!CRATE_CLASS;HIGHWOOD;Archaeopterix}
+	{!CRATE_CLASS;PINE;Archaeopterix}
+	{!CRATE_CLASS;CEDAR;Archaeopterix}
+	{!CRATE_CLASS;OAK;Archaeopterix}
+	
+	{!CRATE_CLASS;ARROWS_WOOD;Archaeopterix}
+	
+	{!CRATE_CLASS;PLANT_BLADE_WEED;Archaeopterix}
+	{!CRATE_CLASS;PLANT_BLOATED_TUBER;Archaeopterix}
+	{!CRATE_CLASS;PLANT_FISHER_BERRY;Archaeopterix}
+	{!CRATE_CLASS;PLANT_HIDE_ROOT;Archaeopterix}
+	{!CRATE_CLASS;PLANT_KOBOLD_BULB;Archaeopterix}
+	{!CRATE_CLASS;PLANT_LONGLAND_GRASS;Archaeopterix}
+	{!CRATE_CLASS;PLANT_MUCK_ROOT;Archaeopterix}
+	{!CRATE_CLASS;PLANT_PRICKLE_BERRY;Archaeopterix}
+	{!CRATE_CLASS;PLANT_RAT_WEED;Archaeopterix}
+	{!CRATE_CLASS;PLANT_ROPE_REED;Archaeopterix}
+	{!CRATE_CLASS;PLANT_STRAWBERRY;Archaeopterix}
+}
+{REACTION;CRATES_Archaeopterix_WORLDGEN;ADDON_HOOK_SWAMP}
+	{CRATE_WORLDGEN_REACTION_PRODUCTS_CLASSED;Archaeopterix}
+;
+{@SCRIPT;
+	(rubble:skipfile "reaction_crates_user_Archaeopterix.txt")
+}
+}

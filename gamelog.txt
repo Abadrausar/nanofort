@@ -1,0 +1,90 @@
+*** STARTING NEW GAME ***
+Generating world using parameter set POCKET REGION
+ Seed: XJOWzG6WIaTbHbVjleju
+ History Seed: lqEtCyT8wtfyzKxydD78
+ Name Seed: XNaN189nP2BEARr3PPDG
+ Creature Seed: QFa4e0cgCoa3WnCYOXbG
+Nothing has arrived on the calendar.
+*** STARTING NEW GAME ***
+Spring has arrived on the calendar.
+This region's raws were generated with Rubble v7.5.0!
+*** STARTING NEW GAME ***
+Generating world using parameter set POCKET REGION
+ Seed: 0Ki2uwqgKcCeIACsKiuc
+ History Seed: km2KQgaAKOog0CQGk4As
+ Name Seed: gCKwIqiyom66yMMKyiyg
+ Creature Seed: esYeGUQAIg0WogW0mY8u
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+This region's raws were generated with Rubble v7.5.2!
+*** STARTING NEW GAME ***
+*** STARTING NEW GAME ***
+Generating world using parameter set POCKET REGION
+ Seed: 46sQeiU8Q2SQ2Yaae0sU
+ History Seed: eweascoGqAg6Mu86u8sC
+ Name Seed: Eigsqce8mi4ACmKucmmm
+ Creature Seed: SGgIi2W8ESkyqQoGWaU0
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+*** STARTING NEW GAME ***
+Generating world using parameter set POCKET REGION
+ Seed: zTA8rWAEqEZ31DJNBwdW
+ History Seed: TqcbW0Bws1Nwf6J45Dre
+ Name Seed: rrsrBsTZXCDaa9XhpHR0
+ Creature Seed: sTiwO6QKQIGjoDCegJRK
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+This region's raws were generated with Rubble v7.5.2!
+*** STARTING NEW GAME ***
+Generating world using parameter set POCKET REGION
+ Seed: RLUSdm8ME09fZ1Z9NGhU
+ History Seed: JWyJu8DSqBRK5i3Czrrg
+ Name Seed: PP2xnqbHl2hyG7JZRbZw
+ Creature Seed: UTSGCoYAQWuLARKYexPI
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+This region's raws were generated with Rubble v7.5.2!
+*** STARTING NEW GAME ***
+Generating world using parameter set POCKET REGION
+ Seed: hBg8zEsOEwJnRblxfmfy
+ History Seed: 940rq0rWATP0L05KZ9Lk
+ Name Seed: XtY9L0PPHoFyMbf957fc
+ Creature Seed: OnuCEkmGISCT6p6c2VNS
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+This region's raws were generated with Rubble v7.5.2!
+*** STARTING NEW GAME ***
+Generating world using parameter set POCKET REGION
+ Seed: mEYo8EaI4SQEEcgAkAGA
+ History Seed: wAWm8w6GQqwG2GiaqS2w
+ Name Seed: yS22c2WweQYgSmgceKCG
+ Creature Seed: I8qMUYeqOSsUw4I6oW0c
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+This region's raws were generated with Rubble v7.5.2!
+** Starting New Outpost **
+*** STARTING NEW GAME ***
+Generating world using parameter set POCKET REGION
+ Seed: CYy2EQWy46AwA66SqMaK
+ History Seed: uOYImaIKqaGU6eOw2Yqa
+ Name Seed: gcs6mQ60U2igUImAYWsU
+ Creature Seed: yuK0ACgEykyCEYGoIOy0
+Nothing has arrived on the calendar.
+This region's raws were generated with Rubble v7.5.2!
+Nothing has arrived on the calendar.
+** Starting New Outpost **
+It has started raining.
+*** STARTING NEW GAME ***
+This region's raws were generated with Rubble v7.5.2!
+Spring has arrived on the calendar.
+** Starting New Outpost **

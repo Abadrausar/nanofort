@@ -1,0 +1,28 @@
+[OBJECT:PLANT]
+{!TEMPLATE;!PROTOTYPE;object;name;variety;seed;color;growdur;clustersize;
+{!SHARED_OBJECT_DUPLICATE;PLANT:%{object};PLANT:{@STR_TO_ID;%{object}_%{variety}};true;true}
+{SHARED_OBJECT_REPLACE_TAG;{@STR_TO_ID;%{object}_%{variety}};NAME;[NAME:%{name} %{variety}]}
+{SHARED_OBJECT_REPLACE_TAG;{@STR_TO_ID;%{object}_%{variety}};NAME_PLURAL;[NAME_PLURAL:%{name}s %{variety}]}
+{SHARED_OBJECT_REPLACE_TAG;{@STR_TO_ID;%{object}_%{variety}};ADJ:[ADJ:%{name} %{variety}]}
+{SHARED_OBJECT_REPLACE_TAG;{@STR_TO_ID;%{object}_%{variety}};SEED;[SEED:%{name} %{variety} %{seed}:%{name} %{variety} %{seed}s:%{color}:LOCAL_PLANT_MAT:SEED]}
+{SHARED_OBJECT_REPLACE_TAG;{@STR_TO_ID;%{object}_%{variety}};GROWDUR;[GROWDUR:%{growdur}]}  
+{SHARED_OBJECT_REPLACE_TAG;{@STR_TO_ID;%{object}_%{variety}};CLUSTERSIZE;[CLUSTERSIZE:%{clustersize}]}}
+
+{!PROTOTYPE;MUSHROOM_HELMET_PLUMP;plump helmet;sprouting;spawn;4:0:1;60;1}       # divide by 5, good for exp, yearly output more or less maintained, except for the seeds
+{!PROTOTYPE;MUSHROOM_HELMET_PLUMP;plump helmet;intensive;spawn;4:0:1;3900;65}    # multiply by 13, good for FPS (bigger stacks - 4024 GROWDUR units in a year) yearly output more or less maintained, except for the seeds
+
+{!PROTOTYPE;GRASS_TAIL_PIG;pig tail;sprouting;seed;0:0:1;60;1}                # divide by 5, good for exp, yearly output more or less maintained, except for the seeds
+{!PROTOTYPE;GRASS_TAIL_PIG;pig tail;intensive;seed;0:0:1;3900;65}             # multiply by 13, good for FPS (bigger stacks - 4024 GROWDUR units in a year) yearly output more or less maintained, except for the seeds
+
+{!PROTOTYPE;GRASS_WHEAT_CAVE;cave wheat;sprouting;seed;6:0:0;100;1}             # divide by 5, good for exp, yearly output more or less maintained, except for the seeds
+{!PROTOTYPE;GRASS_WHEAT_CAVE;cave wheat;intensive;seed;6:0:0;4000;40}          # multiply by 8, good for FPS (bigger stacks - 4024 GROWDUR units in a year) yearly output more or less maintained, except for the seeds
+
+{!PROTOTYPE;POD_SWEET;pod sweet;sprouting;seed;2:0:1;100;1}                   # divide by 5, good for exp, yearly output more or less maintained, except for the seeds
+{!PROTOTYPE;POD_SWEET;pod sweet;intensive;seed;2:0:1;4000;40}                # multiply by 8, good for FPS (bigger stacks - 4024 GROWDUR units in a year) yearly output more or less maintained, except for the seeds
+
+{!PROTOTYPE;BUSH_QUARRY;bush quarry;sprouting;nut;7:0:1;100;1}                # divide by 5, good for exp, yearly output more or less maintained, except for the seeds
+{!PROTOTYPE;BUSH_QUARRY;bush quarry;intensive;nut;7:0:1;4000;40}             # multiply by 8, good for FPS (bigger stacks - 4024 GROWDUR units in a year) yearly output more or less maintained, except for the seeds
+
+{!PROTOTYPE;MUSHROOM_CUP_DIMPLE;dimple cup;sprouting;spawn;5:0:1;100;1}          # divide by 5, good for exp, yearly output more or less maintained, except for the seeds
+{!PROTOTYPE;MUSHROOM_CUP_DIMPLE;dimple cup;intensive;spawn;5:0:1;4000;65} 
+

@@ -1,0 +1,7 @@
+{	"Tags": {"Library": true},
+	"Header": "Allows you to grind non-economic stone into sand at the millstone.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base"
+	]
+}

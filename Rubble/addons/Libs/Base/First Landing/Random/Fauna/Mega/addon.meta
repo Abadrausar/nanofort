@@ -1,0 +1,18 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "Adds randomly generated mega and semi-mega beasts.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base/First Landing/Random/Fauna/Base"
+	],
+	"Vars": {
+		"FL_RANDOM_MEGA_COUNT": {
+			"Name": "How many random mega beasts should be generated?",
+			"Values": [
+				"25"
+			]
+		}
+	}
+}

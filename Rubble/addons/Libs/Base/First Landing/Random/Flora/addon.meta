@@ -1,0 +1,13 @@
+{
+	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "Adds randomly generated Flora.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base/First Landing/Random/Flora/Crops",
+		"Libs/Base/First Landing/Random/Flora/Mushrooms",
+		"Libs/Base/First Landing/Random/Flora/Trees"
+	]
+}

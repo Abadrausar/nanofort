@@ -1,0 +1,18 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "Adds randomly generated vertebrates.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base/First Landing/Random/Fauna/Base"
+	],
+	"Vars": {
+		"FL_RANDOM_LAND_COUNT": {
+			"Name": "How many random vertebrates should be generated?",
+			"Values": [
+				"250"
+			]
+		}
+	}
+}

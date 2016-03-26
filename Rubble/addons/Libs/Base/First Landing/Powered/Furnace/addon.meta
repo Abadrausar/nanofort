@@ -1,0 +1,12 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "An automated version of the arc furnace, makes many kinds of items.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base",
+		"Libs/Powered",
+		"Modder/Milo/First Landing"
+	]
+}

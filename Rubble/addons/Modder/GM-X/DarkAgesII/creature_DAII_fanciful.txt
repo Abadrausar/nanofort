@@ -1,0 +1,40 @@
+===========================================================================================================
+Dark Towers 0.40.10 | r1 | Doubles purely fanciful creatures. -GM-X | dfdarkage.com
+===========================================================================================================
+
+[CREATURE:GHOST_CHIMERA]
+	[NAME:ghost chimera:ghost chimeras:ghost chimeric]
+	[CREATURE_TILE:'C'][COLOR:2:0:1]
+	[FANCIFUL]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:terrifying features]
+	[ALL_ACTIVE]
+
+[CREATURE:UNDEAD_CENTAUR]
+	[NAME:undead centaur:undead centaurs:undead centaur]
+	[CREATURE_TILE:'C'][COLOR:6:0:0]
+	[FANCIFUL]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:terrifying features]
+	[ALL_ACTIVE]
+	[CASTE:FEMALE]
+		[CASTE_NAME:centauress:centauresses:centauress]
+		[FEMALE]
+	[CASTE:MALE]
+		[CASTE_NAME:centaur:centaurs:centaur]
+		[MALE]
+
+[CREATURE:GOLDEN_GRIFFON]
+	[NAME:golden griffon:golden griffons:golden griffon]
+	[CREATURE_TILE:'G'][COLOR:7:0:1]
+	[FANCIFUL]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:strength]
+	[PREFSTRING:beauty]
+	[ALL_ACTIVE]
+	[CASTE:FEMALE]
+		[FEMALE]
+	[CASTE:MALE]
+		[MALE]
+		
+===========================================================================================================

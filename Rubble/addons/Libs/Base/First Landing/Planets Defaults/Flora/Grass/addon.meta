@@ -1,0 +1,9 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "This addon adds an assortment of default grasses.",
+	"Activates": [
+		"Libs/Base"
+	]
+}

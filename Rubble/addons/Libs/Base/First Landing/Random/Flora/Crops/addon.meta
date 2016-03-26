@@ -1,0 +1,19 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "Adds randomly generated farmable plants.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Random",
+		"Libs/Base/First Landing/Random/Names"
+	],
+	"Vars": {
+		"FL_RANDOM_CROP_COUNT": {
+			"Name": "How many random crops should be generated?",
+			"Values": [
+				"100"
+			]
+		}
+	}
+}

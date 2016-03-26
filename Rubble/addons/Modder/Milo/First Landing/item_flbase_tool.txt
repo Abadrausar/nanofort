@@ -1,0 +1,543 @@
+[OBJECT:ITEM]
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_CAULDRON;
+	[NAME:cauldron:cauldrons]
+	[VALUE:50]
+	[METAL_MAT]
+	[TOOL_USE:LIQUID_COOKING]
+	[TILE:147]
+	[SIZE:4000]
+	[MATERIAL_SIZE:6]
+	[CONTAINER_CAPACITY:100000]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_LADLE;
+	[NAME:ladle:ladles]
+	[VALUE:10]
+	[METAL_MAT]
+	[TOOL_USE:LIQUID_SCOOP]
+	[TILE:13]
+	[SIZE:100]
+	[MATERIAL_SIZE:1]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_BOWL;
+	[NAME:bowl:bowls]
+	[VALUE:10]
+	[HARD_MAT]
+	[TOOL_USE:MEAL_CONTAINER]
+	[TILE:248]
+	[SIZE:100]
+	[MATERIAL_SIZE:1]
+	[CONTAINER_CAPACITY:3000]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_MORTAR;
+	[NAME:mortar:mortars]
+	[VALUE:10]
+	[HARD_MAT]
+	[TOOL_USE:GRIND_POWDER_RECEPTACLE]
+	[TILE:248]
+	[SIZE:100]
+	[MATERIAL_SIZE:1]
+	[CONTAINER_CAPACITY:1000]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_PESTLE;
+	[NAME:pestle:pestles]
+	[VALUE:10]
+	[HARD_MAT]
+	[TOOL_USE:GRIND_POWDER_GRINDER]
+	[TILE:'/']
+	[SIZE:20]
+	[MATERIAL_SIZE:1]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_KNIFE_CARVING;
+	[NAME:carving knife:carving knives]
+	[VALUE:10]
+	[METAL_WEAPON_MAT]
+	[TOOL_USE:MEAT_CARVING]
+	[TILE:'/']
+	[SIZE:150]
+	[SKILL:DAGGER]
+	[TWO_HANDED:22500]
+	[MINIMUM_SIZE:4000]
+	[MATERIAL_SIZE:1]
+	[ATTACK:EDGE:800:600:slash:slashes:NO_SUB:1250]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+	[ATTACK:EDGE:4:800:stab:stabs:NO_SUB:1000]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+	[ATTACK:BLUNT:15:400:strike:strikes:handle:1000]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_KNIFE_BONING;
+	[NAME:boning knife:boning knives]
+	[VALUE:10]
+	[METAL_WEAPON_MAT]
+	[TOOL_USE:MEAT_BONING]
+	[TILE:'/']
+	[SIZE:50]
+	[SKILL:DAGGER]
+	[TWO_HANDED:17500]
+	[MINIMUM_SIZE:2000]
+	[MATERIAL_SIZE:1]
+	[ATTACK:EDGE:500:300:slash:slashes:NO_SUB:1250]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+	[ATTACK:EDGE:2:400:stab:stabs:NO_SUB:1000]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+	[ATTACK:BLUNT:10:200:strike:strikes:handle:1000]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_KNIFE_SLICING;
+	[NAME:slicing knife:slicing knives]
+	[VALUE:10]
+	[METAL_WEAPON_MAT]
+	[TOOL_USE:MEAT_SLICING]
+	[TILE:'/']
+	[SIZE:150]
+	[SKILL:DAGGER]
+	[TWO_HANDED:22500]
+	[MINIMUM_SIZE:4000]
+	[MATERIAL_SIZE:1]
+	[ATTACK:EDGE:900:700:slash:slashes:NO_SUB:1250]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+	[ATTACK:EDGE:3:900:stab:stabs:NO_SUB:1000]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+	[ATTACK:BLUNT:15:400:strike:strikes:handle:1000]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_KNIFE_MEAT_CLEAVER;
+	[NAME:meat cleaver:meat cleavers]
+	[VALUE:10]
+	[METAL_WEAPON_MAT]
+	[TOOL_USE:MEAT_CLEAVING]
+	[TILE:'/']
+	[SIZE:300]
+	[SKILL:AXE]
+	[TWO_HANDED:27500]
+	[MINIMUM_SIZE:5000]
+	[MATERIAL_SIZE:1]
+	[ATTACK:EDGE:800:400:hack:hacks:NO_SUB:1250]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+	[ATTACK:BLUNT:800:400:slap:slaps:flat:1250]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+	[ATTACK:BLUNT:20:400:strike:strikes:handle:1000]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_FORK_CARVING;
+	[NAME:carving fork:carving forks]
+	[VALUE:10]
+	[METAL_WEAPON_MAT]
+	[TOOL_USE:HOLD_MEAT_FOR_CARVING]
+	[TILE:'/']
+	[SIZE:150]
+	[SKILL:DAGGER]
+	[TWO_HANDED:22500]
+	[MINIMUM_SIZE:4000]
+	[MATERIAL_SIZE:1]
+	[ATTACK:EDGE:1:100:stab:stabs:NO_SUB:1000]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+	[ATTACK:BLUNT:15:400:strike:strikes:handle:1000]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_NEST_BOX;
+	[NAME:nest box:nest boxes]
+	[VALUE:10]
+	[HARD_MAT]
+	[TOOL_USE:NEST_BOX]
+	[TILE:8]
+	[SIZE:1000]
+	[MATERIAL_SIZE:1]
+	[CONTAINER_CAPACITY:2000]
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_JUG;
+	[NAME:jug:jugs]
+	[VALUE:10]
+	[HARD_MAT]
+	[TOOL_USE:LIQUID_CONTAINER]
+	[TILE:229]
+	[SIZE:300]
+	[MATERIAL_SIZE:1]
+	[CONTAINER_CAPACITY:10000]
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_LARGE_POT;
+	[NAME:pot:pots]
+	[ADJECTIVE:large]
+	[VALUE:10]
+	[HARD_MAT]
+	[TOOL_USE:FOOD_STORAGE]
+	[TILE:232]
+	[SIZE:5000]
+	[MATERIAL_SIZE:1]
+	[CONTAINER_CAPACITY:60000]
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_HIVE;
+	[NAME:hive:hives]
+	[VALUE:10]
+	[HARD_MAT]
+	[TOOL_USE:HIVE]
+	[TILE:22]
+	[SIZE:2000]
+	[MATERIAL_SIZE:1]
+	[CONTAINER_CAPACITY:5000]
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_POUCH;
+	[NAME:pouch:pouches]
+	[VALUE:10]
+	[SOFT_MAT]
+	[TOOL_USE:SMALL_OBJECT_STORAGE]
+	[TILE:173]
+	[SIZE:100]
+	[MATERIAL_SIZE:1]
+	[CONTAINER_CAPACITY:1000]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_MINECART;
+	[NAME:minecart:minecarts]
+	[VALUE:50]
+	[METAL_MAT]
+	[WOOD_MAT]
+	[TOOL_USE:TRACK_CART]
+	[FURNITURE]
+	[TILE:254]
+	[INVERTED_TILE]
+	[SIZE:40000]
+	[MATERIAL_SIZE:6]
+	[CONTAINER_CAPACITY:500000]
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_WHEELBARROW;
+	[NAME:wheelbarrow:wheelbarrows]
+	[VALUE:50]
+	[METAL_MAT]
+	[WOOD_MAT]
+	[TOOL_USE:HEAVY_OBJECT_HAULING]
+	[FURNITURE]
+	[TILE:153]
+	[SIZE:30000]
+	[MATERIAL_SIZE:6]
+	[CONTAINER_CAPACITY:100000]
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_STEPLADDER;
+	[NAME:stepladder:stepladders]
+	[VALUE:50]
+	[METAL_MAT]
+	[WOOD_MAT]
+	[TOOL_USE:STAND_AND_WORK_ABOVE]
+	[FURNITURE]
+	[TILE:158]
+	[SIZE:40000]
+	[MATERIAL_SIZE:6]
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_SCROLL_ROLLERS;
+	[NAME:scroll rollers:scroll rollers]
+	[VALUE:10]
+	[HARD_MAT]
+	[TOOL_USE:ROLL_UP_SHEET]
+	[TILE:246]
+	[SIZE:100]
+	[MATERIAL_SIZE:1]
+	[INCOMPLETE_ITEM]
+	[UNIMPROVABLE]
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_BOOK_BINDING;
+	[NAME:book binding:book bindings]
+	[VALUE:10]
+	[HARD_MAT]
+	[TOOL_USE:PROTECT_FOLDED_SHEETS]
+	[TILE:246]
+	[SIZE:100]
+	[MATERIAL_SIZE:1]
+	[INCOMPLETE_ITEM]
+	[UNIMPROVABLE]
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_SCROLL;
+	[NAME:scroll:scrolls]
+	[VALUE:20]
+	[SHEET_MAT]
+	[TOOL_USE:CONTAIN_WRITING]
+	[TILE:236]
+	[SIZE:200]
+	[NO_DEFAULT_JOB]
+	[DEFAULT_IMPROVEMENT:SPECIFIC:ROLLERS:HARD_MAT]
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_QUIRE;
+	[NAME:quire:quires]
+	[VALUE:20]
+	[SHEET_MAT]
+	[TOOL_USE:CONTAIN_WRITING]
+	[TILE:240]
+	[SIZE:100]
+	[NO_DEFAULT_JOB]
+	[INCOMPLETE_ITEM]
+	[UNIMPROVABLE]
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_BOOKCASE;
+	[NAME:bookcase:bookcases]
+	[VALUE:10]
+	[HARD_MAT]
+	[TOOL_USE:BOOKCASE]
+	[FURNITURE]
+	[TILE:240]
+	[INVERTED_TILE]
+	[SIZE:1000]
+	[MATERIAL_SIZE:6]
+	[CONTAINER_CAPACITY:100000]
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
+
+====================================================================================================
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_RESIN_BEETLES;
+	[NAME:resin beetle colony:resin beetle colonies]
+	[DESCRIPTION:A colony a resin beetles, use to build a beetle hive and they will supply you with a never ending trickle of resin. Resin is used to make plastics at the chemist.]
+	[VALUE:100]
+	[TILE:22]
+	[SIZE:500]
+	[MATERIAL_SIZE:1]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_ALGAE_TANK;
+	[NAME:algae tank:algae tanks]
+	[DESCRIPTION:Small, self-contained, algae tanks. Once setup they will produce a small amount of cheap, but tasteless, food. Great for stocking emergency bunkers.]
+	[VALUE:200]
+	[TILE:176]
+	[SIZE:5000]
+	[MATERIAL_SIZE:1]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_MOISTURE_CONDENSER;
+	[NAME:moisture condenser:moisture condensers]
+	[DESCRIPTION:Moisture condensers gather water from the air, ready to fill barrels for drinking. Great for stocking emergency bunkers.]
+	[VALUE:200]
+	[TILE:176]
+	[SIZE:5000]
+	[MATERIAL_SIZE:1]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_SEALED_CONTAINER;
+	[NAME:container:containers]
+	[ADJECTIVE:sealed]
+	[VALUE:50]
+	[TILE:240]
+	[SIZE:30]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_VIAL_PACK;
+	[NAME:vials:vials]
+	[ADJECTIVE:pack of]
+	[DESCRIPTION:A pack of vials waiting to be filled with chemicals at the chemist.]
+	[VALUE:50]
+	[TILE:240]
+	[SIZE:300]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_VIAL_SINGLE;
+	[NAME:vial:vials]
+	[VALUE:5]
+	[TILE:173]
+	[SIZE:30]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_ELECTRONICS_WIRE;
+	[NAME:wire coil:wire coils]
+	[DESCRIPTION:A coil of wire for use at the electronics workshop.]
+	[VALUE:5]
+	[TILE:21]
+	[SIZE:30]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_ELECTRONICS_SOLDER;
+	[NAME:solder:solder]
+	[DESCRIPTION:A coil of solder for use at the electronics workshop.]
+	[VALUE:5]
+	[TILE:21]
+	[SIZE:30]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_HAND_TOOLS;
+	[NAME:hand tools:hand tools]
+	[DESCRIPTION:Misc. hand tools, used as a build item for all but the simplest workshops.]
+	[VALUE:5]
+	[TILE:240]
+	[SIZE:30]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_FUEL_ROD;
+	[NAME:fuel rod:fuel rods]
+	[DESCRIPTION:Fuel rods, ready to be inserted into a RTG or reactor near you!]
+	[VALUE:50]
+	[TILE:45]
+	[SIZE:30]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_ELECTRONIC_CIRCUIT;
+	[NAME:circuit:circuits]
+	[DESCRIPTION:A selection of modular electronic circuit boards. Used as the basis for most electronic items.]
+	[VALUE:10]
+	[TILE:42]
+	[SIZE:30]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_ELECTRONIC_PROCESSOR;
+	[NAME:processing unit:processing units]
+	[DESCRIPTION:Programmable micro-processors. Many generations behind state-of-the-art, but rugged and reliable.]
+	[VALUE:20]
+	[TILE:42]
+	[SIZE:30]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_RTG_MODULE;
+	[NAME:RTG module:RTG modules]
+	[DESCRIPTION:Radioisotope Thermoelectric Generators. Produces a relative modest amount of electricity by exploiting the heat of decaying radioactive elements.]
+	[VALUE:100]
+	[TILE:42]
+	[SIZE:30]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_BATTERY;
+	[NAME:battery:batteries]
+	[DESCRIPTION:Simple but reliable rechargeable lead-acid batteries.]
+	[VALUE:10]
+	[TILE:249]
+	[SIZE:20]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_RADIO_PARTS;
+	[NAME:radio parts:radio parts]
+	[DESCRIPTION:Various small specialized circuits that make a radio work.]
+	[VALUE:50]
+	[TILE:254]
+	[SIZE:400]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_MACHINE_TOOLS;
+	[NAME:machine tools:machine tools]
+	[DESCRIPTION:Mechanically powered tools of various kinds. Critical for many industrial processes.]
+	[VALUE:50]
+	[TILE:254]
+	[SIZE:2000]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_PISTON_CYLINDER;
+	[NAME:piston and cylinder:pistons and cylinders]
+	[DESCRIPTION:A cylinder and piston assembly, ready to use in a steam engine or the like.]
+	[VALUE:25]
+	[TILE:254]
+	[SIZE:1000]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_STEAM_BOILER;
+	[NAME:steam boiler:steam boilers]
+	[DESCRIPTION:A high performance steam boiler.]
+	[VALUE:50]
+	[TILE:254]
+	[SIZE:3000]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_ELECTRONICS_ASSEMBLER;
+	[NAME:electronics assembler:electronics assemblers]
+	[DESCRIPTION:This complicated machine build electronic components from lightly refined raw materials.  Far too complicated to build here, these must be imported from off world.]
+	[VALUE:200]
+	[TILE:254]
+	[SIZE:2000]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_CENTRIFUGE;
+	[NAME:centrifuge:centrifuges]
+	[DESCRIPTION:A high precision centrifuge for separating uranium isotopes.  Far too complicated to build here, these must be imported from off world.]
+	[VALUE:250]
+	[TILE:254]
+	[SIZE:2000]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GENERATOR;
+	[NAME:electrical generator:electrical generators]
+	[DESCRIPTION:A basic electrical generator, tis is basically an electric motor wired up slightly differently.]
+	[VALUE:50]
+	[TILE:254]
+	[SIZE:2000]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_ELECTRIC_MOTOR;
+	[NAME:electric motor:electric motors]
+	[DESCRIPTION:A simple electric motor.]
+	[VALUE:50]
+	[TILE:254]
+	[SIZE:2000]
+	[MATERIAL_SIZE:1]
+	[NO_DEFAULT_JOB]
+	[UNIMPROVABLE]
+}

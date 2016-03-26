@@ -1,0 +1,18 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "Adds a script module for generating random names.",
+	"Vars": {
+		"FL_ADV_RANDOM_NAMES": {
+			"Name": "Use alternate random creature name generator (may produce poor results)?",
+			"Values": [
+				"NO",
+				"YES"
+			]
+		}
+	},
+	"Activates": [
+		"Libs/Random"
+	]
+}

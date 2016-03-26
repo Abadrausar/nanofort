@@ -1,0 +1,8 @@
+{	"Tags": {"Library": true},
+	"Header": "Adds a new alloy to the alloy furnace, mithril.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base",
+		"User/Metallurgy"
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"Header": "Support for the Generic Animal Materials.",
+	"Activates": [
+		"Libs/Base", 
+		"Libs/Base/Milo/Common/Generic Animal Mats",
+		"Libs/Base/Milo/Common/Generic Animal Mats/Blood and Pus",
+		"Libs/Base/Milo/Common/Generic Animal Mats/Bone",
+		"Libs/Base/Milo/Common/Generic Animal Mats/Fat, Tallow, and Soap",
+		"Libs/Base/Milo/Common/Generic Animal Mats/Hair and Feathers",
+		"Libs/Base/Milo/Common/Generic Animal Mats/Horn and Hoof",
+		"Libs/Base/Milo/Common/Generic Animal Mats/Meat",
+		"Libs/Base/Milo/Common/Generic Animal Mats/Milk",
+		"Libs/Base/Milo/Common/Generic Animal Mats/Shell",
+		"Libs/Base/Milo/Common/Generic Animal Mats/Sinew and Nerves",
+		"Libs/Base/Milo/Common/Generic Animal Mats/Skin, Scale and Chitin",
+		"Libs/Base/Milo/Common/Generic Animal Mats/Tooth and Claw"
+	]
+}

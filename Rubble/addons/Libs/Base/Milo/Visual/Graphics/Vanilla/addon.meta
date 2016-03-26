@@ -1,0 +1,6 @@
+{	"Tags": {"Library": true},
+	"Header": "The vanilla creature graphics, mostly just a demo.",
+	"Activates": [
+		"Libs/Base"
+	]
+}

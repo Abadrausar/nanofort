@@ -1,0 +1,1 @@
+Adds \"overseer\" and \"former overseer\" nobles for succession forts.

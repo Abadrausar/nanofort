@@ -1,0 +1,7 @@
+{	"Tags": {"Library": true},
+	"Header": "Make all sorts of stuff from woven plants.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base"
+	]
+}

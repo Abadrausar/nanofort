@@ -1,0 +1,13 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "An automatic assembly machine, makes items from stone, wood, metal, plastic, pottery, and glass.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base",
+		"Libs/Powered",
+		"Modder/Milo/First Landing",
+		"Libs/Timeout"
+	]
+}

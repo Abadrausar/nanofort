@@ -1,0 +1,9 @@
+{	"Tags": {"Library": true},
+	"Header": "Item sensor, toggle various buildings based on item counts.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base",
+		"Libs/Powered",
+		"Libs/Base/Milo/Vanilla/Powered"
+	]
+}

@@ -1,0 +1,44 @@
+[OBJECT:PLANT]
+{!TEMPLATE;PROTOTYPE;object;name;variety;seed;color;growdur;clustersize;
+{@FOREACH;NAME=[NAME:%{name} %{variety}]|NAME_PLURAL=NAME_PLURAL;[NAME_PLURAL:%{name}s %{variety}]|ADJ=[ADJ:%{name} %{variety}]|GROWDUR=[GROWDUR:%{growdur}]|CLUSTERSIZE=[CLUSTERSIZE:%{clustersize}]
+	|SEED=[SEED:%{name} %{variety} %{seed}:%{name} %{variety} %{seed}s:%{color}:LOCAL_PLANT_MAT:SEED];
+	{SHARED_OBJECT_REPLACE_TAG;PLANT:{@STR_TO_ID;%{object}_%{variety}};%{}{key};%{}{val}}}}
+	
+	
+{@FOREACH;MUSHROOM_HELMET_PLUMP=plump helmet|GRASS_TAIL_PIG=pig tail|GRASS_WHEAT_CAVE=cave wheat|POD_SWEET=pod sweet|BUSH_QUARRY=bush quarry|MUSHROOM_CUP_DIMPLE=dimple cup;
+	{!SHARED_OBJECT_DUPLICATE;PLANT:%{key};PLANT:{@STR_TO_ID;%{object}_%{variety}};true;true}
+	{PROTOTYPE_PLANT;%{key};PLANT:{@STR_TO_ID;%{object}_%{variety}}}}
+	
+{@FOREACH;MUSHROOM_HELMET_PLUMP=plump helmet|GRASS_TAIL_PIG=pig tail|GRASS_WHEAT_CAVE=cave wheat|POD_SWEET=pod sweet|BUSH_QUARRY=bush quarry|MUSHROOM_CUP_DIMPLE=dimple cup;
+	{!SHARED_OBJECT_DUPLICATE;PLANT:%{key};PLANT:{@STR_TO_ID;%{object}_%{variety}};true;true}
+	{PROTOTYPE_PLANT;%{key};PLANT:{@STR_TO_ID;%{object}_%{variety}}}}	
+	
+	
+	
+# for sproutings we divide by 5, good for exp, yearly output more or less maintained, except for the seeds
+# for intensives we multiply by 13, good for FPS (bigger stacks - 4024 GROWDUR units in a year) yearly output more or less maintained, except for the seeds
+{!SHARED_OBJECT_DUPLICATE;PLANT:MUSHROOM_HELMET_PLUMP;PLANT:MUSHROOM_HELMET_PLUMP_sprouting;true;true}
+{!SHARED_OBJECT_DUPLICATE;PLANT:MUSHROOM_HELMET_PLUMP;PLANT:MUSHROOM_HELMET_PLUMP_intensive;true;true}
+{!SHARED_OBJECT_DUPLICATE;PLANT:GRASS_TAIL_PIG;PLANT:GRASS_TAIL_PIG_sprouting;true;true}
+{!SHARED_OBJECT_DUPLICATE;PLANT:GRASS_TAIL_PIG;PLANT:GRASS_TAIL_PIG_intensive;true;true}
+{!SHARED_OBJECT_DUPLICATE;PLANT:GRASS_WHEAT_CAVE;PLANT:GRASS_WHEAT_CAVE_sprouting;true;true}
+{!SHARED_OBJECT_DUPLICATE;PLANT:GRASS_WHEAT_CAVE;PLANT:GRASS_WHEAT_CAVE_intensive;true;true}
+{!SHARED_OBJECT_DUPLICATE;PLANT:POD_SWEET;PLANT:POD_SWEET_sprouting;true;true}
+{!SHARED_OBJECT_DUPLICATE;PLANT:POD_SWEET;PLANT:POD_SWEET_intensive;true;true}
+{!SHARED_OBJECT_DUPLICATE;PLANT:BUSH_QUARRY;PLANT:BUSH_QUARRY_sprouting;true;true}
+{!SHARED_OBJECT_DUPLICATE;PLANT:BUSH_QUARRY;PLANT:BUSH_QUARRY_intensive;true;true}
+{!SHARED_OBJECT_DUPLICATE;PLANT:MUSHROOM_CUP_DIMPLE;PLANT:MUSHROOM_CUP_DIMPLE_sprouting;true;true}
+{!SHARED_OBJECT_DUPLICATE;PLANT:MUSHROOM_CUP_DIMPLE;PLANT:MUSHROOM_CUP_DIMPLE_intensive;true;true}
+
+{PROTOTYPE;MUSHROOM_HELMET_PLUMP;plump helmet;sprouting;spawn;4:0:1;60;1}
+{PROTOTYPE;MUSHROOM_HELMET_PLUMP;plump helmet;intensive;spawn;4:0:1;3900;65}
+{PROTOTYPE;GRASS_TAIL_PIG;pig tail;sprouting;seed;0:0:1;60;1}
+{PROTOTYPE;GRASS_TAIL_PIG;pig tail;intensive;seed;0:0:1;3900;65}
+{PROTOTYPE;GRASS_WHEAT_CAVE;cave wheat;sprouting;seed;6:0:0;100;1}
+{PROTOTYPE;GRASS_WHEAT_CAVE;cave wheat;intensive;seed;6:0:0;4000;40}
+{PROTOTYPE;POD_SWEET;pod sweet;sprouting;seed;2:0:1;100;1}
+{PROTOTYPE;POD_SWEET;pod sweet;intensive;seed;2:0:1;4000;40}
+{PROTOTYPE;BUSH_QUARRY;bush quarry;sprouting;nut;7:0:1;100;1}
+{PROTOTYPE;BUSH_QUARRY;bush quarry;intensive;nut;7:0:1;4000;40}
+{PROTOTYPE;MUSHROOM_CUP_DIMPLE;dimple cup;sprouting;spawn;5:0:1;100;1}
+{PROTOTYPE;MUSHROOM_CUP_DIMPLE;dimple cup;intensive;spawn;5:0:1;4000;65}

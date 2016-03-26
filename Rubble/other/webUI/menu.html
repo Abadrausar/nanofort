@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css"/>
+	<title>Rubble Web UI: Menu</title>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			var btn = document.getElementById("Menu");
+			btn.addEventListener("click", function(evnt) {
+				evnt.stopPropagation()
+				evnt.preventDefault()
+
+				var to = {
+					"Generate": "/genaddons",
+					"Tileset": "/tsetaddons",
+					"IApply": "/iaaddons",
+					"Addons": "/addons",
+					"Docs": "/doclist",
+					"Quit": "/kill",
+					"Log": "/log",
+					"About": "/doc/Rubble License",
+				}[evnt.target.id]
+
+				if (to === undefined) {
+					return
+				}
+				window.location.replace("http://" + window.location.host + to)
+			}, false)
+		}
+	</script>
+</head>
+<body>
+	<h1>Welcome to the Rubble Web UI!</h1>
+	<div id="Menu">
+		<p><div id="Generate" class="button">Generate raws</div></p>
+		<p><div id="Tileset" class="button">Switch a region's tileset</div></p>
+		<p><div id="IApply" class="button">Apply a save-safe addon to a region</div></p>
+		<div class="hr"></div>
+		<p><div id="Addons" class="button">Addon documentation</div></p>
+		<p><div id="Docs" class="button">General documentation</div></p>
+		<div class="hr"></div>
+		<p><div id="Log" class="button">Current log file</div></p>
+		<p><div id="About" class="button">About Rubble</div></p>
+		<div class="hr"></div>
+		<p><div id="Quit" class="button">Exit Rubble</div></p>
+	</div>
+</body>
+</html>

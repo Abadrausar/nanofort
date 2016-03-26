@@ -1,0 +1,10 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Entity for subterranean animalpeople, The Furries",
+	
+	"Author": "Tarn Adams, Rubble porting by Abadrausar",
+	
+	"DescFile": "addon.md",
+	
+	"Activates": ["Libs/Base", "Libs/Castes"]
+}

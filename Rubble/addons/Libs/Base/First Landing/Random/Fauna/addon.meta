@@ -1,0 +1,14 @@
+{
+	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "Adds randomly generated creatures.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base/First Landing/Random/Fauna/Aquatic",
+		"Libs/Base/First Landing/Random/Fauna/Mega",
+		"Libs/Base/First Landing/Random/Fauna/Natives",
+		"Libs/Base/First Landing/Random/Fauna/Vertebrates"
+	]
+}

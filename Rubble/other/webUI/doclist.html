@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css"/>
+	<title>Rubble Web UI: Documentation</title>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			// Kill the back button as best I can. There may be a better way to do this, but I don't know it.
+			function killback(evnt) {
+				if (evnt.target.href != "" && evnt.target.href != "#") {
+					evnt.preventDefault()
+					evnt.stopPropagation()
+					window.location.replace(evnt.target.href)
+				}
+			}
+			var a = document.getElementsByTagName("a")
+			for (var i = 0; i < a.length; i++) {
+				a[i].addEventListener("click", killback, false)
+			}
+
+			function listener(evnt) {
+				evnt.stopPropagation()
+
+				window.location.replace("http://" + window.location.host + "/")
+			}
+
+			document.getElementById("Back").addEventListener("click", listener, false)
+		}
+	</script>
+</head>
+<body>
+	<p>Stuff everyone should read:</p>
+	<li><a href="/doc/Rubble Readme">Rubble Readme</a></li>
+	<li><a href="/doc/Rubble Changelog">Rubble Changelog</a></li>
+
+	<p><div class="hr"></div></p>
+
+	<p>Extras:</p>
+	<li><a href="/doc/Rubble History and Philosophy">Rubble History and Philosophy</a></li>
+
+	<p><div class="hr"></div></p>
+
+	<p>For modders:
+	<li><a href="/doc/Rubble Basics">Rubble Basics</a></li>
+	<li><a href="/doc/Rubble Base Templates">Rubble Base Templates</a></li>
+	<li><a href="/doc/Rubble Libs Templates">Rubble Libs Templates</a></li>
+
+	<p><div class="hr"></div></p>
+
+	<p>Miscellaneous tutorials:
+	<li><a href="/doc/Tutorials/Common standard library templates">Common standard library templates</a></li>
+	<li><a href="/doc/Tutorials/User templates">User templates</a></li>
+	<li><a href="/doc/Tutorials/Tileset addons">Tileset addons</a></li>
+
+	{{range .}}<p><div class="hr"></div></p><p>External Documentation:</p>
+	<li>{{.Header}}</li>{{else}}{{end}}
+
+	<p><div id="Back" class="button">Back to Menu</div></p>
+</body>
+</html>

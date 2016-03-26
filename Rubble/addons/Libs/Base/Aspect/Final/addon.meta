@@ -1,0 +1,11 @@
+{	"Tags": {"Library": true},
+	"Header": "Mark an addon as final",
+	"Author": " Ababrausar",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base" 
+		],
+	"Incompatible": [
+		"Libs/Base/Aspect/Base"
+	]
+}

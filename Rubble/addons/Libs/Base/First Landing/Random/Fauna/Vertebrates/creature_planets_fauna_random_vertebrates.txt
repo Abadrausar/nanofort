@@ -1,0 +1,2 @@
+[OBJECT:CREATURE]
+{@SCRIPT;(rubble:stageparse (require "planets_fauna_random_vertebrates"))}

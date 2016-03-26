@@ -1,0 +1,7 @@
+{	"Tags": {"Library": true},
+	"Header": "Allows you to cure infections in your adventurer.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base"
+	]
+}

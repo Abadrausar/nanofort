@@ -1,0 +1,11 @@
+{
+	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "A streamlined version of the DFHack spatter example mod.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base"
+	]
+}

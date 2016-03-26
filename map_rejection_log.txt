@@ -1,0 +1,264 @@
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough low altitudes after shift down: -4
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough low altitudes after shift down: -2
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough high altitudes after shift up
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough low altitudes after shift down: -14
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Mythical Plane, region4: Not enough peaks: 0<1
+The Past Universe, region1: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -11
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -10
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough high altitudes after shift up
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -2
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -22
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -11
+The Everlasting Plane, region2: Placed farming entity without non-orchard crops
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -6
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough high altitudes after shift up
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -5
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitude locations after erosion: -1
+The Everlasting Plane, region2: Not enough high altitudes after shift up
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -2
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -24
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Placed farming entity without non-orchard crops
+The Everlasting Plane, region2: Placed farming entity without non-orchard crops
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -18
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Placed farming entity without non-orchard crops
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -18
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -27
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Placed farming entity without non-orchard crops
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Placed farming entity without non-orchard crops
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -15
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -28
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Placed farming entity without non-orchard crops
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough entity placement locations
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -24
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -22
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Placed farming entity without non-orchard crops
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -11
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough low altitudes after shift down: -19
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Placed farming entity without non-orchard crops
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Everlasting Plane, region2: Not enough peaks: 0<1
+The Legendary World, region2: Not enough low altitudes after shift down: -13
+The Legendary World, region2: Not enough peaks: 0<1
+The Legendary World, region2: Not enough high altitudes after shift up
+The Legendary World, region2: Not enough peaks: 0<1
+The Universes of Prophecy, region3: Not enough peaks: 0<1
+The Universes of Prophecy, region3: Not enough peaks: 0<1
+The Universes of Prophecy, region3: Not enough peaks: 0<1
+The Dimension of Dawns, region4: Not enough peaks: 0<1
+The Dimension of Dawns, region4: Not enough peaks: 0<1
+The Dimension of Dawns, region4: Not enough peaks: 0<1
+The Land of Portents, region5: Not enough peaks: 0<1
+The Land of Portents, region5: Not enough peaks: 0<1
+The Land of Portents, region5: Not enough low altitudes after shift down: -8
+The Land of Portents, region5: Not enough peaks: 0<1
+The Land of Portents, region5: Not enough peaks: 0<1
+The Land of Portents, region5: Not enough peaks: 0<1
+The Land of Portents, region5: Not enough low altitudes after shift down: -23
+The Land of Portents, region5: Not enough peaks: 0<1
+The Land of Portents, region5: Not enough low altitudes after shift down: -15
+The Land of Portents, region5: Not enough low altitudes after shift down: -23
+The Land of Portents, region5: Not enough peaks: 0<1
+The Land of Portents, region5: Not enough peaks: 0<1
+The Oracular Dimensions, region6: Not enough peaks: 0<1
+The Oracular Dimensions, region6: Not enough peaks: 0<1
+The Oracular Dimensions, region6: Not enough peaks: 0<1

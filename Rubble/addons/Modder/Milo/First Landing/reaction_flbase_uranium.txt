@@ -1,0 +1,14 @@
+[OBJECT:REACTION]
+
+# This recipe is not very realistic (understatement!)
+# For one thing I think initial steps need hydrochloric acid, which I am not producing currently
+# (I would rather not add it, this is already getting complicated enough).
+# This requires 1/7 water (via Lua hook).
+{!SHARED_INDUSTRY_REACTION;REFINE_URANIUM;URANIUM_REFINERY;
+	[NAME:refine uranium]
+	[BUILDING:URANIUM_REFINERY:NONE]
+	[REAGENT:ore:1:BOULDER:NONE:INORGANIC:URANIUM_ORE]
+	[REAGENT:sulfuric_acid:2:TOOL:ITEM_TOOL_VIAL_SINGLE:INORGANIC:CHEMICAL_SULFURIC_ACID]
+	[PRODUCT:100:1:TOOL:ITEM_TOOL_FUEL_ROD:INORGANIC:CHEMICAL_URANIUM]
+	[SKILL:ALCHEMY]
+}

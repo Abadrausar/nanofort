@@ -1,0 +1,11 @@
+{	"Tags": {"Library": true},
+	"Header": "Milo vanilla oriented minor mods library.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base/Milo/Common",
+		"Libs/Base/Milo/ThirdParty",
+		"Libs/Base/Milo/Vanilla",
+		"Libs/Base/Milo//Visual"
+	]
+
+}

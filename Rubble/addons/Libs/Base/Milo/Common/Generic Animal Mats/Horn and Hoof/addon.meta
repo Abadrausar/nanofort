@@ -1,0 +1,7 @@
+{	"Tags": {"Library": true},
+	"Header": "Generic animal horn and hooves.",
+	"Activates": [
+		"Libs/Base",
+		"Libs/Base/Milo/Common/Generic Animal Mats"
+	]
+}

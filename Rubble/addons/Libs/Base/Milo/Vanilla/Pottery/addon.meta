@@ -1,0 +1,7 @@
+{	"Tags": {"Library": true},
+	"Header": "Replace the vanilla pottery system with a much expanded version.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base"
+	]
+}

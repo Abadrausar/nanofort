@@ -1,0 +1,22 @@
+{	"Tags": {"Library": true},
+	"Header": "Milo vanilla oriented minor mods library.",
+	"Activates": [
+		"Libs/Base/Milo/Common/Adv Reactions",
+		"Libs/Base/Milo/Common/Adv Reactions/Armor Resize",
+		"Libs/Base/Milo/Common/Adv Reactions/Disinfect",
+		"Libs/Base/Milo/Common/Block/Boulder",
+		"Libs/Base/Milo/Common/Block/Cutter",
+		"Libs/Base/Milo/Common/Block/Kiln",
+		"Libs/Base/Milo/Common/Bonecarver",
+		"Libs/Base/Milo/Common/Adv Reactions",
+		"Libs/Base/Milo/Common/Bonfire",
+		"Libs/Base/Milo/Common/Display Case",
+		"Libs/Base/Milo/Common/Edible Vermin",
+		"Libs/Base/Milo/Common/Lamination",
+		"Libs/Base/Milo/Common/Sawmill",
+		"Libs/Base/Milo/Common/Shovel",
+		"Libs/Base/Milo/Common/Stone Anvil",
+		"Libs/Base/Milo/Common/Tanning",
+		"Libs/Base/Milo/Common/Wooden Mechanisms"
+	]
+}

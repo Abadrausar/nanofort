@@ -1,0 +1,41 @@
+{
+	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "Powered workshop support addon (and general powered workshop documentation).",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base",
+		"Libs/Powered",
+		"Libs/Base/Milo/Vanilla/Powered/Assembler",
+		"Libs/Base/Milo/Vanilla/Powered/AutoCrossbow",
+		"Libs/Base/Milo/Vanilla/Powered/Catapult",
+		"Libs/Base/Milo/Vanilla/Powered/Clothier",
+		"Libs/Base/Milo/Vanilla/Powered/Decorator",
+		"Libs/Base/Milo/Vanilla/Powered/Drill",
+		"Libs/Base/Milo/Vanilla/Powered/Food Processor",
+		"Libs/Base/Milo/Vanilla/Powered/Geothermal Plant",
+		"Libs/Base/Milo/Vanilla/Powered/Glass Furnace",
+		"Libs/Base/Milo/Vanilla/Powered/Item Sensor",
+		"Libs/Base/Milo/Vanilla/Powered/Jeweler",
+		"Libs/Base/Milo/Vanilla/Powered/Logic Gates",
+		"Libs/Base/Milo/Vanilla/Powered/Logistics",
+		"Libs/Base/Milo/Vanilla/Powered/Loom",
+		"Libs/Base/Milo/Vanilla/Powered/Magma Extractor",
+		"Libs/Base/Milo/Vanilla/Powered/Metal Press",
+		"Libs/Base/Milo/Vanilla/Powered/Mill",
+		"Libs/Base/Milo/Vanilla/Powered/Mist Gen",
+		"Libs/Base/Milo/Vanilla/Powered/Obsidian Caster",
+		"Libs/Base/Milo/Vanilla/Powered/Quarry",
+		"Libs/Base/Milo/Vanilla/Powered/Sawmill",
+		"Libs/Base/Milo/Vanilla/Powered/Screw Press",
+		"Libs/Base/Milo/Vanilla/Powered/Smelter",
+		"Libs/Base/Milo/Vanilla/Powered/Spinner",
+		"Libs/Base/Milo/Vanilla/Powered/Still",
+		"Libs/Base/Milo/Vanilla/Powered/Teleporter",
+		"Libs/Base/Milo/Vanilla/Powered/Treadmill",
+		"Libs/Base/Milo/Vanilla/Powered/Unraveler",
+		"Libs/Base/Milo/Vanilla/Powered/Wood Furnace"
+	]
+}

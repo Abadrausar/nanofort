@@ -1,0 +1,32 @@
+{
+	"Tags": {
+		"DFHack": true
+	},
+	"Header": "Makes First Landing final, incompatible with other bases, remove candy and anticandy",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base",
+		"Libs/Industry",
+		"Libs/Castes",
+		"Libs/Timeout",
+		"Libs/Crates",
+		"Libs/Change Build List",
+		"Libs/Powered",
+		"Libs/Item Syndrome",
+		"Libs/Fluids",
+		"Libs/Fix Handedness",
+		"Libs/Melt Item",
+		"Libs/Auto-Worker",
+		"Libs/Colors",
+		"Libs/Colors/Swap Palette"
+	],
+	"Incompatible": [
+		"Base",
+		"Modest Base",
+		"User/Sawmill",
+		"User/Pottery",
+		"User/Bonecarver",
+		"User/Powered",
+		"User/Melt Item"
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"Header": "some testing.",
+	"Author": "Abadrausar",
+	"Activates": [
+		"Libs/Base"
+	]
+}

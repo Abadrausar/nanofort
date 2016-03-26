@@ -1,0 +1,113 @@
+{{with .State}}
+<!DOCTYPE html>
+<html><!-- This is also used for applying tilesets -->
+<head>
+	<link rel="stylesheet" type="text/css" href="/css"/>
+	<title>Rubble Web UI: Select Addons</title>
+	<script type="text/javascript">
+		function Toggle(addon, state) {
+			var req = new XMLHttpRequest()
+			req.open("POST", "/toggle", false)
+			req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+			req.send("addon=" + encodeURIComponent(addon) + "&state=" + encodeURIComponent(state))
+		}
+
+		function Set(key, val) {
+			var req = new XMLHttpRequest()
+			req.open("POST", "/setvar", false)
+			req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+			req.send("key=" + encodeURIComponent(key) + "&val=" + encodeURIComponent(val))
+		}
+
+		window.onload = function() {
+			// Kill the back button as best I can. There may be a better way to do this, but I don't know it.
+			function killback(evnt) {
+				if (evnt.target.href != "" && evnt.target.href != "#") {
+					evnt.preventDefault()
+					evnt.stopPropagation()
+					window.location.replace(evnt.target.href)
+				}
+			}
+			var a = document.getElementsByTagName("a")
+			for (var i = 0; i < a.length; i++) {
+				a[i].addEventListener("click", killback, false)
+
+				// Fix addon links
+				if (a[i].href.indexOf("/addondata?addon=") != -1) {
+					a[i].href = a[i].href + "&fromurl={{urlquery $.Back_URL}}&fromname={{urlquery $.Name}}"
+				}
+			}
+
+			document.getElementById("Region").addEventListener("change", function(evnt) {
+				evnt.stopPropagation()
+
+				Set("_RUBBLE_IA_REGION_", evnt.target.value)
+			}, false)
+
+			document.getElementById("AddonList").addEventListener("click", function(evnt) {
+				evnt.stopPropagation()
+
+				if (evnt.target.name != "") {
+					Toggle(evnt.target.name, evnt.target.checked == true)
+				}
+			}, false)
+
+			document.getElementById("Select").addEventListener("click", function(evnt) {
+				evnt.stopPropagation()
+
+				var state
+				if (evnt.target.id == "All") {
+					state = "true"
+				} else if (evnt.target.id == "None") {
+					state = "false"
+				}
+				if (state === undefined) {
+					return
+				}
+
+				var addons = document.getElementById("AddonList").getElementsByTagName("input")
+				for (var i = 0; i < addons.length; i++) {
+					Toggle(addons[i].name, state)
+					addons[i].value = state
+					addons[i].checked = state === "true"
+				}
+			}, false)
+
+			document.getElementById("Menu").addEventListener("click", function(evnt) {
+				evnt.stopPropagation()
+
+				var to = {
+					"Apply": "/pleasewait?to={{urlquery $.URL}}",
+					"Back": "/",
+				}[evnt.target.id]
+
+				if (to === undefined) {
+					return
+				}
+				window.location.replace("http://" + window.location.host + to)
+			}, false)
+		}
+	</script>
+</head>
+<body>
+	<p>Region: <select id="Region">
+		<option selected>raw</option>{{range $.Regions}}
+		<option>{{.}}</option>{{end}}
+	</select></p>
+
+	<table id="AddonList">{{range .Addons}}{{if and (and (not .Meta.Tags.Library) (not .Meta.Tags.DocPack)) (index .Meta.Tags $.Tag)}}
+		<tr><td nowrap>{{if .Active}}<input type="checkbox" value="true" checked name="{{.Meta.Name}}">{{else}}<input type="checkbox" value="false" name="{{.Meta.Name}}">{{end}}<a href="/addondata?addon={{.Meta.Name}}">{{.Meta.Name}}</a></td><td>{{.Meta.Header}}</td></tr>{{end}}{{end}}
+	</table>
+
+	<p><div id="Select" class="button">
+		Select
+		<div id="All" class="nose">All</div>
+		<div id="None" class="nose">None</div>
+	</div></p>
+	<div id="Menu">
+		<p><div id="Apply" class="button">Apply Selected</div></p>
+		<p><div id="Back" class="button">Back to Menu</div></p>
+	</div>
+</body>
+</html>
+{{end}}

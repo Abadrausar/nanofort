@@ -1,0 +1,9 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "A few generic vermin, just what every settlement needs.",
+	"Activates": [
+		"Libs/Base"
+	]
+}

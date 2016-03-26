@@ -1,0 +1,6 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Adds lua parser for metalua rubble scripting.",
+	"DescFile": "README_Metalua-parser.md",
+	"Activates": ["Libs/Base"]
+}

@@ -1,0 +1,13 @@
+{	"Tags": {"Library": true},
+	"Header": "Milo vanilla oriented minor mods library.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base/Milo/Visual/Graphics/Keep",
+		"Libs/Base/Milo/Visual/Graphics/Vanilla",
+		"Libs/Base/Milo/Visual/Tilesets/MLC/Normal",
+		"Libs/Base/Milo/Visual/Tilesets/MLC/Pure ASCII",
+		"Libs/Base/Milo/Visual/Tilesets/MLC/TWBT - 16px",
+		"Libs/Base/Milo/Visual/Tilesets/MLC/TWBT - 24px"
+	]
+
+}

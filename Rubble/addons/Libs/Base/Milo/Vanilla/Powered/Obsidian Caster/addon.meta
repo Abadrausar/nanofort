@@ -1,0 +1,10 @@
+{	"Tags": {"Library": true},
+	"Header": "An automatic powered version of the `addon:User/DFHack/Obsidian Caster` addon.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base",
+		"Libs/Powered",
+		"Libs/Base/Milo/Vanilla/Powered",
+		"Libs/Fluids"
+	]
+}

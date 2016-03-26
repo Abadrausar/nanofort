@@ -1,0 +1,110 @@
+[OBJECT:PLANT]
+
+This file is intended for use with The Earth Strikes Back! mod.  See the readme file or http://www.bay12forums.com/smf/index.php?topic=144831
+
+{@IF;$TESB_PLANTS;NO;
+Gem vines feature has been disabled.
+;
+
+These plants do not exist in the wild.  Extracting a gem seed from a hidden gem requires a mod-specific reaction, as does processing these plants' growths, but the plants themselves are typical underground crops.
+
+{!TEMPLATE;TESB_VINE;vine;id;name;drinkcolor;shrubcolor;pickedcolor;growthcolor;displaycolor;
+{SHARED_OBJECT_EXISTS;INORGANIC:HIDDEN %{id};
+[PLANT:TESB_VINE_%{vine}]
+	[NAME:%{name} vine][NAME_PLURAL:%{name} vines][ADJ:%{name} vine]
+	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
+		[MATERIAL_VALUE:3]
+		[EDIBLE_VERMIN]
+	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
+	[USE_MATERIAL_TEMPLATE:FRUIT:FRUIT_TEMPLATE] Not edible, but will stockpile with other plant growths.
+		[MATERIAL_REACTION_PRODUCT:SPIRIT_MAT:LOCAL_PLANT_MAT:DRINK] Note the non-standard _MAT
+		[MATERIAL_REACTION_PRODUCT:SEEDS_MAT:LOCAL_PLANT_MAT:SEED] Note the non-standard _MAT
+		[MATERIAL_REACTION_PRODUCT:GEM_MAT:INORGANIC:HIDDEN %{id}]
+		[STOCKPILE_PLANT_GROWTH]
+		[MATERIAL_VALUE:333]
+	[PICKED_TILE:37][PICKED_COLOR:%{pickedcolor}][DEAD_PICKED_TILE:182]
+	[WET][DRY][BIOME:SUBTERRANEAN_WATER][UNDERGROUND_DEPTH:4:4]
+	[VALUE:3]
+	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
+		[STATE_NAME_ADJ:ALL_SOLID:frozen %{name} spirits]
+		[STATE_NAME_ADJ:LIQUID:%{name} spirits]
+		[STATE_NAME_ADJ:GAS:boiling %{name} spirits]
+		[STATE_COLOR:ALL:%{drinkcolor}]
+		[MATERIAL_VALUE:2]
+		[DISPLAY_COLOR:%{displaycolor}]
+		[EDIBLE_RAW]
+		[EDIBLE_COOKED]
+		[PREFIX:NONE]
+	[DRINK:LOCAL_PLANT_MAT:DRINK] May want to remove this, to avoid the still's standard reactions.
+	[SPRING][SUMMER][AUTUMN][WINTER] Underground plant, so seasons should be irrelevant.
+	[USE_MATERIAL_TEMPLATE:SEED:SEED_TEMPLATE]
+		[MATERIAL_VALUE:333]
+		[EDIBLE_VERMIN]
+		[EDIBLE_COOKED]
+	[SEED:%{name} seed:%{name} seeds:%{displaycolor}:LOCAL_PLANT_MAT:SEED]
+	[FREQUENCY:50]
+	[CLUSTERSIZE:5]
+	[PREFSTRING:%{name} clusters]
+	[SHRUB_TILE:18]
+	[DEAD_SHRUB_TILE:18]
+	[SHRUB_COLOR:%{shrubcolor}]
+	[DEAD_SHRUB_COLOR:6:0:0]
+	[GROWTH:FRUIT]
+		[GROWTH_NAME:%{name} cluster:%{name} clusters]
+		[GROWTH_ITEM:PLANT_GROWTH:NONE:LOCAL_PLANT_MAT:FRUIT]
+		[GROWTH_DENSITY:1000]
+		[GROWTH_HOST_TILE:BRANCHES_AND_TWIGS]
+		[GROWTH_TIMING:120000:200000]
+		[GROWTH_DROPS_OFF_NO_CLOUD]
+		[GROWTH_PRINT:18:37:%{growthcolor}:120000:200000:3]
+;%{id} does not exist.}
+}
+
+{TESB_VINE;AMBER_OPAL;AMBER OPAL;amber opal;AMBER;6:7:0;5:4:0;6:12:0;5:0:1}
+
+{TESB_VINE;AMETHYST;AMETHYST;amethyst;AMETHYST;5:2:1;5:4:0;5:12:1;5:0:1}
+
+{TESB_VINE;AQUAMARINE;AQUAMARINE;aquamarine;AQUAMARINE;3:2:1;3:2:0;3:9:1;3:0:1}
+
+{TESB_VINE;BERYL;BERYL;beryl;GOLDEN_YELLOW;6:2:1;6:4:0;6:10:1;6:0:1}
+
+{TESB_VINE;BLACK_OPAL;BLACK OPAL;black opal;BLACK;0:2:1;6:4:0;0:9:1;0:0:1}
+
+{TESB_VINE;BONE_OPAL;BONE OPAL;bone opal;BEIGE;7:2:1;6:4:0;7:8:1;7:0:0}
+
+{TESB_VINE;CHERRY_OPAL;CHERRY OPAL;cherry opal;CHESTNUT;4:2:1;6:4:0;4:14:1;4:0:1}
+
+{TESB_VINE;EMERALD;EMERALD;emerald;EMERALD;2:2:1;2:6:0;2:14:1;2:0:1}
+
+{TESB_VINE;FIRE_OPAL;FIRE OPAL;fire opal;SCARLET;4:10:1;6:12:0;4:13:1;4:0:1}
+
+{TESB_VINE;GARNET;GARNET;garnet;BLUE;1:2:1;1:6:0;1:11:1;1:0:1}
+
+{TESB_VINE;MILK_OPAL;MILK OPAL;milk opal;CREAM;7:2:1;6:7:0;7:14:1;7:0:1}
+		
+{TESB_VINE;ONYX;ONYX;onyx;BLACK;7:2:0;7:6:0;7:15:0;7:0:0}
+
+{TESB_VINE;PINFIRE_OPAL;PINFIRE OPAL;pinfire opal;FLAX;6:2:1;6:14:0;6:6:1;6:0:1}
+
+{TESB_VINE;PYRITE;PYRITE;pyrite;SILVER;7:2:1;7:6:1;7:7:1;7:0:1}
+
+{TESB_VINE;PYROPE;PYROPE;pyrope;BLACK;0:2:1;0:6:1;0:4:1;0:0:1}
+
+{TESB_VINE;QUARTZ;QUARTZ;quartz;CREAM;7:2:1;7:14:1;7:6:1;7:0:1}
+
+{TESB_VINE;SHELL_OPAL;SHELL OPAL;shell opal;IVORY;6:2:1;7:6:1;7:6:1;7:0:1}
+
+{TESB_VINE;SPINEL;SPINEL;spinel;PURPLE;5:2:0;5:6:0;5:6:0;5:0:0}
+
+{TESB_VINE;SUNSTONE;SUNSTONE;sunstone;PUMPKIN;4:2:1;4:14:1;4:6:1;6:0:1}
+
+{TESB_VINE;TOURMALINE;TOURMALINE;tourmaline;INDIGO;1:2:0;1:6:0;1:6:0;1:0:0}
+
+{TESB_VINE;TURQUOISE;TURQUOISE;turquoise;TURQUOISE;3:2:1;3:14:1;3:14:1;3:0:1}
+
+{TESB_VINE;WAX_OPAL;WAX OPAL;wax opal;FLAX;6:2:0;6:14:0;6:14:0;6:0:0}
+
+{TESB_VINE;WHITE_OPAL;WHITE OPAL;white opal;WHITE;7:2:1;7:6:1;7:14:1;7:0:1}
+
+{TESB_VINE;ZIRCON;ZIRCON;zircon;RED;4:2:1;4:14:1;4:6:1;4:0:1}
+}

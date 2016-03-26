@@ -1,0 +1,28 @@
+{
+	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "Adds powered workshops.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base/First Landing/Powered/Assembler",
+		"Libs/Base/First Landing/Powered/Decorator",
+		"Libs/Base/First Landing/Powered/Drill",
+		"Libs/Base/First Landing/Powered/Furnace",
+		"Libs/Base/First Landing/Powered/Geothermal Plant",
+		"Libs/Base/First Landing/Powered/Item Sensor",
+		"Libs/Base/First Landing/Powered/Logic Gates",
+		"Libs/Base/First Landing/Powered/Logistics",
+		"Libs/Base/First Landing/Powered/Loom",
+		"Libs/Base/First Landing/Powered/Mill",
+		"Libs/Base/First Landing/Powered/Quarry",
+		"Libs/Base/First Landing/Powered/Rock Breaker",
+		"Libs/Base/First Landing/Powered/Sawmill",
+		"Libs/Base/First Landing/Powered/Screw Press",
+		"Libs/Base/First Landing/Powered/Spinner",
+		"Libs/Base/First Landing/Powered/Still",
+		"Libs/Base/First Landing/Powered/Tailor",
+		"Libs/Base/First Landing/Powered/Unraveler"
+	]
+}

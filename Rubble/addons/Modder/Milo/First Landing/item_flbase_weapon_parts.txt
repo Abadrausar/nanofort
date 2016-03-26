@@ -1,0 +1,126 @@
+[OBJECT:ITEM]
+
+Barrels
+====================================================================================================
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GUN_BARREL_SMOOTH;
+	[NAME:gun barrel:gun barrels]
+	[ADJECTIVE:smoothbore]
+	[VALUE:3]
+	[SIZE:100]
+	[TILE:128]
+	[MATERIAL_SIZE:1]
+	[UNIMPROVABLE]
+	[INCOMPLETE_ITEM]
+	[NO_DEFAULT_JOB]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GUN_BARREL_RIFLED;
+	[NAME:gun barrel:gun barrels]
+	[ADJECTIVE:rifled]
+	[VALUE:3]
+	[SIZE:100]
+	[TILE:128]
+	[MATERIAL_SIZE:1]
+	[UNIMPROVABLE]
+	[INCOMPLETE_ITEM]
+	[NO_DEFAULT_JOB]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_PISTOL_BARREL;
+	[NAME:pistol barrel:pistol barrels]
+	[ADJECTIVE:rifled]
+	[VALUE:1]
+	[SIZE:75]
+	[TILE:128]
+	[MATERIAL_SIZE:1]
+	[UNIMPROVABLE]
+	[INCOMPLETE_ITEM]
+	[NO_DEFAULT_JOB]
+}
+
+Receivers
+====================================================================================================
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_PISTOL_FRAME;
+	[NAME:pistol frame:pistol frames]
+	[VALUE:1]
+	[SIZE:150]
+	[TILE:128]
+	[MATERIAL_SIZE:1]
+	[UNIMPROVABLE]
+	[INCOMPLETE_ITEM]
+	[NO_DEFAULT_JOB]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_RIFLE_RECEIVER;
+	[NAME:long-gun receiver:long-gun receivers]
+	[VALUE:3]
+	[SIZE:200]
+	[TILE:128]
+	[MATERIAL_SIZE:1]
+	[UNIMPROVABLE]
+	[INCOMPLETE_ITEM]
+	[NO_DEFAULT_JOB]
+}
+
+Action Parts
+====================================================================================================
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_PISTOL_BOLT;
+	[NAME:pistol bolt:pistol bolt]
+	[VALUE:1]
+	[SIZE:150]
+	[TILE:128]
+	[MATERIAL_SIZE:1]
+	[UNIMPROVABLE]
+	[INCOMPLETE_ITEM]
+	[NO_DEFAULT_JOB]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_RIFLE_BOLT;
+	[NAME:rifle bolt:rifle bolts]
+	[VALUE:3]
+	[SIZE:100]
+	[TILE:128]
+	[MATERIAL_SIZE:1]
+	[UNIMPROVABLE]
+	[INCOMPLETE_ITEM]
+	[NO_DEFAULT_JOB]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_SPRING_RECOIL;
+	[NAME:recoil spring:recoil springs]
+	[VALUE:2]
+	[SIZE:150]
+	[TILE:128]
+	[MATERIAL_SIZE:1]
+	[UNIMPROVABLE]
+	[INCOMPLETE_ITEM]
+	[NO_DEFAULT_JOB]
+}
+
+Furniture
+====================================================================================================
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_PISTOL_FURNITURE;
+	[NAME:pistol furniture:pistol furniture]
+	[VALUE:1]
+	[SIZE:150]
+	[TILE:128]
+	[MATERIAL_SIZE:1]
+	[UNIMPROVABLE]
+	[INCOMPLETE_ITEM]
+	[NO_DEFAULT_JOB]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_RIFLE_FURNITURE;
+	[NAME:long-gun furniture:long-gun furniture]
+	[VALUE:2]
+	[SIZE:200]
+	[TILE:128]
+	[MATERIAL_SIZE:1]
+	[UNIMPROVABLE]
+	[INCOMPLETE_ITEM]
+	[NO_DEFAULT_JOB]
+}

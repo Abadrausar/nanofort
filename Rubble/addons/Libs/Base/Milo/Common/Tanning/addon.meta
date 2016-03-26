@@ -1,0 +1,7 @@
+{	"Tags": {"Library": true},
+	"Header": "Allows creatures to give more than one (skin,scale,chitin,shell) based on their size.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base"
+	]
+}

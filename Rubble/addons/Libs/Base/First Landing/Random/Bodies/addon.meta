@@ -1,0 +1,9 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "Adds script modules for generating random creature bodies from body part tables.",
+	"Activates": [
+		"Libs/Random"
+	]
+}

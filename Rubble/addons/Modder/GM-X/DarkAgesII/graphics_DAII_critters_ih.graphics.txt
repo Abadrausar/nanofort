@@ -1,0 +1,401 @@
+graphics_critters_ih
+
+[OBJECT:GRAPHICS]
+
+===========================================================================================================
+Dark Ages: War & Mythos: 0.42.06 | R2 | GM-X | Dark Ages-Ironhand tile pack. Adds unique critter tile links. GM-X | dfdarkage.com
+===========================================================================================================
+
+[TILE_PAGE:CRITTER_IH]
+  [FILE:DAII_critters_ih.png]
+  [TILE_DIM:18:18]
+  [PAGE_DIM:31:23]
+
+===========================================================================================================
+ [CREATURE_GRAPHICS:HOUND]
+  [DEFAULT:CRITTER:0:0:AS_IS:DEFAULT]
+  [CHILD:CRITTER:1:0:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:2:0:AS_IS:ANIMATED]
+  [TRAINED_HUNTER:CRITTER:4:0:AS_IS:DEFAULT]
+  [TRAINED_WAR:CRITTER:5:0:AS_IS:DEFAULT]
+===========================================================================================================
+  [CREATURE_GRAPHICS:OWL]
+  [DEFAULT:CRITTER:15:13:AS_IS:DEFAULT]
+  [CHILD:CRITTER:16:13:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:17:13:AS_IS:ANIMATED]
+============================================================================================================
+  [CREATURE_GRAPHICS:CAVE_LYNX]
+  [DEFAULT:CRITTER:12:10:AS_IS:DEFAULT]
+  [CHILD:CRITTER:13:10:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:14:10:AS_IS:ANIMATED]
+ ============================================================================================================
+[CREATURE_GRAPHICS:GREATER_BADGER]
+  [DEFAULT:CRITTER:4:5:AS_IS:DEFAULT]
+  [CHILD:CRITTER:5:5:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:6:5:AS_IS:ANIMATED]
+============================================================================================================ 
+[CREATURE_GRAPHICS:GREATER_HONEY BADGER]
+  [DEFAULT:CRITTER:4:6:AS_IS:DEFAULT]
+  [CHILD:CRITTER:5:6:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:6:6:AS_IS:ANIMATED]
+===========================================================================================================
+[CREATURE_GRAPHICS:GREAT_CAMEL_1_HUMP]
+  [DEFAULT:CRITTER:4:14:AS_IS:DEFAULT]
+  [CHILD:CRITTER:5:14:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:6:14:AS_IS:ANIMATED]  
+=========================================================================================================== 
+[CREATURE_GRAPHICS:GEAT_GAZELLE]
+  [DEFAULT:CRITTER:4:13:AS_IS:DEFAULT]
+  [CHILD:CRITTER:5:13:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:6:13:AS_IS:ANIMATED]
+===========================================================================================================
+[CREATURE_GRAPHICS:GREAT_WARTHOG]
+  [DEFAULT:CRITTER:4:12:AS_IS:DEFAULT]
+  [CHILD:CRITTER:5:12:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:6:12:AS_IS:ANIMATED]
+===========================================================================================================
+[CREATURE_GRAPHICS:GREATER_DEER]
+  [DEFAULT:CRITTER:4:11:AS_IS:DEFAULT]
+  [CHILD:CRITTER:5:11:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:6:11:AS_IS:ANIMATED]
+===========================================================================================================  
+[CREATURE_GRAPHICS:GREATER_FOX]
+  [DEFAULT:CRITTER:4:18:AS_IS:DEFAULT]
+  [CHILD:CRITTER:5:18:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:6:18:AS_IS:ANIMATED]
+=========================================================================================================== 
+[CREATURE_GRAPHICS:GREATER_RACCOON]
+  [DEFAULT:CRITTER:4:19:AS_IS:DEFAULT]
+  [CHILD:CRITTER:5:19:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:6:19:AS_IS:ANIMATED]
+============================================================================================================ 
+[CREATURE_GRAPHICS:GREATER_ELEPHANT]
+  [DEFAULT:CRITTER:8:0:AS_IS:DEFAULT]
+  [CHILD:CRITTER:9:0:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:10:0:AS_IS:ANIMATED]
+  [TRAINED_HUNTER:CRITTER:6:0:AS_IS:DEFAULT]
+  [TRAINED_WAR:CRITTER:7:0:AS_IS:DEFAULT]
+===========================================================================================================
+[CREATURE_GRAPHICS:GREATER_RHINOCEROS]
+  [DEFAULT:CRITTER:8:2:AS_IS:DEFAULT]
+  [CHILD:CRITTER:9:2:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:10:2:AS_IS:ANIMATED]
+  [TRAINED_HUNTER:CRITTER:8:3:AS_IS:DEFAULT]
+  [TRAINED_WAR:CRITTER:9:3:AS_IS:DEFAULT]
+============================================================================================================
+[CREATURE_GRAPHICS:GREATER_PANDA_GIGANTIC]
+  [DEFAULT:CRITTER:8:6:AS_IS:DEFAULT]
+  [CHILD:CRITTER:9:6:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:10:6:AS_IS:ANIMATED]
+============================================================================================================  
+[CREATURE_GRAPHICS:GREATER_PANDA]
+  [DEFAULT:CRITTER:8:5:AS_IS:DEFAULT]
+  [CHILD:CRITTER:9:5:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:10:5:AS_IS:ANIMATED]
+============================================================================================================
+[CREATURE_GRAPHICS:GREATER_LION]
+  [DEFAULT:CRITTER:12:0:AS_IS:DEFAULT]
+  [CHILD:CRITTER:13:0:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:14:0:AS_IS:ANIMATED]
+  [TRAINED_HUNTER:CRITTER:15:0:AS_IS:DEFAULT]
+  [TRAINED_WAR:CRITTER:16:0:AS_IS:DEFAULT]
+ ============================================================================================================
+[CREATURE_GRAPHICS:GREAT_TIGER]
+  [DEFAULT:CRITTER:12:1:AS_IS:DEFAULT]
+  [CHILD:CRITTER:13:1:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:14:1:AS_IS:ANIMATED]
+  [TRAINED_HUNTER:CRITTER:15:1:AS_IS:DEFAULT]
+  [TRAINED_WAR:CRITTER:16:1:AS_IS:DEFAULT]
+============================================================================================================
+[CREATURE_GRAPHICS:GREAT_LEOPARD]
+  [DEFAULT:CRITTER:12:2:AS_IS:DEFAULT]
+  [CHILD:CRITTER:13:2:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:14:2:AS_IS:ANIMATED]
+  [TRAINED_HUNTER:CRITTER:15:2:AS_IS:DEFAULT]
+  [TRAINED_WAR:CRITTER:16:2:AS_IS:DEFAULT]
+============================================================================================================
+[CREATURE_GRAPHICS:GREAT_JAGUAR]
+  [DEFAULT:CRITTER:12:3:AS_IS:DEFAULT]
+  [CHILD:CRITTER:13:3:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:14:3:AS_IS:ANIMATED]
+  [TRAINED_HUNTER:CRITTER:15:3:AS_IS:DEFAULT]
+  [TRAINED_WAR:CRITTER:16:3:AS_IS:DEFAULT]
+============================================================================================================  
+CREATURE_GRAPHICS:GREAT_CHEETAH]
+  [DEFAULT:CRITTER:12:4:AS_IS:DEFAULT]
+  [CHILD:CRITTER:13:4:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:14:4:AS_IS:ANIMATED]
+  [TRAINED_HUNTER:CRITTER:15:4:AS_IS:DEFAULT]
+  [TRAINED_WAR:CRITTER:16:4:AS_IS:DEFAULT]
+============================================================================================================
+  [CREATURE_GRAPHICS:GREATER_COUGAR]
+  [DEFAULT:CRITTER:12:10:AS_IS:DEFAULT]
+  [CHILD:CRITTER:13:10:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:14:10:AS_IS:ANIMATED]
+============================================================================================================
+  [CREATURE_GRAPHICS:COUGAR_V]
+  [DEFAULT:CRITTER:12:10:AS_IS:DEFAULT]
+  [CHILD:CRITTER:13:10:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:14:10:AS_IS:ANIMATED]
+============================================================================================================
+[CREATURE_GRAPHICS:GREATER_CAPYBARA]
+  [DEFAULT:CRITTER:12:11:AS_IS:DEFAULT]
+  [CHILD:CRITTER:13:11:AS_IS:DEFAULT]
+========================================================================================================= 
+[CREATURE_GRAPHICS:GREATER_WOLF]
+  [DEFAULT:CRITTER:11:14:AS_IS:DEFAULT]
+  [CHILD:CRITTER:12:14:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:13:14:AS_IS:ANIMATED]
+=========================================================================================================
+[CREATURE_GRAPHICS:DIREWOLF]
+  [DEFAULT:CRITTER:11:14:AS_IS:DEFAULT]
+  [CHILD:CRITTER:12:14:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:13:14:AS_IS:ANIMATED]
+=========================================================================================================  
+[CREATURE_GRAPHICS:GREATER_ALLIGATOR]
+  [DEFAULT:CRITTER:11:16:AS_IS:DEFAULT]
+  [CHILD:CRITTER:12:16:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:13:16:AS_IS:ANIMATED]
+=========================================================================================================
+[CREATURE_GRAPHICS:GREAT_CROCODILE_SALTWATER]
+  [DEFAULT:CRITTER:11:17:AS_IS:DEFAULT]
+  [CHILD:CRITTER:12:17:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:13:17:AS_IS:ANIMATED]
+=========================================================================================================
+[CREATURE_GRAPHICS:GREATER_TOAD_GIANT]
+  [DEFAULT:CRITTER:11:19:AS_IS:DEFAULT]
+  [CHILD:CRITTER:12:19:AS_IS:DEFAULT]
+=========================================================================================================
+[CREATURE_GRAPHICS:GREATER_BIRD_BUZZARD]
+  [DEFAULT:CRITTER:15:14:AS_IS:DEFAULT]
+  [CHILD:CRITTER:16:14:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:17:14:AS_IS:ANIMATED]
+  [ANIMATED:CRITTER:17:15:AS_IS:ANIMATED]
+ ========================================================================================================= 
+[CREATURE_GRAPHICS:GREATER_BIRD_VULTURE]
+  [DEFAULT:CRITTER:15:15:AS_IS:DEFAULT]
+  [CHILD:CRITTER:16:15:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:17:15:AS_IS:ANIMATED]
+  ========================================================================================================= 
+[CREATURE_GRAPHICS:GREATER_NIGHTWING]
+  [DEFAULT:CRITTER:15:20:AS_IS:DEFAULT] 
+ ============================================================================================================
+[CREATURE_GRAPHICS:GREATER_BEAR_BLACK]
+  [DEFAULT:CRITTER:17:4:AS_IS:DEFAULT]
+  [CHILD:CRITTER:18:4:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:19:4:AS_IS:ANIMATED]
+============================================================================================================
+[CREATURE_GRAPHICS:GREATER_BEAR_GRIZZLY]
+  [DEFAULT:CRITTER:17:5:AS_IS:DEFAULT]
+  [CHILD:CRITTER:18:5:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:19:5:AS_IS:ANIMATED]
+  [TRAINED_HUNTER:CRITTER:20:4:AS_IS:DEFAULT]
+  [TRAINED_WAR:CRITTER:20:5:AS_IS:DEFAULT]
+============================================================================================================
+[CREATURE_GRAPHICS:GREATER_MINOTAUR]
+  [DEFAULT:CRITTER:19:19:AS_IS:DEFAULT]
+  [CHILD:CRITTER:20:19:AS_IS:DEFAULT]
+  [BABY:CRITTER:21:19:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:22:19:AS_IS:ANIMATED]  
+=========================================================================================================  
+[CREATURE_GRAPHICS:GREATER_CAPYBARA MAN]
+  [DEFAULT:CRITTER:28:3:AS_IS:DEFAULT]
+  [CHILD:CRITTER:29:3:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:30:3:AS_IS:ANIMATED]
+=========================================================================================================  
+  [CREATURE_GRAPHICS:BLOOD_HELMET_MAN]
+  [DEFAULT:CRITTER:28:0:AS_IS:DEFAULT]
+  [CHILD:CRITTER:29:0:AS_IS:DEFAULT] 
+ 
+### Dark Ages Mod GM-X ###==================================================================================
+
+  [CREATURE_GRAPHICS:HAG_MONSTER]
+  [DEFAULT:CRITTER:19:13:AS_IS:DEFAULT]
+  [CHILD:CRITTER:20:13:AS_IS:DEFAULT]
+  [BABY:CRITTER:21:13:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:22:13:AS_IS:ANIMATED]
+  
+  [CREATURE_GRAPHICS:HAG]
+  [DEFAULT:CRITTER:19:13:AS_IS:DEFAULT]
+  [CHILD:CRITTER:20:13:AS_IS:DEFAULT]
+  [BABY:CRITTER:21:13:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:22:13:AS_IS:ANIMATED] 
+
+  [CREATURE_GRAPHICS:SHARK_DIRE_GREAT_WHITE]
+  [DEFAULT:CRITTER:24:22:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:26:22:AS_IS:ANIMATED]
+  
+  [CREATURE_GRAPHICS:LIZARD_MAN]
+  [DEFAULT:CRITTER:28:17:AS_IS:DEFAULT]
+  [CHILD:CRITTER:29:17:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:30:17:AS_IS:ANIMATED] 
+  
+  [CREATURE_GRAPHICS:BLOOD_RAT]
+  [DEFAULT:CRITTER:16:22:AS_IS:DEFAULT]
+  [CHILD:CRITTER:13:22:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:17:22:AS_IS:ANIMATED]
+  
+  [CREATURE_GRAPHICS:RAT_LARGE_V]
+  [DEFAULT:CRITTER:16:22:AS_IS:DEFAULT]
+  [CHILD:CRITTER:13:22:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:17:22:AS_IS:ANIMATED]
+ 
+  [CREATURE_GRAPHICS:UMBRARACHNE]
+  [DEFAULT:CRITTER:17:2:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:18:2:AS_IS:ANIMATED]
+ 
+============================================================================================================
+
+  [CREATURE_GRAPHICS:GIANT_LOBSTER_CAVE]
+  [DEFAULT:CRITTER:23:8:AS_IS:DEFAULT]
+ 
+  [CREATURE_GRAPHICS:CYCLOPS_BRUTE]
+  [DEFAULT:CRITTER:19:15:AS_IS:DEFAULT]
+  [CHILD:CRITTER:20:15:AS_IS:DEFAULT]
+  [BABY:CRITTER:21:15:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:22:15:AS_IS:ANIMATED]
+  
+  [CREATURE_GRAPHICS:GIANT_SNAPPING_TURTLE]
+  [DEFAULT:CRITTER:24:5:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:25:5:AS_IS:ANIMATED]
+  
+  [CREATURE_GRAPHICS:SNAPPING TURTLE]
+  [DEFAULT:CRITTER:24:5:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:25:5:AS_IS:ANIMATED]
+  
+  [CREATURE_GRAPHICS:DESERT TORTOISE]
+  [DEFAULT:CRITTER:24:5:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:25:5:AS_IS:ANIMATED]
+  
+  [CREATURE_GRAPHICS:DRUIDIC_GIANT_SNAPPING_TURTLE]
+  [DEFAULT:CRITTER:24:5:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:25:5:AS_IS:ANIMATED]  
+  
+  [CREATURE_GRAPHICS:DRUIDIC_FALCON]
+  [DEFAULT:BIRD:0:0:AS_IS:DEFAULT]
+  [CHILD:BIRD:1:0:AS_IS:DEFAULT]
+  
+  [CREATURE_GRAPHICS:BEAR_DIRE_GRIZZLY]
+  [DEFAULT:CRITTER:17:5:AS_IS:DEFAULT]
+  [CHILD:CRITTER:18:5:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:19:5:AS_IS:ANIMATED]
+  [TRAINED_HUNTER:CRITTER:20:4:AS_IS:DEFAULT]
+  [TRAINED_WAR:CRITTER:20:5:AS_IS:DEFAULT]
+  
+  [CREATURE_GRAPHICS:DHOLE]
+  [DEFAULT:CRITTER:17:1:AS_IS:DEFAULT]
+  [CHILD:CRITTER:18:1:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:19:1:AS_IS:ANIMATED]
+  
+  [CREATURE_GRAPHICS:BLENDEC_FOUL]
+  [DEFAULT:CRITTER:28:9:AS_IS:DEFAULT]
+  [CHILD:CRITTER:29:9:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:30:9:AS_IS:ANIMATED]
+  
+  [CREATURE_GRAPHICS:BLENDEC_FOUL_GREATER]
+  [DEFAULT:CRITTER:28:9:AS_IS:DEFAULT]
+  [CHILD:CRITTER:29:9:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:30:9:AS_IS:ANIMATED]
+  
+  [CREATURE_GRAPHICS:BAT_GIANT_V]
+  [DEFAULT:CRITTER:12:21:AS_IS:DEFAULT]
+  [CHILD:CRITTER:13:21:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:14:21:AS_IS:ANIMATED] 
+  
+  [CREATURE_GRAPHICS:RATTLESNAKE_V]
+  [DEFAULT:CRITTER:24:2:AS_IS:DEFAULT]
+  [CHILD:CRITTER:25:2:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:24:2:AS_IS:ANIMATED]
+  
+  [CREATURE_GRAPHICS:MINERAL_BEAST]
+  [DEFAULT:CRITTER:30:21:AS_IS:DEFAULT]
+  
+  [CREATURE_GRAPHICS:GREAT_AMPHIBIAN_MAN]
+  [DEFAULT:CRITTER:28:14:AS_IS:DEFAULT]
+  [CHILD:CRITTER:29:14:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:30:14:AS_IS:ANIMATED]
+  
+  [CREATURE_GRAPHICS:VAMPIRE_LAMIA_SNAKE_FORM]
+  [DEFAULT:CRITTER:24:2:AS_IS:DEFAULT]
+  [CHILD:CRITTER:25:2:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:24:2:AS_IS:ANIMATED] 
+  
+  [CREATURE_GRAPHICS:VAMPIRE_TRICKERY_GHUL_BAT_FORM]
+  [DEFAULT:CRITTER:12:21:AS_IS:DEFAULT]
+  [CHILD:CRITTER:13:21:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:14:21:AS_IS:ANIMATED] 
+  
+  [CREATURE_GRAPHICS:VAMPIRE_CRYPT_MOROI_RAT_FORM]
+  [DEFAULT:CRITTER:12:22:AS_IS:DEFAULT]
+  [CHILD:CRITTER:13:22:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:14:22:AS_IS:ANIMATED]
+  
+  [CREATURE_GRAPHICS:STRIGOI_SERPENT_WORM]
+  [DEFAULT:CRITTER:24:2:AS_IS:DEFAULT]
+  [CHILD:CRITTER:25:2:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:24:2:AS_IS:ANIMATED]  
+  
+  [CREATURE_GRAPHICS:MAGI_SERPENT]
+  [DEFAULT:CRITTER:24:2:AS_IS:DEFAULT]
+  [CHILD:CRITTER:25:2:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:24:2:AS_IS:ANIMATED]  
+  
+  [CREATURE_GRAPHICS:LIVING_STATUE]
+  [DEFAULT:CRITTER:30:1:AS_IS:DEFAULT]
+  [CHILD:CRITTER:30:1:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:30:1:AS_IS:ANIMATED]
+
+  [CREATURE_GRAPHICS:GREAT_VAMPIRE_BAT]
+  [DEFAULT:CRITTER:12:21:AS_IS:DEFAULT]
+  [CHILD:CRITTER:13:21:AS_IS:DEFAULT]
+  [ANIMATED:CRITTER:14:21:AS_IS:ANIMATED] 
+  
+============================================================================================================
+
+[TILE_PAGE:BUG_V]
+  [FILE:DAII_bugs.png]
+  [TILE_DIM:18:18]
+  [PAGE_DIM:4:7]
+
+  [CREATURE_GRAPHICS:VAMPIRE_FLY_DRACULA_FORM]
+  [DEFAULT:BUG:0:1:AS_IS:DEFAULT]
+  [CHILD:BUG:1:1:AS_IS:DEFAULT]
+
+  [CREATURE_GRAPHICS:VAMPIRE_NOCTURNE_MOTH_FORM]
+  [DEFAULT:BUG:0:2:AS_IS:DEFAULT]
+  [CHILD:BUG:1:2:AS_IS:DEFAULT]
+  
+  [CREATURE_GRAPHICS:WERESPIDER_TWO_HEADED]
+  [DEFAULT:BUG:4:5:AS_IS:DEFAULT] 
+  
+  [CREATURE_GRAPHICS:GREAT_SPIDER_CAVE_GIANT]
+  [DEFAULT:BUG:4:5:AS_IS:DEFAULT]   
+  
+  [CREATURE_GRAPHICS:GREATER_GIANT_JUMPING_SPIDER]
+  [DEFAULT:BUG:3:5:AS_IS:DEFAULT]
+ 
+ ============================================================================================================ 
+  
+ [TILE_PAGE:BIRD_V]
+  [FILE:DAII_birds.png]
+  [TILE_DIM:18:18]
+  [PAGE_DIM:8:8]
+  
+  [CREATURE_GRAPHICS:VAMPIRE_BLOOD_CREEP_RAVEN_FORM]
+  [DEFAULT:BIRD:0:2:AS_IS:DEFAULT]
+  [CHILD:BIRD:1:2:AS_IS:DEFAULT]
+  
+============================================================================================================
+============================================================================================================
+
+[TILE_PAGE:DOREN_CRITTERMEN]
+	[FILE:DAII_doren_crittermen.png]
+	[TILE_DIM:16:16]
+	[PAGE_DIM:18:19]
+
+    [CREATURE_GRAPHICS:GREATER_JUMPING_SPIDER_MAN]
+	[DEFAULT:DOREN_CRITTERMEN:6:11:AS_IS:DEFAULT]
+	[CHILD:DOREN_CRITTERMEN:6:11:AS_IS:DEFAULT]
+	[ANIMATED:DOREN_CRITTERMEN:6:11:AS_IS:DEFAULT]  
+	
+	

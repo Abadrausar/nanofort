@@ -1,0 +1,18 @@
+{	"Tags": {
+		"Library": true,
+		"DFHack": true
+	},
+	"Header": "Adds randomly generated intelligent natives.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base/First Landing/Random/Fauna/Base"
+	],
+	"Vars": {
+		"FL_RANDOM_NATIVE_COUNT": {
+			"Name": "How many random natives should be generated?",
+			"Values": [
+				"5"
+			]
+		}
+	}
+}

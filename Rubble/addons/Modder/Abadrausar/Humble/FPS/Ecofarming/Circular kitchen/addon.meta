@@ -1,0 +1,7 @@
+{
+	"Header": "Circular kitchen, you can dry low quality meals into flour and recook it again.",
+	"Author": "Abadrausar",
+	"Activates": [
+		"Libs/Base"
+	]
+}
