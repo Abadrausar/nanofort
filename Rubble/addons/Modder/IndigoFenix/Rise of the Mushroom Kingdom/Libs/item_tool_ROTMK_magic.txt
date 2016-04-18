@@ -1,0 +1,705 @@
+item_tool_mw_magic
+
+[OBJECT:ITEM]
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_1_MW;
+	[NAME:gem (1% charge):gems (1% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_2_MW;
+	[NAME:gem (2% charge):gems (2% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_3_MW;
+	[NAME:gem (3% charge):gems (3% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_4_MW;
+	[NAME:gem (4% charge):gems (4% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_5_MW;
+	[NAME:gem (5% charge):gems (5% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_6_MW;
+	[NAME:gem (6% charge):gems (6% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_7_MW;
+	[NAME:gem (7% charge):gems (7% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_8_MW;
+	[NAME:gem (8% charge):gems (8% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_9_MW;
+	[NAME:gem (9% charge):gems (9% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_10_MW;
+	[NAME:gem (10% charge):gems (10% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_11_MW;
+	[NAME:gem (11% charge):gems (11% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_12_MW;
+	[NAME:gem (12% charge):gems (12% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_13_MW;
+	[NAME:gem (13% charge):gems (13% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_14_MW;
+	[NAME:gem (14% charge):gems (14% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_15_MW;
+	[NAME:gem (15% charge):gems (15% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_16_MW;
+	[NAME:gem (16% charge):gems (16% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_17_MW;
+	[NAME:gem (17% charge):gems (17% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_18_MW;
+	[NAME:gem (18% charge):gems (18% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_19_MW;
+	[NAME:gem (19% charge):gems (19% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_20_MW;
+	[NAME:gem (20% charge):gems (20% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_21_MW;
+	[NAME:gem (21% charge):gems (21% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_22_MW;
+	[NAME:gem (22% charge):gems (22% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_23_MW;
+	[NAME:gem (23% charge):gems (23% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_24_MW;
+	[NAME:gem (24% charge):gems (24% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_25_MW;
+	[NAME:gem (25% charge):gems (25% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_26_MW;
+	[NAME:gem (26% charge):gems (26% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_27_MW;
+	[NAME:gem (27% charge):gems (27% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_28_MW;
+	[NAME:gem (28% charge):gems (28% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_29_MW;
+	[NAME:gem (29% charge):gems (29% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_30_MW;
+	[NAME:gem (30% charge):gems (30% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_31_MW;
+	[NAME:gem (31% charge):gems (31% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_32_MW;
+	[NAME:gem (32% charge):gems (32% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_33_MW;
+	[NAME:gem (33% charge):gems (33% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_34_MW;
+	[NAME:gem (34% charge):gems (34% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_35_MW;
+	[NAME:gem (35% charge):gems (35% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_36_MW;
+	[NAME:gem (36% charge):gems (36% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_37_MW;
+	[NAME:gem (37% charge):gems (37% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_38_MW;
+	[NAME:gem (38% charge):gems (38% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_39_MW;
+	[NAME:gem (39% charge):gems (39% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_40_MW;
+	[NAME:gem (40% charge):gems (40% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_41_MW;
+	[NAME:gem (41% charge):gems (41% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_42_MW;
+	[NAME:gem (42% charge):gems (42% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_43_MW;
+	[NAME:gem (43% charge):gems (43% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_44_MW;
+	[NAME:gem (44% charge):gems (44% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_45_MW;
+	[NAME:gem (45% charge):gems (45% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_46_MW;
+	[NAME:gem (46% charge):gems (46% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_47_MW;
+	[NAME:gem (47% charge):gems (47% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_48_MW;
+	[NAME:gem (48% charge):gems (48% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_49_MW;
+	[NAME:gem (49% charge):gems (49% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_50_MW;
+	[NAME:gem (50% charge):gems (50% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_51_MW;
+	[NAME:gem (51% charge):gems (51% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_52_MW;
+	[NAME:gem (52% charge):gems (52% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_53_MW;
+	[NAME:gem (53% charge):gems (53% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_54_MW;
+	[NAME:gem (54% charge):gems (54% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_55_MW;
+	[NAME:gem (55% charge):gems (55% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_56_MW;
+	[NAME:gem (56% charge):gems (56% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_57_MW;
+	[NAME:gem (57% charge):gems (57% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_58_MW;
+	[NAME:gem (58% charge):gems (58% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_59_MW;
+	[NAME:gem (59% charge):gems (59% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_60_MW;
+	[NAME:gem (60% charge):gems (60% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_61_MW;
+	[NAME:gem (61% charge):gems (61% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_62_MW;
+	[NAME:gem (62% charge):gems (62% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_63_MW;
+	[NAME:gem (63% charge):gems (63% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_64_MW;
+	[NAME:gem (64% charge):gems (64% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_65_MW;
+	[NAME:gem (65% charge):gems (65% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_66_MW;
+	[NAME:gem (66% charge):gems (66% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_67_MW;
+	[NAME:gem (67% charge):gems (67% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_68_MW;
+	[NAME:gem (68% charge):gems (68% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_69_MW;
+	[NAME:gem (69% charge):gems (69% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_70_MW;
+	[NAME:gem (70% charge):gems (70% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_71_MW;
+	[NAME:gem (71% charge):gems (71% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_72_MW;
+	[NAME:gem (72% charge):gems (72% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_73_MW;
+	[NAME:gem (73% charge):gems (73% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_74_MW;
+	[NAME:gem (74% charge):gems (74% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_75_MW;
+	[NAME:gem (75% charge):gems (75% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_76_MW;
+	[NAME:gem (76% charge):gems (76% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_77_MW;
+	[NAME:gem (77% charge):gems (77% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_78_MW;
+	[NAME:gem (78% charge):gems (78% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_79_MW;
+	[NAME:gem (79% charge):gems (79% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_80_MW;
+	[NAME:gem (80% charge):gems (80% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_81_MW;
+	[NAME:gem (81% charge):gems (81% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_82_MW;
+	[NAME:gem (82% charge):gems (82% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_83_MW;
+	[NAME:gem (83% charge):gems (83% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_84_MW;
+	[NAME:gem (84% charge):gems (84% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_85_MW;
+	[NAME:gem (85% charge):gems (85% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_86_MW;
+	[NAME:gem (86% charge):gems (86% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_87_MW;
+	[NAME:gem (87% charge):gems (87% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_88_MW;
+	[NAME:gem (88% charge):gems (88% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_89_MW;
+	[NAME:gem (89% charge):gems (89% charge)]
+	[VALUE:10]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_90_MW;
+	[NAME:gem (90% charge):gems (90% charge)]
+	[VALUE:120]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_91_MW;
+	[NAME:gem (91% charge):gems (91% charge)]
+	[VALUE:120]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_92_MW;
+	[NAME:gem (92% charge):gems (92% charge)]
+	[VALUE:120]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_93_MW;
+	[NAME:gem (93% charge):gems (93% charge)]
+	[VALUE:120]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_94_MW;
+	[NAME:gem (94% charge):gems (94% charge)]
+	[VALUE:120]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_95_MW;
+	[NAME:gem (95% charge):gems (95% charge)]
+	[VALUE:120]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_96_MW;
+	[NAME:gem (96% charge):gems (96% charge)]
+	[VALUE:120]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_97_MW;
+	[NAME:gem (97% charge):gems (97% charge)]
+	[VALUE:120]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_98_MW;
+	[NAME:gem (98% charge):gems (98% charge)]
+	[VALUE:120]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_99_MW;
+	[NAME:gem (99% charge):gems (99% charge)]
+	[VALUE:120]
+	[TILE:4]
+	[SIZE:5]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_CHARGED_MW;
+	[NAME:gem:gems]
+	[ADJECTIVE:magically charged]
+	[HARD_MAT]
+	[VALUE:1200]
+	[TILE:4]
+	[SIZE:5]
+}

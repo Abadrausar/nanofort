@@ -70,9 +70,8 @@ function HasRClass(class, mat)
 	return nil
 end
 
--- Like CreateItem, but with numeric type and subtype.
-function CreateItemNumeric(mat, typ, subtyp, unit, skill)
-	local item = df['item_'..string.lower(df.item_type[typ])..'st']:new()
+function createItem(mat, typ, subtyp, unit, skill)
+	local item = df[typ]:new()
 	
 	item.id = df.global.item_next_id
 	df.global.world.items.all:insert('#', item)
@@ -97,18 +96,23 @@ function CreateItemNumeric(mat, typ, subtyp, unit, skill)
 	return item
 end
 
+-- Like CreateItem, but with numeric type and subtype.
+function CreateItemNumeric(mat, typ, subtyp, unit, skill)
+	return createItem(mat, 'item_'..string.lower(df.item_type[typ])..'st', subtyp, unit, skill)
+end
+
 -- Create a basic item, you will have to set dimensions, subtype or stack size if needed.
 -- The removed flag is set (as needed by moveToGround), so remember to clear this if you need to!
 -- If unit is not nil then the item quality is based on it's skill.
 -- id should be an item type id of the form "item_barst" or "item_boulderst".
 -- The item is returned.
 function CreateItem(mat, id, unit, skill)
-	return CreateItemNumeric(mat, df.item_type[id], -1, unit, skill)
+	return createItem(mat, id, -1, unit, skill)
 end
 
 -- Like CreateItem, but just use "BAR" or "bar" instead of "item_barst".
 function CreateItemBasic(mat, id, unit, skill)
-	return CreateItem(mat, 'item_'..string.lower(id)..'st', unit, skill)
+	return createItem(mat, 'item_'..string.lower(id)..'st', -1, unit, skill)
 end
 
 -- Creates a "clothing" item. For some reason the other item creation functions crash DF when they

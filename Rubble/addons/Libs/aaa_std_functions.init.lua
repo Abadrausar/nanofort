@@ -22,13 +22,13 @@ function rubble.targs(args, defaults, noexpand)
 	if type(noexpand) == "table" then
 		for i = 1, #args, 1 do
 			if not noexpand[i] then
-				args[i] = rubble.expandvars(args[i])
+				args[i] = rubble.expandvars(rubble.expandvars(args[i]), '&', true)
 			end
 		end
 	else
 		if not noexpand then
 			for i = 1, #args, 1 do
-				args[i] = rubble.expandvars(args[i])
+				args[i] = rubble.expandvars(rubble.expandvars(args[i]), '&', true)
 			end
 		end
 	end
@@ -45,6 +45,30 @@ function rubble.targs(args, defaults, noexpand)
 		end
 		return table.unpack(args)
 	end
+end
+
+function rubble.expandargs(...)
+	local args = {...}
+	for i, v in ipairs(args) do
+		args[i] = rubble.expandvars(rubble.expandvars(v), '&', true)
+	end
+	return table.unpack(args)
+end
+
+function rubble.getarraypacked(array, fitem, len)
+	local rtn = {}
+	for i = fitem, fitem+len, 1 do
+		table.insert(rtn, array[i])
+	end
+	return table.unpack(rtn)
+end
+
+function rubble.inverttable(tbl)
+	rtn = {}
+	for k, v in pairs(tbl) do
+		rtn[v] = k
+	end
+	return rtn
 end
 
 local bool_map = {

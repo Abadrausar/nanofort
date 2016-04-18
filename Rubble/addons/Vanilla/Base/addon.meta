@@ -1,0 +1,4 @@
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": false, "NotNormal": false},
+	"LoadPriority": 10, "Name": "Toady_One___Vanilla", "Version": "42.06", "Author": "Tarn Adams, rubble porting by Abadrausar", "Header": "Toady One Vanilla base raw files, rubble porting by Abadrausar, able of fine grained imports.",
+	"DescFile": "addon.md",
+	"Activates": ["VANILLA"]}

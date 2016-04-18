@@ -1,3 +1,0 @@
-{	"Header": "Allows creatures to give more than one meatskin based on size, not a big deal when you think about it... mmm seasoned chicken skins.",
-	"DescFile": "addon.md",
-	"Activates": ["Libs/Base"]}

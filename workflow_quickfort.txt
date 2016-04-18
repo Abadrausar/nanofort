@@ -1,0 +1,85 @@
+# 								Raws
+workflow count POWDER_MISC/SAND									50	5
+workflow count BOULDER/CLAY										50	5
+workflow amount LIQUID_MISC/MILK								50	5
+workflow amount BLOCKS											50	5
+#								Containers
+workflow amount BARREL/WOOD										20			# METAL also possible
+workflow amount BIN/WOOD 										20	5		# METAL also possible
+workflow amount BUCKET/WOOD 									20	5		# METAL also possible
+workflow amount FLASK/GLASS,LEATHER 							20	5		# METAL also possible
+workflow amount BACKPACK/LEATHER,CLOTH,SILK,YARN				20	5 
+workflow amount QUIVER/LEATHER,CLOTH							20	5
+workflow amount BOX/LEATHER,CLOTH,SILK,YARN						500	50		# Bags
+workflow amount BOX/STONE,WOOD,GLASS							200	20		# METAL also possible
+workflow amount POUCH/LEATHER,CLOTH,SILK,YARN					20	5
+workflow amount CABINET/STONE,WOOD,GLASS						200	20		# METAL also possible
+workflow count TOOL:ITEM_TOOL_JUG/STONE,WOOD,GLASS				20	5		# METAL also possible
+workflow count TOOL:ITEM_TOOL_JUG//CERAMIC_STONEWARE			20	5
+workflow count TOOL:ITEM_TOOL_LARGE_POT/STONE,WOOD,GLASS		500	50		# METAL also possible
+workflow count TOOL:ITEM_TOOL_LARGE_POT//CERAMIC_STONEWARE		500	5
+workflow count TOOL:ITEM_TOOL_NEST_BOX/STONE,WOOD,GLASS			20	5		# METAL also possible
+workflow count TOOL:ITEM_TOOL_HIVE/STONE,WOOD,GLASS				20	5		# METAL also possible
+workflow count TOOL:ITEM_TOOL_HIVE//CERAMIC_STONEWARE			20	5
+workflow count TOOL:ITEM_TOOL_WHEELBARROW/WOOD					20	5		# METAL also possible
+workflow count TOOL:ITEM_TOOL_WHEELBARROW/WOOD					20	5		# METAL also possible
+workflow count TOOL:ITEM_TOOL_MINECART/WOOD						20	5		# METAL also possible
+workflow amount CAGE/GLASS										200	20		# WOOD,METAL also possible
+workflow amount ANIMALTRAP/WOOD									20	5		# METAL also possible
+workflow amount COFFIN/STONE,WOOD,GLASS							20	5		# METAL also possible
+workflow amount WEAPONRACK/STONE,WOOD,GLASS						200	20		# METAL also possible
+workflow amount ARMORSTAND/STONE,WOOD,GLASS						202	20		# METAL also possible
+# 								Buildings
+workflow count ANVIL 											10 5
+workflow count QUERN 											20 5
+workflow count PIPE_SECTION 									20 5
+workflow count TRACTION_BENCH 									20 5
+workflow count TRAPCOMP:ITEM_TRAPCOMP_ENORMOUSCORKSCREW			20	5
+workflow count CHAIN	 										100	20
+workflow count TRAPPARTS 										500	50		# Mechanisms
+# 								Hospital specifics
+workflow count BAR//ASH											20	5
+workflow count LIQUID_MISC//LYE									20	5
+workflow count BAR/SOAP											20	5
+workflow count CRUTCH//STEEL									20	5
+workflow count SPLINT											20	5
+workflow count ORTHOPEDIC_CAST									20	5
+workflow count TRACTION_BENCH									64	8
+# 								Books specifics, look for sheet ,slurry, papyrus, Paper industry?! 
+workflow count TOOL:ITEM_TOOL_SCROLL_ROLLERS					20	5
+workflow count TOOL:ITEM_TOOL_BOOK_BINDING						20	5
+workflow count TOOL:ITEM_TOOL_SCROLL							20	5
+workflow count TOOL:ITEM_TOOL_QUIRE								20	5
+workflow amount TOOL:ITEM_TOOL_BOOKCASE/STONE,WOOD,GLASS		20	5		# METAL also possible
+# 								Furniture in rooms, zones, locations and hospital
+workflow count TOOL:ITEM_TOOL_STEPLADDER						20	5
+workflow count GRATE											20	5
+workflow count SLAB												20	5
+workflow count TOOL:ITEM_TOOL_HIVE								20	5
+workflow count TOOL:ITEM_TOOL_NEST_BOX							20	5
+workflow count STATUE											20	5
+workflow count DOOR												20	5
+workflow count HATCH_COVER										200	20
+workflow count BED												200	20
+workflow count CHAIR											200	20
+workflow count TABLE											200	20
+workflow count BED												200	20
+workflow count HATCH_COVER										200	20
+workflow count CHAIR											200	20
+# 								Armor
+workflow count SHIELD:ITEM_SHIELD_SHIELD						20	5
+workflow count SHOES:ITEM_SHOES_BOOTS							20	5
+workflow count HELM:ITEM_HELM_HELM								20	5
+workflow count GLOVES:ITEM_GLOVES_GAUNTLETS						20	5
+workflow count PANTS:ITEM_PANTS_GREAVES							20	5
+workflow count ARMOR:ITEM_ARMOR_BREASTPLATE						20	5
+# 								Weapons
+workflow count WEAPON:ITEM_WEAPON_AXE_BATTLE					10	5
+workflow count WEAPON:ITEM_WEAPON_PICK							100	5
+# 								Ranged
+workflow count WEAPON:ITEM_WEAPON_CROSSBOW//STEEL 				20	5
+workflow count WEAPON:ITEM_WEAPON_ARQUEBUS//STEEL				20	5
+# 								Ammo
+workflow count AMMO:ITEM_AMMO_BOLTS//STEEL						20	5
+workflow count AMMO:ITEM_AMMO_CARTRIDGE//STEEL					20	5
+workflow count AMMO:ITEM_AMMO_BULLET//STEEL						20	5

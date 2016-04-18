@@ -1,0 +1,5 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Vanilla BODY raws library",
+	"Activates": ["Libs/Base"]
+}

@@ -1,0 +1,4 @@
+{"Tags": {"Library": true, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": true, "NotNormal": false},
+"LoadPriority": 3100, "Name": "MMMM", "Version": "0.9-DF42.01+", "Author": "IndigoFenix, Rubble porting by Abadrausar", "Header": "Mostly mythical monsters",
+#	"DescFile": "addon.md",
+	"Activates": ["HAIKU"]}

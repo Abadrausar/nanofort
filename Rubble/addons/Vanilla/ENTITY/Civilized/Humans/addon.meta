@@ -1,0 +1,5 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Vanilla ENTITY for humans",
+	"Activates": ["Libs/Base", "Libs/Castes"]
+}

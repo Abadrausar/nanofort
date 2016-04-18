@@ -9,7 +9,11 @@
 		window.onload = function() {
 			// Kill the back button as best I can. There may be a better way to do this, but I don't know it.
 			function killback(evnt) {
-				if (evnt.target.href != "" && evnt.target.href != "#") {
+				if (evnt.target.href === undefined && this.href !== undefined) {
+					evnt.preventDefault()
+					evnt.stopPropagation()
+					window.location.replace(this.href)
+				}else if (evnt.target.href !== undefined && evnt.target.href !== "" && evnt.target.href !== "#") {
 					evnt.preventDefault()
 					evnt.stopPropagation()
 					window.location.replace(evnt.target.href)
@@ -18,6 +22,16 @@
 			var a = document.getElementsByTagName("a")
 			for (var i = 0; i < a.length; i++) {
 				a[i].addEventListener("click", killback, false)
+				
+				// Fix doc links
+				if (a[i].href.indexOf("/doc/") != -1) {
+					a[i].href = "http://" + a[i].host + a[i].pathname + "?from=" + escape(window.location.pathname + window.location.search) + a[i].hash
+				}
+				
+				// Fix addon links
+				if (a[i].href.indexOf("/addondata?addon=") != -1) {
+					a[i].href = a[i].href + "&from=" + escape(window.location.pathname + window.location.search) + "&fromname=Previous Page"
+				}
 			}
 
 			function listener(evnt) {

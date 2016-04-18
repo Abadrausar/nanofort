@@ -1,0 +1,5 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Entity for Goblins",
+	"Activates": ["Libs/Base", "Libs/Castes"]
+}

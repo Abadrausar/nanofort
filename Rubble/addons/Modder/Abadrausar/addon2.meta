@@ -1,0 +1,7 @@
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": false, "NotNormal": false},
+	"LoadPriority": -100, "Name": "-", "Version": "1.0", "Author": "Abadrausar", "Header": "This is an example addon.meta file.",
+#	"DescFile": "example.md",
+#	"Description": "If you prefer you can have the be markdown description inline.\nObviously this can be convenient, but only for short descriptions.\nIf DescFile is set this is ignored (or rather, overwritten).",
+#	"Vars": {"TEST": {"Name": "A test variable", "Values": ["YES", "NO"]}},
+	Activates: [],
+	Incompatible: []}

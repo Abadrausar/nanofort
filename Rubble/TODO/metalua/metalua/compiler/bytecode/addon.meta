@@ -1,5 +1,0 @@
-{
-	"Tags": {"Library": true},
-	"Header": "lua bytecode for metalua rubble scripting.",
-	"Activates": ["Libs/Base"]
-}

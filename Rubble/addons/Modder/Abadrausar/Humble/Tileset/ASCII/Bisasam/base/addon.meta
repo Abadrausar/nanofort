@@ -1,7 +1,0 @@
-{
-	"Header": "A simple addon that installs antialiased 20x20 pure ASCII-like Bisasam´s tileset.",
-	"DescFile": "addon.md",
-	"Activates": [
-		"Libs/Base"
-	]
-}

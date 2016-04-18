@@ -1,0 +1,5 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Vanilla DESCRIPTOR_COLOR raws library",
+	"Activates": ["Libs/Base"]
+}

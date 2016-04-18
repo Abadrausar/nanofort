@@ -1,7 +1,5 @@
-{
-	"Header": "Removes all giants from active game, they will appears only in engravings and legends",
-	"Author": "Abadrausar",
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": true, "NotNormal": false},
+"LoadPriority": 3100, "Name": "Abadrausar___No_more_giants", "Version": "1.0", "Author": "Abadrausar", "Header": "Removes all giants from active game, they will appears only in engravings and legends.",
 	"Activates": [
-		"Libs/Base"
-	]
-}
+		"Libs/Base",
+		"Vanilla/CREATURE_VARIATION"]}

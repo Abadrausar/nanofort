@@ -1,0 +1,8 @@
+item_siegeammo_mw
+
+[OBJECT:ITEM]
+
+{!SHARED_ITEM;SIEGEAMMO;ITEM_SIEGEAMMO_BULLET_BILL_MW;
+	[NAME:banzai bill:banzai bills]
+	[CLASS:BALLISTA]
+}

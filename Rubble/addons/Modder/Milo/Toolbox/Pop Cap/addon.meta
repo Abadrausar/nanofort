@@ -1,9 +1,5 @@
-{
-	"Tags": {
-		"SaveSafe": true,
-		"DFHack": true
-	},
-	"Header": "Allows you to set a population cap that will override the default for this world.",
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": true, "NotNormal": false},
+"LoadPriority": 3100, "Name": "Milo___Pop_Cap", "Version": "1.0", "Author": "Milo", "Header": "Allows you to set a population cap that will override the default for this world.",
 	"DescFile": "addon.md",
 	"Vars": {
 		"baby_cap_absolute": {

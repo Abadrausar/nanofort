@@ -1,0 +1,8 @@
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": true, "NotNormal": false},
+	"Header": "test9",
+	"Author": "Abadrausar",
+	"Activates": [
+		"Libs/Base", 
+		"Libs/Base/Vanilla/REACTION"
+	]
+}

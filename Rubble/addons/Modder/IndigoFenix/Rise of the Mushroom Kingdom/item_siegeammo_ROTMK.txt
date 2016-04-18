@@ -1,7 +1,0 @@
-item_siegeammo_mw
-
-[OBJECT:ITEM]
-
-[ITEM_SIEGEAMMO:ITEM_SIEGEAMMO_BULLET_BILL_MW]
-	[NAME:banzai bill:banzai bills]
-	[CLASS:BALLISTA]

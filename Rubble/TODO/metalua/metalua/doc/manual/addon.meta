@@ -1,5 +1,0 @@
-{
-	"Tags": {"Library": true},
-	"Header": "Adds obsoleted manual(0.42->0.72) for metalua rubble scripting.",
-	"Activates": ["Libs/Base"]
-}

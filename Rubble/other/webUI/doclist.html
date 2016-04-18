@@ -9,8 +9,11 @@
 		window.onload = function() {
 			// Kill the back button as best I can. There may be a better way to do this, but I don't know it.
 			function killback(evnt) {
-				if (evnt.target.href != "" && evnt.target.href != "#") {
-					evnt.preventDefault()
+				evnt.preventDefault()
+				if (evnt.target.href === undefined && this.href !== undefined) {
+					evnt.stopPropagation()
+					window.location.replace(this.href)
+				} else if (evnt.target.href !== undefined && evnt.target.href !== "" && evnt.target.href !== "#") {
 					evnt.stopPropagation()
 					window.location.replace(evnt.target.href)
 				}
@@ -18,6 +21,11 @@
 			var a = document.getElementsByTagName("a")
 			for (var i = 0; i < a.length; i++) {
 				a[i].addEventListener("click", killback, false)
+				
+				// Fix addon links
+				if (a[i].href.indexOf("/addondata?addon=") != -1) {
+					a[i].href = a[i].href + "&from=" + escape(window.location.pathname + window.location.search) + "&fromname=Previous Page"
+				}
 			}
 
 			function listener(evnt) {
@@ -32,30 +40,31 @@
 </head>
 <body>
 	<p>Stuff everyone should read:</p>
-	<li><a href="/doc/Rubble Readme">Rubble Readme</a></li>
-	<li><a href="/doc/Rubble Changelog">Rubble Changelog</a></li>
+	<li><a href="/doc/Rubble Readme.md">Rubble Readme</a></li>
+	<li><a href="/doc/Rubble Changelog.md">Rubble Changelog</a></li>
 
 	<p><div class="hr"></div></p>
 
 	<p>Extras:</p>
-	<li><a href="/doc/Rubble History and Philosophy">Rubble History and Philosophy</a></li>
+	<li><a href="/doc/Rubble History and Philosophy.md">Rubble History and Philosophy</a></li>
 
 	<p><div class="hr"></div></p>
 
 	<p>For modders:
-	<li><a href="/doc/Rubble Basics">Rubble Basics</a></li>
-	<li><a href="/doc/Rubble Base Templates">Rubble Base Templates</a></li>
-	<li><a href="/doc/Rubble Libs Templates">Rubble Libs Templates</a></li>
+	<li><a href="/doc/Rubble Basics.md">Rubble Basics</a></li>
+	<li><a href="/doc/Rubble Base Templates.md">Rubble Base Templates</a></li>
+	<li><a href="/doc/Rubble Conventions.md">Rubble Conventions</a></li>
 
 	<p><div class="hr"></div></p>
 
 	<p>Miscellaneous tutorials:
-	<li><a href="/doc/Tutorials/Common standard library templates">Common standard library templates</a></li>
-	<li><a href="/doc/Tutorials/User templates">User templates</a></li>
-	<li><a href="/doc/Tutorials/Tileset addons">Tileset addons</a></li>
+	<li><a href="/doc/Tutorials/Common standard library templates.md">Common standard library templates</a></li>
+	<li><a href="/doc/Tutorials/User templates.md">User templates</a></li>
+	<li><a href="/doc/Tutorials/Tileset addons.md">Tileset addons</a></li>
 
-	{{range .}}<p><div class="hr"></div></p><p>External Documentation:</p>
-	<li>{{.Header}}</li>{{else}}{{end}}
+	{{if gt (len .) 0}}<p><div class="hr"></div></p><p>External Documentation:</p>
+	{{range .}}<li>{{.Header}}</li>
+	{{end}}{{end}}
 
 	<p><div id="Back" class="button">Back to Menu</div></p>
 </body>

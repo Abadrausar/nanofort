@@ -1,0 +1,5 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Vanilla INTERACTION raws library",
+	"Activates": ["Libs/Base"]
+}

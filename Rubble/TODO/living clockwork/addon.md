@@ -1,1 +1,0 @@
-wagons produce clockwork parts when scutled and fire like MW turrets, combine with changelings to be able of building static turrets, the use of clockwork souls into the hearts of wagons is the reason behind the hostility of automatons toward all the other sentients.

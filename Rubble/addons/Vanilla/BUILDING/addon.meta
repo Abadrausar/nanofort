@@ -1,0 +1,5 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Vanilla BUILDING raws library",
+	"Activates": ["Libs/Base"]
+}

@@ -1,0 +1,34 @@
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": true, "Dev": true, "NotNormal": false},
+	"LoadPriority": 3100, "Name": "Dirst___Accessibility", "Version": "1.01", "Author": "Dirst", "Header": "A set of simple commands for the DFHack console to aid in navigating the map. Comments and suggestions are welcome.",
+	"DescFile": "addon.md",
+	"Activates": ["ACCESSIBILITY"],
+"Vars": {
+	"TESB_LIVING_STONE": {
+		"Name": "Living Stone",
+		"Values": [ "COMMON", "RARE", "NEVER" ]
+		},
+	"TESB_HIDDEN_GEMS": {
+		"Name": "Hidden Gems",
+		"Values": [ "COMMON", "RARE", "NEVER" ]
+		# Setting this to NEVER will also convert Wyrm eyes to common gems.
+		},
+	"TESB_PET_ROCKS": {
+		"Name": "Pet Rocks",
+		"Values": [ "YES", "NO" ]
+		# Independent of Living Stone setting.
+		},
+	"TESB_PLANTS": {
+		"Name": "Gem Vines",
+		"Values": [ "YES", "NO" ]
+		# Suppressed if Hidden Gems are set to NEVER.
+		},
+	"TESB_SECRETS": {
+		"Name": "Secrets",
+		"Values": [ "YES", "NO" ]
+		},
+	"USE_GRAPHICS": {
+		"Name": "Creature Graphics",
+		"Values": [ "YES", "NO" ]
+		}
+	}
+}

@@ -1,0 +1,5 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Creature for Elves",
+	"Activates": ["Libs/Base", "Libs/Castes"]
+}

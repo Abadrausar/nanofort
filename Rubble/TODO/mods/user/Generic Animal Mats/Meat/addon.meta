@@ -1,5 +1,0 @@
-<rubble:addonmeta
-	header=`Generic animal meat (including organs).`
-	
-	activates="Libs/Base;User/Generic Animal Mats"
->

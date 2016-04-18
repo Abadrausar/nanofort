@@ -1,6 +1,0 @@
-<rubble:addonmeta
-	header=`"Vampfodder is a mod for Dwarf Fortress by Button. Original concept by the Bay 12 Dwarf Fortress modding forum community. ;)
-The "Vampire Fodder" variations modify the blood of applicable creatures to remove during a week [NO_DRINK] from anything that drinks their blood.
-This will cause vampires to get thirsty and drink alcohol (if available) in fortress mode, alleviating the effects of sobriety.
-Do note that this will replace any other blood modifications you may have made - you'll need to apply them to BLOOD2/ICHOR2 to retain them. "`
->

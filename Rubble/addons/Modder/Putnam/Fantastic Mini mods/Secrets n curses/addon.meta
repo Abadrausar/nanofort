@@ -1,0 +1,8 @@
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": true, "NotNormal": false},
+"LoadPriority": 3100, "Name": "Putnam___Secrets_n_Curses", "Version": "1.0", "Author": "Putnam, Rubble porting by Abadrausar", "Header": "A mod that adds a few random secrets and curses that didn't fit in any of my existing mods.",
+#"df_min_version": "0.40.01",
+#"df_max_version": "",
+# "DescFile": "addon.md",
+"Activates": [
+		"Libs/Base"
+]}

@@ -1,0 +1,4 @@
+{!TEMPLATE;@SET_VALUE;token;value;preraws;{@SHARED_OBJECT_REPLACE_TAG;$OBJECT_CURSOR;%{token};[%{token}:%{value}]%{preraws}}}
+{!TEMPLATE;@ATTACH_BEFORE_TAG;token;preraws;{@SHARED_OBJECT_REPLACE_TAG;$OBJECT_CURSOR;%{token};%{preraws}[%{token}:%{value}]}}
+{!TEMPLATE;@ATTACH_AFTER_TAG;token;preraws;{@SHARED_OBJECT_REPLACE_TAG;$OBJECT_CURSOR;%{token};[%{token}:%{value}]%{preraws}}}
+{!TEMPLATE;@REPLACE_TAG;token;preraws;{@SHARED_OBJECT_REPLACE_TAG;$OBJECT_CURSOR;%{token};%{preraws}}}

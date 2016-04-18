@@ -288,14 +288,3 @@ rubble.usertemplate("!SHARED_ENTITY", {{"id", ""}, {"fort", ""}, {"adv", ""}, {"
 )
 
 -- SHARED_ITEM has it's own file.
-rubble.template("!SET_VALUE", [[
-	local target,value, repl = rubble.targs({...}, {"", "", ""})
-	target = string.split(target, ":")
-	local id = rubble.configvar(OBJECT_CURSOR)
-	rubble.libs_base.sharedobject_walk(id, function(tag)
-		if rubble.libs_base.matchtag(tag, target) then
-			tag.Comments = "["..target..":"..value.."]"..repl..tag.Comments
-			tag.CommentsOnly = true
-		end
-	end)
-]])

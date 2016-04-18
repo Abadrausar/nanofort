@@ -1,0 +1,45 @@
+descriptor_color_pony
+
+[OBJECT:DESCRIPTOR_COLOR]
+
+{!SHARED_COLOR;PONY_STARFIELD;
+	[NAME:starry]
+	[WORD:BLUE]
+	[RGB:0:51:102]
+}
+
+{!SHARED_COLOR;PONY_SUNSET;
+	[NAME:sunset pink]
+	[WORD:FUCHSIA]
+	[RGB:244:0:161]
+}
+
+{!SHARED_COLOR;PONY_SUNRISE;
+	[NAME:sunrise gold]
+	[WORD:GOLDEN_YELLOW]
+	[RGB:255:223:0]
+}
+
+{!SHARED_COLOR;PONY_MOON;
+	[NAME:moon silver]
+	[WORD:SILVER]
+	[RGB:192:192:192]
+}
+
+{!SHARED_COLOR;PONY_SUN;
+	[NAME:solar gold]
+	[WORD:YELLOW]
+	[RGB:255:255:0]
+}
+
+{!SHARED_COLOR;PONY_ECLIPSE;
+	[NAME:ecplise black]
+	[WORD:BLACK]
+	[RGB:0:0:0]
+}
+
+{!SHARED_COLOR;LMR_EYES;
+	[NAME:azure and eclipse black]
+	[WORD:BLACK]
+	[RGB:0:0:0]
+}

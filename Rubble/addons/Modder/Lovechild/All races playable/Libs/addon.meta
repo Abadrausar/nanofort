@@ -1,0 +1,4 @@
+{"Tags": {"Library": true, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": false, "NotNormal": false},
+	"LoadPriority": 1100, "Name": "ALLPLAYABLE", "Version": "1.0", "Author": "Lovechild, Rubble porting by Abadrausar", "Header": "You can play as Vanilla dwarf, elf, human, goblin, kobold, or animalpeople.",
+#	"DescFile": "addon.md",
+	"Activates": ["MODEST"]}

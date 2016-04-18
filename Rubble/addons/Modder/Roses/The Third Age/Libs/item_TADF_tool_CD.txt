@@ -1,0 +1,1011 @@
+item_tool_CD
+
+[OBJECT:ITEM]
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_GEMS_STANDARD;
+	[NAME:box of common gems:box of common gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_GEMS_FINE;
+	[NAME:box of fine gems:box of fine gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_GEMS_RARE;
+	[NAME:box of precious gems:box of precious gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_METALS_STANDARD;
+	[NAME:box of basic metals:box of basic metals]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_METALS_FINE;
+	[NAME:box of valuable metals:box of valuable metals]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_METALS_RARE;
+	[NAME:box of rare metals:box of rare metals]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_GLASS_STANDARD;
+	[NAME:box of common glass:box of common glass]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_GLASS_FINE;
+	[NAME:box of rare glass:box of rare glass]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_GLASS_RARE;
+	[NAME:large box of rare glass:large box of rare glass]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_WOOD_STANDARD;
+	[NAME:box of basic woods:box of basic woods]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_WOOD_FINE;
+	[NAME:box of fine woods:box of fine woods]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_WOOD_RARE;
+	[NAME:large box of fine woods:large box of fine woods]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_WOOD_UNDERGROUND;
+	[NAME:box of subteranian woods:box of subteranian woods]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_PLANTS_STANDARD;
+	[NAME:box of basic plants:box of basic plants]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_PLANTS_FINE;
+	[NAME:box of rare plants:box of rare plants]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_PLANTS_RARE;
+	[NAME:large box of rare plants:large box of rare plants]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BOX_ITEM_TOOL_PLANTS_UNDERGROUND;
+	[NAME:box of subteranian plants:box of subteranian plants]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;NATURE_ITEM_TOOL_WOOD;
+	[NAME:wood growth:wood growth]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;NATURE_ITEM_TOOL_PLANT;
+	[NAME:plant growth:plant growth]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;TOOL_ITEM_TOOL_MAGNET;
+	[NAME:weak magnet:weak magnets]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;TOOL_ITEM_TOOL_SCOPE;
+	[NAME:poor scope:poor scopes]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;TOOL_ITEM_TOOL_BATTERY;
+	[NAME:poor battery:poor batteries]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;TOOL_ITEM_TOOL_NAPALM;
+	[NAME:impure napalm:impure napalm]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;TOOL_ITEM_TOOL_DRILL;
+	[NAME:makeshift drill:makeshift drills]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;TOOL_ITEM_TOOL_LIGHTTUBE;
+	[NAME:poor light tube:poor light tubes]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;TOOL_ITEM_TOOL_CURINGCHAMBER;
+	[NAME:inefficient curing chamber:inefficient curing chambers]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;TOOL_ITEM_TOOL_SPEAKER;
+	[NAME:quite speaker:quite speakers]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;DISCOVERY_ITEM_TOOL_DISCOVERY1;
+	[NAME:strong magnet:strong magnets]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;DISCOVERY_ITEM_TOOL_DISCOVERY2;
+	[NAME:pure levisium:pure levisium]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;DISCOVERY_ITEM_TOOL_DISCOVERY3;
+	[NAME:quality scope:quality scopes]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;DISCOVERY_ITEM_TOOL_DISCOVERY4;
+	[NAME:strong battery:strong batteries]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;DISCOVERY_ITEM_TOOL_DISCOVERY5;
+	[NAME:pure napalm:pure napalm]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;DISCOVERY_ITEM_TOOL_DISCOVERY6;
+	[NAME:large drill:large drills]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;DISCOVERY_ITEM_TOOL_DISCOVERY7;
+	[NAME:light tube:light tubes]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;DISCOVERY_ITEM_TOOL_DISCOVERY8;
+	[NAME:curing chamber:curing chambers]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;DISCOVERY_ITEM_TOOL_DISCOVERY9;
+	[NAME:loud speaker:loud speakers]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;DISCOVERY_ITEM_TOOL_DISCOVERY10;
+	[NAME:advanced golem stone:advanced golem stones]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;ARTIFACT_ITEM_TOOL_ARTIFACT1;
+	[NAME:magnet:magnets]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;ARTIFACT_ITEM_TOOL_ARTIFACT2;
+	[NAME:levisium:levisium]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;ARTIFACT_ITEM_TOOL_ARTIFACT3;
+	[NAME:scope:scopes]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;ARTIFACT_ITEM_TOOL_ARTIFACT4;
+	[NAME:battery:batteries]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;ARTIFACT_ITEM_TOOL_ARTIFACT5;
+	[NAME:napalm:napalm]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;ARTIFACT_ITEM_TOOL_ARTIFACT6;
+	[NAME:large drill:large drills]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;ARTIFACT_ITEM_TOOL_ARTIFACT7;
+	[NAME:light tube:light tubes]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;ARTIFACT_ITEM_TOOL_ARTIFACT8;
+	[NAME:curing chamber:curing chambers]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;ARTIFACT_ITEM_TOOL_ARTIFACT9;
+	[NAME:loud speaker:loud speakers]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;ARTIFACT_ITEM_TOOL_ARTIFACT10;
+	[NAME:advanced golem stone:advanced golem stones]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC1;
+	[NAME:strange metal:strange metals]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC2;
+	[NAME:strange floating stone:strange floating stones]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC3;
+	[NAME:strange glass:strange glass]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC4;
+	[NAME:strange jar:strange jars]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC5;
+	[NAME:strange liquid:strange liquid]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC6;
+	[NAME:strange twisted metal:strange twisted metal]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC7;
+	[NAME:strange tube:strange tubes]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC8;
+	[NAME:strange chamber:strange chambers]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC9;
+	[NAME:strange box:strange boxes]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC10;
+	[NAME:strange gem:strange gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC11;
+	[NAME:relic:relics]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC12;
+	[NAME:relic:relics]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC13;
+	[NAME:relic:relics]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC14;
+	[NAME:relic:relics]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC15;
+	[NAME:relic:relics]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;RELIC_ITEM_TOOL_RELIC16;
+	[NAME:relic:relics]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BLUEPRINT_ITEM_TOOL_ARCHEOLOGIST_WORKSHOP;
+	[NAME:archeology workshop blueprint:archeology workshop blueprints]
+	[VALUE:5000]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BLUEPRINT_ITEM_TOOL_ARCANE_FORGE;
+	[NAME:arcane forge blueprint:arcane forge blueprints]
+	[VALUE:5000]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BLUEPRINT_ITEM_TOOL_ARCANE_SMELTER;
+	[NAME:arcane smelter blueprint:arcane smelter blueprints]
+	[VALUE:5000]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BLUEPRINT_ITEM_TOOL_SOUL_FORGE;
+	[NAME:soul forge blueprint:soul forge blueprints]
+	[VALUE:5000]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BLUEPRINT_ITEM_TOOL_RESEARCH_LAB;
+	[NAME:research lab blueprint:research lab blueprints]
+	[VALUE:5000]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BLUEPRINT_ITEM_TOOL_GOLEM_FORGE;
+	[NAME:golem forge blueprint:golem forge blueprints]
+	[VALUE:5000]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BLUEPRINT_ITEM_TOOL_INFUSION_CHAMBER;
+	[NAME:infusion chamber blueprint:infusion chamber blueprints]
+	[VALUE:5000]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BLUEPRINT_ITEM_TOOL_ENGINEERING_WORKSHOP;
+	[NAME:engineering workshop blueprint:engineering workshop blueprints]
+	[VALUE:5000]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BLUEPRINT_ITEM_TOOL_CREATURE_WORKSHOP;
+	[NAME:creature workshop blueprint:creature workshop blueprints]
+	[VALUE:5000]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BLUEPRINT_ITEM_TOOL_CREATURE_FORGE;
+	[NAME:creature lab blueprint:creature lab blueprints]
+	[VALUE:5000]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BLUEPRINT_ITEM_TOOL_APOTHECARY;
+	[NAME:apothecary blueprint:apothecary blueprints]
+	[VALUE:5000]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;BLUEPRINT_ITEM_TOOL_ALCHEMIST_LAB;
+	[NAME:alchemy lab blueprint:alchemy lab blueprints]
+	[VALUE:5000]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ROC_FEATHER;
+	[NAME:roc pinion:roc pinions]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_CYCLOPS_EYE;
+	[NAME:cyclops eye:cyclops eyes]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_DRAGON_HEART;
+	[NAME:dragon heart:dragon hearts]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_DRAKE_FANG;
+	[NAME:drake fang:drake fangs]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ETTIN_SACK;
+	[NAME:ettin sack:ettin sacks]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_FAIRY_DUST;
+	[NAME:fairy dust:fairy dust]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_GREAT_DRAGON_HEART;
+	[NAME:great dragon heart:great dragon hearts]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_HARPY_FEATHER;
+	[NAME:harpy pinion:harpy pinions]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_HIGH_DRAGON_HEART;
+	[NAME:high dragon heart:high dragon hearts]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_HYDRA_HEAD;
+	[NAME:hydra head:hydra heads]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_IMP_FIRE_TAIL;
+	[NAME:fire imp tail:fire imp tails]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_BEHEMOTH_HIDE;
+	[NAME:behemoth hide:behemoth hides]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_CARBUNCLE_GEM;
+	[NAME:carbuncle gem:carbuncle gems]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_JAGGED_CRYSTAL_DRAGON_SCALE;
+	[NAME:jagged crystal dragon scale:jagged crystal dragon scales]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_LEVIATHAN_HEART;
+	[NAME:leviathan heart:leviathan hearts]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_MANTICORE_TAIL;
+	[NAME:manticore tail:manticore tails]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_PEGASUS_PINION;
+	[NAME:pegasus pinion:pegasus pinions]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_WILL_O_WISP_DUST;
+	[NAME:will-o-wisp dust:will-o-wisp dusts]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_WYVERN_FANG;
+	[NAME:wyvern fang:wyvern fangs]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ICE_WYVERN_FANG;
+	[NAME:ice wyvern fang:ice wyvern fangs]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_MINOTAUR_HORN;
+	[NAME:minotaur horns:minotaurs horns]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_BASILISK_EYE;
+	[NAME:basalisk eyes:basalisks eyes]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_BEHOLDER_EYE;
+	[NAME:beholder eyes:beholders eyes]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_DIRE_WOLF_FUR;
+	[NAME:dire wolf fur:dire wolf furs]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_GARGOYLE_STONE;
+	[NAME:gargoyle stone:gargoyle stones]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_GIANT_GARGOYLE_STONE;
+	[NAME:giant gargoyle stone:giant gargoyle stones]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_GRIFFON_FEATHER;
+	[NAME:griffon pinion:griffon pinions]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_HELL_HOUND_FUR;
+	[NAME:hell hound fur:hell hound furs]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_PHOENIX_EGG;
+	[NAME:pheonix egg:phoenix eggs]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_TREANT_BARK;
+	[NAME:wild treant bark:wild treant bark]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_NIGHTWING_HORN;
+	[NAME:nightwing horn:nightwing horns]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_OGRE_BAG;
+	[NAME:ogre bag:ogre bags]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_PIXIE_DUST;
+	[NAME:pixie dust:pixie dust]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_SASQUATCH_FUR;
+	[NAME:sasquatch fur:sasquatch furs]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_SATYR_HORN;
+	[NAME:satyr horn:satyr horns]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_SEA_MONSTER_HEART;
+	[NAME:sea monster heart:sea monster hearts]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_SEA_SERPENT_FANG;
+	[NAME:sea serpent fang:sea serpent fangs]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_GIANT_CAVE_SPIDER_FANG;
+	[NAME:giant cave spider fang:giant cave spider fangs]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_TROLL_GUT;
+	[NAME:troll gut:troll guts]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_UNICORN_HORN;
+	[NAME:unicorn horn:unicorn horns]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ICE_WOLF_FUR;
+	[NAME:ice wolf fur:ice wolf furs]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_YETI_FUR;
+	[NAME:yeti fur:yeti furs]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_COLOSSUS_STONE;
+	[NAME:colossus stone:colossus stones]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_GREATER_GOLEM_STONE;
+	[NAME:greater golem stone:greater golem stones]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_GOLEM_STONE;
+	[NAME:golem stone:golem stones]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_LESSER_GOLEM_STONE;
+	[NAME:lesser golem stone:lesser golem stones]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ELEMENTAL_FIRE_ESSENCE;
+	[NAME:fire elemental essence:fire elemental essences]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ELEMENTAL_FROST_ESSENCE;
+	[NAME:frost elemental essence:frost elemental essences]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ELEMENTAL_AIR_ESSENCE;
+	[NAME:air elemental essence:air elemental essences]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ELEMENTAL_EARTH_ESSENCE;
+	[NAME:earth elemental essence:earth elemental essences]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ELEMENTAL_DARK_ESSENCE;
+	[NAME:dark elemental essence:dark elemental essences]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ELEMENTAL_LIGHT_ESSENCE;
+	[NAME:light elemental essence:light elemental essences]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ELEMENTAL_FIRE_GREATER_ESSENCE;
+	[NAME:greater fire elemental essence:greater fire elemental essences]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ELEMENTAL_FROST_GREATER_ESSENCE;
+	[NAME:greater frost elemental essence:greater frost elemental essences]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ELEMENTAL_AIR_GREATER_ESSENCE;
+	[NAME:greater air elemental essence:greater air elemental essences]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ELEMENTAL_EARTH_GREATER_ESSENCE;
+	[NAME:greater earth elemental essence:greater earth elemental essences]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ELEMENTAL_DARK_GREATER_ESSENCE;
+	[NAME:greater dark elemental essence:greater dark elemental essences]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_ELEMENTAL_LIGHT_GREATER_ESSENCE;
+	[NAME:greater light elemental essence:greater light elemental essences]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_MEPHIT_DUST;
+	[NAME:mephit dust:mephit dust]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_PHANTOM_DUST;
+	[NAME:phantom dust:phantom dust]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_GREATER_PHANTOM_DUST;
+	[NAME:greater phantom dust:greater phantom dust]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_DJINN_ESSENCE;
+	[NAME:djinn essence:djinn essences]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_EFREET_ESSENCE;
+	[NAME:efreet essence:efreet essences]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_CHIMERA_PARTS;
+	[NAME:chimera parts:chimera parts]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_COCKATRICE_EYES;
+	[NAME:cockatrice eye:cockatrice eyes]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_GIANT_BAG;
+	[NAME:wild giant bag:wild giant bags]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_DEMON_LORD_HEART;
+	[NAME:demon lord heart:demon lord hearts]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_DOOM_BAT_WINGS;
+	[NAME:doom bat wing:doom bat wings]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CD_ITEM_TOOL_GREAT_WYRM_FANGS;
+	[NAME:great wyrm fang:great wyrm fangs]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}

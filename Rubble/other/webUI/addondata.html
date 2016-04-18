@@ -6,8 +6,8 @@
 	<title>Rubble Web UI: Addon Information for "{{.Meta.Name}}"{{if ne .Meta.Version ""}} ({{.Meta.Version}}){{end}}</title>
 
 	<script type="text/javascript">
-		function Toggle(file) {
-			var el = document.getElementById("FILE:" + file)
+		function Toggle(id) {
+			var el = document.getElementById(id)
 			if (el.style.display == "none") {
 				el.style.display = ""
 			} else {
@@ -18,7 +18,11 @@
 		window.onload = function() {
 			// Kill the back button as best I can. There may be a better way to do this, but I don't know it.
 			function killback(evnt) {
-				if (evnt.target.href !== undefined && evnt.target.href !== "" && evnt.target.href !== "#") {
+				if (evnt.target.href === undefined && this.href !== undefined) {
+					evnt.preventDefault()
+					evnt.stopPropagation()
+					window.location.replace(this.href)
+				}else if (evnt.target.href !== undefined && evnt.target.href !== "" && evnt.target.href !== "#") {
 					evnt.preventDefault()
 					evnt.stopPropagation()
 					window.location.replace(evnt.target.href)
@@ -30,7 +34,12 @@
 
 				// Fix addon links
 				if (a[i].href.indexOf("/addondata?addon=") != -1) {
-					a[i].href = a[i].href + "&fromurl={{urlquery $.FromUrl}}&fromname={{urlquery $.FromName}}"
+					a[i].href = a[i].href + "&from={{urlquery $.FromUrl}}&fromname={{urlquery $.FromName}}"
+				}
+
+				// Fix doc links
+				if (a[i].href.indexOf("/doc/") != -1) {
+					a[i].href = "http://" + a[i].host + a[i].pathname + "?from=" + escape(window.location.pathname + window.location.search) + a[i].hash
 				}
 			}
 
@@ -109,7 +118,7 @@
 		</script>
 
 		<h4>Addon Files:</h4>
-		{{range .Files}}<li><a href="javascript:Toggle('{{.Name}}');">{{.Name}}</a><pre id="FILE:{{.Name}}" style="display:none;" class="border">{{printf "%s" .Content}}</pre></li>
+		{{range .Files}}<li><a href="javascript:Toggle('FILE:{{.Name}}');">{{.Name}}</a><pre id="FILE:{{.Name}}" style="display:none;" class="border">{{printf "%s" .Content}}</pre></li>
 		{{else}}<li>This addon has no files (how is this even possible?).</li>{{end}}
 	</div>
 

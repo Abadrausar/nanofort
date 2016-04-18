@@ -1,0 +1,23 @@
+item_ammo_arquebus
+
+[OBJECT:ITEM]
+
+===========================================================================================================
+Dark Ages: Mythos & War: 0.42.02 | r1 | GM-X | dfdarkage.com | adventrpg.com
+===========================================================================================================
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_CARTRIDGE;
+[NAME:arquebus cartridge:arquebus cartridges] 
+[CLASS:CARTRIDGE]
+[SIZE:175]
+[ATTACK:EDGE:5:6500:pierce:pierces:NO_SUB:10000]
+[ATTACK_PREPARE_AND_RECOVER:9:2]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_BULLET;
+[NAME:arquebus bullet:arquebus bullets] 
+[CLASS:BULLET]
+[SIZE:175]
+[ATTACK:EDGE:5:6500:pierce:pierces:NO_SUB:7500]
+[ATTACK_PREPARE_AND_RECOVER:9:2]
+}

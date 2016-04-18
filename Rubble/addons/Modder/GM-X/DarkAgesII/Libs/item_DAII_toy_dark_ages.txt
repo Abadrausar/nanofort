@@ -1,0 +1,67 @@
+item_toy_dark_ages
+
+[OBJECT:ITEM]
+
+===========================================================================================================
+Dark Ages: Mythos & War: 0.42.02 | r1 | GM-X | DFDarkAge.com | AdventRPG.com
+===========================================================================================================
+
+{!SHARED_ITEM;TOY;ITEM_TOY_SHADOW_FIGURE;
+[NAME:shadow figurine:shadow figurines]
+[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOY;ITEM_TOY_ABOLETH_FIGURE;
+[NAME:aboleth figurine:aboleth figurines]
+[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOY;ITEM_TOY_DREAM_CATCHER;
+[NAME:dream catcher:dream catchers]
+[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOY;ITEM_TOY_STAR_RAMMOK;
+[NAME:star of rammok:stars of rammok]
+[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOY;ITEM_TOY_TALKING_HEAD;
+[NAME:mechanical talking head:mechanical talking heads]
+[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOY;ITEM_TOY_MYSTICAL_SERPENT_FIGURE;
+[NAME:mystical serpent figurine:mystical serpent figurines]
+[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOY;ITEM_TOY_RING_OF_MIGHT;
+[NAME:ring of might:rings of might]
+[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOY;ITEM_TOY_SEAL_UNDERWORLD;
+[NAME:seal of the underworld:seals of the underworld]
+[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOY;ITEM_TOY_SEAL_ARMOK;
+[NAME:seal of armok:seals of armok]
+[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOY;ITEM_TOY_SEAL_GUARDIANS;
+[NAME:seal of the guardian:seals of the guardian]
+[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOY;ITEM_TOY_SEAL_OF_THE_NIGHT;
+[NAME:seal of the night:seals of the night]
+[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOY;ITEM_TOY_LYCAN_BEAD;
+[NAME:lycanthrope bead:lycanthrope beads]
+[HARD_MAT]
+}

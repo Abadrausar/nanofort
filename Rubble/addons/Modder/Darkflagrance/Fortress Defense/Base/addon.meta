@@ -1,0 +1,4 @@
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": false, "NotNormal": false},
+	"LoadPriority": 1100, "Name": "Darkflagrance___Fortress_Defense", "Version": "0.17_DF42.06+", "Author": "Darkflagrance, Rubble porting by Ababrausar", "Header": "More concentrated FUN",
+	"DescFile": "addon.md",
+	"Activates": ["FD"]}

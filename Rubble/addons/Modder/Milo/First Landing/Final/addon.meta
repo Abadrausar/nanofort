@@ -1,8 +1,5 @@
-{
-	"Tags": {
-		"DFHack": true
-	},
-	"Header": "Makes First Landing final, incompatible with other bases, remove candy and anticandy",
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": true, "Dev": false, "NotNormal": false},
+"LoadPriority": 2100, "Name": "Milo___First_Landing_FINAL", "Version": "1.5_DF42.01+", "Author": "Milo Christiansen", "Header": "Makes First Landing final, incompatible with other bases because it removes candy and anticandy.",
 	"DescFile": "addon.md",
 	"Activates": [
 		"Libs/Base",

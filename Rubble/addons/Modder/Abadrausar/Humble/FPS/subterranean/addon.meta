@@ -1,7 +1,10 @@
-{
-	"Header": "Circular kitchen, you can dry low quality meals into flour and recook it again.",
-	"Author": "Abadrausar",
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": true, "NotNormal": false},
+"LoadPriority": 3100, "Name": "Abadrausar___Circular_kitchen2", "Version": "1.0", "Author": "Abadrausar", "Header": "you can dry low quality meals into flour and recook it again.",
 	"Activates": [
-		"Libs/Base"
-	]
-}
+		"Libs/Base",
+		"Vanilla/ENTITY/Cavern/AnimalPeople",
+		"Vanilla/ENTITY/Civilized/Dwarves",
+		"Vanilla/ENTITY/Civilized/Elves",
+		"Vanilla/ENTITY/Civilized/Humans",
+		"Vanilla/ENTITY/Savage/Kobolds",
+		"Vanilla/ENTITY/Slavers/Goblins"]}

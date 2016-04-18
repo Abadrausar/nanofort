@@ -1,0 +1,131 @@
+item_ammo_entities
+
+[OBJECT:ITEM]
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_ANIMAL_MEN;
+	[NAME:throwing stick:throwing sticks]
+	[SIZE:400]
+	[CLASS:ANIMAL_MEN]
+	[ATTACK:EDGE:20:15000:stab:stabs:NO_SUB:2000]
+	[ATTACK:EDGE:10:10000:mercilessly pierce:mercilessly pierces:savage point:1800]
+	[ATTACK:EDGE:50:10000:run through:runs through:NO_SUB:1100]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_ASHARI;
+	[NAME:throwing knife:throwing knives]
+	[CLASS:ASHARI]
+	[SIZE:50]
+	[ATTACK:EDGE:5:2500:stab:stabs:NO_SUB:3000]
+	[ATTACK:EDGE:10:2000:drill:drills:spike:1200]
+	[ATTACK:EDGE:10:5000:impale:impales:NO_SUB:2000]
+	[ATTACK:EDGE:10:5000:gore:gores:NO_SUB:2000]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_AUTOMATON;
+	[NAME:cannon ball:cannon balls]
+	[CLASS:AUTOMATON]
+	[SIZE:450]
+	[ATTACK:EDGE:50:50000:explode upon contact and hit:explodes upon contact and hits:NO_SUB:30000]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_DARK_DWARF;
+	[NAME:twisted bolt:twisted bolts]
+	[CLASS:DARK_DWARF]
+	[SIZE:100]
+	[ATTACK:EDGE:20:1000:stab:stabs:NO_SUB:1000]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_DRAGON_WORSHIPERS;
+	[NAME:dragon tipped bolt:dragon tipped bolts]
+	[CLASS:DRAGON_WORSHIPERS]
+	[SIZE:100]
+	[ATTACK:EDGE:20:1000:stab:stabs:NO_SUB:1000]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_DROW;
+	[NAME:cruel arrow:cruel arrows]
+	[CLASS:DROW]
+	[SIZE:80]
+	[ATTACK:EDGE:5:12000:stab:stabs:NO_SUB:3000]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_DWARF;
+	[NAME:bolt:bolts]
+	[CLASS:DWARF]
+	[SIZE:100]
+	[ATTACK:EDGE:20:1000:stab:stabs:NO_SUB:1000]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_ELF;
+	[NAME:singing arrow:singing arrows]
+	[CLASS:ELF]
+	[SIZE:80]
+	[ATTACK:EDGE:5:12000:stab:stabs:NO_SUB:3000]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_GIANTS;
+	[NAME:treetrunk:treetrunks]
+	[CLASS:GIANTS]
+	[SIZE:80]
+	[ATTACK:BLUNT:5000:12000:crush:crushes:NO_SUB:30000]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_GNOME;
+	[NAME:hollow point bullet:hollow point bullets]
+	[CLASS:GNOME]
+	[SIZE:25]
+	[ATTACK:EDGE:5:5000:pierce:pierces:NO_SUB:7500]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_GOBLIN;
+	[NAME:throwing axe:throwing axes]
+	[CLASS:GOBLIN]
+	[SIZE:300]
+	[ATTACK:EDGE:105:2000:cut:cuts:NO_SUB:1000]
+	[ATTACK:EDGE:105:2000:hack:hacks:NO_SUB:1250]
+	[ATTACK:EDGE:105:2000:chop:chops:NO_SUB:1250]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_HUMAN;
+	[NAME:small bolt:small bolts]
+	[CLASS:HUMAN]
+	[SIZE:100]
+	[ATTACK:EDGE:5:2000:pierce:pierces:NO_SUB:10000]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_HUNTERS_GUILD;
+	[NAME:rifle bullet:riffle bullet]
+	[CLASS:HUNTERS_GUILD]
+	[SIZE:25]
+	[ATTACK:EDGE:5:10000:pierce:pierces:NO_SUB:10000]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_KOBOLD;
+	[NAME:throwing whip:throwing whips]
+	[SIZE:400]
+	[CLASS:KOBOLD]
+	[ATTACK:EDGE:200:12000:whip:whips:NO_SUB:3000]
+	[ATTACK:EDGE:200:12000:cut:cuts:wire:3000]
+	[ATTACK:EDGE:200:12000:entangle:entangles:long wire:3000]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_ORC;
+	[NAME:large arrow:large arrows]
+	[CLASS:ORC]
+	[SIZE:80]
+	[ATTACK:EDGE:10:15000:stab:stabs:NO_SUB:5000]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_SYLVAN;
+	[NAME:vine:vines]
+	[CLASS:SYLVAN]
+	[SIZE:100]
+	[ATTACK:EDGE:20:1000:stab:stabs:NO_SUB:1000]
+}
+
+{!SHARED_ITEM;AMMO;ITEM_AMMO_XECTI;
+	[NAME:stinger:stingers]
+	[CLASS:XECTI]
+	[SIZE:100]
+	[ATTACK:EDGE:20:1000:stab:stabs:NO_SUB:1000]
+}

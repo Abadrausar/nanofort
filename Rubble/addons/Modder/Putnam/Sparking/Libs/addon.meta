@@ -1,0 +1,6 @@
+{"Tags": {"Library": true, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": true, "Dev": false, "NotNormal": false},
+"LoadPriority": 1100, "Name": "SPARKING", "Version": "42.01+", "Author": "Putnam, Rubble porting by Abadrausar", "Header": "Complete dragonball lore.",
+#	"DescFile": "addon.md",
+	"Activates": ["HAIKU",
+		"Vanilla/PLANT/Minimal",
+		"Vanilla/PLANT/Extreme"]}

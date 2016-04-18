@@ -1,0 +1,42 @@
+item_rhenaya_drow_other
+
+[OBJECT:ITEM]
+
+{!SHARED_ITEM;TOY;RHENAYAS_DROW_ITEM_TOY_PUZZLEBOX;
+[NAME:drow puzzlebox:drow puzzleboxes]
+}
+
+{!SHARED_ITEM;TOY;RHENAYAS_DROW_ITEM_TOY_SAVA;
+[NAME:sava box:sava boxes]
+[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOY;RHENAYAS_DROW_ITEM_TOY_SWORD;
+[NAME:toy drow sword:toy drow swords]
+[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOY;RHENAYAS_DROW_ITEM_TOY_DAGGER;
+[NAME:toy drow dagger:toy drow daggers]
+[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOY;RHENAYAS_DROW_ITEM_TOY_MACE;
+[NAME:toy drow mace:toy drow maces]
+[HARD_MAT]
+}
+
+
+{!SHARED_ITEM;INSTRUMENT;RHENAYAS_DROW_ITEM_INSTRUMENT_DRUM;
+[NAME:drow slavedrum:drow slavedrums]
+}
+
+{!SHARED_ITEM;INSTRUMENT;RHENAYAS_DROW_ITEM_INSTRUMENT_HARP;
+[NAME:drow harp:drow harps]
+[HARD_MAT]
+}
+
+{!SHARED_ITEM;INSTRUMENT;RHENAYAS_DROW_ITEM_INSTRUMENT_FLUTE;
+[NAME:drow flute:drow flutes]
+[HARD_MAT]
+}

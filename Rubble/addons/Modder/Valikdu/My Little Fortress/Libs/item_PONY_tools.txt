@@ -1,0 +1,324 @@
+item_FiM_tools
+
+[OBJECT:ITEM]
+
+
+//Various
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_IRONPLANK;
+	[NAME:planks:planks]
+	[VALUE:1]
+	[TILE:139]
+	[SIZE:300]
+	[UNIMPROVABLE]
+	[INCOMPLETE_ITEM]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_BARK;
+	[NAME:bark:bark]
+	[VALUE:1]
+	[TILE:139]
+	[SIZE:300]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_MOLD;
+	[NAME:chunk:chunks]
+	[VALUE:1]
+	[TILE:'o']
+	[SIZE:1000]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_SCRAPS;
+	[NAME:leather scraps:leather scraps]
+	[VALUE:1]
+	[TILE:4]
+	[SIZE:150]
+	[UNIMPROVABLE]
+}
+	
+
+//Crystal Shards
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_CRYSTAL_SHARD;
+	[NAME:shard:shards]
+	[VALUE:1]
+	[TILE:4]
+	[SIZE:150]
+	[UNIMPROVABLE]
+	[SKILL:DAGGER]
+	[TWO_HANDED:22500]
+	[MINIMUM_SIZE:4000]
+	[ATTACK:EDGE:800:600:slash:slashes:sharp edge:1250]
+	[ATTACK:EDGE:2:400:stab:stabs:pointy end:1500]
+	[ATTACK:BLUNT:20:400:bash:bashes:NO_SUB:1000]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEM_SHARD;
+	[NAME:shard:shards]
+	[VALUE:1]
+	[TILE:4]
+	[SIZE:150]
+	[UNIMPROVABLE]
+	[SKILL:DAGGER]
+	[TWO_HANDED:22500]
+	[MINIMUM_SIZE:4000]
+	[ATTACK:EDGE:800:600:slash:slashes:sharp edge:1250]
+	[ATTACK:EDGE:2:400:stab:stabs:pointy end:1500]
+	[ATTACK:BLUNT:20:400:bash:bashes:NO_SUB:1000]
+}
+	
+	
+//Gem Replication
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_CHUNK;
+	[NAME:chunk:chunks]
+	[VALUE:1]
+	[TILE:169]
+	[SIZE:1000]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_FRAG;
+	[NAME:fragments:fragments]
+	[VALUE:1]
+	[TILE:139]
+	[SIZE:500]
+	[UNIMPROVABLE]
+}
+	
+	
+//Rainbows
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_RAINBOW;
+	[NAME:chunk:chunks]
+	[VALUE:1]
+	[TILE:'o']
+	[SIZE:1000]
+	[UNIMPROVABLE]
+}
+	
+{!SHARED_ITEM;TOOL;ITEM_TOOL_ORB;
+	[NAME:orb:orbs]
+	[VALUE:1]
+	[TILE:'o']
+	[SIZE:500]
+	[UNIMPROVABLE]
+}
+
+
+//Clouds
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_CLOUD_SEED;
+	[NAME:cloud seed:cloud seeds]
+	[VALUE:1]
+	[TILE:136]
+	[SIZE:10]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_CLOUD;
+	[NAME:cloud:cloud]
+	[VALUE:1]
+	[TILE:21]
+	[SIZE:10]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_CLOUD_DENSE;
+	[NAME:dense cloud:dense clouds]
+	[VALUE:1]
+	[TILE:21]
+	[SIZE:10]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_PLASTIC;
+	[NAME:chunk:chunks]
+	[VALUE:1]
+	[TILE:'o']
+	[SIZE:1000]
+	[UNIMPROVABLE]
+}
+
+
+//Crystal Engineering & Alchemy & Toxins
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_CIRCUIT_BASIC;
+	[NAME:circuit:circuits]
+	[VALUE:1]
+	[TILE:42]
+	[SIZE:50]
+	[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_TRANSMUTE;
+	[NAME:transmutation core:transmutation cores]
+	[VALUE:5]
+	[TILE:42]
+	[SIZE:50]
+	[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_ETHER;
+	[NAME:orb:orbs]
+	[VALUE:100]
+	[TILE:15]
+	[SIZE:50]
+	[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_BATTERY;
+	[NAME:battery:batteries]
+	[VALUE:3]
+	[TILE:04]
+	[SIZE:500]
+	[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_DEPLETED;
+	[NAME:depleted battery:depleted batteries]
+	[VALUE:1]
+	[TILE:04]
+	[SIZE:500]
+	[HARD_MAT]
+}
+
+
+//Energy weapon components
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GEMCORE;
+	[NAME:power core:power cores]
+	[VALUE:5]
+	[TILE:42]
+	[SIZE:50]
+	[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_ASSEMBLY;
+	[NAME:emitter assembly:emitter assemblies]
+	[VALUE:5]
+	[TILE:42]
+	[SIZE:50]
+	[HARD_MAT]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_CIRCUIT;
+	[NAME:booster circuit:booster circuits]
+	[VALUE:5]
+	[TILE:42]
+	[SIZE:50]
+	[HARD_MAT]
+}
+
+
+//Gunsmithing
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_FLECHETTE_CASING;
+	[NAME:flechette gun casing:flechette gun casings]
+	[VALUE:10]
+	[TILE:47]
+	[SIZE:300]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_SLUG_CASING;
+	[NAME:slugthrower casing:slugthrower casings]
+	[VALUE:10]
+	[TILE:47]
+	[SIZE:500]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_BLASTER_CASING;
+	[NAME:blaster casing:blaster casings]
+	[VALUE:10]
+	[TILE:47]
+	[SIZE:2000]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_CAPACITOR;
+	[NAME:capacitor:capacitors]
+	[VALUE:5]
+	[TILE:42]
+	[SIZE:100]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;WEAPON;ITEM_WEAPON_BAYONET;
+	[NAME:bayonet:bayonets]
+	[SIZE:100]
+	[SKILL:DAGGER]
+	[TWO_HANDED:5500]
+	[MINIMUM_SIZE:5000]
+	[MATERIAL_SIZE:2]
+	[ATTACK:EDGE:250:7000:cut:cuts:edge:1250]
+		[ATTACK_PREPARE_AND_RECOVER:2:2]
+	[ATTACK:EDGE:70:3000:stab:stabs:NO_SUB:1250]
+		[ATTACK_PREPARE_AND_RECOVER:2:2]
+}
+
+{!SHARED_ITEM;WEAPON;ITEM_WEAPON_PISTOL_BAYONET;
+	[NAME:small bayonet:small bayonets]
+	[SIZE:100]
+	[SKILL:DAGGER]
+	[TWO_HANDED:5500]
+	[MINIMUM_SIZE:5000]
+	[MATERIAL_SIZE:1]
+	[ATTACK:EDGE:10:600:stab:stabs:NO_SUB:1250]
+		[ATTACK_PREPARE_AND_RECOVER:1:2]
+		[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+	[ATTACK:EDGE:125:200:cut:cuts:edge:1250]
+		[ATTACK_PREPARE_AND_RECOVER:2:2]
+		[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_CRYSGEAR;
+	[NAME:crystal gear set:crystal gear sets]
+	[VALUE:10]
+	[TILE:'*']
+	[SIZE:40]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_CASINGS_P;
+	[NAME:pistol cartridge casings:pistol cartridge casings]
+	[VALUE:2]
+	[TILE:'-']
+	[SIZE:30]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_SABOT;
+	[NAME:discarding sabot:discarding sabots]
+	[VALUE:5]
+	[TILE:'=']
+	[SIZE:30]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_CASINGS_S;
+	[NAME:slug casings:slug casings]
+	[VALUE:3]
+	[TILE:'-']
+	[SIZE:60]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_CASINGS_SH;
+	[NAME:heavy slug casings:heavy slug casings]
+	[VALUE:4]
+	[TILE:'-']
+	[SIZE:90]
+	[UNIMPROVABLE]
+}
+
+{!SHARED_ITEM;TOOL;ITEM_TOOL_GUNPOWDER;
+	[NAME:gunpowder:gunpowder]
+	[VALUE:4]
+	[TILE:'o']
+	[SIZE:20]
+	[UNIMPROVABLE]
+}

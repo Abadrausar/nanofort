@@ -1,12 +1,10 @@
-{
-	"Tags": {
-		"Dev": true
-	},
-	"Header": "This addon adds \"dummy reactions\" eg. empty reactions registered to `ADDON_HOOK_PLAYABLE`.",
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": true, "NotNormal": false},
+"LoadPriority": 3100, "Name": "Milo___Dummy_Reactions", "Version": "1.0", "Author": "Milo", "Header": "Empty reactions registered to `ADDON_HOOK_PLAYABLE`.",
 	"DescFile": "addon.md",
-	"Activates": [
-		"Libs/Base"
-	],
+	"Description": "This addon adds \"dummy reactions\" eg. empty reactions registered to `ADDON_HOOK_PLAYABLE`.",
+"Activates": [
+	"Libs/Base",
+	"Vanilla/REACTION"],
 	"Vars": {
 		"DEV_DUMMY_REACTION_COUNT": {
 			"Name": "How many dummy reactions should be generated?",

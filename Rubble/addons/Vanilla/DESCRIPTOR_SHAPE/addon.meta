@@ -1,0 +1,5 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Vanilla DESCRIPTOR_SHAPE raws library",
+	"Activates": ["Libs/Base"]
+}

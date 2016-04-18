@@ -1,0 +1,15 @@
+--- C:/Users/Milo/Desktop/vm.go	Wed Jul 29 07:29:30 2015
++++ D:/Projects/Go/src/github.com/Shopify/go-lua/vm.go	Fri Nov 06 14:27:57 2015
+@@ -108,6 +108,12 @@
+ 		if t1 == t2 {
+ 			return true
+ 		}
++		
++		// Change by Milo: Somebody at Shopify forgot that you can compare tables to nil...
++		if t2 == nil {
++			return false
++		}
++		
+ 		tm = l.equalTagMethod(t1.metaTable, t2.(*table).metaTable, tmEq)
+ 	default:
+ 		return t1 == t2

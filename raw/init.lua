@@ -162,4 +162,4 @@ function onStateChange(state)
 	end
 end
 
-dfhack.gui.showAnnouncement("This region's raws were generated with Rubble v7.5.2!", COLOR_LIGHTGREEN)
+dfhack.gui.showAnnouncement("This region's raws were generated with Rubble v7.7.1!", COLOR_LIGHTGREEN)

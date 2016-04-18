@@ -6,10 +6,23 @@
 	<title>Rubble Web UI: Documentation</title>
 
 	<script type="text/javascript">
+		function Toggle(id) {
+			var el = document.getElementById(id)
+			if (el.style.display == "none") {
+				el.style.display = ""
+			} else {
+				el.style.display = "none"
+			}
+		}
+		
 		window.onload = function() {
 			// Kill the back button as best I can. There may be a better way to do this, but I don't know it.
 			function killback(evnt) {
-				if (evnt.target.href != "" && evnt.target.href != "#") {
+				if (evnt.target.href === undefined && this.href !== undefined) {
+					evnt.preventDefault()
+					evnt.stopPropagation()
+					window.location.replace(this.href)
+				}else if (evnt.target.href !== undefined && evnt.target.href !== "" && evnt.target.href !== "#") {
 					evnt.preventDefault()
 					evnt.stopPropagation()
 					window.location.replace(evnt.target.href)
@@ -18,13 +31,23 @@
 			var a = document.getElementsByTagName("a")
 			for (var i = 0; i < a.length; i++) {
 				a[i].addEventListener("click", killback, false)
+				
+				// Fix doc links
+				if (a[i].href.indexOf("/doc/") != -1) {
+					a[i].href = "http://" + a[i].host + a[i].pathname + "?from=" + escape(window.location.pathname + window.location.search) + a[i].hash
+				}
+				
+				// Fix addon links
+				if (a[i].href.indexOf("/addondata?addon=") != -1) {
+					a[i].href = a[i].href + "&from=" + escape(window.location.pathname + window.location.search) + "&fromname=Previous Page"
+				}
 			}
 
 			function listener(evnt) {
 				evnt.stopPropagation()
 
 				var to = {
-					"Back": "/doclist",
+					"Back": {{if eq .From ""}}"/doclist"{{else}}{{.From}}{{end}},
 					"ToMenu": "/",
 				}[evnt.target.id]
 
@@ -44,14 +67,14 @@
 </head>
 <body>
 	<div id="Menu1">
-		<p><div id="Back" class="button">Back to Documentation</div></p>
+		<p><div id="Back" class="button">Back to {{if eq .From ""}}Documentation{{else}}Previous Page{{end}}</div></p>
 		<p><div id="ToMenu" class="button">To Main Menu</div></p>
 	</div>
 
-	{{.}}
+	{{.Body}}
 
 	<div id="Menu2">
-		<p><div id="Back" class="button">Back to Documentation</div></p>
+		<p><div id="Back" class="button">Back to {{if eq .From ""}}Documentation{{else}}Previous Page{{end}}</div></p>
 		<p><div id="ToMenu" class="button">To Main Menu</div></p>
 	</div>
 </body>

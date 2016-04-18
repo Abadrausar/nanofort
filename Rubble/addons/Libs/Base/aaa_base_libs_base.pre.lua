@@ -121,6 +121,7 @@ rubble.template("@FOREACH_LIST", [[
 		-- This is the exact procedure followed by the rubble template parser.
 		local chunk = rubble.expandvars(raws, '%', true, {key = k-1, val = v})
 		chunk = rubble.expandvars(chunk)
+		chunk = rubble.expandvars(chunk, '&', true)
 		out = out..rubble.parse(chunk)
 	end
 	return out
@@ -146,6 +147,7 @@ rubble.template("@FOREACH_TABLE", [[
 		-- This is the exact procedure followed by the rubble template parser.
 		local chunk = rubble.expandvars(raws, '%', true, {key = k, val = v})
 		chunk = rubble.expandvars(chunk)
+		chunk = rubble.expandvars(chunk, '&', true)
 		out = out..rubble.parse(chunk)
 	end
 	return out
@@ -166,6 +168,7 @@ rubble.template("@FOREACH", [[
 		-- This is the exact procedure followed by the rubble template parser.
 		local chunk = rubble.expandvars(raws, '%', true, {key = k, val = v})
 		chunk = rubble.expandvars(chunk)
+		chunk = rubble.expandvars(chunk, '&', true)
 		out = out..rubble.parse(chunk)
 	end
 	return out
@@ -185,6 +188,7 @@ rubble.template("@SET", [[
 	local name, value, expand = rubble.targs({...}, {"", "", "false"}, true)
 	if expand ~= "false" then
 		value = rubble.expandvars(value, "$", true)
+		chunk = rubble.expandvars(chunk, '&', true)
 	end
 	rubble.configvar(name, value)
 ]])
@@ -192,13 +196,13 @@ rubble.template("@SET", [[
 rubble.template("@GENERATE_ID", [[
 	local prefix = rubble.targs({...}, {""})
 	
-	local data = rubble.registry["Libs/Base:@GENERATE_ID"].table
-	local idx = tonumber(data[prefix])
+	local data = rubble.registry["Libs/Base:@GENERATE_ID"]
+	local idx = tonumber(data.table[prefix])
 	if idx == nil then
 		idx = -1
 	end
 	idx = idx + 1
-	data[prefix] = idx
+	data.table[prefix] = idx
 	
 	return prefix.."_"..idx
 ]])
@@ -223,5 +227,7 @@ rubble.template("#WARN", warn)
 
 rubble.template("@PARSE_TO", [[
 	local id, raws = rubble.targs({...}, {"", ""})
-	rubble.configvar(id, rubble.parse(raws))
+	local chunk = rubble.expandvars(raws)
+	chunk = rubble.expandvars(chunk, '&', true)
+	rubble.configvar(id, rubble.parse(chunk))
 ]])

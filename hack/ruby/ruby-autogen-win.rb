@@ -6276,6 +6276,8 @@ class SiteRealizationBuildingType < MemHack::Enum
     ENUM[18] = :HillockHouse ; NUME[:HillockHouse] = 18
     ENUM[19] = :MeadHall ; NUME[:MeadHall] = 19
     ENUM[20] = :FortressEntrance ; NUME[:FortressEntrance] = 20
+    ENUM[21] = :Library ; NUME[:Library] = 21
+    ENUM[22] = :Tavern ; NUME[:Tavern] = 22
 end
 
 class SiteShopType < MemHack::Enum
@@ -7918,6 +7920,8 @@ class TreeHouseType < MemHack::Enum
     ENUM[1] = :HomeTree ; NUME[:HomeTree] = 1
     ENUM[2] = :ShapingTree ; NUME[:ShapingTree] = 2
     ENUM[3] = :MarketTree ; NUME[:MarketTree] = 3
+    ENUM[4] = :Unknown1 ; NUME[:Unknown1] = 4
+    ENUM[5] = :Unknown2 ; NUME[:Unknown2] = 5
 end
 
 class TuningType < MemHack::Enum
@@ -8960,6 +8964,8 @@ class WrittenContentType < MemHack::Enum
     ENUM[9] = :Letter ; NUME[:Letter] = 9
     ENUM[10] = :Essay ; NUME[:Essay] = 10
     ENUM[11] = :Dialog ; NUME[:Dialog] = 11
+    ENUM[12] = :MusicalComposition ; NUME[:MusicalComposition] = 12
+    ENUM[13] = :Choreography ; NUME[:Choreography] = 13
 end
 
 class ZoomCommands < MemHack::Enum
@@ -11450,7 +11456,7 @@ class ArmyController < MemHack::Compound
         pointer {
         }
     }
-    field(:unk_5c, 92) {
+    field(:type, 92) {
         number 32, true
     }
 end
@@ -17043,10 +17049,10 @@ class CreatureInteractionEffectCanDoInteractionst < CreatureInteractionEffect
     }
 end
 
-class CreatureInteractionEffectChangePersonality < CreatureInteractionEffect
+class CreatureInteractionEffectChangePersonalityst < CreatureInteractionEffect
     sizeof 212
 
-    rtti_classname :creature_interaction_effect_change_personality
+    rtti_classname :creature_interaction_effect_change_personalityst
 
     field(:facets, 112) {
         static_array(50, 2, PersonalityFacetType) {
@@ -18456,32 +18462,32 @@ class DanceFormSub1 < MemHack::Compound
 end
 
 class DanceFormSub2 < MemHack::Compound
-    sizeof 72
+    sizeof 96
 
     field(:anon_1, 0) {
-        number 32, true
+        stl_string
     }
-    field(:anon_2, 4) {
+    field(:anon_2, 28) {
         stl_vector(4) {
             number 32, true
         }
     }
-    field(:anon_3, 20) {
+    field(:anon_3, 44) {
         stl_vector(4) {
             number 32, true
         }
     }
-    field(:anon_4, 36) {
+    field(:anon_4, 60) {
         stl_vector(4) {
             number 32, true
         }
     }
-    field(:anon_5, 52) {
+    field(:anon_5, 76) {
         stl_vector(4) {
             number 32, true
         }
     }
-    field(:anon_6, 68) {
+    field(:anon_6, 92) {
         number 32, true
     }
 end
@@ -25046,20 +25052,20 @@ class HistoricalFigureInfo < MemHack::Compound
                 field(:unk_10, 16) {
                     number 32, true
                 }
-                field(:anon_1, 20) {
+                field(:read_books, 20) {
+                    stl_vector(4) {
+                        number 32, true, -1
+                    }
+                }
+                field(:anon_1, 36) {
                     stl_vector(4) {
                         number 32, true
                     }
                 }
-                field(:anon_2, 36) {
-                    stl_vector(4) {
-                        number 32, true
-                    }
-                }
-                field(:anon_3, 52) {
+                field(:anon_2, 52) {
                     stl_vector(4) {
                         pointer {
-                            compound(:HistoricalFigureInfo_TSecret_TAnon3) {
+                            compound(:HistoricalFigureInfo_TSecret_TAnon2) {
                                 sizeof 24
 
                                 field(:anon_1, 0) {
@@ -25084,37 +25090,37 @@ class HistoricalFigureInfo < MemHack::Compound
                         }
                     }
                 }
-                field(:anon_4, 68) {
+                field(:anon_3, 68) {
                     stl_vector(4) {
                         pointer {
                             global :EntityEvent
                         }
                     }
                 }
-                field(:anon_5, 84) {
+                field(:anon_4, 84) {
                     stl_vector(4) {
                         number 32, true
                     }
                 }
-                field(:anon_6, 100) {
+                field(:anon_5, 100) {
                     stl_vector(4) {
                         number 32, true
                     }
                 }
-                field(:anon_7, 116) {
+                field(:anon_6, 116) {
                     stl_vector(4) {
                         number 32, true
                     }
                 }
-                field(:anon_8, 132) {
+                field(:anon_7, 132) {
                     stl_vector(4) {
                         number 32, true
                     }
                 }
-                field(:anon_9, 148) {
+                field(:anon_8, 148) {
                     stl_vector(4) {
                         pointer {
-                            compound(:HistoricalFigureInfo_TSecret_TAnon9) {
+                            compound(:HistoricalFigureInfo_TSecret_TAnon8) {
                                 sizeof 56
 
                                 field(:anon_1, 0) {
@@ -37612,14 +37618,14 @@ class PoeticForm < MemHack::Compound
     field(:anon_16, 196) {
         stl_vector(4) {
             pointer {
-                global :PoeticFormSub1
+                global :PoeticFormSub2
             }
         }
     }
 end
 
 class PoeticFormSub1 < MemHack::Compound
-    sizeof 288
+    sizeof 292
 
     field(:anon_1, 0) {
         number 32, true
@@ -37643,72 +37649,72 @@ class PoeticFormSub1 < MemHack::Compound
         number 32, true
     }
     field(:anon_8, 28) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:anon_9, 44) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:anon_10, 60) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:anon_11, 76) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:anon_12, 92) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:anon_13, 108) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:anon_14, 124) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:anon_15, 140) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:anon_16, 156) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:anon_17, 172) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:anon_18, 188) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:anon_19, 204) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:anon_20, 220) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:anon_21, 236) {
         number 32, true
+    }
+    field(:anon_9, 32) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_10, 48) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_11, 64) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_12, 80) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_13, 96) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_14, 112) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_15, 128) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_16, 144) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_17, 160) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_18, 176) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_19, 192) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_20, 208) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_21, 224) {
+        stl_vector(4) {
+            number 32, true
+        }
     }
     field(:anon_22, 240) {
         number 32, true
@@ -37717,12 +37723,12 @@ class PoeticFormSub1 < MemHack::Compound
         number 32, true
     }
     field(:anon_24, 248) {
+        number 32, true
+    }
+    field(:anon_25, 252) {
         stl_vector(4) {
             number 32, true
         }
-    }
-    field(:anon_25, 264) {
-        number 32, true
     }
     field(:anon_26, 268) {
         number 32, true
@@ -37737,6 +37743,9 @@ class PoeticFormSub1 < MemHack::Compound
         number 32, true
     }
     field(:anon_30, 284) {
+        number 32, true
+    }
+    field(:anon_31, 288) {
         number 32, true
     }
 end
@@ -39084,16 +39093,16 @@ class ResourceAllotmentSpecifierCropst < ResourceAllotmentSpecifier
 
     rtti_classname :resource_allotment_specifier_cropst
 
-    field(:anon_1, 16) {
-        number 32, true
+    field(:mat_type, 16) {
+        number 32, true, -1
     }
-    field(:anon_2, 20) {
+    field(:anon_1, 20) {
         number 32, true
     }
     field(:unk_v40_01, 24) {
         number 32, true
     }
-    field(:anon_3, 28) {
+    field(:anon_2, 28) {
         static_array(5, 4) {
             number 32, true
         }
@@ -46285,55 +46294,58 @@ class Unit < MemHack::Compound
             field(:enemy_status_slot, 1196) {
                 number 32, true, -1
             }
-            field(:unk_874_cntr, 1200) {
+            field(:unk_v4206_1, 1200) {
                 number 32, true
             }
-            field(:body_part_878, 1204) {
+            field(:unk_874_cntr, 1204) {
+                number 32, true
+            }
+            field(:body_part_878, 1208) {
                 stl_vector(1) {
                     number 8, false
                 }
             }
-            field(:body_part_888, 1220) {
+            field(:body_part_888, 1224) {
                 stl_vector(1) {
                     number 8, false
                 }
             }
-            field(:body_part_relsize, 1236) {
+            field(:body_part_relsize, 1240) {
                 stl_vector(4) {
                     number 32, true
                 }
             }
-            field(:body_part_8a8, 1252) {
+            field(:body_part_8a8, 1256) {
                 stl_vector(1) {
                     number 8, false
                 }
             }
-            field(:body_part_base_ins, 1268) {
+            field(:body_part_base_ins, 1272) {
                 stl_vector(2) {
                     number 16, false
                 }
             }
-            field(:body_part_clothing_ins, 1284) {
+            field(:body_part_clothing_ins, 1288) {
                 stl_vector(2) {
                     number 16, false
                 }
             }
-            field(:body_part_8d8, 1300) {
+            field(:body_part_8d8, 1304) {
                 stl_vector(2) {
                     number 16, false
                 }
             }
-            field(:unk_8e8, 1316) {
+            field(:unk_8e8, 1320) {
                 stl_vector
             }
-            field(:unk_8f8, 1332) {
+            field(:unk_8f8, 1336) {
                 stl_vector(2) {
                     number 16, false
                 }
             }
         }
     }
-    field(:recuperation, 3900) {
+    field(:recuperation, 3904) {
         compound(:Unit_TRecuperation) {
             field(:healing_rate, 0) {
                 stl_vector(4) {
@@ -46351,25 +46363,22 @@ class Unit < MemHack::Compound
             }
         }
     }
-    field(:weight, 3928) {
+    field(:weight, 3932) {
         number 32, true
     }
-    field(:weight_fraction, 3932) {
+    field(:weight_fraction, 3936) {
         number 32, true
     }
-    field(:burrows, 3936) {
+    field(:burrows, 3940) {
         stl_vector(4) {
             number 32, true, -1
         }
     }
     def burrows_tg ; burrows.map { |i| df.ui.burrows.list.binsearch(i) } ; end
-    field(:combat_side_id, 3952) {
+    field(:combat_side_id, 3956) {
         number 32, true
     }
-    field(:anon_4, 3956) {
-        number 32, true
-    }
-    field(:anon_5, 3960) {
+    field(:anon_4, 3960) {
         stl_vector
     }
     field(:adjective, 3976) {
@@ -46949,6 +46958,20 @@ class UnitComplaint < MemHack::Compound
     }
 end
 
+class UnitDanceSkill < MemHack::Compound
+    sizeof 12
+
+    field(:id, 0) {
+        number 32, true, -1
+    }
+    field(:rating, 4) {
+        number 32, true, nil, SkillRating
+    }
+    field(:experience, 8) {
+        number 32, true
+    }
+end
+
 class UnitDemand < MemHack::Compound
     sizeof 24
 
@@ -47303,6 +47326,20 @@ class UnitHealthInfo < MemHack::Compound
     }
 end
 
+class UnitInstrumentSkill < MemHack::Compound
+    sizeof 12
+
+    field(:id, 0) {
+        number 32, true, -1
+    }
+    field(:rating, 4) {
+        number 32, true, nil, SkillRating
+    }
+    field(:experience, 8) {
+        number 32, true
+    }
+end
+
 class UnitInventoryItem < MemHack::Compound
     sizeof 16
 
@@ -47404,6 +47441,20 @@ class UnitMiscTrait < MemHack::Compound
         number 16, true, nil, MiscTraitType
     }
     field(:value, 4) {
+        number 32, true
+    }
+end
+
+class UnitMusicalSkill < MemHack::Compound
+    sizeof 12
+
+    field(:id, 0) {
+        number 32, true, -1
+    }
+    field(:rating, 4) {
+        number 32, true, nil, SkillRating
+    }
+    field(:experience, 8) {
         number 32, true
     }
 end
@@ -47590,33 +47641,42 @@ class UnitPersonality < MemHack::Compound
     field(:unk_v4019_2, 240) {
         number 32, true
     }
-    field(:unk_v4201_1a, 244) {
+    field(:needs, 244) {
         stl_vector(4) {
             pointer {
-                compound(:UnitPersonality_TUnkV42011a) {
+                compound(:UnitPersonality_TNeeds) {
                     sizeof 16
 
-                    field(:unk_0, 0) {
-                        number 32, true
+                    field(:id, 0) {
+                        number 32, true, nil, NeedType
                     }
-                    field(:unk_4, 4) {
+                    field(:deity_id, 4) {
                         number 32, true, -1
                     }
-                    field(:unk_8, 8) {
+                    field(:focus_level, 8) {
                         number 32, true
                     }
-                    field(:unk_c, 12) {
+                    field(:need_level, 12) {
                         number 32, true
                     }
                 }
             }
         }
     }
-    field(:unk_v4201_1, 260) {
-        number 32, true
+    field(:flags, 260) {
+        compound(:UnitPersonality_TFlags) {
+            field(:_whole, 0) {
+                number 32, false
+            }
+            field(:has_unmet_needs, 0) { bit 1 }
+        }
     }
-    field(:unk_v4201_2, 264) {
-        number 32, true
+    field(:temporary_trait_changes, 264) {
+        pointer {
+            static_array(50, 2, PersonalityFacetType) {
+                number 16, true
+            }
+        }
     }
     field(:unk_v4201_3, 268) {
         number 32, true, -1
@@ -47624,10 +47684,24 @@ class UnitPersonality < MemHack::Compound
     field(:unk_v4201_4, 272) {
         number 32, true, -1
     }
-    field(:unk_v4201_5, 276) {
+    field(:current_focus, 276) {
         number 32, true
     }
-    field(:unk_v4201_6, 280) {
+    field(:undistracted_focus, 280) {
+        number 32, true
+    }
+end
+
+class UnitPoeticSkill < MemHack::Compound
+    sizeof 12
+
+    field(:id, 0) {
+        number 32, true, -1
+    }
+    field(:rating, 4) {
+        number 32, true, nil, SkillRating
+    }
+    field(:experience, 8) {
         number 32, true
     }
 end
@@ -47825,8 +47899,41 @@ class UnitSoul < MemHack::Compound
     field(:personality, 552) {
         global :UnitPersonality
     }
-    field(:unk_v42_1, 836) {
-        number 32, true
+    field(:perfomance_skills, 836) {
+        pointer {
+            compound(:UnitSoul_TPerfomanceSkills) {
+                sizeof 64
+
+                field(:musical_instruments, 0) {
+                    stl_vector(4) {
+                        pointer {
+                            global :UnitInstrumentSkill
+                        }
+                    }
+                }
+                field(:poetic_forms, 16) {
+                    stl_vector(4) {
+                        pointer {
+                            global :UnitPoeticSkill
+                        }
+                    }
+                }
+                field(:musical_forms, 32) {
+                    stl_vector(4) {
+                        pointer {
+                            global :UnitMusicalSkill
+                        }
+                    }
+                }
+                field(:dance_forms, 48) {
+                    stl_vector(4) {
+                        pointer {
+                            global :UnitDanceSkill
+                        }
+                    }
+                }
+            }
+        }
     }
 end
 
@@ -49127,6 +49234,103 @@ class ViewscreenGameCleanerst < Viewscreen
     }
 end
 
+class ViewscreenImageCreatorst < Viewscreen
+    sizeof 152
+
+    rtti_classname :viewscreen_image_creatorst
+
+    field(:title, 16) {
+        stl_string
+    }
+    field(:anon_1, 44) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:category_idx, 60) {
+        number 32, true
+    }
+    field(:category, 64) {
+        class ::DFHack::ViewscreenImageCreatorst_TCategory < MemHack::Enum
+            ENUM = Hash.new
+            NUME = Hash.new
+            ENUM[-1] = :None ; NUME[:None] = -1
+            ENUM[0] = :Unk0 ; NUME[:Unk0] = 0
+            ENUM[1] = :Histfig ; NUME[:Histfig] = 1
+            ENUM[2] = :Site ; NUME[:Site] = 2
+            ENUM[3] = :CivGroup ; NUME[:CivGroup] = 3
+            ENUM[4] = :Unk4 ; NUME[:Unk4] = 4
+            ENUM[5] = :ExistingImage ; NUME[:ExistingImage] = 5
+            ENUM[6] = :NewImage ; NUME[:NewImage] = 6
+        end
+
+        number 32, true, nil, ViewscreenImageCreatorst_TCategory
+    }
+    field(:item_idx, 68) {
+        number 32, true
+    }
+    field(:in_filter, 72) {
+        number 8, true, nil, BooleanEnum
+    }
+    field(:filter, 76) {
+        stl_string
+    }
+    field(:descriptions, 104) {
+        stl_vector(4) {
+            pointer {
+                compound(:ViewscreenImageCreatorst_TDescriptions) {
+                    sizeof 32
+
+                    field(:line, 0) {
+                        stl_string
+                    }
+                    field(:anon_1, 28) {
+                        number 32, true
+                    }
+                }
+            }
+        }
+    }
+    field(:site_info, 120) {
+        stl_vector(4) {
+            pointer {
+                compound(:ViewscreenImageCreatorst_TSiteInfo) {
+                    sizeof 84
+
+                    field(:anon_1, 0) {
+                        stl_string
+                    }
+                    field(:name, 28) {
+                        stl_string
+                    }
+                    field(:trans_name, 56) {
+                        stl_string
+                    }
+                }
+            }
+        }
+    }
+    field(:civ_info, 136) {
+        stl_vector(4) {
+            pointer {
+                compound(:ViewscreenImageCreatorst_TCivInfo) {
+                    sizeof 84
+
+                    field(:anon_1, 0) {
+                        stl_string
+                    }
+                    field(:name, 28) {
+                        stl_string
+                    }
+                    field(:trans_name, 56) {
+                        stl_string
+                    }
+                }
+            }
+        }
+    }
+end
+
 class ViewscreenItemst < Viewscreen
     sizeof 108
 
@@ -50228,7 +50432,7 @@ class ViewscreenLayerStoneRestrictionst < ViewscreenLayer
 end
 
 class ViewscreenLayerUnitActionst < ViewscreenLayer
-    sizeof 260
+    sizeof 304
 
     rtti_classname :viewscreen_layer_unit_actionst
 
@@ -50251,61 +50455,67 @@ class ViewscreenLayerUnitActionst < ViewscreenLayer
             }
         }
     }
-    field(:choice_items, 68) {
+    field(:anon_1, 68) {
+        stl_vector
+    }
+    field(:group_name, 84) {
+        stl_string
+    }
+    field(:choice_items, 112) {
         stl_vector(4) {
             pointer {
                 global :Item
             }
         }
     }
-    field(:sel_items, 84) {
+    field(:sel_items, 128) {
         stl_vector(4) {
             pointer {
                 global :Item
             }
         }
     }
-    field(:sel_reagents, 100) {
+    field(:sel_reagents, 144) {
         stl_vector(4) {
             number 32, true, -1
         }
     }
-    field(:cur_reaction, 116) {
+    field(:cur_reaction, 160) {
         pointer {
             global :Reaction
         }
     }
-    field(:reagent, 120) {
+    field(:reagent, 164) {
         number 32, true, -1
     }
-    field(:reagent_amnt_left, 124) {
+    field(:reagent_amnt_left, 168) {
         number 32, true
     }
-    field(:anon_1, 128) {
+    field(:anon_2, 172) {
         number 32, true
     }
-    field(:anon_2, 132) {
+    field(:anon_3, 176) {
         stl_vector
     }
-    field(:anon_3, 148) {
+    field(:anon_4, 192) {
         stl_vector
     }
-    field(:anon_4, 164) {
+    field(:anon_5, 208) {
         stl_vector
     }
-    field(:anon_5, 180) {
+    field(:anon_6, 224) {
         stl_vector
     }
-    field(:anon_6, 196) {
+    field(:anon_7, 240) {
         stl_vector
     }
-    field(:anon_7, 212) {
+    field(:anon_8, 256) {
         stl_vector
     }
-    field(:anon_8, 228) {
+    field(:anon_9, 272) {
         stl_vector
     }
-    field(:anon_9, 244) {
+    field(:anon_10, 288) {
         stl_vector
     }
 end
@@ -54834,11 +55044,7 @@ class World < MemHack::Compound
                 number 32, true
             }
             field(:unk_v40_5, 52) {
-                stl_vector(4) {
-                    pointer {
-                        stl_string
-                    }
-                }
+                stl_vector
             }
             field(:unk_v40_6, 68) {
                 number 32, true
@@ -57879,7 +58085,7 @@ class WorldSiteInhabitant < MemHack::Compound
 end
 
 class WorldSiteRealization < MemHack::Compound
-    sizeof 225636
+    sizeof 225720
 
     field(:buildings, 0) {
         stl_vector(4) {
@@ -57927,7 +58133,7 @@ class WorldSiteRealization < MemHack::Compound
             }
         }
     }
-    field(:unk_2d44, 11588) {
+    field(:river_map, 11588) {
         static_array(51, 204) {
             static_array(51, 4) {
                 pointer {
@@ -58087,7 +58293,7 @@ class WorldSiteRealization < MemHack::Compound
             }
         }
     }
-    field(:unk_v40_1, 71700) {
+    field(:flags_map, 71700) {
         static_array(51, 204) {
             static_array(51, 4) {
                 number 32, false
@@ -58140,6 +58346,7 @@ class WorldSiteRealization < MemHack::Compound
                             ENUM[5] = :Orchard ; NUME[:Orchard] = 5
                             ENUM[6] = :Woodland ; NUME[:Woodland] = 6
                             ENUM[7] = :Waste ; NUME[:Waste] = 7
+                            ENUM[8] = :Unknown1 ; NUME[:Unknown1] = 8
                         end
 
                         number 32, true, nil, WorldSiteRealization_TAreas_TType
@@ -58175,10 +58382,10 @@ class WorldSiteRealization < MemHack::Compound
     field(:anon_1, 103344) {
         number 32, true
     }
-    field(:anon_2, 103348) {
+    field(:army_controller_pos_x, 103348) {
         number 32, true
     }
-    field(:anon_3, 103352) {
+    field(:army_controller_pos_y, 103352) {
         number 32, true
     }
     field(:unk_193bc, 103356) {
@@ -58279,53 +58486,54 @@ class WorldSiteRealization < MemHack::Compound
     field(:num_unk_193bc, 225356) {
         number 32, true
     }
-    field(:anon_4, 225360) {
+    field(:anon_2, 225360) {
         number 32, true
     }
-    field(:anon_5, 225364) {
+    field(:anon_3, 225364) {
         number 32, true
     }
-    field(:building_type13, 225368) {
+    field(:building_well, 225368) {
         static_array(20, 4) {
             pointer {
                 global :SiteRealizationBuilding
             }
         }
     }
-    field(:num_building_type13, 225448) {
+    field(:num_building_well, 225448) {
         number 32, true
     }
-    field(:building_type5, 225452) {
+    field(:building_temple, 225452) {
         static_array(20, 4) {
             pointer {
                 global :SiteRealizationBuilding
             }
         }
     }
-    field(:num_building_type5, 225532) {
+    field(:num_building_temple, 225532) {
         number 32, true
     }
-    field(:building_shop_house, 225536) {
+    field(:building_type22, 225536) {
         static_array(20, 4) {
             pointer {
                 global :SiteRealizationBuilding
             }
         }
     }
-    field(:num_building_shop_house, 225616) {
+    field(:num_building_type22, 225616) {
         number 32, true
     }
-    field(:anon_6, 225620) {
+    field(:building_type21, 225620) {
+        static_array(20, 4) {
+            pointer {
+                global :SiteRealizationBuilding
+            }
+        }
+    }
+    field(:num_building_type21, 225700) {
         number 32, true
     }
-    field(:anon_7, 225624) {
-        number 32, true
-    }
-    field(:anon_8, 225628) {
-        number 32, true
-    }
-    field(:anon_9, 225632) {
-        number 32, true
+    field(:unk_wsr_vector, 225704) {
+        stl_vector
     }
 end
 

@@ -36,6 +36,10 @@ function rubble.libs_castes.newcaste(creature, id, desc_name, name, name_plur, p
 		desc = " "..desc
 	end
 	
+	if rubble.libs_castes.castes[creature][id] == nil then
+		table.insert(rubble.libs_castes.creature_castes[creature], id)
+	end
+	
 	rubble.libs_castes.castes[creature][id] =
 		"\t[CASTE:MALE_"..id.."]\n"..
 		"\t\t[DESCRIPTION:"..desc_name..rubble.libs_castes.creature_desc[creature]..desc.."]\n"..
@@ -44,7 +48,6 @@ function rubble.libs_castes.newcaste(creature, id, desc_name, name, name_plur, p
 		"\t\t[DESCRIPTION:"..desc_name..rubble.libs_castes.creature_desc[creature]..desc.."]\n"..
 		"\t\t[POP_RATIO:"..popf.."]\n"
 	
-	table.insert(rubble.libs_castes.creature_castes[creature], id)
 	rubble.libs_castes.bonuses[creature][id] = bonus
 	rubble.libs_castes.names[creature][id] = name
 	rubble.libs_castes.names_plur[creature][id] = name_plur

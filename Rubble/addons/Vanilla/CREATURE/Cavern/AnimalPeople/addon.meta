@@ -1,0 +1,5 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Creatures for subterranean animalpeople, The Furries",
+	"Activates": ["Libs/Base", "Libs/Castes"]
+}

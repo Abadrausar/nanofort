@@ -1,0 +1,4 @@
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": true, "NotNormal": false},
+"LoadPriority": 3100, "Name": "Uncle_Span___Leathery_Vegetables", "Version": "1.0", "Author": "Milo", "Header": "Huskshroom and Leather-leaf, plants  that gives you skin to tan or leather ready leafs",
+	"DescFile": "addon.md",
+	"Activates": ["Libs/Base"]}

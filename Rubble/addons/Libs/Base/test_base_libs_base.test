@@ -23,7 +23,13 @@ Hello Fun!
 <<<
 
 >>> @SET:
-{@SET;TEST;OK!}{ECHO;$TEST}
+{@SET;TEMP;OK!}{ECHO;$TEMP}
+===
+OK!
+<<<
+
+>>> @PARSE_TO:
+{@PARSE_TO;TEMP;OK!}{ECHO;$TEMP}
 ===
 OK!
 <<<
@@ -76,4 +82,16 @@ This also serves as a test of quoted parameters.
 "a" = 1,
 "b" = 2,
 "c" = 3,
+<<<
+
+>>> @GENERATE_ID:
+{@GENERATE_ID;TEST}
+{@GENERATE_ID;TEST}
+{@GENERATE_ID;TEST}
+{@GENERATE_ID;TEST}
+===
+TEST_0
+TEST_1
+TEST_2
+TEST_3
 <<<

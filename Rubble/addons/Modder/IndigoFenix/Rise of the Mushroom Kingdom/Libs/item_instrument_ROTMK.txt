@@ -1,0 +1,64 @@
+item_intrument_mw
+
+[OBJECT:ITEM]
+
+{!SHARED_ITEM;TOOL;BONGO_BODY_MW;
+	[NO_DEFAULT_JOB]
+	[INCOMPLETE_ITEM]
+	[UNIMPROVABLE]
+	[NAME:bongo drum:bongo drums]
+	[VALUE:10]
+	[WOOD_MAT]
+	[TILE:155]
+	[UNIMPROVABLE]
+	[SIZE:19550]
+	[MATERIAL_SIZE:3]
+	[DESCRIPTION:The bongo drums make up the bulk of the instrument.]
+}
+
+{!SHARED_ITEM;TOOL;BONGO_HEAD_MW;
+	[NO_DEFAULT_JOB]
+	[INCOMPLETE_ITEM]
+	[UNIMPROVABLE]
+	[NAME:bongo head:bongo heads]
+	[VALUE:10]
+	[LEATHER_MAT]
+	[TILE:155]
+	[UNIMPROVABLE]
+	[SIZE:3450]
+	[MATERIAL_SIZE:3]
+	[DESCRIPTION:The bongo heads are stretched over the instrument and used to produce sound.]
+}
+
+{!SHARED_ITEM;INSTRUMENT;BONGO_MW;
+	[NAME:bongoes:sets of bongoes]
+	[VALUE:50]
+	[SIZE:23000]
+	[DOMINANT_MATERIAL_PIECE:BODY_R]
+	[SOUND_PRODUCTION:STRUCK_BY_BP:HEAD_R]
+	[SOUND_PRODUCTION:STRUCK_BY_BP:HEAD_L]
+	[PITCH_CHOICE:SUBPART_CHOICE:HEAD_R]
+	[PITCH_CHOICE:SUBPART_CHOICE:HEAD_L]
+	[INSTRUMENT_PIECE:BODY_R:BONGO_BODY_MW:macho drum:macho drums:STANDARD]
+	[INSTRUMENT_PIECE:BODY_L:BONGO_BODY_MW:hembra drum:hembra drums:STANDARD]
+	[INSTRUMENT_PIECE:HEAD_R:BONGO_HEAD_MW:macho head:macho heads:STANDARD]
+	[INSTRUMENT_PIECE:HEAD_L:BONGO_HEAD_MW:hembra head:hembra heads:STANDARD]
+	[VOLUME_mB:0:10000]
+	[PITCH_RANGE:1200:3000]
+	[DESCRIPTION:The bongoes consist of a pair of small open bottomed drums of different sizes.  They are held between the knees and played by striking the heads with the hands to produce different pitches.]
+}
+
+{!SHARED_ITEM;INSTRUMENT;CONCH_MW;
+	[NAME:conch:conch]
+	[VALUE:50]
+	[SIZE:25000]
+	[MATERIAL_SIZE:3]
+	[HARD_MAT]
+	[SOUND_PRODUCTION:BLOW_OVER_OPENING_END:SELF]
+	[PITCH_CHOICE:SUBPART_CHOICE:SELF]
+	[VOLUME_mB:0:100000]
+	[PITCH_RANGE:-4200:-4300]
+	[TIMBRE:STRONG:CLEAR:SONOROUS]
+	[MUSIC_SKILL:PLAY_WIND_INSTRUMENT]
+	[DESCRIPTION:The conch is a wide-mouthed instrument made in the shape of a sea-creature's shell.  It is played by blowing through the narrow opening.]
+}

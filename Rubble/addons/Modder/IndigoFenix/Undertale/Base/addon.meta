@@ -1,0 +1,4 @@
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": false, "NotNormal": false},
+	"LoadPriority": 1100, "Name": "IndigoFenix___Undertale", "Version": "1.0.0_DF42.06+", "Author": "IndigoFenix, Rubble porting by Ababrausar", "Header": "This mod adds the monsters from the game Undertale as a playable race",
+	"DescFile": "addon.md",
+	"Activates": ["UNDERTALE"]}

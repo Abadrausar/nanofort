@@ -1,7 +1,5 @@
-{
-	"Header": "Removes all animalmen from active game, they will appears only in engravings and legends",
-	"Author": "Abadrausar",
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": true, "NotNormal": false},
+"LoadPriority": 3100, "Name": "Abadrausar_No_more_animalpeople", "Version": "1.0", "Author": "Abadrausar", "Header": "Removes all animalpeople from active game, they will appears only in engravings and legends.",
 	"Activates": [
-		"Libs/Base"
-	]
-}
+		"Libs/Base",
+		"Vanilla/CREATURE_VARIATION"]}

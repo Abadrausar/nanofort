@@ -1,0 +1,5 @@
+{"Tags": {"Library": true, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": false, "NotNormal": false},
+	"LoadPriority": 1100, "Name": "MODEST", "Version": "42.04+ 1a ASCII", "Author": "Button", "Header": "Collection of vital Vanilla bugfixes and tweaks that everyone should be able to use comfortably and without reservation.",
+#	"DescFile": "addon.md",
+	"Activates": ["VANILLA"]
+}

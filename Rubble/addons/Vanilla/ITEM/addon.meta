@@ -1,0 +1,5 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Vanilla ITEM raws library",
+	"Activates": ["Libs/Base"]
+}

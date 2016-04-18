@@ -1,5 +1,0 @@
-{
-	"Tags": {"Library": true},
-	"Header": "Adds metalua rubble scripting.",
-	"Activates": ["Libs/Base"]
-}

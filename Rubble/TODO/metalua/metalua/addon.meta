@@ -1,6 +1,0 @@
-{	"Header": "Adds metalua rubble scripting.",
-	"DescFile": "README_Metalua.md",
-	"Activates": [
-		"Libs/Base"
-	]
-}

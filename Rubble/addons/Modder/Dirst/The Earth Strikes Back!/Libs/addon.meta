@@ -1,0 +1,52 @@
+{"Tags": {"Library": true, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": true, "Dev": false, "NotNormal": false},
+	"LoadPriority": 1100, "Name": "TESB", "Version": "2.02", "Author": "Dirst", "Header": "Any miner knows that the surest way to prosperity is to strike the earth. Wise miners know that sometimes the earth strikes back.",
+#	"DescFile": "addon.md",
+	"Activates": ["Libs/Base", "VANILLA/Delta",
+		"Vanilla/BODY",
+		"Vanilla/BODY_DETAIL_PLAN",
+		"Vanilla/BOOK",
+		"Vanilla/CREATURE/Equipment",
+		"Vanilla/CREATURE_VARIATION",
+		"Vanilla/DESCRIPTOR_COLOR",
+		"Vanilla/DESCRIPTOR_PATTERN",
+		"Vanilla/DESCRIPTOR_PATTERN/Pupil",
+		"Vanilla/DESCRIPTOR_SHAPE",
+		"Vanilla/INORGANIC",
+		"Vanilla/INORGANIC/Minimal",
+		"Vanilla/INORGANIC/Minimal/Candy",
+		"Vanilla/INORGANIC/Minimal/Steel",
+		"Vanilla/INORGANIC/Minimal/Bronze",
+		"Vanilla/INORGANIC/Minimal/Bronze/Adventure_Coins",
+		"Vanilla/INTERACTION",
+		"Vanilla/MATERIAL_TEMPLATE",
+		"Vanilla/TISSUE_TEMPLATE"],
+"Vars": {
+	"TESB_LIVING_STONE": {
+		"Name": "Living Stone",
+		"Values": [ "COMMON", "RARE", "NEVER" ]
+		},
+	"TESB_HIDDEN_GEMS": {
+		"Name": "Hidden Gems",
+		"Values": [ "COMMON", "RARE", "NEVER" ]
+		# Setting this to NEVER will also convert Wyrm eyes to common gems.
+		},
+	"TESB_PET_ROCKS": {
+		"Name": "Pet Rocks",
+		"Values": [ "YES", "NO" ]
+		# Independent of Living Stone setting.
+		},
+	"TESB_PLANTS": {
+		"Name": "Gem Vines",
+		"Values": [ "YES", "NO" ]
+		# Suppressed if Hidden Gems are set to NEVER.
+		},
+	"TESB_SECRETS": {
+		"Name": "Secrets",
+		"Values": [ "YES", "NO" ]
+		},
+	"USE_GRAPHICS": {
+		"Name": "Creature Graphics",
+		"Values": [ "YES", "NO" ]
+		}
+	}
+}

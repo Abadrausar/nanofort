@@ -1,0 +1,1438 @@
+item_tools_crates_CD
+
+[OBJECT:ITEM]
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_IRON_HARD;
+	[NAME:crate of iron hard bars:crates of iron hard bars]
+	[VALUE:150]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_STEEL_WOOTZ;
+	[NAME:crate of steel wootz bars:crates of steel wootz bars]
+	[VALUE:350]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GOLD_BLACK;
+	[NAME:crate of gold black bars:crates of gold black bars]
+	[VALUE:230]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GOLD_WHITE;
+	[NAME:crate of gold white bars:crates of gold white bars]
+	[VALUE:230]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GOLD_RED;
+	[NAME:crate of gold red bars:crates of gold red bars]
+	[VALUE:230]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GOLD_CYAN;
+	[NAME:crate of gold cyan bars:crates of gold cyan bars]
+	[VALUE:230]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GOLD_GREEN;
+	[NAME:crate of gold green bars:crates of gold green bars]
+	[VALUE:230]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GOLD_BLUE;
+	[NAME:crate of gold blue bars:crates of gold blue bars]
+	[VALUE:230]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GOLD_PURPLE;
+	[NAME:crate of gold purple bars:crates of gold purple bars]
+	[VALUE:230]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GOLD;
+	[NAME:crate of gold bars:crates of gold bars]
+	[VALUE:300]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SILVER;
+	[NAME:crate of silver bars:crates of silver bars]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_NICKEL;
+	[NAME:crate of nickel bars:crates of nickel bars]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_ZINC;
+	[NAME:crate of zinc bars:crates of zinc bars]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BRASS;
+	[NAME:crate of brass bars:crates of brass bars]
+	[VALUE:70]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PLATINUM;
+	[NAME:crate of platinum bars:crates of platinum bars]
+	[VALUE:400]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_ELECTRUM;
+	[NAME:crate of electrum bars:crates of electrum bars]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_TIN;
+	[NAME:crate of tin bars:crates of tin bars]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PEWTER_FINE;
+	[NAME:crate of pewter fine bars:crates of pewter fine bars]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PEWTER_TRIFLE;
+	[NAME:crate of pewter trifle bars:crates of pewter trifle bars]
+	[VALUE:40]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PEWTER_LAY;
+	[NAME:crate of pewter lay bars:crates of pewter lay bars]
+	[VALUE:30]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_LEAD;
+	[NAME:crate of lead bars:crates of lead bars]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_ALUMINUM;
+	[NAME:crate of aluminum bars:crates of aluminum bars]
+	[VALUE:400]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_NICKEL_SILVER;
+	[NAME:crate of nickel silver bars:crates of nickel silver bars]
+	[VALUE:30]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BILLON;
+	[NAME:crate of billon bars:crates of billon bars]
+	[VALUE:60]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_STERLING_SILVER;
+	[NAME:crate of sterling silver bars:crates of sterling silver bars]
+	[VALUE:80]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_ROSE_GOLD;
+	[NAME:crate of rose gold bars:crates of rose gold bars]
+	[VALUE:230]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BISMUTH;
+	[NAME:crate of bismuth bars:crates of bismuth bars]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_LEVISIUM;
+	[NAME:crate of levisium bars:crates of levisium bars]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_MITHRIL;
+	[NAME:crate of mithril bars:crates of mithril bars]
+	[VALUE:1000]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_ORICHALCUM;
+	[NAME:crate of orichalcum bars:crates of orichalcum bars]
+	[VALUE:650]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GLACIUM;
+	[NAME:crate of glacium bars:crates of glacium bars]
+	[VALUE:900]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_INCENDIUM;
+	[NAME:crate of incendium bars:crates of incendium bars]
+	[VALUE:900]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_TEMPESTIUM;
+	[NAME:crate of tempestium bars:crates of tempestium bars]
+	[VALUE:900]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_EARTH_STEEL;
+	[NAME:crate of earth steel bars:crates of earth steel bars]
+	[VALUE:900]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_ELEMENTIUM;
+	[NAME:crate of elementium bars:crates of elementium bars]
+	[VALUE:2500]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_IRON;
+	[NAME:crate of iron bars:crates of iron bars]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_COPPER;
+	[NAME:crate of copper bars:crates of copper bars]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BRONZE;
+	[NAME:crate of bronze bars:crates of bronze bars]
+	[VALUE:50]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_STEEL;
+	[NAME:crate of steel bars:crates of steel bars]
+	[VALUE:300]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PIG_IRON;
+	[NAME:crate of pig iron bars:crates of pig iron bars]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BLACK_BRONZE;
+	[NAME:crate of black bronze bars:crates of black bronze bars]
+	[VALUE:110]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BISMUTH_BRONZE;
+	[NAME:crate of bismuth bronze bars:crates of bismuth bronze bars]
+	[VALUE:60]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GLASS_CRYSTAL;
+	[NAME:crate of glass crystal bars:crates of glass crystal bars]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GLASS_TEMPERED;
+	[NAME:crate of glass tempered bars:crates of glass tempered bars]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GLASS_BLOOD;
+	[NAME:crate of glass blood bars:crates of glass blood bars]
+	[VALUE:250]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GLASS_SOUL;
+	[NAME:crate of glass soul bars:crates of glass soul bars]
+	[VALUE:250]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GLASS_VOID;
+	[NAME:crate of glass void bars:crates of glass void bars]
+	[VALUE:400]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GLASS_DIAMOND;
+	[NAME:crate of glass diamond bars:crates of glass diamond bars]
+	[VALUE:750]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GLASS_MOON;
+	[NAME:crate of glass moon bars:crates of glass moon bars]
+	[VALUE:2500]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GLASS_STAR;
+	[NAME:crate of glass star bars:crates of glass star bars]
+	[VALUE:2500]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GLASS_FIRE;
+	[NAME:crate of glass fire bars:crates of glass fire bars]
+	[VALUE:900]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GLASS_FROST;
+	[NAME:crate of glass frost bars:crates of glass frost bars]
+	[VALUE:900]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GLASS_STORM;
+	[NAME:crate of glass storm bars:crates of glass storm bars]
+	[VALUE:900]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GLASS_STONE;
+	[NAME:crate of glass stone bars:crates of glass stone bars]
+	[VALUE:900]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_ONYX;
+	[NAME:crate of onyx gems:crates of onyx gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_MORION;
+	[NAME:crate of morion gems:crates of morion gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SCHORL;
+	[NAME:crate of schorl gems:crates of schorl gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_LACE_AGATE;
+	[NAME:crate of lace agate gems:crates of lace agate gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BLUE_JADE;
+	[NAME:crate of blue jade gems:crates of blue jade gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_LAPIS_LAZULI;
+	[NAME:crate of lapis lazuli gems:crates of lapis lazuli gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PRASE;
+	[NAME:crate of prase gems:crates of prase gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PRASE_OPAL;
+	[NAME:crate of prase opal gems:crates of prase opal gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BLOODSTONE;
+	[NAME:crate of bloodstone gems:crates of bloodstone gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_MOSS_AGATE;
+	[NAME:crate of moss agate gems:crates of moss agate gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_MOSS_OPAL;
+	[NAME:crate of moss opal gems:crates of moss opal gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_VARISCITE;
+	[NAME:crate of variscite gems:crates of variscite gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CHRYSOPRASE;
+	[NAME:crate of chrysoprase gems:crates of chrysoprase gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CHRYSOCOLLA;
+	[NAME:crate of chrysocolla gems:crates of chrysocolla gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SARD;
+	[NAME:crate of sard gems:crates of sard gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CARNELIAN;
+	[NAME:crate of carnelian gems:crates of carnelian gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BANDED_AGATE;
+	[NAME:crate of banded agate gems:crates of banded agate gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SARDONYX;
+	[NAME:crate of sardonyx gems:crates of sardonyx gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CHERRY_OPAL;
+	[NAME:crate of cherry opal gems:crates of cherry opal gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_LAVENDER_JADE;
+	[NAME:crate of lavender jade gems:crates of lavender jade gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PINK_JADE;
+	[NAME:crate of pink jade gems:crates of pink jade gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_TUBE_AGATE;
+	[NAME:crate of tube agate gems:crates of tube agate gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_FIRE_AGATE;
+	[NAME:crate of fire agate gems:crates of fire agate gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PLUME_AGATE;
+	[NAME:crate of plume agate gems:crates of plume agate gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BROWN_JASPER;
+	[NAME:crate of brown jasper gems:crates of brown jasper gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PICTURE_JASPER;
+	[NAME:crate of picture jasper gems:crates of picture jasper gems]
+	[VALUE:30]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SMOKY_QUARTZ;
+	[NAME:crate of smoky quartz gems:crates of smoky quartz gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_WAX_OPAL;
+	[NAME:crate of wax opal gems:crates of wax opal gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_WOOD_OPAL;
+	[NAME:crate of wood opal gems:crates of wood opal gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_AMBER_OPAL;
+	[NAME:crate of amber opal gems:crates of amber opal gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GOLD_OPAL;
+	[NAME:crate of gold opal gems:crates of gold opal gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CITRINE;
+	[NAME:crate of citrine gems:crates of citrine gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_YELLOW_JASPER;
+	[NAME:crate of yellow jasper gems:crates of yellow jasper gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_TIGEREYE;
+	[NAME:crate of tigereye gems:crates of tigereye gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_TIGER_IRON;
+	[NAME:crate of tiger iron gems:crates of tiger iron gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SUNSTONE;
+	[NAME:crate of sunstone gems:crates of sunstone gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_RESIN_OPAL;
+	[NAME:crate of resin opal gems:crates of resin opal gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PYRITE;
+	[NAME:crate of pyrite gems:crates of pyrite gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CLEAR_TOURMALINE;
+	[NAME:crate of clear tourmaline gems:crates of clear tourmaline gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GRAY_CHALCEDONY;
+	[NAME:crate of gray chalcedony gems:crates of gray chalcedony gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_DENDRITIC_AGATE;
+	[NAME:crate of dendritic agate gems:crates of dendritic agate gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SHELL_OPAL;
+	[NAME:crate of shell opal gems:crates of shell opal gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BONE_OPAL;
+	[NAME:crate of bone opal gems:crates of bone opal gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_WHITE_CHALCEDONY;
+	[NAME:crate of white chalcedony gems:crates of white chalcedony gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_FORTIFICATION_AGATE;
+	[NAME:crate of fortification agate gems:crates of fortification agate gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_MILK_QUARTZ;
+	[NAME:crate of milk quartz gems:crates of milk quartz gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_MOONSTONE;
+	[NAME:crate of moonstone gems:crates of moonstone gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_WHITE_JADE;
+	[NAME:crate of white jade gems:crates of white jade gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_JASPER_OPAL;
+	[NAME:crate of jasper opal gems:crates of jasper opal gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PINEAPPLE_OPAL;
+	[NAME:crate of pineapple opal gems:crates of pineapple opal gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_ONYX_OPAL;
+	[NAME:crate of onyx opal gems:crates of onyx opal gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_MILK_OPAL;
+	[NAME:crate of milk opal gems:crates of milk opal gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PIPE_OPAL;
+	[NAME:crate of pipe opal gems:crates of pipe opal gems]
+	[VALUE:100]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_AVENTURINE;
+	[NAME:crate of aventurine gems:crates of aventurine gems]
+	[VALUE:30]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_TURQUOISE;
+	[NAME:crate of turquoise gems:crates of turquoise gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_QUARTZ_ROSE;
+	[NAME:crate of quartz rose gems:crates of quartz rose gems]
+	[VALUE:30]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CRYSTAL_ROCK;
+	[NAME:crate of crystal rock gems:crates of crystal rock gems]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BLACK_ZIRCON;
+	[NAME:crate of black zircon gems:crates of black zircon gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BLACK_PYROPE;
+	[NAME:crate of black pyrope gems:crates of black pyrope gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_MELANITE;
+	[NAME:crate of melanite gems:crates of melanite gems]
+	[VALUE:150]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_INDIGO_TOURMALINE;
+	[NAME:crate of indigo tourmaline gems:crates of indigo tourmaline gems]
+	[VALUE:250]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BLUE_GARNET;
+	[NAME:crate of blue garnet gems:crates of blue garnet gems]
+	[VALUE:300]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_TSAVORITE;
+	[NAME:crate of tsavorite gems:crates of tsavorite gems]
+	[VALUE:300]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GREEN_TOURMALINE;
+	[NAME:crate of green tourmaline gems:crates of green tourmaline gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_DEMANTOID;
+	[NAME:crate of demantoid gems:crates of demantoid gems]
+	[VALUE:300]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GREEN_ZIRCON;
+	[NAME:crate of green zircon gems:crates of green zircon gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GREEN_JADE;
+	[NAME:crate of green jade gems:crates of green jade gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_HELIODOR;
+	[NAME:crate of heliodor gems:crates of heliodor gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PERIDOT;
+	[NAME:crate of peridot gems:crates of peridot gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_RED_ZIRCON;
+	[NAME:crate of red zircon gems:crates of red zircon gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_RED_TOURMALINE;
+	[NAME:crate of red tourmaline gems:crates of red tourmaline gems]
+	[VALUE:150]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_RED_PYROPE;
+	[NAME:crate of red pyrope gems:crates of red pyrope gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_ALMANDINE;
+	[NAME:crate of almandine gems:crates of almandine gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_RED_GROSSULAR;
+	[NAME:crate of red grossular gems:crates of red grossular gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PINK_TOURMALINE;
+	[NAME:crate of pink tourmaline gems:crates of pink tourmaline gems]
+	[VALUE:150]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_RED_BERYL;
+	[NAME:crate of red beryl gems:crates of red beryl gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_FIRE_OPAL;
+	[NAME:crate of fire opal gems:crates of fire opal gems]
+	[VALUE:150]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_RHODOLITE;
+	[NAME:crate of rhodolite gems:crates of rhodolite gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SPINEL_PURPLE;
+	[NAME:crate of spinel purple gems:crates of spinel purple gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_ALEXANDRITE;
+	[NAME:crate of alexandrite gems:crates of alexandrite gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_MORGANITE;
+	[NAME:crate of morganite gems:crates of morganite gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_VIOLET_SPESSARTINE;
+	[NAME:crate of violet spessartine gems:crates of violet spessartine gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PINK_GARNET;
+	[NAME:crate of pink garnet gems:crates of pink garnet gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_KUNZITE;
+	[NAME:crate of kunzite gems:crates of kunzite gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CINNAMON_GROSSULAR;
+	[NAME:crate of cinnamon grossular gems:crates of cinnamon grossular gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_HONEY_YELLOW_BERYL;
+	[NAME:crate of honey yellow beryl gems:crates of honey yellow beryl gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_JELLY_OPAL;
+	[NAME:crate of jelly opal gems:crates of jelly opal gems]
+	[VALUE:150]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BROWN_ZIRCON;
+	[NAME:crate of brown zircon gems:crates of brown zircon gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_YELLOW_ZIRCON;
+	[NAME:crate of yellow zircon gems:crates of yellow zircon gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GOLDEN_BERYL;
+	[NAME:crate of golden beryl gems:crates of golden beryl gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_YELLOW_SPESSARTINE;
+	[NAME:crate of yellow spessartine gems:crates of yellow spessartine gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_TOPAZ;
+	[NAME:crate of topaz gems:crates of topaz gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_TOPAZOLITE;
+	[NAME:crate of topazolite gems:crates of topazolite gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_YELLOW_GROSSULAR;
+	[NAME:crate of yellow grossular gems:crates of yellow grossular gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_RUBICELLE;
+	[NAME:crate of rubicelle gems:crates of rubicelle gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CLEAR_GARNET;
+	[NAME:crate of clear garnet gems:crates of clear garnet gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GOSHENITE;
+	[NAME:crate of goshenite gems:crates of goshenite gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CAT'S_EYE;
+	[NAME:crate of cat's eye gems:crates of cat's eye gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CLEAR_ZIRCON;
+	[NAME:crate of clear zircon gems:crates of clear zircon gems]
+	[VALUE:250]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_AMETHYST;
+	[NAME:crate of amethyst gems:crates of amethyst gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_AQUAMARINE;
+	[NAME:crate of aquamarine gems:crates of aquamarine gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SPINEL_RED;
+	[NAME:crate of spinel red gems:crates of spinel red gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CHRYSOBERYL;
+	[NAME:crate of chrysoberyl gems:crates of chrysoberyl gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_OPAL_PFIRE;
+	[NAME:crate of opal pfire gems:crates of opal pfire gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_OPAL_REDFLASH;
+	[NAME:crate of opal redflash gems:crates of opal redflash gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_OPAL_BLACK;
+	[NAME:crate of opal black gems:crates of opal black gems]
+	[VALUE:300]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_OPAL_WHITE;
+	[NAME:crate of opal white gems:crates of opal white gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_OPAL_CRYSTAL;
+	[NAME:crate of opal crystal gems:crates of opal crystal gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_OPAL_CLARO;
+	[NAME:crate of opal claro gems:crates of opal claro gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_OPAL_LEVIN;
+	[NAME:crate of opal levin gems:crates of opal levin gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_OPAL_HARLEQUIN;
+	[NAME:crate of opal harlequin gems:crates of opal harlequin gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_OPAL_PINFIRE;
+	[NAME:crate of opal pinfire gems:crates of opal pinfire gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_OPAL_BANDFIRE;
+	[NAME:crate of opal bandfire gems:crates of opal bandfire gems]
+	[VALUE:200]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_DIAMOND_LY;
+	[NAME:crate of diamond ly gems:crates of diamond ly gems]
+	[VALUE:300]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_DIAMOND_FY;
+	[NAME:crate of diamond fy gems:crates of diamond fy gems]
+	[VALUE:400]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_EMERALD;
+	[NAME:crate of emerald gems:crates of emerald gems]
+	[VALUE:400]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_RUBY;
+	[NAME:crate of ruby gems:crates of ruby gems]
+	[VALUE:400]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SAPPHIRE;
+	[NAME:crate of sapphire gems:crates of sapphire gems]
+	[VALUE:400]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_DIAMOND_CLEAR;
+	[NAME:crate of diamond clear gems:crates of diamond clear gems]
+	[VALUE:600]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_DIAMOND_RED;
+	[NAME:crate of diamond red gems:crates of diamond red gems]
+	[VALUE:600]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_DIAMOND_GREEN;
+	[NAME:crate of diamond green gems:crates of diamond green gems]
+	[VALUE:600]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_DIAMOND_BLUE;
+	[NAME:crate of diamond blue gems:crates of diamond blue gems]
+	[VALUE:600]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_DIAMOND_YELLOW;
+	[NAME:crate of diamond yellow gems:crates of diamond yellow gems]
+	[VALUE:600]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_DIAMOND_BLACK;
+	[NAME:crate of diamond black gems:crates of diamond black gems]
+	[VALUE:600]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SAPPHIRE_STAR;
+	[NAME:crate of sapphire star gems:crates of sapphire star gems]
+	[VALUE:600]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_RUBY_STAR;
+	[NAME:crate of ruby star gems:crates of ruby star gems]
+	[VALUE:600]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CRYSTAL_FIRE;
+	[NAME:crate of crystal fire gems:crates of crystal fire gems]
+	[VALUE:400]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CRYSTAL_FROST;
+	[NAME:crate of crystal frost gems:crates of crystal frost gems]
+	[VALUE:400]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CRYSTAL_STORM;
+	[NAME:crate of crystal storm gems:crates of crystal storm gems]
+	[VALUE:400]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CRYSTAL_STONE;
+	[NAME:crate of crystal stone gems:crates of crystal stone gems]
+	[VALUE:400]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_MARBLE;
+	[NAME:crate of marble boulders:crates of marble boulders]
+	[VALUE:20]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_OBSIDIAN;
+	[NAME:crate of obsidian boulders:crates of obsidian boulders]
+	[VALUE:30]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GRANITE;
+	[NAME:crate of granite boulders:crates of granite boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CLAYSTONE;
+	[NAME:crate of claystone boulders:crates of claystone boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_CONGLOMERATE;
+	[NAME:crate of conglomerate boulders:crates of conglomerate boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_DOLOMITE;
+	[NAME:crate of dolomite boulders:crates of dolomite boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_LIMESTONE;
+	[NAME:crate of limestone boulders:crates of limestone boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_MUDSTONE;
+	[NAME:crate of mudstone boulders:crates of mudstone boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SANDSTONE;
+	[NAME:crate of sandstone boulders:crates of sandstone boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SHALE;
+	[NAME:crate of shale boulders:crates of shale boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SILTSTONE;
+	[NAME:crate of siltstone boulders:crates of siltstone boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_DIORITE;
+	[NAME:crate of diorite boulders:crates of diorite boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GABBRO;
+	[NAME:crate of gabbro boulders:crates of gabbro boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_ANDESITE;
+	[NAME:crate of andesite boulders:crates of andesite boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_BASALT;
+	[NAME:crate of basalt boulders:crates of basalt boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_DACITE;
+	[NAME:crate of dacite boulders:crates of dacite boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_RHYOLITE;
+	[NAME:crate of rhyolite boulders:crates of rhyolite boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_GNEISS;
+	[NAME:crate of gneiss boulders:crates of gneiss boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_PHYLLITE;
+	[NAME:crate of phyllite boulders:crates of phyllite boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SCHIST;
+	[NAME:crate of schist boulders:crates of schist boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}
+
+{!SHARED_ITEM;TOOL;CRATE_ITEM_TOOL_SLATE;
+	[NAME:crate of slate boulders:crates of slate boulders]
+	[VALUE:10]
+	[TILE:147]
+	[SIZE:4000]
+}

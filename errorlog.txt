@@ -325,3 +325,33 @@ Unrecognized Inorganic Token: BLACK_BRONZE
 Unrecognized Inorganic Token: STERLING_SILVER
 *** Error(s) finalizing the reaction ROSE_GOLD_MAKING
 Unrecognized Inorganic Token: ROSE_GOLD
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+*** Error(s) found in the file "raw/objects/creature_insects.txt"
+BEETLE_MAN:Unrecognized Creature Copy (Order is important!): BEETLE
+BEETLE_MAN:Caste Selection Fails: MALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Caste Selection Fails: FEMALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Attack PUNCH seems to have correct format but could not find proper BPs in any caste, so not added
+BEETLE_MAN:Attack KICK seems to have correct format but could not find proper BPs in any caste, so not added
+GIANT_BEETLE:Unrecognized Creature Copy (Order is important!): BEETLE
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+*** Error(s) found in the file "data/save/region1/raw/objects/creature_insects.txt"
+BEETLE_MAN:Unrecognized Creature Copy (Order is important!): BEETLE
+BEETLE_MAN:Caste Selection Fails: MALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Caste Selection Fails: FEMALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Attack PUNCH seems to have correct format but could not find proper BPs in any caste, so not added
+BEETLE_MAN:Attack KICK seems to have correct format but could not find proper BPs in any caste, so not added
+GIANT_BEETLE:Unrecognized Creature Copy (Order is important!): BEETLE
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+*** Error(s) found in the file "raw/objects/creature_insects.txt"
+BEETLE_MAN:Unrecognized Creature Copy (Order is important!): BEETLE
+BEETLE_MAN:Caste Selection Fails: MALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Caste Selection Fails: FEMALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Attack PUNCH seems to have correct format but could not find proper BPs in any caste, so not added
+BEETLE_MAN:Attack KICK seems to have correct format but could not find proper BPs in any caste, so not added
+GIANT_BEETLE:Unrecognized Creature Copy (Order is important!): BEETLE

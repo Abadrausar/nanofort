@@ -1,0 +1,5 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Vanilla creature honey bees raws library",
+	"Activates": ["Libs/Base"]
+}

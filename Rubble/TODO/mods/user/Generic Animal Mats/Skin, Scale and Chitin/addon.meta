@@ -1,5 +1,0 @@
-<rubble:addonmeta
-	header=`Generic animal hide materials.`
-	
-	activates="Libs/Base;User/Generic Animal Mats"
->

@@ -1,0 +1,5 @@
+{
+	"Tags": {"Library": true},
+	"Header": "Vanilla LANGUAGE raws library",
+	"Activates": ["Libs/Base"]
+}
