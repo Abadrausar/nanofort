@@ -2,7 +2,7 @@ creature_boo
 
 [OBJECT:CREATURE]
 
-[CREATURE:MAJIN_BOO]
+{!SHARED_CREATURE;MAJIN_BOO;
 	[NAME:majin:majin:majin]
 	[CASTE_NAME:majin:majin:majin]
 	[DESCRIPTION:A creature created in the distant past by an evil wizard. He can regenerate himself from any situation.]
@@ -184,8 +184,9 @@ creature_boo
 			[CDI:MAX_TARGET_NUMBER:A:1]
 			[CDI:TARGET_VERB:turn into candy:turns into candy]
 			[CDI:WAIT_PERIOD:12000]
+}
 			
-[CREATURE:REGENERATE_CREATURE_DB]
+{!SHARED_CREATURE;REGENERATE_CREATURE_DB;
 	[ARENA_RESTRICTED]
 	[DESCRIPTION:He's regenerating!!!]'
 	[NAME:regenerating creature:regenerating creatures:regenerating]
@@ -206,8 +207,9 @@ creature_boo
 	[NO_SLEEP]
 	[NO_DIZZINESS]
 	[CASTE:DEFAULT]
+}
 	
-[CREATURE:CANDY_DB]
+{!SHARED_CREATURE;CANDY_DB;
 	[DESCRIPTION:It's a piece of candy!]'
 	[NAME:candy:candies:candy]
 	[CASTE_NAME:candy:candies:candy]
@@ -249,3 +251,4 @@ creature_boo
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CANDY]
 			[TL_COLOR_MODIFIER:YELLOW:1:RED:1:PINK:1:BLUE:1:ORANGE:1:LIME:1:CINNAMON:1:MOSS_GREEN:1:PLUM:1:AQUA:1:FLAX:1] flax is a great flavor for candy
 				[TLCM_NOUN:color/flavor:SINGULAR]
+}

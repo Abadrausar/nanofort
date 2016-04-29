@@ -1,0 +1,13 @@
+{"Tags": {"Library": true, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": true, "Dev": false, "NotNormal": false},
+	"LoadPriority": 1100, "Name": "1ST_DFSCRATCH", "Version": "2.4b", "Author": "Halfling", "Header": "DF from scratch..",
+#	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base"
+		],
+"Vars": {
+	"USE_GRAPHICS": {
+		"Name": "Creature Graphics",
+		"Values": [ "NO", "YES" ]
+		}
+	}
+}

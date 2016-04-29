@@ -1,0 +1,5 @@
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": true, "NotNormal": false},
+"LoadPriority": 5100, "Name": "Graphics___CLA", "Version": "1.0", "Author": "CLA", "Header": "Graphic set that tries to keep the simplicity and ease-of-recognition of ASCII-like tilesets and add a little beauty and variety of graphic sets.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base"]}

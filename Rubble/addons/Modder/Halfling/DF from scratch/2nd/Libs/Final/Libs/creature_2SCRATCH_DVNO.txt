@@ -1,0 +1,180 @@
+
+creature_DVNO
+
+[OBJECT:CREATURE]
+
+[CREATURE:DRETCH_DVNO]
+    [DESCRIPTION:A Civilized race of spider-like humanoids hailing from the darker places of the world. Be wary as they are as durable as an average mole and have a venomous bite.]
+    [NAME:dretch:dretches:dretchy]
+	[CASTE_NAME:dretch:dretches:dretchy]
+	[CREATURE_TILE:'D'][COLOR:7:0:0]
+	[BIOME:NOT_FREEZING]
+	[DIFFICULTY:2]
+	[POPULATION_NUMBER:600:20000]
+	[CLUSTER_NUMBER:1:20] 
+	[LARGE_ROAMING][LIKES_FIGHTING]
+	[PRONE_TO_RAGE:1]
+	[GRASSTRAMPLE:20]
+	[CANOPENDOORS]
+	[INTELLIGENT]
+	[LOCKPICKER]
+	[LISP]
+	[CARNIVORE]
+	[NO_EAT]
+
+	[BODY:BODY_CER:ORGANS_CER:HEAD_BUG_DVNO:TOOTH_EYES_CER:ARM_RIGHT_BIRD_CER:ARM_LEFT_BIRD_CER:FINGERS_6_CER:WINGS_2_CER:FOOTED_LEG_REAR_RIGHT_CER:FOOTED_LEG_REAR_LEFT_CER:FOOTED_LEG_FRONT_RIGHT_CER:FOOTED_LEG_FRONT_LEFT_CER:TOES_5_CER]
+    [BODY_DETAIL_PLAN:HEAD_MANDIBLES_DNVO]
+    [BODY_DETAIL_PLAN:PLAN_MATERIALS_CER]
+	[BODY_DETAIL_PLAN:PLAN_TISSUES_CER]
+	[BODY_DETAIL_PLAN:LAYERS_BASIC_CHITINOUS_DVNO]
+	[BODY_DETAIL_PLAN:LAYERS_ARMS_CER]
+	[BODY_DETAIL_PLAN:LAYERS_LEGS_NOFOOT_CER]
+	[BODY_DETAIL_PLAN:LAYERS_LEGS_NORMALFOOT_CER]
+	[BODY_DETAIL_PLAN:BONY_WINGS_CER]
+	[BODY_DETAIL_PLAN:LAYERS_TOOTH_CER]
+	[TENDONS:LOCAL_CREATURE_MAT:TENDON:400]
+	[LIGAMENTS:LOCAL_CREATURE_MAT:TENDON:400]
+	[BLOOD:BLOOD_TEMPLATE_HLG:LIQUID]
+	
+	// Added nails, if you don't mind :D ~ Cerapter
+	[USE_MATERIAL_TEMPLATE:NAIL:MATERIAL_NAIL_CER]
+	[USE_TISSUE_TEMPLATE:NAIL:TISSUE_NAIL_CER]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+
+	[PROFESSION_NAME:STANDARD:whelp:whelps]
+	[PROFESSION_NAME:CRAFTSMAN:dretch cobbler:dretch cobblers]
+	[PROFESSION_NAME:FISHERMAN:pond skimmer:pond skimmers]
+	[PROFESSION_NAME:HAMMERMAN:brute:brutes]
+	[PROFESSION_NAME:SPEARMAN:sticker:stickers]
+	[PROFESSION_NAME:CROSSBOWMAN:spray and prayer:spray and prayers]
+	[PROFESSION_NAME:AXEMAN:beserker:beserkers]
+	[PROFESSION_NAME:SWORDSMAN:dark knight:dark knights]
+	[PROFESSION_NAME:MACEMAN:mauler:maulers]
+	[PROFESSION_NAME:PIKEMAN:stab and slashers:stab and slashers]
+	[PROFESSION_NAME:BOWMAN:game hunter:game hunters]
+	[PROFESSION_NAME:MASTER_AXEMAN:alpha beserker:alpha beserkers]
+	[PROFESSION_NAME:MASTER_BOWMAN:alpha game hunter:alpha game hunters]
+	[PROFESSION_NAME:MASTER_CROSSBOWMAN:hit-dretch:hit-dretches]
+	[PROFESSION_NAME:MASTER_HAMMERMAN:alpha brute:alpha brute]
+	[PROFESSION_NAME:MASTER_MACEMAN:alpha mauler:alpha maulers]
+	[PROFESSION_NAME:MASTER_PIKEMAN:alpha stab 'n slasher:alpha stab 'n slasher]
+	[PROFESSION_NAME:MASTER_SPEARMAN:alpha sticker:alpha stickers]
+	[PROFESSION_NAME:MASTER_SWORDSMAN:hero dark kight:hero dark knights]
+	[PROFESSION_NAME:MASTER_THIEF:special oprative:special opratives]
+
+	// ----------------------------------
+	// Cerapter's message:
+	// In \raw\objects, there is a new folder called "notes". In it, there is a file
+	// With some basic speed stuff. Those lines are the end part of the gait tokens.
+	// Basically, if you want to set the creature to do something at X speed, you 
+	// Need to copy said speed's line after the action you want the creature to do at
+	// That speed.
+	
+	// So, for example, if you want your creature to move at the speed of 10 kph on legs,
+	// You'd write this line into the creature's file (with [] of course):
+	
+	APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:
+	
+	// And take this line from the gaits.txt in the notes folder:
+	
+	3512:2634:1756:878:4900:6900] 10 kph
+	
+	// And copy one after another in the creature file:///////
+	
+	APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:3512:2634:1756:878:4900:6900] 10 kph
+	
+	// Of course, if your creature walks on 4 legs, you'd use STANDARD_QUADRUPED_GAITS.
+	// The available gaits are in the c_variation_CER.txt file.
+	// Not writing any gaits will make the creature move at the speed of 1 (1 tile every 10 ticks,
+	// average speed in-game), so don't fret too much.
+	// You'll generally need a walking speed (BIPED / QUADRUPED / WALKING / WALK_CRAWL) a swimming
+	// speed, a climbing speed, a crawling speed and if your creature flies, a flying speed.
+	
+	// For the Dretch, I think you'll need this.
+	// Feel free to delete this message.
+	// ----------------------------------
+	
+	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:489:326:163:1900:2900]
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:900:718:537:313:1900:2900]
+	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:900:718:537:313:1900:2900]
+	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:900:734:568:366:1900:2900]
+	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:438:292:146:1900:2900]
+	
+
+	[USE_MATERIAL_TEMPLATE:VENOM:CREATURE_GOO_DVNO]
+		[STATE_NAME:ALL_SOLID:frozen dretch venom]
+		[STATE_ADJ:ALL_SOLID:frozen dretch venom]
+		[STATE_NAME:LIQUID:dretch venom]
+		[STATE_ADJ:LIQUID:dretch venom]
+		[STATE_NAME:GAS:boiling dretch venomious gas]
+		[STATE_ADJ:GAS:boiling dretch venomious gas]
+		[PREFIX:NONE]
+		[ENTERS_BLOOD]
+		[SYNDROME]
+			[SYN_NAME:Dretch bite]
+			[SYN_AFFECTED_CLASS:NATIVE]
+			[SYN_IMMUNE_CREATURE:DRETCH:ALL]
+			[SYN_INJECTED]
+			[CE_NECROSIS:SEV:100:PROB:37:RESISTABLE:SIZE_DILUTES:LOCALIZED:VASCULAR_ONLY:START:100:PEAK:500:END:2400]
+			[CE_NAUSEA:SEV:50:PROB:14:RESISTABLE:SIZE_DILUTES:START:50:PEAK:500:END:1500]
+			[CE_FEVER:SEV:50:PROB:14:RESISTABLE:SIZE_DILUTES:START:50:PEAK:500:END:1500]
+			[CE_PAIN:SEV:25:PROB:100:RESISTABLE:SIZE_DILUTES:LOCALIZED:VASCULAR_ONLY:START:100:PEAK:500:END:2400]
+	[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
+	[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
+
+	[CREATURE_CLASS:ANIMAL]
+	[CREATURE_CLASS:NATIVE]
+	[GETS_WOUND_INFECTIONS]
+	[GETS_INFECTIONS_FROM_ROT]
+	[BODY_SIZE:0:1:3000]
+	[BODY_SIZE:1:168:15000]
+	[BODY_SIZE:10:0:62500]
+	[BODY_SIZE:15:0:65000]
+	[MAXAGE:70:90]
+        [ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:FIRST]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PRIORITY:MAIN]
+		[ATTACK_FLAG_CANLATCH]
+		[SPECIALATTACK_INJECT_EXTRACT:LOCAL_CREATURE_MAT:VENOM:LIQUID:100:100]
+	[EQUIPS]
+	[DIURNAL]
+	[SMELL_TRIGGER:80]
+	[HOMEOTHERM:10067]
+	[MUNDANE]
+	[ALL_ACTIVE]
+	[SWIMS_INNATE]
+	[CASTE:FEMALE]
+		[FEMALE]
+		[ORIENTATION:MALE:0:100:5]
+		[LAYS_EGGS]
+		[LAYS_EGGS]
+		[EGG_SIZE:5000]
+		[EGG_MATERIAL:LOCAL_CREATURE_MAT:KERATIN:SOLID]
+		[CLUTCH_SIZE:1:20]
+	[CASTE:MALE]
+		[MALE]
+		[NOFEAR]
+		[ORIENTATION:FEMALE:0:100:5]

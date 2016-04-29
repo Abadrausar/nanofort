@@ -1,0 +1,4 @@
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": false, "NotNormal": false},
+	"LoadPriority": 1999, "Name": "___________________________________________", "Version": "1.0", "Author": "Ababrausar", "Header": "______________________(Not_Composable_mods)_incompatibles_with_all others_____________________",
+#	"DescFile": "addon.md",
+	"Activates": ["Libs/Base"]}

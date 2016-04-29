@@ -1,0 +1,5 @@
+body_rcp
+
+# Automatically generated, do not edit!
+# Source: addons:dir:Vanilla/Libs/body_rcp.txt
+Empty

@@ -2,7 +2,7 @@ creature_domestic_dragonball
 
 [OBJECT:CREATURE]
 
-	[CREATURE:SAIBAMEN_DB]
+	{!SHARED_CREATURE;SAIBAMEN_DB;
 		[NAME:saibaman:saibamen:saibaman]
 		[CASTE_NAME:saibaman:saibamen:saibaman]
 		[CREATURE_TILE:'s']
@@ -177,3 +177,4 @@ creature_domestic_dragonball
 				[CDI:TARGET_RANGE:C:5]
 				[CDI:MAX_TARGET_NUMBER:C:1]
 				[CDI:WAIT_PERIOD:1200]
+}

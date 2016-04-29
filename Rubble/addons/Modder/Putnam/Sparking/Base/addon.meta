@@ -1,4 +1,4 @@
 {"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": true, "Dev": false, "NotNormal": false},
-"LoadPriority": 1100, "Name": "Putnam___Sparking", "Version": "42.01+", "Author": "Putnam, Rubble porting by Abadrausar", "Header": "Complete dragonball lore.",
+"LoadPriority": 400, "Name": "Putnam___Sparking", "Version": "42.01+", "Author": "Putnam, Rubble porting by Abadrausar", "Header": "Complete dragonball lore.",
 	"DescFile": "addon.md",
 	"Activates": ["SPARKING"]}

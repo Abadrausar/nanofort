@@ -1,0 +1,18 @@
+descriptor_shape_standard
+
+[OBJECT:DESCRIPTOR_SHAPE]
+
+[SHAPE:CUBE_BSK]
+	[NAME:cube:cubes]
+	[GEMS_USE_NOUN]
+	[TILE:4]
+
+[SHAPE:SPHERE_BSK]
+	[NAME:sphere:spheres]
+	[GEMS_USE_NOUN]
+	[TILE:4]
+
+[SHAPE:CONE_BSK]
+	[NAME:cone:cones]
+	[GEMS_USE_NOUN]
+	[TILE:4]

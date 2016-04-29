@@ -69,7 +69,7 @@ local objects = {
 	{rubble.filters.b_detail_plan, "!SHARED_", {"BODY_DETAIL_PLAN"}, "", ""},
 	{rubble.filters.interaction, "!SHARED_", {"INTERACTION"}, "", ""},
 	{rubble.filters.body, "!SHARED_", {"BODY"}, "", ""},
-	{rubble.filters.reaction, "!SHARED_", {"REACTION"}, ";NULL", ""},
+	{rubble.filters.reaction, "!SHARED_", {"REACTION"}, ";ADDON_HOOK_PLAYABLE", ""},
 	{rubble.filters.building, "!SHARED_", {"BUILDING_WORKSHOP", "BUILDING_FURNACE"}, ";NULL", ""},
 	{rubble.filters.entity, "!SHARED_", {"ENTITY"}, ";false;false", ""},
 	{rubble.filters.language, "!SHARED_", {"TRANSLATION", "SYMBOL", "WORD"}, "", ""},

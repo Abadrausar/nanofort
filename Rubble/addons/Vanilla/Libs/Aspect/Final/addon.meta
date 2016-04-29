@@ -1,0 +1,8 @@
+{	"Tags": {"Library": true},
+	"Header": "Mark an addon as final or not composable",
+	"Author": " Ababrausar",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base" 
+		],
+	"Incompatible": ["VANILLA/Aspect/Composable"]}

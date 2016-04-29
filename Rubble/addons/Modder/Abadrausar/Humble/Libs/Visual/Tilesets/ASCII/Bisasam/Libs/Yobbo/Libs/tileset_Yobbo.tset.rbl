@@ -1,0 +1,6 @@
+
+[AUX_FILE:INIT.TXT]
+	[FONT:graphics_HUMBLE_Yobbo_20x20.png]
+	[FULLFONT:graphics_HUMBLE_Yobbo_20x20.png]
+	[GRAPHICS_FONT:graphics_HUMBLE_Yobbo_20x20.png]
+	[GRAPHICS_FULLFONT:graphics_HUMBLE_Yobbo_20x20.png]

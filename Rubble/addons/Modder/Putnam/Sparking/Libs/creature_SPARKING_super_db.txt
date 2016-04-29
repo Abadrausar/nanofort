@@ -2,7 +2,7 @@ creature_super_db
 
 [OBJECT:CREATURE]
 
-[CREATURE:BEERUS_DB]
+{!SHARED_CREATURE;BEERUS_DB;
 	[NAME:God of Destruction:Gods of Destruction:God of Destruction]
 	[CASTE_NAME:God of Destruction:Gods of Destruction:God of Destruction]
 	[CREATURE_TILE:'B']
@@ -184,3 +184,4 @@ creature_super_db
 	[SELECT_MATERIAL:BLOOD]
 	  [PLUS_MATERIAL:PUS]
 	    [MELTING_POINT:10000]
+}

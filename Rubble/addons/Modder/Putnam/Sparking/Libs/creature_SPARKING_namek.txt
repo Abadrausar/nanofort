@@ -1,6 +1,6 @@
 creature_namek
 [OBJECT:CREATURE]
-	[CREATURE:NAMEK]
+	{!SHARED_CREATURE;NAMEK;
 		[NAME:namekian:namekians:namekian]
 		[CASTE_NAME:namekian:namekians:namekian]
 		[DESCRIPTION:A medium-large creature with regenerative powers and great fighting skills.]
@@ -197,3 +197,4 @@ creature_namek
                 [CDI:ADV_NAME:Do this to yourself]
                 [CDI:TARGET:A:LINE_OF_SIGHT]
                 [CDI:WAIT_PERIOD:2000]
+}

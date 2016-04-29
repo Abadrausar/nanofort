@@ -1,0 +1,4 @@
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": true, "Dev": false, "NotNormal": false},
+"LoadPriority": 1100, "Name": "Putnam___Fantastic_MiniMods", "Version": "1.0", "Author": "Putnam", "Header": "Fantastic_MiniMods includes Materials Plus, Microreduce and Secrets n curses",
+	"DescFile": "addon.md",
+	"Activates": ["FANTASTIC"]}

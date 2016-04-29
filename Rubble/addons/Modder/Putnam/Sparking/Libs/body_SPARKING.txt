@@ -1,6 +1,6 @@
 body_dragonball
 [OBJECT:BODY]
-	[BODY:CELL]
+	{!SHARED_BODY;CELL;
 		[BP:HD:head:STP]
 			without that head token, there are a few bugs fixed
 			[CATEGORY:HEAD]
@@ -135,7 +135,8 @@ body_dragonball
 			[DEFAULT_RELSIZE:20]
 		[BP:TONGUE:tongue:STP][CON:MOUTH][CATEGORY:TONGUE][SMALL]
 			[DEFAULT_RELSIZE:20]
-[BODY:CELL_BRAIN]
+}
+{!SHARED_BODY;CELL_BRAIN;
 	[BP:BRAIN:nucleus:STP][CON:HD][THOUGHT][INTERNAL][SMALL][CATEGORY:BRAIN]
 		[DEFAULT_RELSIZE:1]
 	[BP:SKULL:skull:STP]
@@ -147,8 +148,9 @@ body_dragonball
 		[TOTEMABLE]
 	[BP:NOSE:nose:STP][CON:HD][SMELL][SMALL][CATEGORY:NOSE] only buu and cell use the cell parts, and only cell has a nose, so... (so what? friggin past me was awful at comments)
 		[DEFAULT_RELSIZE:10]
+}
 		
-	[BODY:HUMANOID_WITH_NO_DEATH_DB]
+	{!SHARED_BODY;HUMANOID_WITH_NO_DEATH_DB;
 		[BP:UB:upper body:upper bodies]
 			[UPPERBODY]
 			[CATEGORY:BODY_UPPER]
@@ -298,8 +300,9 @@ body_dragonball
 			[DEFAULT_RELSIZE:2]
 		[BP:R_EYELID:right eyelid:STP][CON:HD][CATEGORY:EYELID][SMALL][EMBEDDED]
 			[DEFAULT_RELSIZE:2]
+}
 			
-[BODY:FACIAL_FEATURES_SPECIAL_DB]
+{!SHARED_BODY;FACIAL_FEATURES_SPECIAL_DB;
 	[BP:L_CHEEK:left cheek:STP][CON:HD][CATEGORY:CHEEK][SMALL][EMBEDDED]
 		[DEFAULT_RELSIZE:10]
 	[BP:R_CHEEK:right cheek:STP][CON:HD][CATEGORY:CHEEK][SMALL][EMBEDDED]
@@ -312,7 +315,8 @@ body_dragonball
 		[DEFAULT_RELSIZE:6]
 	[BP:U_LIP:upper lip:STP][CON:HD][CATEGORY:LIP][SMALL][EMBEDDED]
 		[DEFAULT_RELSIZE:6]
-	[BODY:CELL_2EARS]
+}
+	{!SHARED_BODY;CELL_2EARS;
 		[BP:R_EAR:right ear:STP]
 			[CON:HD] goddamned contypes
 			[HEAR]
@@ -329,7 +333,8 @@ body_dragonball
 			[LEFT]
 			[CATEGORY:EAR]
 			[DEFAULT_RELSIZE:25]
-	[BODY:TEETH_SPECIAL_DB]
+}
+	{!SHARED_BODY;TEETH_SPECIAL_DB;
 		[BP:U_F_TOOTH:upper front tooth:upper front teeth]
 			[CON:HD]
 			[CATEGORY:TOOTH]
@@ -400,12 +405,14 @@ body_dragonball
 			[INDIVIDUAL_NAME:second lower left premolar:STP]
 			[INDIVIDUAL_NAME:first lower left molar:STP]
 			[INDIVIDUAL_NAME:second lower left molar:STP]
-	[BODY:TAIL_CELL]
+}
+	{!SHARED_BODY;TAIL_CELL;
 		[BP:TAIL:tail:STP]
 			[CON:LB]
 			[CATEGORY:TAIL]
 			[DEFAULT_RELSIZE:100]
-	[BODY:2WINGS_FUNCTIONLESS]
+}
+	{!SHARED_BODY;2WINGS_FUNCTIONLESS;
 		[BP:RWING:right wing:STP]
 			[CON:UB]
 			[LIMB]
@@ -418,7 +425,8 @@ body_dragonball
 			[LEFT]
 			[CATEGORY:WING]
 			[DEFAULT_RELSIZE:500]
-	[BODY:PSYCHIC_EYES]
+}
+	{!SHARED_BODY;PSYCHIC_EYES;
 		[BP:REYEP:second right eye:STP]
 			[CONTYPE:HEAD]
 			[SIGHT]
@@ -437,16 +445,19 @@ body_dragonball
 			[GRASP]
 			[CATEGORY:EYE]
 			[DEFAULT_RELSIZE:5]
-	[BODY:TAIL_PREHENSILE]
+}
+	{!SHARED_BODY;TAIL_PREHENSILE;
 		[BP:TAIL:tail:STP]
 			[CONTYPE:LOWERBODY]
 			[LIMB]
 			[CATEGORY:TAIL]
 			[DEFAULT_RELSIZE:100]
-    [BODY:WEAPON_DB]
+}
+    {!SHARED_BODY;WEAPON_DB;
         [BP:WEAPON:weapon:STP]
             [CON:RH]
             [RIGHT]
             [CATEGORY:WEAPON]
             [DEFAULT_RELSIZE:500]
 	[BODYGLOSS:NUCLEUS:brain:nucleus:brains:nuclei]
+}

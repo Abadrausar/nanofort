@@ -1,6 +1,6 @@
 item_weapon_dragonball
 [OBJECT:ITEM]
-	[ITEM_WEAPON:ITEM_WEAPON_TREECHOPPER_DB]
+	{!SHARED_ITEM;WEAPON;ITEM_WEAPON_TREECHOPPER_DB;
 		[NAME:treechopper:treechoppers]
 		[SIZE:5]
 		[SKILL:AXE]
@@ -10,7 +10,8 @@ item_weapon_dragonball
 		[TRAINING]
 		[ATTACK:EDGE:1:1:whack:whacks ineffectively:NO_SUB:50]
 			[ATTACK_PREPARE_AND_RECOVER:3:3]
-	[ITEM_WEAPON:ITEM_WEAPON_DIGFISTS_DB]
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
+	{!SHARED_ITEM;WEAPON;ITEM_WEAPON_DIGFISTS_DB;
 		[NAME:mining gauntlets:mining gauntlets]
 		[SIZE:5]
 		[SKILL:MINING]
@@ -21,3 +22,4 @@ item_weapon_dragonball
 			[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK:BLUNT:10:1000:punch:punches:right gauntlet:2500]
 			[ATTACK_PREPARE_AND_RECOVER:3:3]
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}

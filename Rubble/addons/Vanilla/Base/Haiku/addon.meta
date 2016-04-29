@@ -25,6 +25,8 @@
 		"Vanilla/ITEM",
 		"Vanilla/LANGUAGE",
 		"Vanilla/MATERIAL_TEMPLATE",
+		"Vanilla/PLANT/Minimal",
+		"Vanilla/PLANT/Extreme",
 		"Vanilla/REACTION",
 		"Vanilla/SECRET",
 		"Vanilla/TISSUE_TEMPLATE"]}

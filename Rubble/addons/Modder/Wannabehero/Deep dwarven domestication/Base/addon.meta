@@ -1,5 +1,5 @@
-{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": true, "NotNormal": false},
-	"LoadPriority": 3100, "Name": "Wannabehero___Deep_Dwarven_Domestication", "Version": "1.0_DF42.01+", "Author": "GM-X, Rubble porting by Ababrausar", "Header": "Diverse and thematic domestic animals. It also enables generic honey, the use of nail as a kind of horn, chitin as shell and feathers as pearls.",
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": false, "NotNormal": false},
+	"LoadPriority": 1100, "Name": "Wannabehero___Deep_Dwarven_Domestication", "Version": "1.0_DF42.01+", "Author": "GM-X, Rubble porting by Ababrausar", "Header": "Diverse and thematic domestic animals. It also enables generic honey, the use of nail as a kind of horn, chitin as shell and feathers as pearls.",
 "DescFile": "addon.md",
 "Activates": [
 		"Libs/Base", 

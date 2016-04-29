@@ -1,7 +1,7 @@
 creature_fanciful_dragonball
 
 [OBJECT:CREATURE]
-	[CREATURE:KAI]
+	{!SHARED_CREATURE;KAI;
 		[NAME:shin-jin:shin-jin:shin-jin]
 		[DESCRIPTION:A race of beings from the planet Kaishin.]
 		[CREATURE_TILE:'K']
@@ -155,3 +155,4 @@ creature_fanciful_dragonball
 			[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 				[TL_COLOR_MODIFIER:BLUE:1:GREEN:1:PURPLE:1:RED:1:PEACH:1:ORANGE:1]
 					[TLCM_NOUN:skin:SINGULAR]
+}

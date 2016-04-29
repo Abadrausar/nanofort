@@ -2,7 +2,7 @@ creature_android
 
 [OBJECT:CREATURE]
 
-[CREATURE:ANDROID_DB]
+{!SHARED_CREATURE;ANDROID_DB;
 		[NAME:android:androids:android]
 		[CASTE_NAME:android:androids:android]
 		[CREATURE_TILE:'A']
@@ -282,3 +282,4 @@ creature_android
                 [ATTACK_FLAG_EDGE]
                 [ATTACK_PRIORITY:SECOND]
                 [ATTACK_FLAG_CANLATCH]
+}

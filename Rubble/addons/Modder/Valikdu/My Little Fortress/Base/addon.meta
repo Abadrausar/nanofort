@@ -1,4 +1,4 @@
 {"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": false, "NotNormal": false},
-	"LoadPriority": 1100, "Name": "Valikdu___My_Little_Fortress", "Version": "1.0", "Author": "Valikdu", "Header": "Attempt at expanding and enhancing the original MLP mod by Nidokoenig.",
+	"LoadPriority": 400, "Name": "Valikdu___My_Little_Fortress", "Version": "1.0", "Author": "Valikdu", "Header": "Attempt at expanding and enhancing the original MLP mod by Nidokoenig.",
 	"DescFile": "addon.md",
 	"Activates": [ "PONY"]}

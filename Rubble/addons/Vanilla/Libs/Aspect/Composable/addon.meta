@@ -1,0 +1,9 @@
+{	"Tags": {"Library": true},
+	"Header": "Mark an addon as Composable with others",
+	"Author": " Ababrausar",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base" 
+		],
+	"Incompatible": []
+}

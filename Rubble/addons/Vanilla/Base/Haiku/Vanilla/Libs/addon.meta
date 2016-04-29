@@ -3,6 +3,7 @@
 #	"DescFile": "addon.md",
 	"Activates": [ "Libs/Base", "Libs/Castes",
 		"VANILLA/Delta",
+		"VANILLA/Aspect/Composable",
 		"Vanilla/BODY",
 		"Vanilla/BODY_DETAIL_PLAN",
 		"Vanilla/BOOK",

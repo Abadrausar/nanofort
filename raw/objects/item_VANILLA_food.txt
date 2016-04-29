@@ -1,0 +1,17 @@
+item_VANILLA_food
+
+# Automatically generated, do not edit!
+# Source: addons:dir:Vanilla/ITEM/item_VANILLA_food.txt
+[OBJECT:ITEM]
+
+[ITEM_FOOD:ITEM_FOOD_BISCUITS]
+	[NAME:biscuits]
+	[LEVEL:2]
+
+[ITEM_FOOD:ITEM_FOOD_STEW]
+	[NAME:stew]
+	[LEVEL:3]
+
+[ITEM_FOOD:ITEM_FOOD_ROAST]
+	[NAME:roast]
+	[LEVEL:4]

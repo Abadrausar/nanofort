@@ -1,0 +1,7 @@
+{"Tags": {"Library": true, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": true, "NotNormal": false},
+"LoadPriority": 3100, "Name": "Abadrausar___All_year_around_subterranean_crops", "Version": "1.0", "Author": "Abadrausar", "Header": "Subterranean crops are growable all year around.",
+	"Activates": [
+		"Libs/Base",
+		"Vanilla/PLANT",
+		"Vanilla/PLANT/Minimal",
+		"Vanilla/PLANT/Extreme"]}

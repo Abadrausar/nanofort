@@ -1,6 +1,6 @@
 language_FRIEZA
 [OBJECT:LANGUAGE]
-	[TRANSLATION:FRIEZA]
+	{!SHARED_TRANSLATION;FRIEZA;
 		[T_WORD:ABATE:eberony]
 		[T_WORD:ABBEY:elonce]
 		[T_WORD:ABSOLUTE:nano]
@@ -2174,3 +2174,4 @@ language_FRIEZA
 		[T_WORD:ZEALOT:whori]
 		[T_WORD:ZENITH:arbaran]
 		[T_WORD:ZEPHYR:but]
+}

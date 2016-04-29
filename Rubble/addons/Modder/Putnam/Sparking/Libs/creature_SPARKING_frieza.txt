@@ -1,6 +1,6 @@
 creature_frieza
 [OBJECT:CREATURE]
-	[CREATURE:FRIEZA]
+	{!SHARED_CREATURE;FRIEZA;
 		[NAME:planet trade organization member:Planet Trade Organization:planet trade]
 		[INTELLIGENT]
 		[CANOPENDOORS]
@@ -256,3 +256,4 @@ creature_frieza
 			[CREATURE_CLASS:FRIEZA]
 		[SELECT_CASTE:ALL]
 		[APPLY_CREATURE_VARIATION:HUMANOID_MARTIAL_ARTS_MOVES_DRAGONBALL]
+}

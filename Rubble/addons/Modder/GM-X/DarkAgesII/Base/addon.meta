@@ -1,4 +1,4 @@
 {"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": false, "NotNormal": false},
-	"LoadPriority": 1100, "Name": "GM-X___Dark_Age_II", "Version": "42.06_R3", "Author": "GM-X, Rubble porting by Ababrausar", "Header": "Dark Age has fallen upon the world of Dwarf Fortress.",
+	"LoadPriority": 200, "Name": "GM-X___Dark_Age_II", "Version": "42.06_R3", "Author": "GM-X, Rubble porting by Ababrausar", "Header": "Dark Age has fallen upon the world of Dwarf Fortress.",
 	"DescFile": "addon.md",
 	"Activates": ["DAII"]}

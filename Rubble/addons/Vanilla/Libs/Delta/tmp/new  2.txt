@@ -1,0 +1,18 @@
+e following lines of code show the usage example for iteration over a sparse array;
+-- table below contains unsorted sparse array
+local t = {
+ [10] = 'a', [2] = 'b', [5] = 'c', [100] = 'd', [99] = 'e',
+}
+-- iterate over entries
+for i, v in ipairs_sparse(t) do
+ print(i,v)
+end
+How it works…
+The Lua language uses iterator functions in the control structure called the generic for.
+The generic for calls the iterator function for each new iteration and stops when the iterator
+function returns nil. The ipairs_sparse function works in the following steps:
+1. It builds a new index of keys from the table.
+2. It sorts the index table.
+3. It returns a closure where each call of the closure returns a consecutive index and a
+value from the sparse array.
+Each call to ipairs_sparse prepares a n

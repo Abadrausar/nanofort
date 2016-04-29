@@ -1,0 +1,4 @@
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": false, "NotNormal": false},
+	"LoadPriority": 1100, "Name": "Abadrausar___Humble", "Version": "1.0", "Author": "Abadrausar", "Header": "FPS aware set of minimods",
+	"DescFile": "addon.md",
+	"Activates": ["MODEST"]}

@@ -1,5 +1,5 @@
 {"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": true, "Dev": false, "NotNormal": false},
-"LoadPriority": 1100, "Name": "Milo___First_Landing", "Version": "1.5_DF42.01+", "Author": "Milo Christiansen", "Header": "SCI Themed 4x, explore and colonize foreign planets.",
+"LoadPriority": 400, "Name": "Milo___First_Landing", "Version": "1.5_DF42.01+", "Author": "Milo Christiansen", "Header": "SCI Themed 4x, explore and colonize foreign planets.",
 	"DescFile": "addon.md",
 	"Activates": [ 
 		"Libs/Base",

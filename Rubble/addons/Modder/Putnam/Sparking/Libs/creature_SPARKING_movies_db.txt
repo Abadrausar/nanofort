@@ -2,7 +2,7 @@ creature_movies_db
 
 [OBJECT:CREATURE]
 
-[CREATURE:GARLIC_JR] do not fight this guy as an adventurer, he really is immortal
+{!SHARED_CREATURE;GARLIC_JR; do not fight this guy as an adventurer, he really is immortal
 		[DESCRIPTION:A makyan who wished to be immortal with the dragon balls. He doesn't quite get cages...]
 		[NAME:immortal makyan:immortal makyans:makyan]
 		[CASTE_NAME:immortal makyan:immortal makyans:makyan]
@@ -72,8 +72,9 @@ creature_movies_db
 			[CDI:MAX_TARGET_NUMBER:A:1]
 			[CDI:TARGET_VERB:heal:heals:NA]
 			[CDI:WAIT_PERIOD:10000]
+}
 			
-[CREATURE:SUPER_NAMEK] a la lord slug
+{!SHARED_CREATURE;SUPER_NAMEK; a la lord slug
 		[NAME:super namek:super nameks:namekian]
 		[CASTE_NAME:super namek:super nameks:namekian]
 		[DESCRIPTION:An unusually large creature with regenerative powers and great fighting skills.]
@@ -209,8 +210,9 @@ creature_movies_db
 			[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 				[TL_COLOR_MODIFIER:GREEN:100000:PEACH:1]
 					[TLCM_NOUN:skin:SINGULAR]
+}
 			
-[CREATURE:FRIEZA_MEGABEAST]
+{!SHARED_CREATURE;FRIEZA_MEGABEAST;
 		[NAME:frost demon:frost demons:frost demon]
 		[INTELLIGENT]
 		[CANOPENDOORS]
@@ -304,8 +306,9 @@ creature_movies_db
 			[NATURAL_SKILL:RANGED_COMBAT:10]
 			[NATURAL_SKILL:MELEE_COMBAT:10]
 			[CREATURE_CLASS:FRIEZA]			
+}
 
-[CREATURE:BROLY]
+{!SHARED_CREATURE;BROLY;
 		[NAME:legendary super saiyan:legendary super saiyans:legendary super saiyan]
 		[CASTE_NAME:legendary super saiyan:legendary super saiyans:legendary super saiyan]
 		[CREATURE_TILE:'S']
@@ -417,3 +420,4 @@ creature_movies_db
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 				[TL_COLOR_MODIFIER:BEIGE:1:COPPER:1]
 					[TLCM_NOUN:skin:SINGULAR]
+}

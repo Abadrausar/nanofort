@@ -1,0 +1,7 @@
+{	"Tags": {"Library": true},
+	"Header": "Generic animal milk and cheese.",
+	"Activates": [
+		"Libs/Base",
+		"GENERIC_MATERIALS/Libs"
+	]
+}

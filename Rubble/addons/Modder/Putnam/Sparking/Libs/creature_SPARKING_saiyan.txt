@@ -1,6 +1,6 @@
 creature_saiyan
 [OBJECT:CREATURE]
-	[CREATURE:SAIYAN]
+	{!SHARED_CREATURE;SAIYAN;
 		[NAME:saiyan:saiyans:saiyan]
 		[CASTE_NAME:saiyan:saiyans:saiyan]
 		[CREATURE_TILE:'S']
@@ -191,7 +191,7 @@ creature_saiyan
 		[CASTE:MALE]
 			[MALE]
 			[POP_RATIO:520000]
-			[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]]
+			[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 		[SELECT_CASTE:ALL]
 			[DESCRIPTION:A medium-sized creature with great strength and a tendency towards conquest.]
 			[SET_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
@@ -241,7 +241,8 @@ creature_saiyan
                 [CDI:MAX_TARGET_NUMBER:A:1]
                 [CDI:WAIT_PERIOD:100000000]
             [APPLY_CREATURE_VARIATION:FLYING_DBZ_GAITS:900:675:450:225:1900:2900]
-	[CREATURE:OOZARU]
+}
+	{!SHARED_CREATURE;OOZARU;
 		[NAME:oozaru:oozaru:oozaru]
 		[CASTE_NAME:oozaru:oozaru:oozaru]
 		[CREATURE_TILE:'G']
@@ -338,3 +339,4 @@ creature_saiyan
 				[CDI:TARGET_RANGE:C:50]
 				[CDI:MAX_TARGET_NUMBER:C:1]
 				[CDI:WAIT_PERIOD:100]
+}

@@ -1,0 +1,13 @@
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": true, "Dev": false, "NotNormal": false},
+	"LoadPriority": 400, "Name": "Halfling___1st_DF_from_scratch", "Version": "2.4b", "Author": "Halfling", "Header": "DF from scratch, 1st season.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"1ST_DFSCRATCH"
+		],
+"Vars": {
+	"USE_GRAPHICS": {
+		"Name": "Creature Graphics",
+		"Values": [ "NO", "YES" ]
+		}
+	}
+}

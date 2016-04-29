@@ -1,0 +1,11 @@
+item_money_DVNO
+
+[OBJECT:ITEM]
+
+[ITEM_TOY:100_CREDIT]
+	[NAME:Credit Chip(100)]
+	[HARD_MAT]
+
+[ITEM_TOY:[1000_CREDIT]
+	[NAME:Credit Chip(1000)]
+	[HARD_MAT]

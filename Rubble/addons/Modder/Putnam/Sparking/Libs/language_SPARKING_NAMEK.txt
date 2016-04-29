@@ -2,7 +2,7 @@ language_NAMEK
 
 [OBJECT:LANGUAGE]
 
-[TRANSLATION:NAMEK]
+{!SHARED_TRANSLATION;NAMEK;
 	[T_WORD:ABATE:golzav]
 	[T_WORD:ABBEY:honosa]
 	[T_WORD:ABSOLUTE:galwono]
@@ -2176,3 +2176,4 @@ language_NAMEK
 	[T_WORD:ZEALOT:csalya]
 	[T_WORD:ZENITH:rangol]
 	[T_WORD:ZEPHYR:siput]
+}

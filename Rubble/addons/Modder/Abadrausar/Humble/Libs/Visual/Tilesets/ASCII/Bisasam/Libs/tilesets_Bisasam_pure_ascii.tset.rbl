@@ -1,0 +1,6 @@
+
+[AUX_FILE:INIT.TXT]
+	[FONT:graphics_HUMBLE_Bisasam_20x20g.png]
+	[FULLFONT:graphics_HUMBLE_Bisasam_24x24.png]
+	[GRAPHICS_FONT:graphics_HUMBLE_Bisasam_20x20g.png]
+	[GRAPHICS_FULLFONT:graphics_HUMBLE_Bisasam_24x24.png]

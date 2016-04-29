@@ -1,4 +1,0 @@
-{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": true, "NotNormal": false},
-"LoadPriority": 3050, "Name": "_Porting___Raws_to_Rubble", "Version": "1.0", "Author": "Milo", "Header": "Adds `SHARED_OBJECT` tags to non-Rubble raws, semiautomatic only.",
-	"DescFile": "_addon.md",
-	"Activates": ["Libs/Base"]}

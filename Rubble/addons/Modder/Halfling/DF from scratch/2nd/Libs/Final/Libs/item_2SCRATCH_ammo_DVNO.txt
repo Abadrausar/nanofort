@@ -1,0 +1,11 @@
+item_ammo_DVNO
+
+[OBJECT:ITEM]
+
+[ITEM_AMMO:ITEM_AMMO_PLASMA]
+	[NAME:pulse round:pulse rounds]
+	[CLASS:ENERGY]
+	[SIZE:5000]
+	[ATTACK:BLUNT:500:1000:blast:blasts:NO_SUB:99999]
+	   [ATTACK_PREPARE_AND_RECOVER:5:6]
+

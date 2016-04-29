@@ -2,7 +2,7 @@ creature_shadow_db
 
 [OBJECT:CREATURE]
 
-[CREATURE:SHADOW_DRAGON_DB]
+{!SHARED_CREATURE;SHADOW_DRAGON_DB;
     [NAME:shadow dragon:shadow dragons:shadow dragon]
     [CASTE_NAME:shadow dragon:shadow dragons:shadow dragon]
     [DESCRIPTION:A malevolent draconic creature introduced by overuse of the dragon balls.]
@@ -309,8 +309,9 @@ creature_shadow_db
             [CDI:TARGET_RANGE:A:20]
             [CDI:MAX_TARGET_NUMBER:A:1]
             [CDI:WAIT_PERIOD:12000]
+}
             
-[CREATURE:ENTROPY_SOLDIERS_DB]
+{!SHARED_CREATURE;ENTROPY_SOLDIERS_DB;
     [NAME:soldier:soldiers:soldier]
     [CASTE_NAME:soldier:soldiers:soldier]
     [DESCRIPTION:An automaton created by Lord Entropy to destroy all life.]
@@ -502,8 +503,9 @@ creature_shadow_db
         [ORIENTATION:MALE:1:0:0]
         [CREATURE_CLASS:SPECIAL_NAME/Anima] Perfect, remote afterimages. Very hard.
         [CREATURE_CLASS:KI_BOOST_8700000000000]
+}
         
-[CREATURE:ENTROPY_AND_SAMSARA_DB]
+{!SHARED_CREATURE;ENTROPY_AND_SAMSARA_DB;
 		[NAME:embodiment:embodiments:embodiment]
 		[CREATURE_TILE:142]
 		[COLOR:7:0:1]
@@ -624,3 +626,4 @@ creature_shadow_db
             [CREATURE_CLASS:KI_MULTIPLIER_4]
 		[SELECT_CASTE:ALL]
             [APPLY_CREATURE_VARIATION:FLYING_DBZ_GAITS:900:675:450:225:1900:2900]
+}

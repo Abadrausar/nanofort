@@ -1,6 +1,6 @@
 plant_dragonball
 [OBJECT:PLANT]
-	[PLANT:ARMORGROW]
+	{!SHARED_PLANT;ARMORGROW;
 		[NAME:armor plant]
 		[NAME_PLURAL:armor plants]
 		[ADJ:armor plant]
@@ -29,7 +29,8 @@ plant_dragonball
 		[DEAD_SHRUB_TILE:91]
 		[SHRUB_COLOR:1:0:0]
 		[DEAD_SHRUB_COLOR:6:0:0]
-	[PLANT:SENZU]
+}
+	{!SHARED_PLANT;SENZU;
 		[NAME:senzu bean]
 		[NAME_PLURAL:senzu beans]
 		[ADJ:senzu]
@@ -83,3 +84,4 @@ plant_dragonball
 		[SHRUB_COLOR:2:14:1]
 		[DEAD_SHRUB_COLOR:6:0:0]
 		[PREFSTRING:magic qualities]
+}

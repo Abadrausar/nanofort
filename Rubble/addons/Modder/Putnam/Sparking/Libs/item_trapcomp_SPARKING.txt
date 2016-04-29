@@ -1,6 +1,6 @@
 item_trapcomp_dragonball
 [OBJECT:ITEM]
-	[ITEM_TRAPCOMP:ITEM_TRAPCOMP_CORKSCREW_DB]
+	{!SHARED_ITEM;TRAPCOMP;ITEM_TRAPCOMP_CORKSCREW_DB;
 		[NAME:corkscrew:corkscrews]
 		[ADJECTIVE:mechanical]
 		[SIZE:1600]
@@ -9,3 +9,4 @@ item_trapcomp_dragonball
 		[IS_SCREW]
 		[WOOD]
 		[ATTACK:EDGE:100:1:drill:drills:NO_SUB:100]
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}

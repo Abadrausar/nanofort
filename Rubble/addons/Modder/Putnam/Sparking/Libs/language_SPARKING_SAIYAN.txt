@@ -1,6 +1,6 @@
 language_SAIYAN
 [OBJECT:LANGUAGE]
-	[TRANSLATION:SAIYAN]
+	{!SHARED_TRANSLATION;SAIYAN;
 		[T_WORD:ABATE:horzo]
 		[T_WORD:ABBEY:banut]
 		[T_WORD:ABSOLUTE:scorin]
@@ -2174,3 +2174,4 @@ language_SAIYAN
 		[T_WORD:ZEALOT:peaner]
 		[T_WORD:ZENITH:orina]
 		[T_WORD:ZEPHYR:shard]
+}

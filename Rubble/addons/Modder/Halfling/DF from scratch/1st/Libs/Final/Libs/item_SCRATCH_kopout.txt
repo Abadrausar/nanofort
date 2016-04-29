@@ -1,0 +1,13 @@
+item_kopout
+
+$Id: 35dcdb0946989f2d73fe8d70a2a520927aba6967 $
+
+[OBJECT:ITEM]
+
+{!SHARED_ITEM;TOOL;SPARS;
+[NAME:bundle of spars:bundles of spars]
+[VALUE:10]
+[TILE:240]
+[SIZE:100]
+[UNIMPROVABLE]
+}

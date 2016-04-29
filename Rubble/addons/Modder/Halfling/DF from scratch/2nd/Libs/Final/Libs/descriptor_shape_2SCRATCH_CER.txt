@@ -1,0 +1,38 @@
+descriptor_shape_CER
+
+[OBJECT:DESCRIPTOR_SHAPE]
+
+[SHAPE:CHIRP]
+	[NAME:chirp:chirps]
+	[ADJ:sitting]
+	[ADJ:standing]
+	[ADJ:pointing]
+	[ADJ:laughing]
+	[TILE:'C']
+	
+[SHAPE:MOLE]
+	[NAME:mole:moles]
+	[ADJ:sitting]
+	[ADJ:standing]
+	[ADJ:cackling]
+	[ADJ:grinning]
+	[ADJ:laughing]
+	[TILE:'M']
+	
+[SHAPE:DRETCH]
+	[NAME:dretch:dretches]
+	[ADJ:creepy]
+	[ADJ:spooky]
+	[ADJ:way too spooky]
+	[ADJ:pathetic]
+	[ADJ:laughably weak]
+	[TILE:'D']
+	
+[SHAPE:BHOUND]
+	[NAME:butterfly hound:butterfly hounds]
+	[ADJ:loyal]
+	[ADJ:smiling]
+	[ADJ:rising]
+	[ADJ:sitting]
+	[ADJ:goofy]
+	[TILE:'h']

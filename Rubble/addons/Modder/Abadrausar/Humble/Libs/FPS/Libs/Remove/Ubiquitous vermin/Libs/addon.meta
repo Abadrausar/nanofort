@@ -1,0 +1,9 @@
+{"Tags": {"Library": true, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": true, "NotNormal": false},
+"LoadPriority": 3100, "Version": "1.0", "Author": "Abadrausar", "Header": "Removes all ubiquitous vermin from all biomes.",
+	"Activates": [
+		"Libs/Base",
+		"Vanilla/CREATURE",
+		"Vanilla/CREATURE/equipment",
+		"Vanilla/CREATURE/honey bees",
+		"Vanilla/CREATURE/leopard",
+		"Vanilla/CREATURE/Minimal"]}

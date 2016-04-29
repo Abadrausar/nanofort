@@ -1,0 +1,17 @@
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": true, "Dev": false, "NotNormal": false},
+"LoadPriority": 2100, "Name": "Milo___First_Landing_FINAL", "Version": "1.5_DF42.01+", "Author": "Milo Christiansen", "Header": "Makes First Landing final, incompatible with other bases because it removes candy and anticandy.",
+	"DescFile": "addon.md",
+	"Activates": ["FL_FINAL",
+# Next is important to signal this as incompatible with Composable mods because this one suppresses some Vanilla workshops and does not include Candy, anticandy ni some vanilla workshops.
+		"VANILLA/Aspect/FINAL"
+	],
+	"Incompatible": [
+		"Base",
+		"Modest Base",
+		"User/Sawmill",
+		"User/Pottery",
+		"User/Bonecarver",
+		"User/Powered",
+		"User/Melt Item"
+	]
+}

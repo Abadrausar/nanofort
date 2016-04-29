@@ -1,0 +1,30 @@
+building_CER
+
+[OBJECT:BUILDING]
+
+[BUILDING_WORKSHOP:TRANSFORMATION_CHAMBER_CER]
+    [NAME:Transformation Chamber]
+    [NAME_COLOR:1:0:1]
+    [WORK_LOCATION:2:1]
+    [BUILD_LABOR:MASON]
+    [BUILD_KEY:t]
+    [DIM:3:1]
+	
+    [BLOCK:1:1:0:1]
+	
+    [TILE:0:1:7:32:7]
+    [COLOR:0:1:1:0:0:0:0:0:1:0:0]
+	
+    [TILE:1:1:8:32:7]
+    [COLOR:1:1:1:0:0:0:0:0:1:0:0]
+
+	[TILE:2:1:8:32:8]
+    [COLOR:2:1:1:0:0:0:0:0:1:0:0]
+
+	[TILE:3:1:8:32:8]
+    [COLOR:3:1:1:0:1:0:0:0:1:0:1]
+	
+    [BUILD_ITEM:2:NONE:NONE:NONE:NONE]
+    [BUILDMAT]
+	[WORTHLESS_STONE_ONLY]
+	[CAN_USE_ARTIFACT]

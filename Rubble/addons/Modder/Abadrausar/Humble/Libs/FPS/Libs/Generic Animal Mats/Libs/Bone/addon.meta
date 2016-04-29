@@ -1,0 +1,7 @@
+{	"Tags": {"Library": true},
+	"Header": "Generic animal bones.",
+	"Activates": [
+		"Libs/Base",
+		"GENERIC_MATERIALS/Libs"
+	]
+}

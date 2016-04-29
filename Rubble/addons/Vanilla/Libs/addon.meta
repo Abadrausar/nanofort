@@ -1,13 +1,13 @@
 {"Tags": {"Library": true, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": false, "NotNormal": false},
-	"LoadPriority": 5, "Name": "VANILLA", "Version": "42.06", "Author": "Abadrausar", "Header": "Vanilla objects library",
+	"LoadPriority": 62000, "Name": "VANILLA", "Version": "42.06", "Author": "Abadrausar", "Header": "Vanilla objects library",
 #	"DescFile": "addon.md",
 	"Activates": [ 
 		"Libs/Base",
 		"Libs/Castes",
+		"VANILLA/Aspect/Composable",
 		"VANILLA/Delta",
 		"Vanilla/BODY",
 		"Vanilla/BODY_DETAIL_PLAN",
-		"Vanilla/BOOK",
 		"Vanilla/BUILDING",
 		"Vanilla/CREATURE",
 		"Vanilla/CREATURE/Equipment",
@@ -49,5 +49,4 @@
 		"Vanilla/PLANT/Minimal",
 		"Vanilla/PLANT/Extreme",
 		"Vanilla/REACTION",
-		"Vanilla/SECRET",
 		"Vanilla/TISSUE_TEMPLATE"]}

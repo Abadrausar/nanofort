@@ -1,4 +1,4 @@
 {"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": false, "NotNormal": false},
-	"LoadPriority": 1100, "Name": "Roses___The_Third_Age", "Version": "42.04+ 1a ASCII", "Author": "Roses", "Header": "We now live in the Third Age, and new threats abound.",
+	"LoadPriority": 400, "Name": "Roses___The_Third_Age", "Version": "42.04+ 1a ASCII", "Author": "Roses", "Header": "We now live in the Third Age, and new threats abound.",
 	"DescFile": "addon.md",
 	"Activates": ["TADF"]}

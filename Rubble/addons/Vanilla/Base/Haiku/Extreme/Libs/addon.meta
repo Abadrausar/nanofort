@@ -2,6 +2,7 @@
 	"LoadPriority": 1100, "Name": "HAIKU_EXTREME", "Version": "1.0", "Author": "Abadrausar", "Header": "DF in 41 active Vanilla objects with only 6 modified and *all* the features.",
 #	"DescFile": "addon.md",
 	"Activates": [ "Libs/Base", "Libs/Castes",
+		"VANILLA/Aspect/Composable",
 		"VANILLA/Delta",
 		"Vanilla/BODY",
 		"Vanilla/BODY_DETAIL_PLAN",

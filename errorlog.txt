@@ -1,332 +1,499 @@
 Unrecognized Announcement Token: TRAVEL_ADVISORY
-*** Error(s) finalizing the creature SPIDER_TUNNEL_TARANTULA_KAZOO
-undefined local creature material set to default: SPIDER_TUNNEL_TARANTULA_KAZOO EGG_YOLK_TEMPLATE
-undefined local creature material set to default: SPIDER_TUNNEL_TARANTULA_KAZOO EGG_WHITE_TEMPLATE
-*** Error(s) finalizing the creature SPIDER_CAVE_GIANT
-undefined local creature material set to default: SPIDER_CAVE_GIANT EGG_YOLK_TEMPLATE
-undefined local creature material set to default: SPIDER_CAVE_GIANT EGG_WHITE_TEMPLATE
+*** Error(s) found in the file "raw/objects/plant_SCRATCH_trees_koput.txt"
+RAFT_ROOT_KPT:Unrecognized Plant Token: AUTUMNCOLOR
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_aseaheru.txt"
+LITTLE ONE:Unrecognized Creature Token: SWIM_SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_bfel.txt"
+ELF:Unrecognized Creature Token: SWIM_SPEED
+ELF:Unrecognized Creature Token: SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_dragon_ztg.txt"
+DRAGON_BASE_ZTG:Unrecognized Creature Token: SPEED
+DRAGON1_ZTG:Unrecognized Creature Token: SPEED
+DRAGON1_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON2_ZTG:Unrecognized Creature Token: SPEED
+DRAGON2_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON3_ZTG:Unrecognized Creature Token: SPEED
+DRAGON3_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON4_ZTG:Unrecognized Creature Token: SPEED
+DRAGON4_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON5_ZTG:Unrecognized Creature Token: SPEED
+DRAGON5_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON6_ZTG:Unrecognized Creature Token: SPEED
+DRAGON6_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON7_ZTG:Unrecognized Creature Token: SPEED
+DRAGON7_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON8_ZTG:Unrecognized Creature Token: SPEED
+DRAGON8_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON9_ZTG:Unrecognized Creature Token: SPEED
+DRAGON9_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON10_ZTG:Unrecognized Creature Token: SPEED
+DRAGON10_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON11_ZTG:Unrecognized Creature Token: SPEED
+DRAGON11_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON12_ZTG:Unrecognized Creature Token: SPEED
+DRAGON12_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON13_ZTG:Unrecognized Creature Token: SPEED
+DRAGON13_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON14_ZTG:Unrecognized Creature Token: SPEED
+DRAGON14_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON15_ZTG:Unrecognized Creature Token: SPEED
+DRAGON15_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON16_ZTG:Unrecognized Creature Token: SPEED
+DRAGON16_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGON17_ZTG:Unrecognized Creature Token: SPEED
+DRAGON17_ZTG:Unrecognized Creature Token: SWIM_SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_halfling.txt"
+HALFLING_HLG:Unrecognized Creature Token: SWIM_SPEED
+HOUND_HLG:Unrecognized Creature Token: SWIM_SPEED
+MALLARD_HLG:Unrecognized Creature Token: SWIM_SPEED
+MAN-EATER_HLG:Unrecognized Creature Token: SWIM_SPEED
+QUETZALCOATLUS_HLG:Unrecognized Creature Token: SWIM_SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_hive_putnam.txt"
+MYOMORPH_PUTNAM:Unrecognized Creature Token: SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_HugoL.txt"
+CUTTLER_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+MACTOPUS_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+PANSERBLEKK_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+SQUID_RIVER_HUGOL:Unrecognized Creature Token: SPEED
+SQUID_RIVER_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+NAUTILUS_SWAMP_HUGOL:Unrecognized Creature Token: SPEED
+NAUTILUS_SWAMP_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+NAUTILUS_SWAMP_GREAT_HUGOL:Unrecognized Creature Token: SPEED
+NAUTILUS_SWAMP_GREAT_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+SQUID_GIANT_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+BURDLE_SEA_HUGOL:Unrecognized Creature Token: SPEED
+BURDLE_SEA_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+PELICAN_GOD_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+SKURL_HUGOL:Unrecognized Creature Token: SPEED
+SKURL_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+RAPTOR_SKURL_HUGOL:Unrecognized Creature Token: SPEED
+RAPTOR_SKURL_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+DIRIGIBLE_ANTELOPE:Unrecognized Creature Token: SWIM_SPEED
+DIRIGIBLE_ANTELOPE_TELESCOPIC:Unrecognized Creature Token: SWIM_SPEED
+HOUND_FERAL_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_insects_STL.txt"
+WATER_STRIDER_STL:Unrecognized Creature Token: SWIM_SPEED
+PACK_BEETLE_STL:Unrecognized Creature Token: SWIM_SPEED
+Unrecognized Personality Facet Token: LIBERALISM
+Unrecognized Personality Facet Token: COOPERATION
+Unrecognized Personality Facet Token: SELF_DISCIPLINE
+Unrecognized Personality Facet Token: VULNERABILITY
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_intelligent_ztg.txt"
+LIZARDFOLK_ZTG:Unrecognized Creature Token: SPEED
+LIZARDFOLK_ZTG:Unrecognized Creature Token: SWIM_SPEED
+DRAGONKIN_ZTG:Unrecognized Creature Token: SPEED
+DRAGONKIN_ZTG:Unrecognized Creature Token: SWIM_SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_kopout.txt"
+FLAMINGO_SEAL_KPT:Unrecognized Creature Token: SPEED
+FLAMINGO_SEAL_KPT:Unrecognized Creature Token: SWIM_SPEED
+RIVER_MANATEE_KPT:Unrecognized Creature Token: SWIM_SPEED
+TRUNKO_KPT:Unrecognized Creature Token: SWIM_SPEED
+STINK_DOG_KPT:Unrecognized Creature Token: SWIM_SPEED
+MASTIFF_KPT:Unrecognized Creature Token: SWIM_SPEED
+TERRIER_KPT:Unrecognized Creature Token: SWIM_SPEED
+BASKERVILL_KPT:Unrecognized Creature Token: SWIM_SPEED
+NIDORAN_KPT:Unrecognized Creature Token: SWIM_SPEED
+PLATYPUS_MOOSE_KPT:Unrecognized Creature Token: SPEED
+PLATYPUS_MOOSE_KPT:Unrecognized Creature Token: SWIM_SPEED
+PLATYPUS_DEER_KPT:Unrecognized Creature Token: SPEED
+PLATYPUS_DEER_KPT:Unrecognized Creature Token: SWIM_SPEED
+RYGIC_KPT:Unrecognized Creature Token: SWIM_SPEED
+MILK_SNAKE_KPT:Unrecognized Creature Token: SWIM_SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_mega_putnam.txt"
+HUMANOID_SEMIMEGABEAST_PUTNAM:Unrecognized Creature Token: SWIM_SPEED
+BALANCE_ELEMENTAL_PUTNAM:Unrecognized Creature Token: SWIM_SPEED
+ORDER_ELEMENTAL_PUTNAM:Unrecognized Creature Token: SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_other_gnorm.txt"
+BEAR:Unrecognized Creature Token: SWIM_SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_other_ztg.txt"
+SPIRIT_ZTG:Unrecognized Creature Token: SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_psi_HugoL.txt"
+PSIONIC_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_SKH.txt"
+MAMAPHINT_SKH:Unrecognized Creature Token: SPEED
+MAMAPHINT_SKH:Unrecognized Creature Token: SWIM_SPEED
+PLESIOPHINT_SKH:Unrecognized Creature Token: SPEED
+PLESIOPHINT_SKH:Unrecognized Creature Token: SWIM_SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_troll_halfling.txt"
+TROLL_HLG:Unrecognized Creature Token: SWIM_SPEED
+Unrecognized Personality Facet Token: ANGER
+Unrecognized Personality Facet Token: STRAIGHTFORWARDNESS
+Unrecognized Personality Facet Token: ACHIEVEMENT_STRIVING
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_underground_laularu.txt"
+PALE_RIDER_LKR:Unrecognized Creature Token: SWIM_SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_vampire_halfling.txt"
+VAMPIRE_BAT_HLG:Unrecognized Creature Token: SPEED
+VAMPIRE_BAT_HLG:Unrecognized Creature Token: SWIM_SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_vermin_HugoL.txt"
+NAUTILUS_COMMON_HUGOL:Unrecognized Creature Token: SPEED
+NAUTILUS_COMMON_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+SQUID_RED_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+BURDLE_HUGOL:Unrecognized Creature Token: SPEED
+BURDLE_HUGOL:Unrecognized Creature Token: SWIM_SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_water_insects_STL.txt"
+SEA_SCORPION_STL:Unrecognized Creature Token: SWIM_SPEED
+GIANT_SEA_SCORPION_STL:Unrecognized Creature Token: SWIM_SPEED
+SEA_ANT_STL:Unrecognized Creature Token: SWIM_SPEED
+TRILOBITE_STL:Unrecognized Creature Token: SWIM_SPEED
+AMMONITE_STL:Unrecognized Creature Token: SWIM_SPEED
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_wild_putnam.txt"
+INTELLIGENT_GRASS_CREATURE_PUTNAM:Unrecognized Creature Token: SPEED
+*** Error(s) found in the file "raw/objects/entity_SCRATCH_bfel.txt"
+FOREST:Unrecognized Entity Token: ADVENTURE_TIER
+*** Error(s) found in the file "raw/objects/entity_SCRATCH_gnorm.txt"
+CHERUBIM:Unrecognized Entity Token: ADVENTURE_TIER
+CHERUBIM:Unrecognized Entity Token: START_GROUP_NUMBER
+CLOCKWORK_FACTORIES:Unrecognized Entity Token: ADVENTURE_TIER
+CLOCKWORK_FACTORIES:Unrecognized Entity Token: START_GROUP_NUMBER
+*** Error(s) found in the file "raw/objects/entity_SCRATCH_halfling.txt"
+SMALL_HLG:Unrecognized Entity Token: ADVENTURE_TIER
+SMALL_HLG:Unrecognized Entity Token: ADVENTURE_TIER
+*** Error(s) found in the file "raw/objects/entity_SCRATCH_HugoL.txt"
+MONASTIC_HUGOL:Unrecognized Entity Token: ADVENTURE_TIER
+MONASTIC_HUGOL:Unrecognized Entity Token: START_GROUP_NUMBER
+*** Error(s) found in the file "raw/objects/entity_SCRATCH_STL.txt"
+DESERT_STL:Unrecognized Entity Token: ADVENTURE_TIER
+DESERT_STL:Unrecognized Entity Token: START_GROUP_NUMBER
+CENTAUR_STL:Unrecognized Entity Token: ADVENTURE_TIER
+CENTAUR_STL:Unrecognized Entity Token: START_GROUP_NUMBER
+*** Error(s) found in the file "raw/objects/entity_SCRATCH_troll_halfling.txt"
+TROLLS_HLG:Unrecognized Entity Token: ADVENTURE_TIER
+*** Error(s) found in the file "raw/objects/entity_SCRATCH_ztg.txt"
+LIZARDFOLK_ZTG:Unrecognized Entity Token: ADVENTURE_TIER
+LIZARDFOLK_ZTG:Unrecognized Entity Token: START_GROUP_NUMBER
+undefined local plant material set to default: TARNISH_STALK_MC STRUCTURAL
+undefined local plant material set to default: DESERT_FRUIT STRUCTURAL
+undefined local plant material set to default: COCONUT_KPT RAW_COCONUT
+undefined local plant material set to default: LEMON_CAVE_KPT RAW_LEMON_TREE
+undefined local plant material set to default: APPLE_FRUIT_KPT STRUCTURE
+undefined local plant material set to default: CHERY_FRUIT_KPT STRUCTURE
+undefined local plant material set to default: PEAR_FRUIT_KPT STRUCTURE
+undefined local plant material set to default: ORANGE_FRUIT_KPT STRUCTURE
+undefined local plant material set to default: LEMON_FRUIT_KPT STRUCTURE
+undefined local plant material set to default: COCONUT_MEAT_KPT STRUCTURE
+undefined local plant material set to default: COCONUT_FRUIT_KPT STRUCTURE
+undefined local plant material set to default: COCONUT_SHELL_KPT STRUCTURE
+undefined local plant material set to default: COCONUT_FIBER_KPT STRUCTURE
+undefined local plant material set to default: LEMON_INCINDEARY_KPT STRUCTURE
+*** Error(s) finalizing the creature ELF
+undefined local creature material set to default: ELF SAP
+undefined local creature material set to default: ELF SAP
+*** Error(s) finalizing the creature CLOCKWORKER
+undefined local creature material set to default: CLOCKWORKER METAL_TEMPLATE_HLG
+*** Error(s) finalizing the creature DRAGON_BASE_ZTG
+undefined local creature material set to default: DRAGON_BASE_ZTG SCALE
+undefined local creature material set to default: DRAGON_BASE_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON1_ZTG
+undefined local creature material set to default: DRAGON1_ZTG SCALE
+undefined local creature material set to default: DRAGON1_ZTG SCALE
+undefined local creature material set to default: DRAGON1_ZTG SCALE
+undefined local creature material set to default: DRAGON1_ZTG SCALE
+undefined local creature material set to default: DRAGON1_ZTG SCALE
+undefined local creature material set to default: DRAGON1_ZTG SCALE
+undefined local creature material set to default: DRAGON1_ZTG SCALE
+undefined local creature material set to default: DRAGON1_ZTG SCALE
+undefined local creature material set to default: DRAGON1_ZTG SCALE
+undefined local creature material set to default: DRAGON1_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON2_ZTG
+undefined local creature material set to default: DRAGON2_ZTG SCALE
+undefined local creature material set to default: DRAGON2_ZTG SCALE
+undefined local creature material set to default: DRAGON2_ZTG SCALE
+undefined local creature material set to default: DRAGON2_ZTG SCALE
+undefined local creature material set to default: DRAGON2_ZTG SCALE
+undefined local creature material set to default: DRAGON2_ZTG SCALE
+undefined local creature material set to default: DRAGON2_ZTG SCALE
+undefined local creature material set to default: DRAGON2_ZTG SCALE
+undefined local creature material set to default: DRAGON2_ZTG SCALE
+undefined local creature material set to default: DRAGON2_ZTG SCALE
+undefined local creature material set to default: DRAGON2_ZTG SCALE
+undefined local creature material set to default: DRAGON2_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON3_ZTG
+undefined local creature material set to default: DRAGON3_ZTG SCALE
+undefined local creature material set to default: DRAGON3_ZTG SCALE
+undefined local creature material set to default: DRAGON3_ZTG SCALE
+undefined local creature material set to default: DRAGON3_ZTG SCALE
+undefined local creature material set to default: DRAGON3_ZTG SCALE
+undefined local creature material set to default: DRAGON3_ZTG SCALE
+undefined local creature material set to default: DRAGON3_ZTG SCALE
+undefined local creature material set to default: DRAGON3_ZTG SCALE
+undefined local creature material set to default: DRAGON3_ZTG SCALE
+undefined local creature material set to default: DRAGON3_ZTG SCALE
+undefined local creature material set to default: DRAGON3_ZTG SCALE
+undefined local creature material set to default: DRAGON3_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON4_ZTG
+undefined local creature material set to default: DRAGON4_ZTG SCALE
+undefined local creature material set to default: DRAGON4_ZTG SCALE
+undefined local creature material set to default: DRAGON4_ZTG SCALE
+undefined local creature material set to default: DRAGON4_ZTG SCALE
+undefined local creature material set to default: DRAGON4_ZTG SCALE
+undefined local creature material set to default: DRAGON4_ZTG SCALE
+undefined local creature material set to default: DRAGON4_ZTG SCALE
+undefined local creature material set to default: DRAGON4_ZTG SCALE
+undefined local creature material set to default: DRAGON4_ZTG SCALE
+undefined local creature material set to default: DRAGON4_ZTG SCALE
+undefined local creature material set to default: DRAGON4_ZTG SCALE
+undefined local creature material set to default: DRAGON4_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON5_ZTG
+undefined local creature material set to default: DRAGON5_ZTG SCALE
+undefined local creature material set to default: DRAGON5_ZTG SCALE
+undefined local creature material set to default: DRAGON5_ZTG SCALE
+undefined local creature material set to default: DRAGON5_ZTG SCALE
+undefined local creature material set to default: DRAGON5_ZTG SCALE
+undefined local creature material set to default: DRAGON5_ZTG SCALE
+undefined local creature material set to default: DRAGON5_ZTG SCALE
+undefined local creature material set to default: DRAGON5_ZTG SCALE
+undefined local creature material set to default: DRAGON5_ZTG SCALE
+undefined local creature material set to default: DRAGON5_ZTG SCALE
+undefined local creature material set to default: DRAGON5_ZTG SCALE
+undefined local creature material set to default: DRAGON5_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON6_ZTG
+undefined local creature material set to default: DRAGON6_ZTG SCALE
+undefined local creature material set to default: DRAGON6_ZTG SCALE
+undefined local creature material set to default: DRAGON6_ZTG SCALE
+undefined local creature material set to default: DRAGON6_ZTG SCALE
+undefined local creature material set to default: DRAGON6_ZTG SCALE
+undefined local creature material set to default: DRAGON6_ZTG SCALE
+undefined local creature material set to default: DRAGON6_ZTG SCALE
+undefined local creature material set to default: DRAGON6_ZTG SCALE
+undefined local creature material set to default: DRAGON6_ZTG SCALE
+undefined local creature material set to default: DRAGON6_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON7_ZTG
+undefined local creature material set to default: DRAGON7_ZTG SCALE
+undefined local creature material set to default: DRAGON7_ZTG SCALE
+undefined local creature material set to default: DRAGON7_ZTG SCALE
+undefined local creature material set to default: DRAGON7_ZTG SCALE
+undefined local creature material set to default: DRAGON7_ZTG SCALE
+undefined local creature material set to default: DRAGON7_ZTG SCALE
+undefined local creature material set to default: DRAGON7_ZTG SCALE
+undefined local creature material set to default: DRAGON7_ZTG SCALE
+undefined local creature material set to default: DRAGON7_ZTG SCALE
+undefined local creature material set to default: DRAGON7_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON8_ZTG
+undefined local creature material set to default: DRAGON8_ZTG SCALE
+undefined local creature material set to default: DRAGON8_ZTG SCALE
+undefined local creature material set to default: DRAGON8_ZTG SCALE
+undefined local creature material set to default: DRAGON8_ZTG SCALE
+undefined local creature material set to default: DRAGON8_ZTG SCALE
+undefined local creature material set to default: DRAGON8_ZTG SCALE
+undefined local creature material set to default: DRAGON8_ZTG SCALE
+undefined local creature material set to default: DRAGON8_ZTG SCALE
+undefined local creature material set to default: DRAGON8_ZTG SCALE
+undefined local creature material set to default: DRAGON8_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON9_ZTG
+undefined local creature material set to default: DRAGON9_ZTG SCALE
+undefined local creature material set to default: DRAGON9_ZTG SCALE
+undefined local creature material set to default: DRAGON9_ZTG SCALE
+undefined local creature material set to default: DRAGON9_ZTG SCALE
+undefined local creature material set to default: DRAGON9_ZTG SCALE
+undefined local creature material set to default: DRAGON9_ZTG SCALE
+undefined local creature material set to default: DRAGON9_ZTG SCALE
+undefined local creature material set to default: DRAGON9_ZTG SCALE
+undefined local creature material set to default: DRAGON9_ZTG SCALE
+undefined local creature material set to default: DRAGON9_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON10_ZTG
+undefined local creature material set to default: DRAGON10_ZTG SCALE
+undefined local creature material set to default: DRAGON10_ZTG SCALE
+undefined local creature material set to default: DRAGON10_ZTG SCALE
+undefined local creature material set to default: DRAGON10_ZTG SCALE
+undefined local creature material set to default: DRAGON10_ZTG SCALE
+undefined local creature material set to default: DRAGON10_ZTG SCALE
+undefined local creature material set to default: DRAGON10_ZTG SCALE
+undefined local creature material set to default: DRAGON10_ZTG SCALE
+undefined local creature material set to default: DRAGON10_ZTG SCALE
+undefined local creature material set to default: DRAGON10_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON11_ZTG
+undefined local creature material set to default: DRAGON11_ZTG SCALE
+undefined local creature material set to default: DRAGON11_ZTG SCALE
+undefined local creature material set to default: DRAGON11_ZTG SCALE
+undefined local creature material set to default: DRAGON11_ZTG SCALE
+undefined local creature material set to default: DRAGON11_ZTG SCALE
+undefined local creature material set to default: DRAGON11_ZTG SCALE
+undefined local creature material set to default: DRAGON11_ZTG SCALE
+undefined local creature material set to default: DRAGON11_ZTG SCALE
+undefined local creature material set to default: DRAGON11_ZTG SCALE
+undefined local creature material set to default: DRAGON11_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON12_ZTG
+undefined local creature material set to default: DRAGON12_ZTG SCALE
+undefined local creature material set to default: DRAGON12_ZTG SCALE
+undefined local creature material set to default: DRAGON12_ZTG SCALE
+undefined local creature material set to default: DRAGON12_ZTG SCALE
+undefined local creature material set to default: DRAGON12_ZTG SCALE
+undefined local creature material set to default: DRAGON12_ZTG SCALE
+undefined local creature material set to default: DRAGON12_ZTG SCALE
+undefined local creature material set to default: DRAGON12_ZTG SCALE
+undefined local creature material set to default: DRAGON12_ZTG SCALE
+undefined local creature material set to default: DRAGON12_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON13_ZTG
+undefined local creature material set to default: DRAGON13_ZTG SCALE
+undefined local creature material set to default: DRAGON13_ZTG SCALE
+undefined local creature material set to default: DRAGON13_ZTG SCALE
+undefined local creature material set to default: DRAGON13_ZTG SCALE
+undefined local creature material set to default: DRAGON13_ZTG SCALE
+undefined local creature material set to default: DRAGON13_ZTG SCALE
+undefined local creature material set to default: DRAGON13_ZTG SCALE
+undefined local creature material set to default: DRAGON13_ZTG SCALE
+undefined local creature material set to default: DRAGON13_ZTG SCALE
+undefined local creature material set to default: DRAGON13_ZTG SCALE
+undefined local creature material set to default: DRAGON13_ZTG SCALE
+undefined local creature material set to default: DRAGON13_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON14_ZTG
+undefined local creature material set to default: DRAGON14_ZTG SCALE
+undefined local creature material set to default: DRAGON14_ZTG SCALE
+undefined local creature material set to default: DRAGON14_ZTG SCALE
+undefined local creature material set to default: DRAGON14_ZTG SCALE
+undefined local creature material set to default: DRAGON14_ZTG SCALE
+undefined local creature material set to default: DRAGON14_ZTG SCALE
+undefined local creature material set to default: DRAGON14_ZTG SCALE
+undefined local creature material set to default: DRAGON14_ZTG SCALE
+undefined local creature material set to default: DRAGON14_ZTG SCALE
+undefined local creature material set to default: DRAGON14_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON15_ZTG
+undefined local creature material set to default: DRAGON15_ZTG SCALE
+undefined local creature material set to default: DRAGON15_ZTG SCALE
+undefined local creature material set to default: DRAGON15_ZTG SCALE
+undefined local creature material set to default: DRAGON15_ZTG SCALE
+undefined local creature material set to default: DRAGON15_ZTG SCALE
+undefined local creature material set to default: DRAGON15_ZTG SCALE
+undefined local creature material set to default: DRAGON15_ZTG SCALE
+undefined local creature material set to default: DRAGON15_ZTG SCALE
+undefined local creature material set to default: DRAGON15_ZTG SCALE
+undefined local creature material set to default: DRAGON15_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON16_ZTG
+undefined local creature material set to default: DRAGON16_ZTG SCALE
+undefined local creature material set to default: DRAGON16_ZTG SCALE
+undefined local creature material set to default: DRAGON16_ZTG SCALE
+undefined local creature material set to default: DRAGON16_ZTG SCALE
+undefined local creature material set to default: DRAGON16_ZTG SCALE
+undefined local creature material set to default: DRAGON16_ZTG SCALE
+undefined local creature material set to default: DRAGON16_ZTG SCALE
+undefined local creature material set to default: DRAGON16_ZTG SCALE
+undefined local creature material set to default: DRAGON16_ZTG SCALE
+undefined local creature material set to default: DRAGON16_ZTG SCALE
+*** Error(s) finalizing the creature DRAGON17_ZTG
+undefined local creature material set to default: DRAGON17_ZTG SCALE
+undefined local creature material set to default: DRAGON17_ZTG SCALE
+undefined local creature material set to default: DRAGON17_ZTG SCALE
+undefined local creature material set to default: DRAGON17_ZTG SCALE
+undefined local creature material set to default: DRAGON17_ZTG SCALE
+undefined local creature material set to default: DRAGON17_ZTG SCALE
+undefined local creature material set to default: DRAGON17_ZTG SCALE
+undefined local creature material set to default: DRAGON17_ZTG SCALE
+undefined local creature material set to default: DRAGON17_ZTG SCALE
+undefined local creature material set to default: DRAGON17_ZTG SCALE
+*** Error(s) finalizing the creature HOUND_HLG
+Error Initializing Text: data/speech/speech_hound_hlg.txt
+*** Error(s) finalizing the creature BANK_VOLE_HLG
+undefined local creature material set to default: BANK_VOLE_HLG MUSCLE
+*** Error(s) finalizing the creature TIT_HLG
+undefined local creature material set to default: TIT_HLG MUSCLE
+Error Initializing Text: data/speech/speech_tit_hlg.txt
+*** Error(s) finalizing the creature CUTTLER_HUGOL
+undefined local creature material set to default: CUTTLER_HUGOL CHITIN
+*** Error(s) finalizing the creature MACTOPUS_HUGOL
+undefined local creature material set to default: MACTOPUS_HUGOL CHITIN
+*** Error(s) finalizing the creature PANSERBLEKK_HUGOL
+undefined local creature material set to default: PANSERBLEKK_HUGOL CHITIN
+*** Error(s) finalizing the creature SQUID_RIVER_HUGOL
+undefined local creature material set to default: SQUID_RIVER_HUGOL CHITIN
+*** Error(s) finalizing the creature NAUTILUS_SWAMP_HUGOL
+undefined local creature material set to default: NAUTILUS_SWAMP_HUGOL CHITIN
+*** Error(s) finalizing the creature NAUTILUS_SWAMP_GREAT_HUGOL
+undefined local creature material set to default: NAUTILUS_SWAMP_GREAT_HUGOL CHITIN
+*** Error(s) finalizing the creature SQUID_GIANT_HUGOL
+undefined local creature material set to default: SQUID_GIANT_HUGOL CHITIN
+*** Error(s) finalizing the creature BURDLE_SEA_HUGOL
+undefined local creature material set to default: BURDLE_SEA_HUGOL SCALE
+*** Error(s) finalizing the creature PELICAN_GOD_HUGOL
+undefined local creature material set to default: PELICAN_GOD_HUGOL SCALE
+*** Error(s) finalizing the creature SKURL_HUGOL
+undefined local creature material set to default: SKURL_HUGOL SCALE
+*** Error(s) finalizing the creature RAPTOR_SKURL_HUGOL
+undefined local creature material set to default: RAPTOR_SKURL_HUGOL SCALE
+*** Error(s) finalizing the creature DIRIGIBLE_ANTELOPE
+undefined local creature material set to default: DIRIGIBLE_ANTELOPE LIFT_GAS
+*** Error(s) finalizing the creature DIRIGIBLE_ANTELOPE_TELESCOPIC
+undefined local creature material set to default: DIRIGIBLE_ANTELOPE_TELESCOPIC LIFT_GAS
+*** Error(s) finalizing the creature BOMBUS_STL
+undefined local creature material set to default: BOMBUS_STL KERATIN
+*** Error(s) finalizing the creature LIZARDFOLK_ZTG
+undefined local creature material set to default: LIZARDFOLK_ZTG SCALE
+undefined local creature material set to default: LIZARDFOLK_ZTG SCALE
+undefined local creature material set to default: LIZARDFOLK_ZTG EGG_YOLK
+undefined local creature material set to default: LIZARDFOLK_ZTG EGG_WHITE
+*** Error(s) finalizing the creature DRAGONKIN_ZTG
+undefined local creature material set to default: DRAGONKIN_ZTG SCALE
+undefined local creature material set to default: DRAGONKIN_ZTG SCALE
+undefined local creature material set to default: DRAGONKIN_ZTG SCALE
+undefined local creature material set to default: DRAGONKIN_ZTG SCALE
+undefined local creature material set to default: DRAGONKIN_ZTG SCALE
+undefined local creature material set to default: DRAGONKIN_ZTG SCALE
+undefined local creature material set to default: DRAGONKIN_ZTG SCALE
+undefined local creature material set to default: DRAGONKIN_ZTG SCALE
+undefined local creature material set to default: DRAGONKIN_ZTG SCALE
+undefined local creature material set to default: DRAGONKIN_ZTG SCALE
+*** Error(s) finalizing the creature FLAMINGO_SEAL_KPT
+undefined local creature material set to default: FLAMINGO_SEAL_KPT SCALE
+*** Error(s) finalizing the creature WAILING_MAID
+undefined local creature material set to default: WAILING_MAID KERATIN
+undefined local creature material set to default: WAILING_MAID KERATIN
+undefined local creature material set to default: WAILING_MAID TENDON
+undefined local creature material set to default: WAILING_MAID TENDON
+undefined local creature material set to default: WAILING_MAID BLOOD
+*** Error(s) finalizing the creature SPIRIT_ZTG
+undefined local creature material set to default: SPIRIT_ZTG AETHER_2
+*** Error(s) finalizing the creature MAMAPHINT_SKH
+undefined local creature material set to default: MAMAPHINT_SKH ivory
+*** Error(s) finalizing the creature PLESIOPHINT_SKH
+undefined local creature material set to default: PLESIOPHINT_SKH ivory
+*** Error(s) finalizing the creature TROLL_HLG
+Error Initializing Text: data/speech/speech_troll_hlg.txt
+*** Error(s) finalizing the creature NAUTILUS_COMMON_HUGOL
+undefined local creature material set to default: NAUTILUS_COMMON_HUGOL CHITIN
+*** Error(s) finalizing the creature SQUID_RED_HUGOL
+undefined local creature material set to default: SQUID_RED_HUGOL CHITIN
+*** Error(s) finalizing the creature BURDLE_HUGOL
+undefined local creature material set to default: BURDLE_HUGOL SCALE
+*** Error(s) finalizing the creature AIR_PLANKTON_KPT
+undefined local creature material set to default: AIR_PLANKTON_KPT MUSCLE
+*** Error(s) finalizing the creature PLANKTON_KPT
+undefined local creature material set to default: PLANKTON_KPT MUSCLE
 Unrecognized Announcement Token: TRAVEL_ADVISORY
-*** Error(s) finalizing the creature SPIDER_TUNNEL_TARANTULA_KAZOO
-undefined local creature material set to default: SPIDER_TUNNEL_TARANTULA_KAZOO EGG_YOLK_TEMPLATE
-undefined local creature material set to default: SPIDER_TUNNEL_TARANTULA_KAZOO EGG_WHITE_TEMPLATE
-*** Error(s) finalizing the creature SPIDER_CAVE_GIANT
-undefined local creature material set to default: SPIDER_CAVE_GIANT EGG_YOLK_TEMPLATE
-undefined local creature material set to default: SPIDER_CAVE_GIANT EGG_WHITE_TEMPLATE
 Unrecognized Announcement Token: TRAVEL_ADVISORY
 Unrecognized Announcement Token: TRAVEL_ADVISORY
 Unrecognized Announcement Token: TRAVEL_ADVISORY
-CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
-BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
-*** Error(s) finalizing the reaction LIGNITE_TO_COKE
-Unrecognized Inorganic Token: LIGNITE
-*** Error(s) finalizing the reaction BRASS_MAKING
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction BRASS_MAKING2
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction ELECTRUM_MAKING
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction ELECTRUM_MAKING2
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction BILLON_MAKING
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction BILLON_MAKING2
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
-Unrecognized Inorganic Token: LEAD
-Unrecognized Inorganic Token: PEWTER_LAY
-*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
-Unrecognized Inorganic Token: NICKEL
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: NICKEL_SILVER
-*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
-Unrecognized Inorganic Token: BLACK_BRONZE
-*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
-Unrecognized Inorganic Token: STERLING_SILVER
-*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
-Unrecognized Inorganic Token: ROSE_GOLD
-Unrecognized Announcement Token: TRAVEL_ADVISORY
-CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
-BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
-*** Error(s) finalizing the reaction LIGNITE_TO_COKE
-Unrecognized Inorganic Token: LIGNITE
-*** Error(s) finalizing the reaction BRASS_MAKING
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction BRASS_MAKING2
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction ELECTRUM_MAKING
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction ELECTRUM_MAKING2
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction BILLON_MAKING
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction BILLON_MAKING2
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
-Unrecognized Inorganic Token: LEAD
-Unrecognized Inorganic Token: PEWTER_LAY
-*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
-Unrecognized Inorganic Token: NICKEL
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: NICKEL_SILVER
-*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
-Unrecognized Inorganic Token: BLACK_BRONZE
-*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
-Unrecognized Inorganic Token: STERLING_SILVER
-*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
-Unrecognized Inorganic Token: ROSE_GOLD
-CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
-BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
-*** Error(s) finalizing the reaction LIGNITE_TO_COKE
-Unrecognized Inorganic Token: LIGNITE
-*** Error(s) finalizing the reaction BRASS_MAKING
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction BRASS_MAKING2
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction ELECTRUM_MAKING
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction ELECTRUM_MAKING2
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction BILLON_MAKING
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction BILLON_MAKING2
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
-Unrecognized Inorganic Token: LEAD
-Unrecognized Inorganic Token: PEWTER_LAY
-*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
-Unrecognized Inorganic Token: NICKEL
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: NICKEL_SILVER
-*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
-Unrecognized Inorganic Token: BLACK_BRONZE
-*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
-Unrecognized Inorganic Token: STERLING_SILVER
-*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
-Unrecognized Inorganic Token: ROSE_GOLD
-Unrecognized Announcement Token: TRAVEL_ADVISORY
-CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
-BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
-*** Error(s) finalizing the reaction LIGNITE_TO_COKE
-Unrecognized Inorganic Token: LIGNITE
-*** Error(s) finalizing the reaction BRASS_MAKING
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction BRASS_MAKING2
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction ELECTRUM_MAKING
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction ELECTRUM_MAKING2
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction BILLON_MAKING
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction BILLON_MAKING2
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
-Unrecognized Inorganic Token: LEAD
-Unrecognized Inorganic Token: PEWTER_LAY
-*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
-Unrecognized Inorganic Token: NICKEL
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: NICKEL_SILVER
-*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
-Unrecognized Inorganic Token: BLACK_BRONZE
-*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
-Unrecognized Inorganic Token: STERLING_SILVER
-*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
-Unrecognized Inorganic Token: ROSE_GOLD
-CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
-BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
-*** Error(s) finalizing the reaction LIGNITE_TO_COKE
-Unrecognized Inorganic Token: LIGNITE
-*** Error(s) finalizing the reaction BRASS_MAKING
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction BRASS_MAKING2
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction ELECTRUM_MAKING
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction ELECTRUM_MAKING2
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction BILLON_MAKING
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction BILLON_MAKING2
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
-Unrecognized Inorganic Token: LEAD
-Unrecognized Inorganic Token: PEWTER_LAY
-*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
-Unrecognized Inorganic Token: NICKEL
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: NICKEL_SILVER
-*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
-Unrecognized Inorganic Token: BLACK_BRONZE
-*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
-Unrecognized Inorganic Token: STERLING_SILVER
-*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
-Unrecognized Inorganic Token: ROSE_GOLD
 Unrecognized Announcement Token: TRAVEL_ADVISORY
 Unrecognized Announcement Token: TRAVEL_ADVISORY
 Unrecognized Announcement Token: TRAVEL_ADVISORY
-CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
-BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
-*** Error(s) finalizing the reaction LIGNITE_TO_COKE
-Unrecognized Inorganic Token: LIGNITE
-*** Error(s) finalizing the reaction BRASS_MAKING
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction BRASS_MAKING2
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction ELECTRUM_MAKING
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction ELECTRUM_MAKING2
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction BILLON_MAKING
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction BILLON_MAKING2
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
-Unrecognized Inorganic Token: LEAD
-Unrecognized Inorganic Token: PEWTER_LAY
-*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
-Unrecognized Inorganic Token: NICKEL
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: NICKEL_SILVER
-*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
-Unrecognized Inorganic Token: BLACK_BRONZE
-*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
-Unrecognized Inorganic Token: STERLING_SILVER
-*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
-Unrecognized Inorganic Token: ROSE_GOLD
-CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
-BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
-*** Error(s) finalizing the reaction LIGNITE_TO_COKE
-Unrecognized Inorganic Token: LIGNITE
-*** Error(s) finalizing the reaction BRASS_MAKING
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction BRASS_MAKING2
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction ELECTRUM_MAKING
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction ELECTRUM_MAKING2
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction BILLON_MAKING
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction BILLON_MAKING2
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
-Unrecognized Inorganic Token: LEAD
-Unrecognized Inorganic Token: PEWTER_LAY
-*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
-Unrecognized Inorganic Token: NICKEL
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: NICKEL_SILVER
-*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
-Unrecognized Inorganic Token: BLACK_BRONZE
-*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
-Unrecognized Inorganic Token: STERLING_SILVER
-*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
-Unrecognized Inorganic Token: ROSE_GOLD
 Unrecognized Announcement Token: TRAVEL_ADVISORY
-CASSITERITE: Environment Spec Stone Not Found, Token - GRANITE
-BISMUTHINITE: Environment Spec Stone Not Found, Token - GRANITE
-*** Error(s) finalizing the reaction LIGNITE_TO_COKE
-Unrecognized Inorganic Token: LIGNITE
-*** Error(s) finalizing the reaction BRASS_MAKING
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction BRASS_MAKING2
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: BRASS
-*** Error(s) finalizing the reaction ELECTRUM_MAKING
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction ELECTRUM_MAKING2
-Unrecognized Inorganic Token: ELECTRUM
-*** Error(s) finalizing the reaction BILLON_MAKING
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction BILLON_MAKING2
-Unrecognized Inorganic Token: BILLON
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_FINE_MAKING2
-Unrecognized Inorganic Token: PEWTER_FINE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_TRIFLE_MAKING2
-Unrecognized Inorganic Token: PEWTER_TRIFLE
-*** Error(s) finalizing the reaction PEWTER_LAY_MAKING
-Unrecognized Inorganic Token: LEAD
-Unrecognized Inorganic Token: PEWTER_LAY
-*** Error(s) finalizing the reaction NICKEL_SILVER_MAKING
-Unrecognized Inorganic Token: NICKEL
-Unrecognized Inorganic Token: ZINC
-Unrecognized Inorganic Token: NICKEL_SILVER
-*** Error(s) finalizing the reaction BLACK_BRONZE_MAKING
-Unrecognized Inorganic Token: BLACK_BRONZE
-*** Error(s) finalizing the reaction STERLING_SILVER_MAKING
-Unrecognized Inorganic Token: STERLING_SILVER
-*** Error(s) finalizing the reaction ROSE_GOLD_MAKING
-Unrecognized Inorganic Token: ROSE_GOLD
-Unrecognized Announcement Token: TRAVEL_ADVISORY
-*** Error(s) found in the file "raw/objects/creature_insects.txt"
+*** Error(s) found in the file "raw/objects/creature_VANILLA_insects.txt"
+BEETLE_MAN:Unrecognized Creature Copy (Order is important!): BEETLE
+BEETLE_MAN:Caste Selection Fails: MALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Caste Selection Fails: FEMALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Attack PUNCH seems to have correct format but could not find proper BPs in any caste, so not added
+BEETLE_MAN:Attack KICK seems to have correct format but could not find proper BPs in any caste, so not added
+GIANT_BEETLE:Unrecognized Creature Copy (Order is important!): BEETLE
+*** Error(s) found in the file "data/save/region2/raw/objects/creature_VANILLA_insects.txt"
+BEETLE_MAN:Unrecognized Creature Copy (Order is important!): BEETLE
+BEETLE_MAN:Caste Selection Fails: MALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Caste Selection Fails: FEMALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Attack PUNCH seems to have correct format but could not find proper BPs in any caste, so not added
+BEETLE_MAN:Attack KICK seems to have correct format but could not find proper BPs in any caste, so not added
+GIANT_BEETLE:Unrecognized Creature Copy (Order is important!): BEETLE
+                                                                                                    Unrecognized Announcement Token: TRAVEL_ADVISORY
+*** Error(s) found in the file "raw/objects/creature_VANILLA_insects.txt"
+BEETLE_MAN:Unrecognized Creature Copy (Order is important!): BEETLE
+BEETLE_MAN:Caste Selection Fails: MALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Caste Selection Fails: FEMALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Attack PUNCH seems to have correct format but could not find proper BPs in any caste, so not added
+BEETLE_MAN:Attack KICK seems to have correct format but could not find proper BPs in any caste, so not added
+GIANT_BEETLE:Unrecognized Creature Copy (Order is important!): BEETLE
+*** Error(s) found in the file "data/save/region3/raw/objects/creature_VANILLA_insects.txt"
 BEETLE_MAN:Unrecognized Creature Copy (Order is important!): BEETLE
 BEETLE_MAN:Caste Selection Fails: MALE
 BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
@@ -336,22 +503,5 @@ BEETLE_MAN:Attack PUNCH seems to have correct format but could not find proper B
 BEETLE_MAN:Attack KICK seems to have correct format but could not find proper BPs in any caste, so not added
 GIANT_BEETLE:Unrecognized Creature Copy (Order is important!): BEETLE
 Unrecognized Announcement Token: TRAVEL_ADVISORY
-*** Error(s) found in the file "data/save/region1/raw/objects/creature_insects.txt"
-BEETLE_MAN:Unrecognized Creature Copy (Order is important!): BEETLE
-BEETLE_MAN:Caste Selection Fails: MALE
-BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
-BEETLE_MAN:Caste Selection Fails: FEMALE
-BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
-BEETLE_MAN:Attack PUNCH seems to have correct format but could not find proper BPs in any caste, so not added
-BEETLE_MAN:Attack KICK seems to have correct format but could not find proper BPs in any caste, so not added
-GIANT_BEETLE:Unrecognized Creature Copy (Order is important!): BEETLE
 Unrecognized Announcement Token: TRAVEL_ADVISORY
-*** Error(s) found in the file "raw/objects/creature_insects.txt"
-BEETLE_MAN:Unrecognized Creature Copy (Order is important!): BEETLE
-BEETLE_MAN:Caste Selection Fails: MALE
-BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
-BEETLE_MAN:Caste Selection Fails: FEMALE
-BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
-BEETLE_MAN:Attack PUNCH seems to have correct format but could not find proper BPs in any caste, so not added
-BEETLE_MAN:Attack KICK seems to have correct format but could not find proper BPs in any caste, so not added
-GIANT_BEETLE:Unrecognized Creature Copy (Order is important!): BEETLE
+Unrecognized Announcement Token: TRAVEL_ADVISORY

@@ -1,0 +1,120 @@
+    reserved = {
+      ["while"] = true,     ["end"] = true,
+      ["function"] = true,  ["local"] = true,
+    }
+    
+    for w in allwords() do
+      if reserved[w] then
+        -- `w' is a reserved word
+		
+		
+    mt = {}          -- create the matrix
+    for i=1,N do
+      mt[i] = {}     -- create a new row
+      for j=1,M do
+        mt[i][j] = 0
+      end
+    end
+		
+		
+DFobjects = { BODY = 1, BODY_DETAIL_PLAN = 2, BUILDING = 3, DESCRIPTOR_COLOR = 4, DESCRIPTOR_PATTERN = 5, DESCRIPTOR_SHAPE = 6, INTERACTION = 7, ITEM = 8, MATERIAL_TEMPLATE = 9, REACTION = 10, SECRET =11, TISSUE_TEMPLATE =12, WORLD_GEN = 13, PROFILE=14}
+		
+		
+    function Set (list)
+      local set = {}
+      for _, l in ipairs(list) do set[l] = true end
+      return set
+    end
+    
+    reserved = Set{"while", "end", "function", "local", }
+		
+		
+nestedKeyToken= {BP, CV_CONVERT_TAG, BODY_DETAIL_PLAN, ATTACK, CASTE, SELECT_CASTE, WEAPON, POSITION, TISSUE_STYLE, NOUN, ADJ, VERB, PREFIX, SYNDROME, USE_MATERIAL_TEMPLATE, GROWTH, REAGENT, PRODUCT}
+		
+		
+    function Set (list)
+      local set = {}
+      for _, l in ipairs(list) do set[l] = true end
+      return set
+    end
+    
+    DFobjects = Set{BODY, BODY_DETAIL_PLAN, BUILDING, DESCRIPTOR_COLOR, DESCRIPTOR_PATTERN, DESCRIPTOR_SHAPE, INTERACTION, ITEM, MATERIAL_TEMPLATE, REACTION, SECRET, TISSUE_TEMPLATE, WORLD_GEN, PROFILE, }
+	nestedKeyToken= {BP, CV_CONVERT_TAG, BODY_DETAIL_PLAN, ATTACK, CASTE, SELECT_CASTE, WEAPON, POSITION, TISSUE_STYLE, NOUN, ADJ, VERB, PREFIX, SYNDROME, USE_MATERIAL_TEMPLATE, GROWTH, REAGENT, PRODUCT}
+    mt = {}          -- create the matrix
+    for w in DFobjects() do
+      mt[i] = {}     -- create a new row
+      for j=1,M do
+        mt[i][j] = 0
+      end
+    end
+
+function ipairs_sparse(t)
+ -- tmpIndex will hold sorted indices, otherwise
+ -- this iterator would be no different from pairs iterator
+ local tmpIndex = {}
+ local index, _ = next(t)
+ while index do
+ tmpIndex[#tmpIndex+1] = index
+ index, _ = next(t, index)
+ end
+ -- sort table indices
+ table.sort(tmpIndex)
+ local j = 1
+ return function()
+ -- get index value
+ local i = tmpIndex[j]
+  j = j + 1
+ if i then
+ return i, t[i]
+ end
+ end
+end
+
+
+The following lines of code show the usage example for iteration over a sparse array;
+-- table below contains unsorted sparse array
+local t = {
+ [10] = 'a', [2] = 'b', [5] = 'c', [100] = 'd', [99] = 'e',
+}
+-- iterate over entries
+for i, v in ipairs_sparse(t) do
+ print(i,v)
+end
+How it works…
+The Lua language uses iterator functions in the control structure called the generic for.
+The generic for calls the iterator function for each new iteration and stops when the iterator
+function returns nil. The ipairs_sparse function works in the following steps:
+1. It builds a new index of keys from the table.
+2. It sorts the index table.
+3. It returns a closure where each call of the closure returns a consecutive index and a
+value from the sparse array.
+Each call to ipairs_sparse prepares a new index table called index. The index consists of
+(integer, entry) pairs.
+
+
+function rubble.libs_base.matchtag(tag, match)
+	local object = string.split(delta_object_cursor, ":")
+	if tag.CommentsOnly then
+		return false
+	end
+	
+	if #match ~= 1 and #match-1 > #tag.Params then
+		return false
+	end
+	
+	if match[1] ~= tag.ID then
+		return false
+	end
+-- this should act like a sentinel to restric operation to the nested subobject tokens identified by the context
+	for i, v in ipairs_sparse(whereAreTheNestedKeys) do 
+		if delta_nestedKey_cursor ~= "" and whereAreTheNestedKeys[object[1]][tag.Params[v]] == true  then
+			return false
+		end
+	end
+	for i = 2, #match, 1 do
+		if match[i] ~= "&" and match[i] ~= tag.Params[i-1] then
+			return false
+		end
+	end
+	return true
+end

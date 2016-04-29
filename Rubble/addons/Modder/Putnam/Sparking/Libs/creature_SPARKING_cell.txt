@@ -1,6 +1,6 @@
 creature_cell
 [OBJECT:CREATURE]
-	[CREATURE:CELL]
+	{!SHARED_CREATURE;CELL;
 		[NAME:bionic android:bionic androids:android]
 		[DESCRIPTION:A bionic android, called "Cell" by some. It contains the DNA and abilities of the universe's greatest fighters. It can only be killed through the destruction of its nucleus.]
 		[MEGABEAST][ITEMCORPSE:TOOL:DRAGONBALL:NONE:NONE]
@@ -114,7 +114,8 @@ creature_cell
 			[CDI:TARGET_RANGE:A:1]
 			[CDI:MAX_TARGET_NUMBER:A:1]
 			[CDI:WAIT_PERIOD:2000]
-[CREATURE:CELL_CORPSE_EXPLODE_DBZ] narhiril's. i've edited it a bit.
+}
+{!SHARED_CREATURE;CELL_CORPSE_EXPLODE_DBZ; narhiril's. i've edited it a bit.
 	[DESCRIPTION:This corpse is being absorbed!]
 	[NAME:partially absorbed corpse:partially absorbed corpses:partially absorbed]
 	[CASTE_NAME:partially absorbed corpse:partially absorbed corpses:partially absorbed]
@@ -158,3 +159,4 @@ creature_cell
 	[ALL_ACTIVE]
 	[NO_DIZZINESS]
 	[CASTE:GENERIC]
+}

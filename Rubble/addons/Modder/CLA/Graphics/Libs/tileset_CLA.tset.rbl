@@ -1,0 +1,9 @@
+
+[AUX_FILE:INIT.TXT]
+	[INTRO:NO]
+	[GRAPHICS:YES]
+	[MACRO_MS:0]
+	[FONT:graphics_CLA_18x18.png]
+	[FULLFONT:graphics_CLA_18x18.png]
+	[GRAPHICS_FONT:graphics_CLA_18x18.png]
+	[GRAPHICS_FULLFONT:graphics_CLA_18x18.png]

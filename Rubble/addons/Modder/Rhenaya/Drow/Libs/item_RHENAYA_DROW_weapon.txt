@@ -15,7 +15,7 @@ item_rhenaya_drow_weapon
 [ATTACK:EDGE:50:2000:stab:stabs:NO_SUB:1000]
 [ATTACK:BLUNT:20000:4000:slap:slaps:flat:1250]
 [ATTACK:BLUNT:1000:1000:strike:strikes:pommel:1000]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 {!SHARED_ITEM;WEAPON;RHENAYAS_DROW_ITEM_WEAPON_SWORD_LONG;
 [NAME:drow long sword:drow long swords]
@@ -28,7 +28,7 @@ item_rhenaya_drow_weapon
 [ATTACK:EDGE:50:3000:stab:stabs:NO_SUB:1000]
 [ATTACK:BLUNT:60000:6000:slap:slaps:flat:1250]
 [ATTACK:BLUNT:100:1000:strike:strikes:pommel:1000]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 {!SHARED_ITEM;WEAPON;RHENAYAS_DROW_ITEM_WEAPON_SWORD_2H;
 [NAME:drow two-handed sword:drow two-handed swords]
@@ -41,7 +41,7 @@ item_rhenaya_drow_weapon
 [ATTACK:EDGE:50:4000:stab:stabs:NO_SUB:1000]
 [ATTACK:BLUNT:100000:8000:slap:slaps:flat:1250]
 [ATTACK:BLUNT:100:1000:strike:strikes:pommel:1000]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 {!SHARED_ITEM;WEAPON;RHENAYAS_DROW_ITEM_WEAPON_SCIMITAR;
 [NAME:drow scimitar:drow scimitars]
@@ -54,7 +54,7 @@ item_rhenaya_drow_weapon
 [ATTACK:EDGE:500:2500:stab:stabs:NO_SUB:1000]
 [ATTACK:BLUNT:40000:6000:slap:slaps:flat:1250]
 [ATTACK:BLUNT:50:1000:strike:strikes:pommel:1000]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 {!SHARED_ITEM;WEAPON;RHENAYAS_DROW_ITEM_WEAPON_RAPIER;
 [NAME:drow rapier:drow rapiers]
@@ -65,7 +65,7 @@ item_rhenaya_drow_weapon
 [MATERIAL_SIZE:2]
 [ATTACK:EDGE:5:2500:stab:stabs:NO_SUB:1000]
 [ATTACK:BLUNT:50:1000:strike:strikes:pommel:1000]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 
 ** dagger
@@ -80,7 +80,7 @@ item_rhenaya_drow_weapon
 [ATTACK:EDGE:1000:800:slash:slashes:NO_SUB:1250]
 [ATTACK:EDGE:5:1000:stab:stabs:NO_SUB:1000]
 [ATTACK:BLUNT:20:600:strike:strikes:pommel:1000]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 {!SHARED_ITEM;WEAPON;RHENAYAS_DROW_ITEM_WEAPON_KATAR;
 [NAME:set of drow katars:sets of drow katars]
@@ -95,7 +95,7 @@ item_rhenaya_drow_weapon
 [ATTACK:EDGE:10000:2000:slash:slashes:left hand blade:1250]
 [ATTACK:EDGE:10:2000:stab:stabs:left hand tip:1000]
 [ATTACK:BLUNT:10000:2000:slap:slaps:left hand flat:1250]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 
 **maces
@@ -108,7 +108,7 @@ item_rhenaya_drow_weapon
 [MINIMUM_SIZE:37500]
 [MATERIAL_SIZE:4]
 [ATTACK:BLUNT:200:4000:bash:bashes:NO_SUB:2500]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 {!SHARED_ITEM;WEAPON;RHENAYAS_DROW_ITEM_WEAPON_MORNINGSTAR;
 [NAME:drow morningstar:drow morningstars]
@@ -120,7 +120,7 @@ item_rhenaya_drow_weapon
 [MATERIAL_SIZE:3]
 [ATTACK:EDGE:10:500:bash:bashes:NO_SUB:2000]
 [ATTACK:BLUNT:50:1000:strike:strikes:pommel:1000]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 {!SHARED_ITEM;WEAPON;RHENAYAS_DROW_ITEM_WEAPON_MACE;
 [NAME:drow mace:drow maces]
@@ -130,7 +130,7 @@ item_rhenaya_drow_weapon
 [MINIMUM_SIZE:27500]
 [MATERIAL_SIZE:3]
 [ATTACK:BLUNT:20:200:bash:bashes:NO_SUB:2000]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 
 **whips
@@ -142,7 +142,7 @@ item_rhenaya_drow_weapon
 [MINIMUM_SIZE:12500]
 [MATERIAL_SIZE:1]
 [ATTACK:BLUNT:1:10:lash:lashes:NO_SUB:5000]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 {!SHARED_ITEM;WEAPON;RHENAYAS_DROW_ITEM_WEAPON_SCOURGE;
 [NAME:drow scourge:drow scourges]
@@ -152,7 +152,7 @@ item_rhenaya_drow_weapon
 [MINIMUM_SIZE:17500]
 [MATERIAL_SIZE:2]
 [ATTACK:EDGE:10:50:lash:lashes:NO_SUB:2000]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 {!SHARED_ITEM;WEAPON;RHENAYAS_DROW_ITEM_WEAPON_SCOURGE_OF_FANGS;
 [NAME:drow scourge of fangs:drow scourges of fangs]
@@ -163,7 +163,7 @@ item_rhenaya_drow_weapon
 [MATERIAL_SIZE:3]
 [ATTACK:BLUNT:10:50:lash:lashes:NO_SUB:4000]
 [ATTACK:EDGE:5:800:bite:bites:snakehead:2000]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 
 ** axe
@@ -177,7 +177,7 @@ item_rhenaya_drow_weapon
 [ATTACK:EDGE:40000:6000:hack:hacks:NO_SUB:1250]
 [ATTACK:BLUNT:40000:6000:slap:slaps:flat:1250]
 [ATTACK:BLUNT:1000:1000:strike:strikes:pommel:1000]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 
 ** hammer
@@ -189,7 +189,7 @@ item_rhenaya_drow_weapon
 [MINIMUM_SIZE:32500]
 [MATERIAL_SIZE:3]
 [ATTACK:BLUNT:10:200:bash:bashes:NO_SUB:2000]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 
 ** spear
@@ -202,7 +202,7 @@ item_rhenaya_drow_weapon
 [MATERIAL_SIZE:3]
 [ATTACK:EDGE:20:10000:stab:stabs:NO_SUB:1000]
 [ATTACK:BLUNT:10000:6000:bash:bashes:shaft:1250]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 {!SHARED_ITEM;WEAPON;RHENAYAS_DROW_ITEM_WEAPON_QUARTERSTAFF;
 [NAME:drow quarterstaff:drow quarterstaffs]
@@ -213,7 +213,7 @@ item_rhenaya_drow_weapon
 [MATERIAL_SIZE:5]
 [ATTACK:BLUNT:50:10000:stab:stabs:NO_SUB:1000]
 [ATTACK:BLUNT:8000:8000:bash:bashes:shaft:1250]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 {!SHARED_ITEM;WEAPON;RHENAYAS_DROW_ITEM_WEAPON_PITCHFORK;
 [NAME:drow rothe pitchfork:drow rothe pitchforks]
@@ -224,7 +224,7 @@ item_rhenaya_drow_weapon
 [MATERIAL_SIZE:4]
 [ATTACK:EDGE:60:10000:stab:stabs:NO_SUB:1000]
 [ATTACK:BLUNT:10000:6000:bash:bashes:shaft:1250]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 
 ** pike
@@ -237,7 +237,7 @@ item_rhenaya_drow_weapon
 [MATERIAL_SIZE:4]
 [ATTACK:EDGE:20:12000:stab:stabs:NO_SUB:1000]
 [ATTACK:BLUNT:10000:6000:bash:bashes:shaft:1250]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 
 **crossbows
@@ -252,7 +252,7 @@ item_rhenaya_drow_weapon
 [MINIMUM_SIZE:5000]
 [MATERIAL_SIZE:1]
 [ATTACK:BLUNT:1000:2000:slap:slaps:NO_SUB:1250]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 {!SHARED_ITEM;WEAPON;RHENAYAS_DROW_ITEM_WEAPON_CROSSBOW;
 [NAME:drow crossbow:drow crossbows]
@@ -265,14 +265,14 @@ item_rhenaya_drow_weapon
 [MINIMUM_SIZE:15000]
 [MATERIAL_SIZE:3]
 [ATTACK:BLUNT:10000:4000:bash:bashes:NO_SUB:1250]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 {!SHARED_ITEM;AMMO;RHENAYAS_DROW_ITEM_AMMO_BOLTS;
 [NAME:drow bolt:drow bolts]
 [CLASS:BOLT]
 [SIZE:100]
 [ATTACK:EDGE:1:1000:stab:stabs:NO_SUB:2000]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 **training
 {!SHARED_ITEM;WEAPON;RHENAYAS_DROW_ITEM_WEAPON_QUARTERSTAFF_TRAINING;
@@ -285,7 +285,7 @@ item_rhenaya_drow_weapon
 [ATTACK:BLUNT:50:10000:stab:stabs:NO_SUB:1000]
 [ATTACK:BLUNT:8000:8000:bash:bashes:shaft:1250]
 [TRAINING]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 {!SHARED_ITEM;WEAPON;RHENAYAS_DROW_ITEM_WEAPON_SWORD_TRAINING;
 [NAME:drow training staff:drow training staffs]
@@ -298,7 +298,7 @@ item_rhenaya_drow_weapon
 [ATTACK:BLUNT:60000:6000:slap:slaps:NO_SUB:1250]
 [ATTACK:BLUNT:100:1000:strike:strikes:pommel:1000]
 [TRAINING]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}
 
 {!SHARED_ITEM;WEAPON;RHENAYAS_DROW_ITEM_WEAPON_MACE_TRAINING;
 [NAME:drow training club:drow training clubs]
@@ -309,4 +309,4 @@ item_rhenaya_drow_weapon
 [MATERIAL_SIZE:3]
 [ATTACK:BLUNT:20:200:bash:bashes:NO_SUB:2000]
 [TRAINING]
-}
+}{!ITEM_CLASS;ADDON_HOOK_PLAYABLE}

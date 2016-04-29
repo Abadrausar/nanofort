@@ -1,0 +1,3 @@
+Minor mods that may have a positive impact over FPS or give bigger relevance to the auto generated content of the simulation:
+Ruins, Tombs, Lairs, Titans, megabeast, semimegabeast, Bogeyman, vampires,mummies, clowns, ghost, zombies and necros, clowns and Mayor Demons, Gods, magic weather, night creatures...
+Dwarf Fortress File Depot definition of minor mod is relevant here.

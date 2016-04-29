@@ -1,0 +1,15 @@
+interaction_halfling
+
+$Id: 2ea5b18ec5a67f8d8912ff5ac0866d0e0bec3281 $
+
+[OBJECT:INTERACTION] ## really, again you can't do this differently... 
+
+{!SHARED_INTERACTION;CLEAN_SELF_HLG;
+	[I_SOURCE:CREATURE_ACTION]
+	[I_TARGET:A:CREATURE]
+		[IT_LOCATION:CONTEXT_CREATURE]
+	[I_EFFECT:CLEAN]
+		[IE_TARGET:A]
+		[IE_IMMEDIATE]
+		[IE_GRIME_LEVEL:2]
+}
