@@ -15,9 +15,9 @@ The number of active objects have been already dramatically reduced (good news f
 3. You need at least the vanilla base language files and then the specifics language files of the creature of your civilization if those creatures are able to speak.
 4. BODY, BODY_DETAIL_PLAN, BOOK, BUILDING, DESCRIPTOR_COLOR, DESCRIPTOR_PATTERN, DESCRIPTOR_SHAPE, INTERACTION, ITEM, MATERIAL_TEMPLATE, REACTION, SECRET and TISSUE_TEMPLATE have not been investigated for pruning.
 
-# So you think that you need some help, want to do a sugestion, inform about a bug or give thanks to modders or developpers, but not sure where to go.
+# So you think that you need some help, want to do a suggestion, inform about a bug or give thanks to modders or developers, but not sure where to go.
 0. If your question is addressed to the actual original maintainer of this mod then you have [Haiku Vanilla](http://www.bay12forums.com/smf/index.php?topic=157300.0)
-1. If you want to patronize Toady One and the developpment of Dwarf Fortress go to: [Support Dwarf Fortress Vanilla](http://www.bay12games.com/support.html)
+1. If you want to patronize Toady One and the development of Dwarf Fortress go to: [Support Dwarf Fortress Vanilla](http://www.bay12games.com/support.html)
 2. For questions about the rubble framework go to: [Rubble framework](http://www.bay12forums.com/smf/index.php?topic=154304.0)
 3. Anything about HDFPS: Humble Dwarf Fortress Publishing System is there [HDFPS](http://www.bay12forums.com/smf/index.php?topic=157300.0)
 ![Haiku Vanilla pic](http://www.unav.es/nuestrotiempo/themed/nuestrotiempo/files/photos/big/147/135/BIG_cultura1.jpg)
