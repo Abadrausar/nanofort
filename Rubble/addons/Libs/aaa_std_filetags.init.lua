@@ -2,55 +2,55 @@
 -- Some helpful predefined filters.
 rubble.filters = {
 	raw	= {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true
 	},
 	graphics_raw = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=true, AUXTextFile=false, RawFile=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=true,  AUXText=false, RawFile=true
 	},
 	b_detail_plan = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true, BodyDetailRaws=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true, BodyDetailRaws=true
 	},
 	body = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true, BodyRaws=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true, BodyRaws=true
 	},
 	building = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true, BuildingRaws=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true, BuildingRaws=true
 	},
 	c_variation = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true, CreatureVarRaws=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true, CreatureVarRaws=true
 	},
 	creature = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true, CreatureRaws=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true, CreatureRaws=true
 	},
 	descriptor = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true, DescriptorRaws=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true, DescriptorRaws=true
 	},
 	entity = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true, EntityRaws=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true, EntityRaws=true
 	},
 	inorganic = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true, InorganicRaws=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true, InorganicRaws=true
 	},
 	interaction = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true, InteractionRaws=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true, InteractionRaws=true
 	},
 	item = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true, ItemRaws=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true, ItemRaws=true
 	},
 	language = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true, LanguageRaws=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true, LanguageRaws=true
 	},
 	material_template = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true, MatTemplateRaws=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true, MatTemplateRaws=true
 	},
 	plant = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true, PlantRaws=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true, PlantRaws=true
 	},
 	reaction = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true, ReactionRaws=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true, ReactionRaws=true
 	},
 	tissue_template = {
-		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXTextFile=false, RawFile=true, TissueRaws=true
+		Skip=false, NoWrite=false, TileSet=false, CreatureGraphics=false, AUXText=false, RawFile=true, TissueRaws=true
 	},
 }
 

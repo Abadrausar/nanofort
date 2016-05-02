@@ -78,6 +78,27 @@ local soexist = [[
 rubble.template("SHARED_OBJECT_EXISTS", soexist)
 rubble.template("#SHARED_OBJECT_EXISTS", soexist)
 
+rubble.template("SHARED_OBJECT_DELETE", function(id)
+	id = rubble.expandargs(id)
+	
+	local data = rubble.registry["Libs/Base:!SHARED_OBJECT"].table
+	if data[id] ~= nil then
+		data[id] = ""
+	end
+	data = rubble.registry["Libs/Base:SHARED_OBJECT_ADD"].table
+	if data[id] ~= nil then
+		data[id] = ""
+	end
+	
+	for _, cat in ipairs(rubble.registry["Libs/Base:!SHARED_OBJECT_CATEGORY"].list) do
+		if rubble.registry.exists["Libs/Base:!SHARED_OBJECT_CATEGORY:"..cat] then
+			rubble.registry["Libs/Base:!SHARED_OBJECT_CATEGORY:"..cat].table[id] = "f"
+		end
+	end
+	
+	rubble.registry["Libs/Base:SHARED_OBJECT_DELETE"].table[id] = "t"
+end)
+
 function rubble.libs_base.sharedobject_walk(id, action)
 	local data = rubble.registry["Libs/Base:!SHARED_OBJECT"].table
 	if data[id] == nil then
@@ -181,6 +202,10 @@ rubble.template("_INSERT_SHARED_OBJECT", [[
 rubble.template("#_INSERT_SHARED_OBJECT", [[
 	local id = rubble.targs({...}, {""})
 	
+	if rubble.registry["Libs/Base:SHARED_OBJECT_DELETE"].table[id] == "t" then
+		return "Object "..id.."deleted."
+	end
+	
 	local out = rubble.parse(rubble.registry["Libs/Base:!SHARED_OBJECT"].table[id])
 	local add_data = rubble.registry["Libs/Base:SHARED_OBJECT_ADD"].table
 	if add_data[id] ~= "" then
@@ -196,7 +221,10 @@ rubble.template("!SHARED_OBJECT_CATEGORY", [[
 		rubble.error("Shared object: "..id.." Does not exist.")
 	end
 	
-	local data = rubble.registry["Libs/Base:!SHARED_OBJECT_CATEGORY:"..cat]
+	local data = rubble.registry["Libs/Base:!SHARED_OBJECT_CATEGORY"]
+	data:listappend(cat)
+	
+	data = rubble.registry["Libs/Base:!SHARED_OBJECT_CATEGORY:"..cat]
 	
 	if data.table[id] == nil then
 		data:listappend(id)

@@ -25,10 +25,10 @@ local function cleardir(path)
 end
 
 -- These are (or at least should be) safe to nuke.
-cleardir("out:objects")
-cleardir("out:scripts")
-cleardir("out:init.d")
-cleardir("out:modules")
+cleardir("out/objects")
+cleardir("out/scripts")
+cleardir("out/init.d")
+cleardir("out/modules")
 
 -- Creature graphics are separately conditional (as it is a pain to make a graphics addon for personal use).
 if rubble.configvar("_RUBBLE_NO_CLEAR_GRAPHICS_") == "true" then
@@ -38,9 +38,9 @@ else
 end
 
 -- Now clear out the various junk that has accumulated in the raw directory itself.
-for _, file in ipairs(axis.listfiles("out:")) do
-	local ok, err = axis.del("out:"..file)
+for _, file in ipairs(axis.listfiles("out")) do
+	local ok, err = axis.del("out/"..file)
 	if not ok then
-		print("  Error deleting: out:\""..file.."\": "..err)
+		print("  Error deleting: \"out/"..file.."\": "..err)
 	end
 end

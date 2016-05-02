@@ -50,6 +50,7 @@ end
 function rubble.expandargs(...)
 	local args = {...}
 	for i, v in ipairs(args) do
+		if v == nil then v = "" end
 		args[i] = rubble.expandvars(rubble.expandvars(v), '&', true)
 	end
 	return table.unpack(args)

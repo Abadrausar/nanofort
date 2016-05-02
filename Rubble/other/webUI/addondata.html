@@ -83,7 +83,7 @@
 		<p>Load Priority: <code>"{{.Meta.LoadPriority}}"</code></p>
 
 		<h4>Tags:</h4>{{range $n, $v := .Meta.Tags}}
-		<li><code>"{{$n}}" = {{$v}}</code>{{if eq $n "Library"}} (Is this addon is an automatically managed library?){{else if eq $n "DocPack"}} (You should never see this, addons with this tag are not really addons.){{else if eq $n "TileSet"}} (Does this addon contains tileset information?){{else if eq $n "SaveSafe"}} (Can this addon be applied to worlds in progress?){{else if eq $n "DFHack"}} (Does this addon requires DFHack to operate?){{else if eq $n "HasTests"}} (Does this addon have template test files?){{else if eq $n "NotNormal"}} (Is this addon not a normal addon, eg should it be hidden during normal generation cycles?){{else if eq $n "Dev"}} (Is this addon something that will only be interesting to addon developers?){{end}}</li>{{else}}
+		<li><code>"{{$n}}" = {{$v}}</code>{{if eq $n "Library"}} (Is this addon is an automatically managed library?){{else if eq $n "DocPack"}} (You should never see this, addons with these tags are not really addons.){{else if eq $n "TileSet"}} (Does this addon contains tileset information?){{else if eq $n "SaveSafe"}} (Can this addon be applied to worlds in progress?){{else if eq $n "DFHack"}} (Does this addon requires DFHack to operate?){{else if eq $n "HasTests"}} (Does this addon have template test files?){{else if eq $n "NotNormal"}} (Is this addon not a normal addon, eg should it be hidden during normal generation cycles?){{else if eq $n "Dev"}} (Is this addon something that will only be interesting to addon developers?){{end}}</li>{{else}}
 		<li>This addon has no tags.</li>{{end}}
 
 		<h4>Dependencies (automatically activated):</h4>{{range .Meta.Activates}}

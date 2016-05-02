@@ -104,8 +104,8 @@
 		<option>{{.}}</option>{{end}}
 	</select></p>
 
-	<table id="AddonList">{{range .Addons}}{{if and (and (not .Meta.Tags.Library) (not .Meta.Tags.DocPack)) (index .Meta.Tags $.Tag)}}
-		<tr><td nowrap>{{if .Active}}<input type="checkbox" value="true" checked name="{{.Meta.Name}}">{{else}}<input type="checkbox" value="false" name="{{.Meta.Name}}">{{end}}<a href="/addondata?addon={{.Meta.Name}}">{{.Meta.Name}}</a></td><td>{{.Meta.Header}}</td></tr>{{end}}{{end}}
+	<table id="AddonList">{{range .Addons.List}}{{if and (and (not .Meta.Tags.Library) (not .Meta.Tags.DocPack)) (index .Meta.Tags $.Tag)}}
+		<tr><td nowrap>{{if (index $.State.Active .Meta.Name)}}<input type="checkbox" value="true" checked name="{{.Meta.Name}}">{{else}}<input type="checkbox" value="false" name="{{.Meta.Name}}">{{end}}<a href="/addondata?addon={{.Meta.Name}}">{{.Meta.Name}}</a></td><td>{{.Meta.Header}}</td></tr>{{end}}{{end}}
 	</table>
 
 	<p><div id="Select" class="button">

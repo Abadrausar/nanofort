@@ -48,7 +48,7 @@
 <body>
 	<p><div id="Back1" class="button">Back to Menu</div></p>
 	<table id="Addons">
-		{{range .Addons}}{{if not .Meta.Tags.DocPack}}<tr><td><a href="/addondata?addon={{.Meta.Name}}">{{.Meta.Name}}</a></td><td>{{.Meta.Header}}</td></tr>
+		{{range .Addons.List}}{{if not .Meta.Tags.DocPack}}<tr><td><a href="/addondata?addon={{.Meta.Name}}">{{.Meta.Name}}</a></td><td>{{.Meta.Header}}</td></tr>
 		{{end}}{{end}}
 	</table>
 	<p><div id="Back2" class="button">Back to Menu</div></p>

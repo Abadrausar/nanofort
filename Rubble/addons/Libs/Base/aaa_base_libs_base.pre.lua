@@ -77,8 +77,7 @@ rubble.template("@IF", [[
 rubble.template("@IF_ACTIVE", [[
 	local addon, t, e = rubble.targs({...}, {"", "", ""})
 	
-	local addonref = rubble.addonstbl[addon]
-	if addonref ~= nil and addonref.Active then
+	if rubble.addonactive[addon] then
 		return rubble.parse(t)
 	end
 	return rubble.parse(e)
@@ -230,4 +229,9 @@ rubble.template("@PARSE_TO", [[
 	local chunk = rubble.expandvars(raws)
 	chunk = rubble.expandvars(chunk, '&', true)
 	rubble.configvar(id, rubble.parse(chunk))
+]])
+
+rubble.template("@COPY_FILE_BANK", [[
+	local id, path = rubble.targs({...}, {"", ""})
+	rubble.copyfilebank(id, path)
 ]])

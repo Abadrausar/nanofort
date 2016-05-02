@@ -12,7 +12,7 @@
 			req.send("addon=" + encodeURIComponent(addon) + "&state=" + encodeURIComponent(state))
 		}
 
-		var addontags = { {{range .Addons}}
+		var addontags = { {{range .Addons.List}}
 			"{{.Meta.Name}}": {{.Meta.Tags}},{{end}}
 		}
 
@@ -160,8 +160,8 @@
 	</script>
 </head>
 <body>
-	<table id="AddonList">{{range .Addons}}{{if and (not .Meta.Tags.Library) (not .Meta.Tags.DocPack) (not .Meta.Tags.NotNormal)}}
-		<tr id="{{.Meta.Name}}"><td nowrap>{{if .Active}}<input type="checkbox" checked name="{{.Meta.Name}}">{{else}}<input type="checkbox" name="{{.Meta.Name}}">{{end}}<a href="/addondata?addon={{.Meta.Name}}">{{.Meta.Name}}</a></td><td>{{.Meta.Header}}</td></tr>{{end}}{{end}}
+	<table id="AddonList">{{range .Addons.List}}{{if and (not .Meta.Tags.Library) (not .Meta.Tags.DocPack) (not .Meta.Tags.NotNormal)}}
+		<tr id="{{.Meta.Name}}"><td nowrap>{{if (index $.State.Active .Meta.Name)}}<input type="checkbox" checked name="{{.Meta.Name}}">{{else}}<input type="checkbox" name="{{.Meta.Name}}">{{end}}<a href="/addondata?addon={{.Meta.Name}}">{{.Meta.Name}}</a></td><td>{{.Meta.Header}}</td></tr>{{end}}{{end}}
 	</table>
 	{{if gt (len $.Presets) 1}}
 	<p>Preset: <select id="Preset">{{range $.Presets}}

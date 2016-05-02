@@ -1,3 +1,35 @@
 The Planets of Myth, region2: Not enough peaks: 0<1
 The Planets of Myth, region2: Not enough peaks: 0<1
 The Planets of Myth, region2: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough high altitudes after shift up
+The Mythic Stars, region1: Not enough low altitudes after shift down: -28
+The Mythic Stars, region1: Not enough high altitudes after shift up
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough low altitudes after shift down: -7
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough low altitudes after shift down: -13
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough high altitudes after shift up
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough peaks: 0<1
+The Mythic Stars, region1: Not enough low altitudes after shift down: -16

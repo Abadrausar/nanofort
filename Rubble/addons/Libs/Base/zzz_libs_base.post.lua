@@ -1,5 +1,5 @@
 
-axis.write("out:init.lua", '\n-- DFHack init.lua script file\n-- Automatically generated, DO NOT EDIT!\n'..
+axis.write("out/init.lua", '\n-- DFHack init.lua script file\n-- Automatically generated, DO NOT EDIT!\n'..
 rubble.files["loader_libs_base.lua"].Content..'\ndfhack.gui.showAnnouncement("This region\'s raws were generated with Rubble v'..
 rubble.version..'!", COLOR_LIGHTGREEN)\n')
 
@@ -34,5 +34,5 @@ if #extras.list > 0 then
 end
 
 if write then
-	axis.write("out:onLoad.init", base)
+	axis.write("out/onLoad.init", base)
 end

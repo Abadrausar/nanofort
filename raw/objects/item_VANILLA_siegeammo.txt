@@ -1,9 +1,0 @@
-item_VANILLA_siegeammo
-
-# Automatically generated, do not edit!
-# Source: addons:dir:Vanilla/ITEM/item_VANILLA_siegeammo.txt
-[OBJECT:ITEM]
-
-[ITEM_SIEGEAMMO:ITEM_SIEGEAMMO_BALLISTA]
-	[NAME:ballista arrow:ballista arrows]
-	[CLASS:BALLISTA]
