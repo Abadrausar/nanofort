@@ -1,6 +1,6 @@
 # Haiku Vanilla
-[Addon Change log](/addonfile?addon=Abadrausar___Haiku_Vanilla&file=addon_changes.md)
 This is DF with the minimal number of active objects to have *all* the basics of a functional vanilla *without modifying any of them* only pruning all the non redundant object into a separate minimal directory nested inside the base of their type.
+[Addon Change log](/addonfile?addon=Abadrausar___Haiku_Vanilla&file=addon_changes.md)
 # What we have until now is:
 1. 10 Creatures: 1 wagon,3 vermin,1 colonies (bees), 3 domestics (dog, cat and donkey) 2 civilized (dwarves and goblins) and nothing more. For the variety you have the titans, FB semiFB, night creatures and rest of random.
 2. 34 Inorganics: 5 to enable adventure coins, 6 for the bronze line, 5 for the steel line, 3 for the deep specials, and 15 for the rest: stones and ores.
