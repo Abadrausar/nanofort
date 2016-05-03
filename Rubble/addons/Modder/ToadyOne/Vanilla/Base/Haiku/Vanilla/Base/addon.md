@@ -20,4 +20,4 @@ The number of active objects have been already dramatically reduced (good news f
 1. If you want to patronize Toady One and the development of Dwarf Fortress go to: [Support Dwarf Fortress Vanilla](http://www.bay12games.com/support.html)
 2. For questions about the rubble framework go to: [Rubble framework](http://www.bay12forums.com/smf/index.php?topic=154304.0)
 3. Anything about HDFPS: Humble Dwarf Fortress Publishing System is there [HDFPS](http://www.bay12forums.com/smf/index.php?topic=157300.0)
-![Vanilla Haiku ](http://www.unav.es/nuestrotiempo/themed/nuestrotiempo/files/photos/big/147/135/BIG_cultura1.jpg)
+![Vanilla Haiku](http://www.unav.es/nuestrotiempo/themed/nuestrotiempo/files/photos/big/147/135/BIG_cultura1.jpg)

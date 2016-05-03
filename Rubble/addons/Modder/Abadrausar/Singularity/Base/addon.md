@@ -25,7 +25,7 @@ And a little bit of admiration ;)
 #	"",
 # My Little Fortress (Valikdu)
 
-[Addon Change log](/addonfile?addon=Abadrausar___Singularity&file=___version_Abadrausar___Singularity_1.0.md)
+[Addon Changelog](/addonfile?addon=Abadrausar___Singularity&file=___version_Abadrausar___Singularity_1.0.md)
 ## So you think that you need some help, want to do a suggestion, inform about a bug or give thanks to modders or developpers, but not sure where to go.
 0. If your question is addressed to the actual original maintainer of this mod then you have [Singularity](http://www.bay12forums.com/smf/index.php?topic=157300.0)
 1. If you want to patronize Toady One and the development of Dwarf Fortress go to: [Support Dwarf Fortress Vanilla](http://www.bay12games.com/support.html)
