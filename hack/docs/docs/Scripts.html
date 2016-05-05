@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>DFHack Scripts &mdash; DFHack 0.42.06- documentation</title>
+    <title>DFHack Scripts &mdash; DFHack 0.42.06-r1 documentation</title>
     
     <link rel="stylesheet" href="../_static/dfhack.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.42.06-',
+        VERSION:     '0.42.06-r1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,12 +24,12 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/dfhack-icon.ico"/>
-    <link rel="top" title="DFHack 0.42.06- documentation" href="../index.html" />
+    <link rel="top" title="DFHack 0.42.06-r1 documentation" href="../index.html" />
     <link rel="next" title="Basic Scripts" href="_auto/base.html" />
     <link rel="prev" title="DFHack Plugins" href="Plugins.html" />
    
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
   <body role="document">  
@@ -58,6 +58,7 @@ are considered for execution as if they were native DFHack commands.</p>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#binpatch">binpatch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#brainwash">brainwash</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#burial">burial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_auto/base.html#colonies">colonies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#combine-drinks">combine-drinks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#combine-plants">combine-plants</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#create-items">create-items</a></li>
@@ -65,7 +66,6 @@ are considered for execution as if they were native DFHack commands.</p>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#deteriorateclothes">deteriorateclothes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#deterioratecorpses">deterioratecorpses</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#deterioratefood">deterioratefood</a></li>
-<li class="toctree-l2"><a class="reference internal" href="_auto/base.html#dfusion">dfusion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#digfort">digfort</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#drain-aquifer">drain-aquifer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#elevate-mental">elevate-mental</a></li>
@@ -87,7 +87,6 @@ are considered for execution as if they were native DFHack commands.</p>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#launch">launch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#lever">lever</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#locate-ore">locate-ore</a></li>
-<li class="toctree-l2"><a class="reference internal" href="_auto/base.html#log-region">log-region</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#lua">lua</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#make-legendary">make-legendary</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#make-monarch">make-monarch</a></li>
@@ -111,7 +110,6 @@ are considered for execution as if they were native DFHack commands.</p>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#setfps">setfps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#show-unit-syndromes">show-unit-syndromes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#siren">siren</a></li>
-<li class="toctree-l2"><a class="reference internal" href="_auto/base.html#soundsense-season">soundsense-season</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#source">source</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#spawnunit">spawnunit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/base.html#startdwarf">startdwarf</a></li>
@@ -215,6 +213,7 @@ are considered for execution as if they were native DFHack commands.</p>
 <li class="toctree-l2"><a class="reference internal" href="_auto/modtools.html#modtools-create-item">modtools/create-item</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/modtools.html#modtools-create-unit">modtools/create-unit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/modtools.html#modtools-equip-item">modtools/equip-item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_auto/modtools.html#modtools-extra-gamelog">modtools/extra-gamelog</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/modtools.html#modtools-force">modtools/force</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/modtools.html#modtools-interaction-trigger">modtools/interaction-trigger</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_auto/modtools.html#modtools-invader-item-destroyer">modtools/invader-item-destroyer</a></li>
@@ -250,6 +249,8 @@ are considered for execution as if they were native DFHack commands.</p>
 
 
 
+
+
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
@@ -267,9 +268,6 @@ are considered for execution as if they were native DFHack commands.</p>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -280,8 +278,8 @@ are considered for execution as if they were native DFHack commands.</p>
       &copy;2015, The DFHack Team.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
       <a href="../_sources/docs/Scripts.txt"

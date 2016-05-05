@@ -45,6 +45,18 @@ class ActivityEventType < MemHack::Enum
     ENUM[25] = :PlayWithToy ; NUME[:PlayWithToy] = 25
 end
 
+class AdventurerAttributeLevel < MemHack::Enum
+    ENUM = Hash.new
+    NUME = Hash.new
+    ENUM[0] = :VeryLow ; NUME[:VeryLow] = 0
+    ENUM[1] = :Low ; NUME[:Low] = 1
+    ENUM[2] = :BelowAverage ; NUME[:BelowAverage] = 2
+    ENUM[3] = :Average ; NUME[:Average] = 3
+    ENUM[4] = :AboveAverage ; NUME[:AboveAverage] = 4
+    ENUM[5] = :High ; NUME[:High] = 5
+    ENUM[6] = :Superior ; NUME[:Superior] = 6
+end
+
 class AgreementConclusionReason < MemHack::Enum
     ENUM = Hash.new
     NUME = Hash.new
@@ -14814,7 +14826,16 @@ class CaravanState < MemHack::Compound
         number 32, true
     }
     field(:trade_state, 8) {
-        number 8, true
+        class ::DFHack::CaravanState_TTradeState < MemHack::Enum
+            ENUM = Hash.new
+            NUME = Hash.new
+            ENUM[0] = :None ; NUME[:None] = 0
+            ENUM[1] = :Approaching ; NUME[:Approaching] = 1
+            ENUM[2] = :AtDepot ; NUME[:AtDepot] = 2
+            ENUM[3] = :Leaving ; NUME[:Leaving] = 3
+        end
+
+        number 8, true, nil, CaravanState_TTradeState
     }
     field(:depot_notified, 9) {
         number 8, true
@@ -51659,7 +51680,7 @@ class ViewscreenSelectitemst < Viewscreen
 end
 
 class ViewscreenSetupadventurest < Viewscreen
-    sizeof 944
+    sizeof 2048
 
     rtti_classname :viewscreen_setupadventurest
 
@@ -51708,27 +51729,36 @@ class ViewscreenSetupadventurest < Viewscreen
                 number 16, true, -1
             }
             def histfig_tg ; df.world.nemesis.all[histfig] ; end
-            field(:unk_7, 660) {
-                number 32, true
-            }
-            field(:unk_8, 664) {
-                number 32, true
-            }
-            field(:unk_9, 668) {
+            field(:unk_282, 658) {
                 number 16, true
             }
-            field(:unk_v42_1, 672) {
+            field(:unk_284, 660) {
                 number 32, true
             }
-            field(:unk_v42_2, 676) {
+            field(:unk_288, 664) {
                 number 32, true
             }
-            field(:unk_v42_3, 680) {
+            field(:unk_28c, 668) {
+                number 16, true
+            }
+            field(:unk_28e, 670) {
+                number 16, true
+            }
+            field(:unk_290, 672) {
                 number 32, true
+            }
+            field(:unk_294, 676) {
+                number 32, true
+            }
+            field(:unk_298, 680) {
+                number 16, true
+            }
+            field(:unk_29a, 682) {
+                number 16, true
             }
             field(:attributes, 684) {
                 static_array(19, 4) {
-                    number 32, true
+                    global :AdventurerAttributeLevel
                 }
             }
             field(:status, 760) {
@@ -51758,59 +51788,270 @@ class ViewscreenSetupadventurest < Viewscreen
     field(:belief_strength, 812) {
         number 32, true
     }
-    field(:background, 816) {
+    field(:anon_2, 816) {
+        number 32, true
+    }
+    field(:anon_3, 820) {
+        number 16, true
+    }
+    field(:anon_4, 822) {
+        number 16, true
+    }
+    field(:anon_5, 824) {
+        number 32, true
+    }
+    field(:anon_6, 828) {
+        static_array(6, 28) {
+            compound(:ViewscreenSetupadventurest_TAnon6) {
+                field(:unk_0, 0) {
+                    number 32, true
+                }
+                field(:unk_4, 4) {
+                    number 32, true
+                }
+                field(:anon_1, 8) {
+                    number 32, true
+                }
+                field(:anon_2, 12) {
+                    number 32, true
+                }
+                field(:anon_3, 16) {
+                    number 32, true
+                }
+                field(:anon_4, 20) {
+                    number 32, true
+                }
+                field(:anon_5, 24) {
+                    number 32, true
+                }
+            }
+        }
+    }
+    field(:anon_7, 996) {
+        number 32, true
+    }
+    field(:anon_8, 1000) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_9, 1016) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_10, 1032) {
+        number 32, true
+    }
+    field(:anon_11, 1036) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_12, 1052) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_13, 1068) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_14, 1084) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_15, 1100) {
+        stl_vector(2) {
+            number 16, true
+        }
+    }
+    field(:anon_16, 1116) {
+        static_array(2, 8) {
+            compound(:ViewscreenSetupadventurest_TAnon16) {
+                field(:anon_1, 0) {
+                    pointer {
+                    }
+                }
+                field(:anon_2, 4) {
+                    number 16, true
+                }
+            }
+        }
+    }
+    field(:anon_17, 1132) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_18, 1148) {
+        number 32, true
+    }
+    field(:anon_19, 1152) {
+        number 32, true
+    }
+    field(:anon_20, 1156) {
+        number 32, true
+    }
+    field(:anon_21, 1160) {
+        number 32, true
+    }
+    field(:anon_22, 1164) {
+        number 32, true
+    }
+    field(:anon_23, 1168) {
+        number 32, true
+    }
+    field(:anon_24, 1172) {
+        stl_vector(4) {
+            pointer {
+            }
+        }
+    }
+    field(:anon_25, 1188) {
+        static_array(6, 4) {
+            number 32, true
+        }
+    }
+    field(:anon_26, 1212) {
+        stl_vector(4) {
+            pointer {
+            }
+        }
+    }
+    field(:anon_27, 1228) {
+        static_array(42, 4) {
+            number 32, true
+        }
+    }
+    field(:anon_28, 1396) {
+        stl_vector(4) {
+            pointer {
+                static_array(5, 4) {
+                    number 32, true
+                }
+            }
+        }
+    }
+    field(:anon_29, 1412) {
+        static_array(6, 4) {
+            number 32, true
+        }
+    }
+    field(:anon_30, 1436) {
+        number 8, true
+    }
+    field(:anon_31, 1440) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_32, 1456) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_33, 1472) {
+        static_array(9, 4) {
+            number 32, true
+        }
+    }
+    field(:anon_34, 1508) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_35, 1524) {
+        number 32, true
+    }
+    field(:anon_36, 1528) {
+        number 32, true
+    }
+    field(:anon_37, 1532) {
+        number 32, true
+    }
+    field(:anon_38, 1536) {
+        number 32, true
+    }
+    field(:anon_39, 1540) {
+        stl_vector(4) {
+            number 32, true
+        }
+    }
+    field(:anon_40, 1556) {
+        number 32, true
+    }
+    field(:anon_41, 1560) {
+        number 32, true
+    }
+    field(:anon_42, 1564) {
+        number 8, true
+    }
+    field(:anon_43, 1568) {
+        pointer {
+        }
+    }
+    field(:background, 1572) {
         stl_vector(4) {
             pointer {
                 stl_string
             }
         }
     }
-    field(:sites, 832) {
+    field(:sites, 1588) {
         stl_vector(4) {
             pointer {
                 global :WorldSite
             }
         }
     }
-    field(:background_type, 848) {
+    field(:background_type, 1604) {
         stl_vector(4) {
             number 32, true
         }
     }
-    field(:sel_background, 864) {
+    field(:sel_background, 1620) {
         number 32, true, -1
     }
-    field(:race_list, 868) {
-        stl_vector(2) {
-            number 16, true, -1
-        }
-    }
-    def race_list_tg ; race_list.map { |i| df.world.raws.creatures.all[i] } ; end
-    field(:entity_list, 884) {
+    field(:anon_44, 1624) {
         stl_vector(4) {
-            number 32, true, -1
+            number 32, true
         }
     }
-    def entity_list_tg ; entity_list.map { |i| df.world.entities.all.binsearch(i) } ; end
-    field(:nemesis_list, 900) {
-        stl_vector(2) {
-            number 16, true, -1
+    field(:unit_description, 1640) {
+        stl_vector(4) {
+            pointer {
+                stl_string
+            }
         }
     }
-    def nemesis_list_tg ; nemesis_list.map { |i| df.world.nemesis.all.binsearch(i) } ; end
-    field(:skill_list, 916) {
-        stl_vector(2) {
-            number 16, true, nil, JobSkill
+    field(:anon_45, 1656) {
+        number 32, true
+    }
+    field(:anon_46, 1660) {
+        stl_vector(4) {
+            pointer {
+            }
         }
     }
-    field(:focus_column, 932) {
+    field(:anon_47, 1676) {
+        stl_vector(4) {
+            pointer {
+            }
+        }
+    }
+    field(:anon_48, 1692) {
+        stl_vector(4) {
+            pointer {
+            }
+        }
+    }
+    field(:anon_49, 1708) {
         number 8, true
     }
-    field(:attribute_points_remaining, 936) {
-        number 32, true
-    }
-    field(:index_attributes, 940) {
-        number 32, true
+    field(:anon_50, 1709) {
     }
 end
 

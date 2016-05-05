@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Patching the DF binary &mdash; DFHack 0.42.06- documentation</title>
+    <title>Patching the DF binary &mdash; DFHack 0.42.06-r1 documentation</title>
     
     <link rel="stylesheet" href="../_static/dfhack.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.42.06-',
+        VERSION:     '0.42.06-r1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,11 +24,11 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/dfhack-icon.ico"/>
-    <link rel="top" title="DFHack 0.42.06- documentation" href="../index.html" />
+    <link rel="top" title="DFHack 0.42.06-r1 documentation" href="../index.html" />
     <link rel="prev" title="Updating DF-structures for a new DF version" href="../library/xml/how-to-update.html" />
    
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
   <body role="document">  
@@ -43,7 +43,7 @@
 <p>Writing scripts and plugins for DFHack is not the only way to modify Dwarf
 Fortress.  Before DFHack, it was common for tools to manually patch the
 binary to change behaviour, and DFHack still contains tools to do this via
-the <a class="reference internal" href="_auto/base.html#binpatch"><span>binpatch</span></a> command.</p>
+the <a class="reference internal" href="_auto/base.html#binpatch"><span class="std std-ref">binpatch</span></a> command.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">We recommend using a script or plugin instead of a raw patch if
@@ -75,11 +75,10 @@ written patches since <code class="docutils literal"><span class="pre">0.34.11</
 <p>There are no binary patches available for Dwarf Fortress versions after 0.34.11</p>
 <p>This system is kept for the chance that someone will find it useful, so some
 hints on how to write your own follow.  This will require disassembly and
-decent skill in <a class="reference internal" href="Contributing.html#contributing-memory-research"><span>memory research</span></a>.</p>
+decent skill in <a class="reference internal" href="Contributing.html#contributing-memory-research"><span class="std std-ref">memory research</span></a>.</p>
 <ul class="simple">
 <li>The patches are expected to be encoded in text format used by IDA.</li>
-<li>See <a class="reference external" href="https://github.com/DFHack/dfhack/commit/8a9e3d1a728">this commit</a>,
-when the 0.34.11 patches were discarded, for example patches.</li>
+<li>See <a class="reference external" href="https://github.com/DFHack/dfhack/commit/8a9e3d1a728">Commit 8a9e3d1a728</a> for examples.</li>
 <li><a class="reference external" href="https://github.com/DFHack/dfhack/issues/546">Issue 546</a> is about the future of the binpatches, and may be useful reading.</li>
 </ul>
 <p>If you want to write a patch, the armory patches discussed here and documented
@@ -90,17 +89,17 @@ below would probably be the best place to start.</p>
 <p>There are two methods to apply a patch.</p>
 <div class="section" id="patching-at-runtime">
 <h3><a class="toc-backref" href="#id4">Patching at runtime</a><a class="headerlink" href="#patching-at-runtime" title="Permalink to this headline">¶</a></h3>
-<p>The <a class="reference internal" href="_auto/base.html#binpatch"><span>binpatch</span></a> script checks, applies or removes binary patches
+<p>The <a class="reference internal" href="_auto/base.html#binpatch"><span class="std std-ref">binpatch</span></a> script checks, applies or removes binary patches
 directly in memory at runtime:</p>
-<div class="highlight-python"><div class="highlight"><pre>binpatch [check|apply|remove] &lt;patchname&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">binpatch</span> <span class="p">[</span><span class="n">check</span><span class="o">|</span><span class="n">apply</span><span class="o">|</span><span class="n">remove</span><span class="p">]</span> <span class="o">&lt;</span><span class="n">patchname</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>If the name of the patch has no extension or directory separators, the
-script uses <code class="docutils literal"><span class="pre">hack/patches/&lt;df-version&gt;/&lt;name&gt;.dif</span></code>, thus auto-selecting
+script uses <code class="file docutils literal"><span class="pre">hack/patches/&lt;df-version&gt;/&lt;name&gt;.dif</span></code>, thus auto-selecting
 the version appropriate for the currently loaded executable.</p>
 <p>This is the preferred method; it&#8217;s easier to debug, does not cause persistent
 problems, and leaves file checksums alone.  As with many other commands, users
-can simply add it to <a class="reference internal" href="Core.html#dfhack-init"><span>dfhack*.init</span></a> to reapply the patch every time DF is run.</p>
+can simply add it to <a class="reference internal" href="Core.html#dfhack-init"><span class="std std-ref">dfhack*.init</span></a> to reapply the patch every time DF is run.</p>
 </div>
 <div class="section" id="patching-on-disk">
 <h3><a class="toc-backref" href="#id5">Patching on disk</a><a class="headerlink" href="#patching-on-disk" title="Permalink to this headline">¶</a></h3>
@@ -123,7 +122,7 @@ system console:</p>
 <p>If you use a permanent patch under OSX or Linux, you must update
 <code class="docutils literal"><span class="pre">symbols.xml</span></code> with the new checksum of the executable.  Find the relevant
 section, and add a new line:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;md5-hash value=&#39;????????????????????????????????&#39;/&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">md5</span><span class="o">-</span><span class="nb">hash</span> <span class="n">value</span><span class="o">=</span><span class="s1">&#39;????????????????????????????????&#39;</span><span class="o">/&gt;</span>
 </pre></div>
 </div>
 <p>In order to find the correct value of the hash, look into stderr.log;
@@ -143,7 +142,7 @@ armor stands, and in containers.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">In order to actually be used, weapon racks have to be patched and
-manually assigned to a squad. See <a class="reference internal" href="_auto/gui.html#gui-assign-rack"><span>gui/assign-rack</span></a>.</p>
+manually assigned to a squad. See <a class="reference internal" href="_auto/gui.html#gui-assign-rack"><span class="std std-ref">gui/assign-rack</span></a>.</p>
 </div>
 <p>Note that the buildings in the armory are used as follows:</p>
 <ul class="simple">
@@ -195,7 +194,7 @@ the game does this. This issue is what this script addresses.</li>
 without a binary patch</strong>.  This patch is called <code class="docutils literal"><span class="pre">weaponrack-unassign</span></code>,
 and has not been updated since 0.34.11. See <a class="reference external" href="http://www.bay12games.com/dwarves/mantisbt/view.php?id=1445">Bug 1445</a> for more info.</li>
 <li>Haulers still take equipment stored in the armory away to the stockpiles,
-unless <a class="reference internal" href="Plugins.html#fix-armory"><span>fix-armory</span></a> is used.</li>
+unless <a class="reference internal" href="Plugins.html#fix-armory"><span class="std std-ref">fix-armory</span></a> is used.</li>
 </ul>
 <p>The script interface simply lets you designate one of the squads that
 are assigned to the barracks/armory containing the selected stand as
@@ -218,6 +217,8 @@ of currently assigned racks for every valid squad.</p>
 
 
 
+
+
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
@@ -234,9 +235,6 @@ of currently assigned racks for every valid squad.</p>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
   <h3><a href="../index.html">Table Of Contents</a></h3>
@@ -265,8 +263,8 @@ of currently assigned racks for every valid squad.</p>
       &copy;2015, The DFHack Team.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
       <a href="../_sources/docs/Binpatches.txt"

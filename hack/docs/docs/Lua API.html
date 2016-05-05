@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>DFHack Lua API &mdash; DFHack 0.42.06- documentation</title>
+    <title>DFHack Lua API &mdash; DFHack 0.42.06-r1 documentation</title>
     
     <link rel="stylesheet" href="../_static/dfhack.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.42.06-',
+        VERSION:     '0.42.06-r1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,12 +24,12 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/dfhack-icon.ico"/>
-    <link rel="top" title="DFHack 0.42.06- documentation" href="../index.html" />
+    <link rel="top" title="DFHack 0.42.06-r1 documentation" href="../index.html" />
     <link rel="next" title="Data Structure Definition Syntax" href="../library/xml/SYNTAX.html" />
     <link rel="prev" title="Compiling DFHack" href="Compile.html" />
    
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
   <body role="document">  
@@ -40,120 +40,9 @@
           <div class="body" role="main">
             
   <div class="section" id="dfhack-lua-api">
-<h1><a class="toc-backref" href="#id5">DFHack Lua API</a><a class="headerlink" href="#dfhack-lua-api" title="Permalink to this headline">¶</a></h1>
-<div class="contents topic" id="contents">
-<p class="topic-title first">Contents</p>
-<ul class="simple">
-<li><a class="reference internal" href="#dfhack-lua-api" id="id5">DFHack Lua API</a><ul>
-<li><a class="reference internal" href="#df-data-structure-wrapper" id="id6">DF data structure wrapper</a><ul>
-<li><a class="reference internal" href="#typed-object-references" id="id7">Typed object references</a><ul>
-<li><a class="reference internal" href="#primitive-references" id="id8">Primitive references</a></li>
-<li><a class="reference internal" href="#struct-references" id="id9">Struct references</a></li>
-<li><a class="reference internal" href="#container-references" id="id10">Container references</a></li>
-<li><a class="reference internal" href="#bitfield-references" id="id11">Bitfield references</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#named-types" id="id12">Named types</a></li>
-<li><a class="reference internal" href="#global-functions" id="id13">Global functions</a></li>
-<li><a class="reference internal" href="#recursive-table-assignment" id="id14">Recursive table assignment</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#dfhack-api" id="id15">DFHack API</a><ul>
-<li><a class="reference internal" href="#native-utilities" id="id16">Native utilities</a><ul>
-<li><a class="reference internal" href="#input-output" id="id17">Input &amp; Output</a></li>
-<li><a class="reference internal" href="#exception-handling" id="id18">Exception handling</a></li>
-<li><a class="reference internal" href="#miscellaneous" id="id19">Miscellaneous</a></li>
-<li><a class="reference internal" href="#locking-and-finalization" id="id20">Locking and finalization</a></li>
-<li><a class="reference internal" href="#persistent-configuration-storage" id="id21">Persistent configuration storage</a></li>
-<li><a class="reference internal" href="#material-info-lookup" id="id22">Material info lookup</a></li>
-<li><a class="reference internal" href="#random-number-generation" id="id23">Random number generation</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#c-function-wrappers" id="id24">C++ function wrappers</a><ul>
-<li><a class="reference internal" href="#gui-module" id="id25">Gui module</a></li>
-<li><a class="reference internal" href="#job-module" id="id26">Job module</a></li>
-<li><a class="reference internal" href="#units-module" id="id27">Units module</a></li>
-<li><a class="reference internal" href="#items-module" id="id28">Items module</a></li>
-<li><a class="reference internal" href="#maps-module" id="id29">Maps module</a></li>
-<li><a class="reference internal" href="#burrows-module" id="id30">Burrows module</a></li>
-<li><a class="reference internal" href="#buildings-module" id="id31">Buildings module</a></li>
-<li><a class="reference internal" href="#constructions-module" id="id32">Constructions module</a></li>
-<li><a class="reference internal" href="#screen-api" id="id33">Screen API</a></li>
-<li><a class="reference internal" href="#penarray-class" id="id34">PenArray class</a></li>
-<li><a class="reference internal" href="#filesystem-module" id="id35">Filesystem module</a></li>
-<li><a class="reference internal" href="#internal-api" id="id36">Internal API</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#core-interpreter-context" id="id37">Core interpreter context</a><ul>
-<li><a class="reference internal" href="#event-type" id="id38">Event type</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#lua-modules" id="id39">Lua Modules</a><ul>
-<li><a class="reference internal" href="#global-environment" id="id40">Global environment</a></li>
-<li><a class="reference internal" href="#utils" id="id41">utils</a></li>
-<li><a class="reference internal" href="#dumper" id="id42">dumper</a></li>
-<li><a class="reference internal" href="#class" id="id43">class</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#in-game-ui-library" id="id44">In-game UI Library</a><ul>
-<li><a class="reference internal" href="#gui" id="id45">gui</a><ul>
-<li><a class="reference internal" href="#misc" id="id46">Misc</a></li>
-<li><a class="reference internal" href="#viewrect-class" id="id47">ViewRect class</a></li>
-<li><a class="reference internal" href="#painter-class" id="id48">Painter class</a></li>
-<li><a class="reference internal" href="#view-class" id="id49">View class</a></li>
-<li><a class="reference internal" href="#screen-class" id="id50">Screen class</a></li>
-<li><a class="reference internal" href="#framedscreen-class" id="id51">FramedScreen class</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#gui-widgets" id="id52">gui.widgets</a><ul>
-<li><a class="reference internal" href="#widget-class" id="id53">Widget class</a></li>
-<li><a class="reference internal" href="#panel-class" id="id54">Panel class</a></li>
-<li><a class="reference internal" href="#pages-class" id="id55">Pages class</a></li>
-<li><a class="reference internal" href="#editfield-class" id="id56">EditField class</a></li>
-<li><a class="reference internal" href="#label-class" id="id57">Label class</a></li>
-<li><a class="reference internal" href="#list-class" id="id58">List class</a></li>
-<li><a class="reference internal" href="#filteredlist-class" id="id59">FilteredList class</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#plugins" id="id60">Plugins</a><ul>
-<li><a class="reference internal" href="#burrows" id="id61">burrows</a></li>
-<li><a class="reference internal" href="#sort" id="id62">sort</a></li>
-<li><a class="reference internal" href="#eventful" id="id63">Eventful</a><ul>
-<li><a class="reference internal" href="#list-of-events" id="id64">List of events</a></li>
-<li><a class="reference internal" href="#events-from-eventmanager" id="id65">Events from EventManager</a></li>
-<li><a class="reference internal" href="#functions" id="id66">Functions</a></li>
-<li><a class="reference internal" href="#examples" id="id67">Examples</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#building-hacks" id="id68">Building-hacks</a><ul>
-<li><a class="reference internal" href="#id3" id="id69">Functions</a></li>
-<li><a class="reference internal" href="#id4" id="id70">Examples</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#luasocket" id="id71">Luasocket</a><ul>
-<li><a class="reference internal" href="#socket-class" id="id72">Socket class</a></li>
-<li><a class="reference internal" href="#client-class" id="id73">Client class</a></li>
-<li><a class="reference internal" href="#server-class" id="id74">Server class</a></li>
-<li><a class="reference internal" href="#tcp-class" id="id75">Tcp class</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#scripts" id="id76">Scripts</a><ul>
-<li><a class="reference internal" href="#enabling-and-disabling-scripts" id="id77">Enabling and disabling scripts</a></li>
-<li><a class="reference internal" href="#save-init-script" id="id78">Save init script</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<p>The current version of DFHack has extensive support for
-the Lua scripting language, providing access to:</p>
+<span id="lua-api"></span><h1><a class="toc-backref" href="#id11">DFHack Lua API</a><a class="headerlink" href="#dfhack-lua-api" title="Permalink to this headline">¶</a></h1>
+<p>DFHack has extensive support for
+the <a class="reference external" href="http://www.lua.org">Lua</a> scripting language, providing access to:</p>
 <ol class="arabic simple">
 <li>Raw data structures used by the game.</li>
 <li>Many C++ functions for high-level access to these
@@ -162,20 +51,84 @@ structures, and interaction with dfhack itself.</li>
 </ol>
 <p>Lua code can be used both for writing scripts, which
 are treated by DFHack command line prompt almost as
-native C++ commands, and invoked by plugins written in c++.</p>
+native C++ commands, and invoked by plugins written in C++.</p>
 <p>This document describes native API available to Lua in detail.
 It does not describe all of the utility functions
-implemented by Lua files located in hack/lua/...</p>
+implemented by Lua files located in <code class="file docutils literal"><span class="pre">hack/lua/*</span></code>
+(<code class="file docutils literal"><span class="pre">library/lua/*</span></code> in the git repo).</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#dfhack-lua-api" id="id11">DFHack Lua API</a><ul>
+<li><a class="reference internal" href="#df-data-structure-wrapper" id="id12">DF data structure wrapper</a><ul>
+<li><a class="reference internal" href="#typed-object-references" id="id13">Typed object references</a></li>
+<li><a class="reference internal" href="#named-types" id="id14">Named types</a></li>
+<li><a class="reference internal" href="#global-functions" id="id15">Global functions</a></li>
+<li><a class="reference internal" href="#recursive-table-assignment" id="id16">Recursive table assignment</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dfhack-api" id="id17">DFHack API</a><ul>
+<li><a class="reference internal" href="#native-utilities" id="id18">Native utilities</a></li>
+<li><a class="reference internal" href="#c-function-wrappers" id="id19">C++ function wrappers</a></li>
+<li><a class="reference internal" href="#core-interpreter-context" id="id20">Core interpreter context</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lua-modules" id="id21">Lua Modules</a><ul>
+<li><a class="reference internal" href="#global-environment" id="id22">Global environment</a></li>
+<li><a class="reference internal" href="#utils" id="id23">utils</a></li>
+<li><a class="reference internal" href="#dumper" id="id24">dumper</a></li>
+<li><a class="reference internal" href="#class" id="id25">class</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#in-game-ui-library" id="id26">In-game UI Library</a><ul>
+<li><a class="reference internal" href="#gui" id="id27">gui</a></li>
+<li><a class="reference internal" href="#gui-widgets" id="id28">gui.widgets</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#plugins" id="id29">Plugins</a><ul>
+<li><a class="reference internal" href="#burrows" id="id30">burrows</a></li>
+<li><a class="reference internal" href="#sort" id="id31">sort</a></li>
+<li><a class="reference internal" href="#eventful" id="id32">Eventful</a></li>
+<li><a class="reference internal" href="#building-hacks" id="id33">Building-hacks</a></li>
+<li><a class="reference internal" href="#luasocket" id="id34">Luasocket</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#scripts" id="id35">Scripts</a><ul>
+<li><a class="reference internal" href="#enabling-and-disabling-scripts" id="id36">Enabling and disabling scripts</a></li>
+<li><a class="reference internal" href="#save-init-script" id="id37">Save init script</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="section" id="df-data-structure-wrapper">
-<h2><a class="toc-backref" href="#id6">DF data structure wrapper</a><a class="headerlink" href="#df-data-structure-wrapper" title="Permalink to this headline">¶</a></h2>
-<p>Data structures of the game are defined in XML files located in library/xml
-(and online at <a class="reference external" href="http://github.com/DFHack/df-structures">http://github.com/DFHack/df-structures</a>), and automatically exported
+<h2><a class="toc-backref" href="#id12">DF data structure wrapper</a><a class="headerlink" href="#df-data-structure-wrapper" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id1">
+<ul class="simple">
+<li><a class="reference internal" href="#typed-object-references" id="id38">Typed object references</a><ul>
+<li><a class="reference internal" href="#primitive-references" id="id39">Primitive references</a></li>
+<li><a class="reference internal" href="#struct-references" id="id40">Struct references</a></li>
+<li><a class="reference internal" href="#container-references" id="id41">Container references</a></li>
+<li><a class="reference internal" href="#bitfield-references" id="id42">Bitfield references</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#named-types" id="id43">Named types</a></li>
+<li><a class="reference internal" href="#global-functions" id="id44">Global functions</a></li>
+<li><a class="reference internal" href="#recursive-table-assignment" id="id45">Recursive table assignment</a></li>
+</ul>
+</div>
+<p>Data structures of the game are defined in XML files located in <code class="file docutils literal"><span class="pre">library/xml</span></code>
+(and <a class="reference external" href="http://github.com/DFHack/df-structures">online</a>, and automatically exported
 to lua code as a tree of objects and functions under the <code class="docutils literal"><span class="pre">df</span></code> global, which
 also broadly maps to the <code class="docutils literal"><span class="pre">df</span></code> namespace in the headers generated for C++.</p>
-<p><strong>WARNING</strong>: The wrapper provides almost raw access to the memory
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>The wrapper provides almost raw access to the memory
 of the game, so mistakes in manipulating objects are as likely to
-crash the game as equivalent plain C++ code would be. E.g. NULL
-pointer access is safely detected, but dangling pointers aren&#8217;t.</p>
+crash the game as equivalent plain C++ code would be.</p>
+<p class="last">eg. NULL pointer access is safely detected, but dangling pointers aren&#8217;t.</p>
+</div>
 <p>Objects managed by the wrapper can be broadly classified into the following groups:</p>
 <ol class="arabic">
 <li><p class="first">Typed object pointers (references).</p>
@@ -204,7 +157,7 @@ both nested types and fields corresponding to global symbols.</p>
 <p>In addition to the <code class="docutils literal"><span class="pre">global</span></code> object and top-level types the <code class="docutils literal"><span class="pre">df</span></code>
 global also contains a few global builtin utility functions.</p>
 <div class="section" id="typed-object-references">
-<h3><a class="toc-backref" href="#id7">Typed object references</a><a class="headerlink" href="#typed-object-references" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id38">Typed object references</a><a class="headerlink" href="#typed-object-references" title="Permalink to this headline">¶</a></h3>
 <p>The underlying primitive lua object is userdata with a metatable.
 Every structured field access produces a new userdata instance.</p>
 <p>All typed objects have the following built-in features:</p>
@@ -216,10 +169,13 @@ Every structured field access produces a new userdata instance.</p>
 <p>Returns an iterator for the sequence of actual C++ field names
 and values. Fields are enumerated in memory order. Methods and
 lua wrapper properties are not included in the iteration.</p>
-<p><strong>WARNING</strong>: a few of the data structures (like ui_look_list)
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">a few of the data structures (like ui_look_list)
 contain unions with pointers to different types with vtables.
 Using pairs on such structs is an almost sure way to crash with
 an access violation.</p>
+</div>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">ref._kind</span></code></p>
 <p>Returns one of: <code class="docutils literal"><span class="pre">primitive</span></code>, <code class="docutils literal"><span class="pre">struct</span></code>, <code class="docutils literal"><span class="pre">container</span></code>,
@@ -239,8 +195,11 @@ from the current object.</p>
 <li><p class="first"><code class="docutils literal"><span class="pre">ref:delete()</span></code></p>
 <p>Destroys the object with the C++ <code class="docutils literal"><span class="pre">delete</span></code> operator.
 If destructor is not available, returns <em>false</em>.</p>
-<p><strong>WARNING</strong>: the lua reference object remains as a dangling
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">the lua reference object remains as a dangling
 pointer, like a raw C++ pointer would.</p>
+</div>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">ref:assign(object)</span></code></p>
 <p>Assigns data from object to ref. Object must either be another
@@ -253,7 +212,7 @@ Step defaults to the natural object size.</p>
 </li>
 </ul>
 <div class="section" id="primitive-references">
-<h4><a class="toc-backref" href="#id8">Primitive references</a><a class="headerlink" href="#primitive-references" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id39">Primitive references</a><a class="headerlink" href="#primitive-references" title="Permalink to this headline">¶</a></h4>
 <p>References of the <em>_kind</em> <code class="docutils literal"><span class="pre">'primitive'</span></code> are used for objects
 that don&#8217;t fit any of the other reference types. Such
 references can only appear as a value of a pointer field,
@@ -265,7 +224,7 @@ no bound checking is performed, since buffer length is not available.
 Index 0 is equivalent to the <code class="docutils literal"><span class="pre">value</span></code> field.</p>
 </div>
 <div class="section" id="struct-references">
-<h4><a class="toc-backref" href="#id9">Struct references</a><a class="headerlink" href="#struct-references" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id40">Struct references</a><a class="headerlink" href="#struct-references" title="Permalink to this headline">¶</a></h4>
 <p>Struct references are used for class and struct objects.</p>
 <p>They implement the following features:</p>
 <ul>
@@ -273,15 +232,18 @@ Index 0 is equivalent to the <code class="docutils literal"><span class="pre">va
 <p>Valid fields of the structure may be accessed by subscript.</p>
 <p>Primitive typed fields, i.e. numbers &amp; strings, are converted
 to/from matching lua values. The value of a pointer is a reference
-to the target, or nil/NULL. Complex types are represented by
+to the target, or <code class="docutils literal"><span class="pre">nil</span></code>/NULL. Complex types are represented by
 a reference to the field within the structure; unless recursive
 lua table assignment is used, such fields can only be read.</p>
-<p><strong>NOTE:</strong> In case of inheritance, <em>superclass</em> fields have precedence
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>In case of inheritance, <em>superclass</em> fields have precedence
 over the subclass, but fields shadowed in this way can still
-be accessed as <code class="docutils literal"><span class="pre">ref['subclasstype.field']</span></code>.
-This shadowing order is necessary because vtable-based classes
+be accessed as <code class="docutils literal"><span class="pre">ref['subclasstype.field']</span></code>.</p>
+<p class="last">This shadowing order is necessary because vtable-based classes
 are automatically exposed in their exact type, and the reverse
 rule would make access to superclass fields unreliable.</p>
+</div>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">ref._field(field)</span></code></p>
 <p>Returns a reference to a valid field. That is, unlike regular
@@ -294,12 +256,12 @@ shadowing rules.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">pairs(ref)</span></code></p>
 <p>Enumerates all real fields (but not methods) in memory
-(= declaration) order.</p>
+order, which is the same as declaration order.</p>
 </li>
 </ul>
 </div>
 <div class="section" id="container-references">
-<h4><a class="toc-backref" href="#id10">Container references</a><a class="headerlink" href="#container-references" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id41">Container references</a><a class="headerlink" href="#container-references" title="Permalink to this headline">¶</a></h4>
 <p>Containers represent vectors and arrays, possibly resizable.</p>
 <p>A container field can associate an enum to the container
 reference, which allows accessing elements using string keys
@@ -346,7 +308,7 @@ use <code class="docutils literal"><span class="pre">#ref</span></code>, or just
 </ul>
 </div>
 <div class="section" id="bitfield-references">
-<h4><a class="toc-backref" href="#id11">Bitfield references</a><a class="headerlink" href="#bitfield-references" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id42">Bitfield references</a><a class="headerlink" href="#bitfield-references" title="Permalink to this headline">¶</a></h4>
 <p>Bitfields behave like special fixed-size containers.
 Consider them to be something in between structs and
 fixed-size vectors.</p>
@@ -362,7 +324,7 @@ them, e.g. <code class="docutils literal"><span class="pre">matinfo:matches{meta
 </div>
 </div>
 <div class="section" id="named-types">
-<h3><a class="toc-backref" href="#id12">Named types</a><a class="headerlink" href="#named-types" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id43">Named types</a><a class="headerlink" href="#named-types" title="Permalink to this headline">¶</a></h3>
 <p>Named types are exposed in the <code class="docutils literal"><span class="pre">df</span></code> tree with names identical
 to the C++ version, except for the <code class="docutils literal"><span class="pre">::</span></code> vs <code class="docutils literal"><span class="pre">.</span></code> difference.</p>
 <p>All types and the global object have the following features:</p>
@@ -373,7 +335,7 @@ to the C++ version, except for the <code class="docutils literal"><span class="p
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">type._identity</span></code></p>
 <p>Contains a lightuserdata pointing to the underlying
-DFHack::type_instance object.</p>
+<code class="docutils literal"><span class="pre">DFHack::type_instance</span></code> object.</p>
 </li>
 </ul>
 <p>Types excluding the global object also support:</p>
@@ -387,8 +349,8 @@ DFHack::type_instance object.</p>
 <li><p class="first"><code class="docutils literal"><span class="pre">type:is_instance(object)</span></code></p>
 <p>Returns true if object is same or subclass type, or a reference
 to an object of same or subclass type. It is permissible to pass
-nil, NULL or non-wrapper value as object; in this case the
-method returns nil.</p>
+<code class="docutils literal"><span class="pre">nil</span></code>, NULL or non-wrapper value as object; in this case the
+method returns <code class="docutils literal"><span class="pre">nil</span></code>.</p>
 </li>
 </ul>
 <p>In addition to this, enum and bitfield types contain a
@@ -400,7 +362,7 @@ xml have a <code class="docutils literal"><span class="pre">type.find(key)</span
 method provided in C++.</p>
 </div>
 <div class="section" id="global-functions">
-<h3><a class="toc-backref" href="#id13">Global functions</a><a class="headerlink" href="#global-functions" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id44">Global functions</a><a class="headerlink" href="#global-functions" title="Permalink to this headline">¶</a></h3>
 <p>The <code class="docutils literal"><span class="pre">df</span></code> table itself contains the following functions and values:</p>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">NULL</span></code>, <code class="docutils literal"><span class="pre">df.NULL</span></code></p>
@@ -445,7 +407,7 @@ a lightuserdata, or a number.</p>
 </ul>
 </div>
 <div class="section" id="recursive-table-assignment">
-<h3><a class="toc-backref" href="#id14">Recursive table assignment</a><a class="headerlink" href="#recursive-table-assignment" title="Permalink to this headline">¶</a></h3>
+<span id="lua-api-table-assignment"></span><h3><a class="toc-backref" href="#id45">Recursive table assignment</a><a class="headerlink" href="#recursive-table-assignment" title="Permalink to this headline">¶</a></h3>
 <p>Recursive assignment is invoked when a lua table is assigned
 to a C++ object or field, i.e. one of:</p>
 <ul class="simple">
@@ -455,11 +417,11 @@ to a C++ object or field, i.e. one of:</p>
 <p>The general mode of operation is that all fields of the table
 are assigned to the fields of the target structure, roughly
 emulating the following code:</p>
-<div class="highlight-python"><div class="highlight"><pre>function rec_assign(ref,table)
-    for key,value in pairs(table) do
-        ref[key] = value
-    end
-end
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">function</span> <span class="n">rec_assign</span><span class="p">(</span><span class="n">ref</span><span class="p">,</span><span class="n">table</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span><span class="n">value</span> <span class="ow">in</span> <span class="n">pairs</span><span class="p">(</span><span class="n">table</span><span class="p">)</span> <span class="n">do</span>
+        <span class="n">ref</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+    <span class="n">end</span>
+<span class="n">end</span>
 </pre></div>
 </div>
 <p>Since assigning a table to a field using = invokes the same
@@ -495,8 +457,8 @@ rule set is used:</p>
 fields, it is interpreted as an ordinary <em>1-based</em> lua
 array. The container is resized to the #-size of the
 table, and elements are assigned in numeric order:</p>
-<div class="highlight-python"><div class="highlight"><pre>ref:resize(#table);
-for i=1,#table do ref[i-1] = table[i] end
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ref</span><span class="p">:</span><span class="n">resize</span><span class="p">(</span><span class="c1">#table);</span>
+<span class="k">for</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="c1">#table do ref[i-1] = table[i] end</span>
 </pre></div>
 </div>
 </li>
@@ -510,12 +472,12 @@ by scanning the table for the largest numeric key.</p>
 </ol>
 <p>This means that in order to reassign only one element of
 a container using this system, it is necessary to use:</p>
-<div class="highlight-python"><div class="highlight"><pre>{ resize=false, [idx]=value }
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span> <span class="n">resize</span><span class="o">=</span><span class="n">false</span><span class="p">,</span> <span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">=</span><span class="n">value</span> <span class="p">}</span>
 </pre></div>
 </div>
 </li>
 </ol>
-<p>Since nil inside a table is indistinguishable from missing key,
+<p>Since <code class="docutils literal"><span class="pre">nil</span></code> inside a table is indistinguishable from missing key,
 it is necessary to use <code class="docutils literal"><span class="pre">df.NULL</span></code> as a null pointer value.</p>
 <p>This system is intended as a way to define a nested object
 tree using pure lua data structures, and then materialize it in
@@ -527,12 +489,50 @@ cleanup.</p>
 </div>
 </div>
 <div class="section" id="dfhack-api">
-<h2><a class="toc-backref" href="#id15">DFHack API</a><a class="headerlink" href="#dfhack-api" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id17">DFHack API</a><a class="headerlink" href="#dfhack-api" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id2">
+<ul class="simple">
+<li><a class="reference internal" href="#native-utilities" id="id46">Native utilities</a><ul>
+<li><a class="reference internal" href="#input-output" id="id47">Input &amp; Output</a></li>
+<li><a class="reference internal" href="#exception-handling" id="id48">Exception handling</a></li>
+<li><a class="reference internal" href="#miscellaneous" id="id49">Miscellaneous</a></li>
+<li><a class="reference internal" href="#locking-and-finalization" id="id50">Locking and finalization</a></li>
+<li><a class="reference internal" href="#persistent-configuration-storage" id="id51">Persistent configuration storage</a></li>
+<li><a class="reference internal" href="#material-info-lookup" id="id52">Material info lookup</a></li>
+<li><a class="reference internal" href="#random-number-generation" id="id53">Random number generation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#c-function-wrappers" id="id54">C++ function wrappers</a><ul>
+<li><a class="reference internal" href="#gui-module" id="id55">Gui module</a></li>
+<li><a class="reference internal" href="#job-module" id="id56">Job module</a></li>
+<li><a class="reference internal" href="#units-module" id="id57">Units module</a></li>
+<li><a class="reference internal" href="#items-module" id="id58">Items module</a></li>
+<li><a class="reference internal" href="#maps-module" id="id59">Maps module</a></li>
+<li><a class="reference internal" href="#burrows-module" id="id60">Burrows module</a></li>
+<li><a class="reference internal" href="#buildings-module" id="id61">Buildings module</a><ul>
+<li><a class="reference internal" href="#general" id="id62">General</a></li>
+<li><a class="reference internal" href="#low-level" id="id63">Low-level</a></li>
+<li><a class="reference internal" href="#high-level" id="id64">High-level</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#constructions-module" id="id65">Constructions module</a></li>
+<li><a class="reference internal" href="#screen-api" id="id66">Screen API</a></li>
+<li><a class="reference internal" href="#penarray-class" id="id67">PenArray class</a></li>
+<li><a class="reference internal" href="#filesystem-module" id="id68">Filesystem module</a></li>
+<li><a class="reference internal" href="#internal-api" id="id69">Internal API</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#core-interpreter-context" id="id70">Core interpreter context</a><ul>
+<li><a class="reference internal" href="#event-type" id="id71">Event type</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <p>DFHack utility functions are placed in the <code class="docutils literal"><span class="pre">dfhack</span></code> global tree.</p>
 <div class="section" id="native-utilities">
-<h3><a class="toc-backref" href="#id16">Native utilities</a><a class="headerlink" href="#native-utilities" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id46">Native utilities</a><a class="headerlink" href="#native-utilities" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="input-output">
-<h4><a class="toc-backref" href="#id17">Input &amp; Output</a><a class="headerlink" href="#input-output" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id47">Input &amp; Output</a><a class="headerlink" href="#input-output" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.print(args...)</span></code></p>
 <p>Output tab-separated args as standard lua print would do,
@@ -568,7 +568,7 @@ string, global environment and command-line history file.</p>
 </ul>
 </div>
 <div class="section" id="exception-handling">
-<h4><a class="toc-backref" href="#id18">Exception handling</a><a class="headerlink" href="#exception-handling" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id48">Exception handling</a><a class="headerlink" href="#exception-handling" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.error(msg[,level[,verbose]])</span></code></p>
 <p>Throws a dfhack exception object with location and stack trace.
@@ -624,7 +624,7 @@ following properties:</p>
 </ul>
 </div>
 <div class="section" id="miscellaneous">
-<h4><a class="toc-backref" href="#id19">Miscellaneous</a><a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id49">Miscellaneous</a><a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.VERSION</span></code></p>
 <p>DFHack version string constant.</p>
@@ -637,7 +637,7 @@ both from the curry call and the closure call itself. I.e.
 </ul>
 </div>
 <div class="section" id="locking-and-finalization">
-<h4><a class="toc-backref" href="#id20">Locking and finalization</a><a class="headerlink" href="#locking-and-finalization" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id50">Locking and finalization</a><a class="headerlink" href="#locking-and-finalization" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.with_suspend(f[,args...])</span></code></p>
 <p>Calls <code class="docutils literal"><span class="pre">f</span></code> with arguments after grabbing the DF core suspend lock.
@@ -670,7 +670,7 @@ Implemented using <code class="docutils literal"><span class="pre">call_with_fin
 </ul>
 </div>
 <div class="section" id="persistent-configuration-storage">
-<h4><a class="toc-backref" href="#id21">Persistent configuration storage</a><a class="headerlink" href="#persistent-configuration-storage" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id51">Persistent configuration storage</a><a class="headerlink" href="#persistent-configuration-storage" title="Permalink to this headline">¶</a></h4>
 <p>This api is intended for storing configuration options in the world itself.
 It probably should be restricted to data that is world-dependent.</p>
 <p>Entries are identified by a string <code class="docutils literal"><span class="pre">key</span></code>, but it is also possible to manage
@@ -720,7 +720,7 @@ as an all-zero mask.</p>
 the persistent entry will <strong>NOT</strong> delete the associated masks.</p>
 </div>
 <div class="section" id="material-info-lookup">
-<h4><a class="toc-backref" href="#id22">Material info lookup</a><a class="headerlink" href="#material-info-lookup" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id52">Material info lookup</a><a class="headerlink" href="#material-info-lookup" title="Permalink to this headline">¶</a></h4>
 <p>A material info record has fields:</p>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">type</span></code>, <code class="docutils literal"><span class="pre">index</span></code>, <code class="docutils literal"><span class="pre">material</span></code></p>
@@ -764,7 +764,7 @@ Accept dfhack_material_category auto-assign table.</p>
 </ul>
 </div>
 <div class="section" id="random-number-generation">
-<h4><a class="toc-backref" href="#id23">Random number generation</a><a class="headerlink" href="#random-number-generation" title="Permalink to this headline">¶</a></h4>
+<span id="lua-api-random"></span><h4><a class="toc-backref" href="#id53">Random number generation</a><a class="headerlink" href="#random-number-generation" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.random.new([seed[,perturb_count]])</span></code></p>
 <p>Creates a new random number generator object. Without any
@@ -808,7 +808,7 @@ Dimension may be 1, 2 or 3 (default).</p>
 </div>
 </div>
 <div class="section" id="c-function-wrappers">
-<h3><a class="toc-backref" href="#id24">C++ function wrappers</a><a class="headerlink" href="#c-function-wrappers" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id54">C++ function wrappers</a><a class="headerlink" href="#c-function-wrappers" title="Permalink to this headline">¶</a></h3>
 <p>Thin wrappers around C++ functions, similar to the ones for virtual methods.
 One notable difference is that these explicit wrappers allow argument count
 adjustment according to the usual lua rules, so trailing false/nil arguments
@@ -832,11 +832,14 @@ can be omitted.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.isRelease()</span></code></p>
 <p>Return information about the DFHack build in use.</p>
-<p><strong>Note:</strong> <code class="docutils literal"><span class="pre">getCompiledDFVersion()</span></code> returns the DF version specified at compile time,
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal"><span class="pre">getCompiledDFVersion()</span></code> returns the DF version specified at compile time,
 while <code class="docutils literal"><span class="pre">getDFVersion()</span></code> returns the version and typically the OS as well.
 These do not necessarily match - for example, DFHack 0.34.11-r5 worked with
 DF 0.34.10 and 0.34.11, so the former function would always return <code class="docutils literal"><span class="pre">0.34.11</span></code>
 while the latter would return <code class="docutils literal"><span class="pre">v0.34.10</span> <span class="pre">&lt;platform&gt;</span></code> or <code class="docutils literal"><span class="pre">v0.34.11</span> <span class="pre">&lt;platform&gt;</span></code>.</p>
+</div>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.getDFPath()</span></code></p>
 <p>Returns the DF directory path.</p>
@@ -874,7 +877,7 @@ DFHack console.</p>
 returned from TranslateName()), use <code class="docutils literal"><span class="pre">print(dfhack.df2console(text)</span></code> to ensure
 proper display on all platforms.</p>
 <div class="section" id="gui-module">
-<h4><a class="toc-backref" href="#id25">Gui module</a><a class="headerlink" href="#gui-module" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id55">Gui module</a><a class="headerlink" href="#gui-module" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.gui.getCurViewscreen([skip_dismissed])</span></code></p>
 <p>Returns the topmost viewscreen. If <code class="docutils literal"><span class="pre">skip_dismissed</span></code> is <em>true</em>,
@@ -893,33 +896,33 @@ the specified type (e.g. <code class="docutils literal"><span class="pre">df.vie
 If <code class="docutils literal"><span class="pre">depth</span></code> is not specified or is less than 1, all viewscreens are checked.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.gui.getSelectedWorkshopJob([silent])</span></code></p>
-<p>When a job is selected in <em>&#8216;q&#8217;</em> mode, returns the job, else
+<p>When a job is selected in <code class="kbd docutils literal"><span class="pre">q</span></code> mode, returns the job, else
 prints error unless silent and returns <em>nil</em>.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.gui.getSelectedJob([silent])</span></code></p>
 <p>Returns the job selected in a workshop or unit/jobs screen.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.gui.getSelectedUnit([silent])</span></code></p>
-<p>Returns the unit selected via <em>&#8216;v&#8217;</em>, <em>&#8216;k&#8217;</em>, unit/jobs, or
+<p>Returns the unit selected via <code class="kbd docutils literal"><span class="pre">v</span></code>, <code class="kbd docutils literal"><span class="pre">k</span></code>, unit/jobs, or
 a full-screen item view of a cage or suchlike.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.gui.getSelectedItem([silent])</span></code></p>
-<p>Returns the item selected via <em>&#8216;v&#8217;</em> -&gt;inventory, <em>&#8216;k&#8217;</em>, <em>&#8216;t&#8217;</em>, or
+<p>Returns the item selected via <code class="kbd docutils literal"><span class="pre">v</span></code> -&gt;inventory, <code class="kbd docutils literal"><span class="pre">k</span></code>, <code class="kbd docutils literal"><span class="pre">t</span></code>, or
 a full-screen item view of a container. Note that in the
 last case, the highlighted <em>contained item</em> is returned, not
 the container itself.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.gui.getSelectedBuilding([silent])</span></code></p>
-<p>Returns the building selected via <em>&#8216;q&#8217;</em>, <em>&#8216;t&#8217;</em>, <em>&#8216;k&#8217;</em> or <em>&#8216;i&#8217;</em>.</p>
+<p>Returns the building selected via <code class="kbd docutils literal"><span class="pre">q</span></code>, <code class="kbd docutils literal"><span class="pre">t</span></code>, <code class="kbd docutils literal"><span class="pre">k</span></code> or <code class="kbd docutils literal"><span class="pre">i</span></code>.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.gui.writeToGamelog(text)</span></code></p>
-<p>Writes a string to gamelog.txt without doing an announcement.</p>
+<p>Writes a string to <code class="file docutils literal"><span class="pre">gamelog.txt</span></code> without doing an announcement.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.gui.makeAnnouncement(type,flags,pos,text,color[,is_bright])</span></code></p>
 <p>Adds an announcement with given announcement_type, text, color, and brightness.
 The is_bright boolean actually seems to invert the brightness.</p>
-<p>The announcement is written to gamelog.txt. The announcement_flags
-argument provides a custom set of announcements.txt options,
+<p>The announcement is written to <code class="file docutils literal"><span class="pre">gamelog.txt</span></code>. The announcement_flags
+argument provides a custom set of <code class="file docutils literal"><span class="pre">announcements.txt</span></code> options,
 which specify if the message should actually be displayed in the
 announcement list, and whether to recenter or show a popup.</p>
 <p>Returns the index of the new announcement in <code class="docutils literal"><span class="pre">df.global.world.status.reports</span></code>, or -1.</p>
@@ -949,7 +952,7 @@ operations accordingly. The units are used to call <code class="docutils literal
 </ul>
 </div>
 <div class="section" id="job-module">
-<h4><a class="toc-backref" href="#id26">Job module</a><a class="headerlink" href="#job-module" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id56">Job module</a><a class="headerlink" href="#job-module" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.job.cloneJobStruct(job)</span></code></p>
 <p>Creates a deep copy of the given job.</p>
@@ -994,7 +997,7 @@ Returns <em>true</em> on success.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.job.linkIntoWorld(job,new_id)</span></code></p>
 <p>Adds job into <code class="docutils literal"><span class="pre">df.global.job_list</span></code>, and if new_id
-is true, then also sets it&#8217;s id and increases
+is true, then also sets its id and increases
 <code class="docutils literal"><span class="pre">df.global.job_next_id</span></code></p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.job.listNewlyCreated(first_id)</span></code></p>
@@ -1015,7 +1018,7 @@ the flags in the job item.</p>
 </ul>
 </div>
 <div class="section" id="units-module">
-<h4><a class="toc-backref" href="#id27">Units module</a><a class="headerlink" href="#units-module" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id57">Units module</a><a class="headerlink" href="#units-module" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.units.getPosition(unit)</span></code></p>
 <p>Returns true <em>x,y,z</em> of the unit, or <em>nil</em> if invalid; may be not equal to unit.pos if caged.</p>
@@ -1119,13 +1122,13 @@ or raws. The <code class="docutils literal"><span class="pre">ignore_noble</span
 </ul>
 </div>
 <div class="section" id="items-module">
-<h4><a class="toc-backref" href="#id28">Items module</a><a class="headerlink" href="#items-module" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id58">Items module</a><a class="headerlink" href="#items-module" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.items.getPosition(item)</span></code></p>
 <p>Returns true <em>x,y,z</em> of the item, or <em>nil</em> if invalid; may be not equal to item.pos if in inventory.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.items.getDescription(item,</span> <span class="pre">type[,</span> <span class="pre">decorate])</span></code></p>
-<p>Returns the string description of the item, as produced by the getItemDescription
+<p>Returns the string description of the item, as produced by the <code class="docutils literal"><span class="pre">getItemDescription</span></code>
 method. If decorate is true, also adds markings for quality and improvements.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.items.getGeneralRef(item,</span> <span class="pre">type)</span></code></p>
@@ -1159,8 +1162,11 @@ Returns <em>false</em> in case of error.</p>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.items.moveToContainer(item,container)</span></code></p>
 <p>Move the item to the container. Returns <em>false</em> if impossible.</p>
 </li>
-<li><p class="first"><code class="docutils literal"><span class="pre">dfhack.items.moveToBuilding(item,building,use_mode)</span></code></p>
+<li><p class="first"><code class="docutils literal"><span class="pre">dfhack.items.moveToBuilding(item,building[,use_mode[,force_in_building])</span></code></p>
 <p>Move the item to the building. Returns <em>false</em> if impossible.</p>
+<p><code class="docutils literal"><span class="pre">use_mode</span></code> defaults to 0. If set to 2, the item will be treated as part of the building.</p>
+<p>If <code class="docutils literal"><span class="pre">force_in_building</span></code> is true, the item will be considered to be stored by the building
+(used for items temporarily used in traps in vanilla DF)</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.items.moveToInventory(item,unit,use_mode,body_part)</span></code></p>
 <p>Move the item to the unit inventory. Returns <em>false</em> if impossible.</p>
@@ -1189,7 +1195,7 @@ Returns <em>false</em> in case of error.</p>
 </ul>
 </div>
 <div class="section" id="maps-module">
-<h4><a class="toc-backref" href="#id29">Maps module</a><a class="headerlink" href="#maps-module" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id59">Maps module</a><a class="headerlink" href="#maps-module" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.maps.getSize()</span></code></p>
 <p>Returns map size in blocks: <em>x, y, z</em></p>
@@ -1236,12 +1242,15 @@ the given parameters. Returns it, or <em>nil</em> if unsuccessful.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.maps.canWalkBetween(pos1,</span> <span class="pre">pos2)</span></code></p>
 <p>Checks if a dwarf may be able to walk between the two tiles,
-using a pathfinding cache maintained by the game. Note that
-this cache is only updated when the game is unpaused, and thus
+using a pathfinding cache maintained by the game.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This cache is only updated when the game is unpaused, and thus
 can get out of date if doors are forbidden or unforbidden, or
-tools like liquids or tiletypes are used. It also cannot possibly
+tools like <a class="reference internal" href="Plugins.html#liquids"><span class="std std-ref">liquids</span></a> or <a class="reference internal" href="Plugins.html#tiletypes"><span class="std std-ref">tiletypes</span></a> are used. It also cannot possibly
 take into account anything that depends on the actual units, like
 burrows, or the presence of invaders.</p>
+</div>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.maps.hasTileAssignment(tilemask)</span></code></p>
 <p>Checks if the tile_bitmask object is not <em>nil</em> and contains any set bits; returns <em>true</em> or <em>false</em>.</p>
@@ -1258,7 +1267,7 @@ burrows, or the presence of invaders.</p>
 </ul>
 </div>
 <div class="section" id="burrows-module">
-<h4><a class="toc-backref" href="#id30">Burrows module</a><a class="headerlink" href="#burrows-module" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id60">Burrows module</a><a class="headerlink" href="#burrows-module" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.burrows.findByName(name)</span></code></p>
 <p>Returns the burrow pointer or <em>nil</em>.</p>
@@ -1293,7 +1302,9 @@ burrows, or the presence of invaders.</p>
 </ul>
 </div>
 <div class="section" id="buildings-module">
-<h4><a class="toc-backref" href="#id31">Buildings module</a><a class="headerlink" href="#buildings-module" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id61">Buildings module</a><a class="headerlink" href="#buildings-module" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="general">
+<h5><a class="toc-backref" href="#id62">General</a><a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h5>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.buildings.getGeneralRef(building,</span> <span class="pre">type)</span></code></p>
 <p>Searches for a general_ref with the given type.</p>
@@ -1342,7 +1353,10 @@ support from terrain, and thus won&#8217;t collapse if retracted.</p>
 Ignores empty bins, barrels, and wheelbarrows assigned as storage and transport for that stockpile.</p>
 </li>
 </ul>
-<p>Low-level building creation functions;</p>
+</div>
+<div class="section" id="low-level">
+<h5><a class="toc-backref" href="#id63">Low-level</a><a class="headerlink" href="#low-level" title="Permalink to this headline">¶</a></h5>
+<p>Low-level building creation functions:</p>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.buildings.allocInstance(pos,</span> <span class="pre">type,</span> <span class="pre">subtype,</span> <span class="pre">custom)</span></code></p>
 <p>Creates a new building instance of given type, subtype and custom type,
@@ -1380,6 +1394,9 @@ from the size of the building.</p>
 Returns <em>true</em> if the building was destroyed and deallocated immediately.</p>
 </li>
 </ul>
+</div>
+<div class="section" id="high-level">
+<h5><a class="toc-backref" href="#id64">High-level</a><a class="headerlink" href="#high-level" title="Permalink to this headline">¶</a></h5>
 <p>More high-level functions are implemented in lua and can be loaded by
 <code class="docutils literal"><span class="pre">require('dfhack.buildings')</span></code>. See <code class="docutils literal"><span class="pre">hack/lua/dfhack/buildings.lua</span></code>.</p>
 <p>Among them are:</p>
@@ -1401,12 +1418,15 @@ is automatically cleared if an explicit material is specified.</p>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.buildings.constructBuilding{...}</span></code></p>
 <p>Creates a building in one call, using options contained
 in the argument table. Returns the building, or <em>nil, error</em>.</p>
-<p><strong>NOTE:</strong> Despite the name, unless the building is abstract,
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Despite the name, unless the building is abstract,
 the function creates it in an &#8216;unconstructed&#8217; stage, with
 a queued in-game job that will actually construct it. I.e.
 the function replicates programmatically what can be done
 through the construct building menu in the game ui, except
 that it does less environment constraint checking.</p>
+</div>
 <p>The following options can be used:</p>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">pos</span> <span class="pre">=</span> <span class="pre">coordinates</span></code>, or <code class="docutils literal"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">...,</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">...,</span> <span class="pre">z</span> <span class="pre">=</span> <span class="pre">...</span></code></p>
@@ -1446,8 +1466,9 @@ can be determined this way, <code class="docutils literal"><span class="pre">con
 </li>
 </ul>
 </div>
+</div>
 <div class="section" id="constructions-module">
-<h4><a class="toc-backref" href="#id32">Constructions module</a><a class="headerlink" href="#constructions-module" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id65">Constructions module</a><a class="headerlink" href="#constructions-module" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.constructions.designateNew(pos,type,item_type,mat_index)</span></code></p>
 <p>Designates a new construction at given position. If there already is
@@ -1463,7 +1484,7 @@ Returns <em>true, was_only_planned</em> if removed; or <em>false</em> if none fo
 </ul>
 </div>
 <div class="section" id="screen-api">
-<h4><a class="toc-backref" href="#id33">Screen API</a><a class="headerlink" href="#screen-api" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id66">Screen API</a><a class="headerlink" href="#screen-api" title="Permalink to this headline">¶</a></h4>
 <p>The screen module implements support for drawing to the tiled screen of the game.
 Note that drawing only has any effect when done from callbacks, so it can only
 be feasibly used in the core context.</p>
@@ -1578,8 +1599,11 @@ assigning to <code class="docutils literal"><span class="pre">pen.tile_color</sp
 <p>In order to actually be able to paint to the screen, it is necessary
 to create and register a viewscreen (basically a modal dialog) with
 the game.</p>
-<p><strong>NOTE</strong>: As a matter of policy, in order to avoid user confusion, all
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">As a matter of policy, in order to avoid user confusion, all
 interface screens added by dfhack should bear the &#8220;DFHack&#8221; signature.</p>
+</div>
 <p>Screens are managed with the following functions:</p>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.screen.show(screen[,below])</span></code></p>
@@ -1597,7 +1621,10 @@ If <code class="docutils literal"><span class="pre">to_first</span></code> is <e
 <p>Apart from a native viewscreen object, these functions accept a table
 as a screen. In this case, <code class="docutils literal"><span class="pre">show</span></code> creates a new native viewscreen
 that delegates all processing to methods stored in that table.</p>
-<p><strong>NOTE</strong>: Lua-implemented screens are only supported in the core context.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Lua-implemented screens are only supported in the core context.</p>
+</div>
 <p>Supported callbacks and fields are:</p>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">screen._native</span></code></p>
@@ -1660,7 +1687,7 @@ options; if multiple interpretations exist, the table will contain multiple keys
 </ul>
 </div>
 <div class="section" id="penarray-class">
-<h4><a class="toc-backref" href="#id34">PenArray class</a><a class="headerlink" href="#penarray-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id67">PenArray class</a><a class="headerlink" href="#penarray-class" title="Permalink to this headline">¶</a></h4>
 <p>Screens that require significant computation in their onRender() method can use
 a <code class="docutils literal"><span class="pre">dfhack.penarray</span></code> instance to cache their output.</p>
 <ul>
@@ -1691,7 +1718,7 @@ are skipped.</p>
 </ul>
 </div>
 <div class="section" id="filesystem-module">
-<h4><a class="toc-backref" href="#id35">Filesystem module</a><a class="headerlink" href="#filesystem-module" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id68">Filesystem module</a><a class="headerlink" href="#filesystem-module" title="Permalink to this headline">¶</a></h4>
 <p>Most of these functions return <code class="docutils literal"><span class="pre">true</span></code> on success and <code class="docutils literal"><span class="pre">false</span></code> on failure,
 unless otherwise noted.</p>
 <ul>
@@ -1732,7 +1759,7 @@ fields of a C++ stat struct, respectively.</p>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.filesystem.listdir_recursive(path</span> <span class="pre">[,</span> <span class="pre">depth</span> <span class="pre">=</span> <span class="pre">10])</span></code></p>
 <p>Lists all files/directories in a directory and its subdirectories. All directories
 are listed before their contents. Returns a table with subtables of the format:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span><span class="n">path</span><span class="p">:</span> <span class="s">&#39;path to file&#39;</span><span class="p">,</span> <span class="n">isdir</span><span class="p">:</span> <span class="n">true</span><span class="o">|</span><span class="n">false</span><span class="p">}</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">path</span><span class="p">:</span> <span class="s1">&#39;path to file&#39;</span><span class="p">,</span> <span class="n">isdir</span><span class="p">:</span> <span class="n">true</span><span class="o">|</span><span class="n">false</span><span class="p">}</span>
 </pre></div>
 </div>
 <p>Note that <code class="docutils literal"><span class="pre">listdir()</span></code> returns only the base name of each directory entry, while
@@ -1742,7 +1769,7 @@ for each entry.</p>
 </ul>
 </div>
 <div class="section" id="internal-api">
-<h4><a class="toc-backref" href="#id36">Internal API</a><a class="headerlink" href="#internal-api" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id69">Internal API</a><a class="headerlink" href="#internal-api" title="Permalink to this headline">¶</a></h4>
 <p>These functions are intended for the use by dfhack developers,
 and are only documented here for completeness:</p>
 <ul>
@@ -1834,14 +1861,17 @@ not exist or has already been registered).</p>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.internal.findScript(name)</span></code></p>
 <p>Searches script paths for the script <code class="docutils literal"><span class="pre">name</span></code> and returns the path of the first
 file found, or <code class="docutils literal"><span class="pre">nil</span></code> on failure.</p>
-<p>Note: This requires an extension to be specified (<code class="docutils literal"><span class="pre">.lua</span></code> or <code class="docutils literal"><span class="pre">.rb</span></code>) -
-use <code class="docutils literal"><span class="pre">dfhack.findScript()</span></code> to include the <code class="docutils literal"><span class="pre">.lua</span></code> extension automatically.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This requires an extension to be specified (<code class="docutils literal"><span class="pre">.lua</span></code> or <code class="docutils literal"><span class="pre">.rb</span></code>) - use
+<code class="docutils literal"><span class="pre">dfhack.findScript()</span></code> to include the <code class="docutils literal"><span class="pre">.lua</span></code> extension automatically.</p>
+</div>
 </li>
 </ul>
 </div>
 </div>
 <div class="section" id="core-interpreter-context">
-<h3><a class="toc-backref" href="#id37">Core interpreter context</a><a class="headerlink" href="#core-interpreter-context" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id70">Core interpreter context</a><a class="headerlink" href="#core-interpreter-context" title="Permalink to this headline">¶</a></h3>
 <p>While plugins can create any number of interpreter instances,
 there is one special context managed by dfhack core. It is the
 only context that can receive events from DF and plugins.</p>
@@ -1872,7 +1902,7 @@ Using <code class="docutils literal"><span class="pre">timeout_active(id,nil)</s
 </li>
 </ul>
 <div class="section" id="event-type">
-<h4><a class="toc-backref" href="#id38">Event type</a><a class="headerlink" href="#event-type" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id71">Event type</a><a class="headerlink" href="#event-type" title="Permalink to this headline">¶</a></h4>
 <p>An event is a native object transparently wrapping a lua table,
 and implementing a __call metamethod. When it is invoked, it loops
 through the table with next and calls all contained values.
@@ -1886,8 +1916,11 @@ core context has the actual events defined by C++ code.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">event[key]</span> <span class="pre">=</span> <span class="pre">function</span></code></p>
 <p>Sets the function as one of the listeners. Assign <em>nil</em> to remove it.</p>
-<p><strong>NOTE</strong>: The <code class="docutils literal"><span class="pre">df.NULL</span></code> key is reserved for the use by
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <code class="docutils literal"><span class="pre">df.NULL</span></code> key is reserved for the use by
 the C++ owner of the event; it is an error to try setting it.</p>
+</div>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">#event</span></code></p>
 <p>Returns the number of non-nil listeners.</p>
@@ -1904,9 +1937,17 @@ order using <code class="docutils literal"><span class="pre">dfhack.safecall</sp
 </div>
 </div>
 <div class="section" id="lua-modules">
-<h2><a class="toc-backref" href="#id39">Lua Modules</a><a class="headerlink" href="#lua-modules" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id21">Lua Modules</a><a class="headerlink" href="#lua-modules" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id3">
+<ul class="simple">
+<li><a class="reference internal" href="#global-environment" id="id72">Global environment</a></li>
+<li><a class="reference internal" href="#utils" id="id73">utils</a></li>
+<li><a class="reference internal" href="#dumper" id="id74">dumper</a></li>
+<li><a class="reference internal" href="#class" id="id75">class</a></li>
+</ul>
+</div>
 <p>DFHack sets up the lua interpreter so that the built-in <code class="docutils literal"><span class="pre">require</span></code>
-function can be used to load shared lua code from hack/lua/.
+function can be used to load shared lua code from <code class="file docutils literal"><span class="pre">hack/lua/</span></code>.
 The <code class="docutils literal"><span class="pre">dfhack</span></code> namespace reference itself may be obtained via
 <code class="docutils literal"><span class="pre">require('dfhack')</span></code>, although it is initially created as a
 global by C++ bootstrap code.</p>
@@ -1914,9 +1955,9 @@ global by C++ bootstrap code.</p>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">mkmodule(name)</span></code></p>
 <p>Creates an environment table for the module. Intended to be used as:</p>
-<div class="highlight-python"><div class="highlight"><pre>local _ENV = mkmodule(&#39;foo&#39;)
-...
-return _ENV
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">local</span> <span class="n">_ENV</span> <span class="o">=</span> <span class="n">mkmodule</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="k">return</span> <span class="n">_ENV</span>
 </pre></div>
 </div>
 <p>If called the second time, returns the same table; thus providing reload support.</p>
@@ -1933,17 +1974,19 @@ in this document.</p>
 </li>
 </ul>
 <div class="section" id="global-environment">
-<h3><a class="toc-backref" href="#id40">Global environment</a><a class="headerlink" href="#global-environment" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id72">Global environment</a><a class="headerlink" href="#global-environment" title="Permalink to this headline">¶</a></h3>
 <p>A number of variables and functions are provided in the base global
 environment by the mandatory init file dfhack.lua:</p>
 <ul>
 <li><p class="first">Color constants</p>
 <p>These are applicable both for <code class="docutils literal"><span class="pre">dfhack.color()</span></code> and color fields
 in DF functions or structures:</p>
-<p>COLOR_RESET, COLOR_BLACK, COLOR_BLUE, COLOR_GREEN, COLOR_CYAN,
-COLOR_RED, COLOR_MAGENTA, COLOR_BROWN, COLOR_GREY, COLOR_DARKGREY,
-COLOR_LIGHTBLUE, COLOR_LIGHTGREEN, COLOR_LIGHTCYAN, COLOR_LIGHTRED,
-COLOR_LIGHTMAGENTA, COLOR_YELLOW, COLOR_WHITE</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">COLOR_RESET</span><span class="p">,</span> <span class="n">COLOR_BLACK</span><span class="p">,</span> <span class="n">COLOR_BLUE</span><span class="p">,</span> <span class="n">COLOR_GREEN</span><span class="p">,</span> <span class="n">COLOR_CYAN</span><span class="p">,</span>
+<span class="n">COLOR_RED</span><span class="p">,</span> <span class="n">COLOR_MAGENTA</span><span class="p">,</span> <span class="n">COLOR_BROWN</span><span class="p">,</span> <span class="n">COLOR_GREY</span><span class="p">,</span> <span class="n">COLOR_DARKGREY</span><span class="p">,</span>
+<span class="n">COLOR_LIGHTBLUE</span><span class="p">,</span> <span class="n">COLOR_LIGHTGREEN</span><span class="p">,</span> <span class="n">COLOR_LIGHTCYAN</span><span class="p">,</span> <span class="n">COLOR_LIGHTRED</span><span class="p">,</span>
+<span class="n">COLOR_LIGHTMAGENTA</span><span class="p">,</span> <span class="n">COLOR_YELLOW</span><span class="p">,</span> <span class="n">COLOR_WHITE</span>
+</pre></div>
+</div>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.onStateChange</span></code> event codes</p>
 <p>Available only in the core context, as is the event itself:</p>
@@ -1954,17 +1997,14 @@ SC_MAP_UNLOADED, SC_VIEWSCREEN_CHANGED, SC_CORE_INITIALIZED</p>
 <p>safecall, qerror, mkmodule, reload</p>
 </li>
 <li><p class="first">Miscellaneous constants</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name" colspan="2">NEWLINE, COMMA, PERIOD:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">evaluate to the relevant character strings.</td>
-</tr>
-<tr class="field-even field"><th class="field-name">DEFAULT_NIL:</th><td class="field-body">is an unspecified unique token used by the class module below.</td>
-</tr>
-</tbody>
-</table>
+<dl class="docutils">
+<dt><code class="docutils literal"><span class="pre">NEWLINE</span></code>, <code class="docutils literal"><span class="pre">COMMA</span></code>, <code class="docutils literal"><span class="pre">PERIOD</span></code></dt>
+<dd><p class="first last">evaluate to the relevant character strings.</p>
+</dd>
+<dt><code class="docutils literal"><span class="pre">DEFAULT_NIL</span></code></dt>
+<dd><p class="first last">is an unspecified unique token used by the class module below.</p>
+</dd>
+</dl>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">printall(obj)</span></code></p>
 <p>If the argument is a lua table or DF object reference, prints all fields.</p>
@@ -1996,7 +2036,7 @@ Returns <em>nil</em> if any of obj or indices is <em>nil</em>, or a numeric inde
 </ul>
 </div>
 <div class="section" id="utils">
-<h3><a class="toc-backref" href="#id41">utils</a><a class="headerlink" href="#utils" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id73">utils</a><a class="headerlink" href="#utils" title="Permalink to this headline">¶</a></h3>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">utils.compare(a,b)</span></code></p>
 <p>Comparator function; returns <em>-1</em> if a&lt;b, <em>1</em> if a&gt;b, <em>0</em> otherwise.</p>
@@ -2038,10 +2078,10 @@ Called on non-nil keys; nil sorts last.</p>
 <p>For every comparison during sorting the specs are applied in
 order until an unambiguous decision is reached. Sorting is stable.</p>
 <p>Example of sorting a sequence by field foo:</p>
-<div class="highlight-python"><div class="highlight"><pre>local spec = { key = function(v) return v.foo end }
-local order = utils.make_sort_order(data, { spec })
-local output = {}
-for i = 1,#order do output[i] = data[order[i]] end
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">local</span> <span class="n">spec</span> <span class="o">=</span> <span class="p">{</span> <span class="n">key</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">return</span> <span class="n">v</span><span class="o">.</span><span class="n">foo</span> <span class="n">end</span> <span class="p">}</span>
+<span class="n">local</span> <span class="n">order</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">make_sort_order</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="p">{</span> <span class="n">spec</span> <span class="p">})</span>
+<span class="n">local</span> <span class="n">output</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="c1">#order do output[i] = data[order[i]] end</span>
 </pre></div>
 </div>
 <p>Separating the actual reordering of the sequence in this
@@ -2060,7 +2100,7 @@ recurses into lua tables.</p>
 <p>Performs a shallow, or semi-deep copy of the object as a lua table tree.
 The deep mode recurses into lua tables and subobjects, except pointers
 to other heap objects.
-Null pointers are represented as df.NULL. Zero-based native containers
+Null pointers are represented as <code class="docutils literal"><span class="pre">df.NULL</span></code>. Zero-based native containers
 are converted to 1-based lua sequences.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">utils.clone_with_default(obj,</span> <span class="pre">default,</span> <span class="pre">force)</span></code></p>
@@ -2104,10 +2144,10 @@ Returns <em>did_insert, vector[idx], idx</em>.</p>
 <p>Like <code class="docutils literal"><span class="pre">insert_sorted</span></code>, but also assigns the item into
 the vector cell if insertion didn&#8217;t happen.</p>
 <p>As an example, you can use this to set skill values:</p>
-<div class="highlight-python"><div class="highlight"><pre>utils.insert_or_update(soul.skills, {new=true, id=..., rating=...}, &#39;id&#39;)
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">utils</span><span class="o">.</span><span class="n">insert_or_update</span><span class="p">(</span><span class="n">soul</span><span class="o">.</span><span class="n">skills</span><span class="p">,</span> <span class="p">{</span><span class="n">new</span><span class="o">=</span><span class="n">true</span><span class="p">,</span> <span class="nb">id</span><span class="o">=...</span><span class="p">,</span> <span class="n">rating</span><span class="o">=...</span><span class="p">},</span> <span class="s1">&#39;id&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>(For an explanation of <code class="docutils literal"><span class="pre">new=true</span></code>, see table assignment in the wrapper section)</p>
+<p>(For an explanation of <code class="docutils literal"><span class="pre">new=true</span></code>, see <a class="reference internal" href="#lua-api-table-assignment"><span class="std std-ref">Recursive table assignment</span></a>)</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">utils.erase_sorted_key(vector,key,field,cmpfun)</span></code></p>
 <p>Removes the item with the given key from the list. Returns: <em>did_erase, vector[idx], idx</em>.</p>
@@ -2145,7 +2185,7 @@ throws an error.</p>
 </ul>
 </div>
 <div class="section" id="dumper">
-<h3><a class="toc-backref" href="#id42">dumper</a><a class="headerlink" href="#dumper" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id74">dumper</a><a class="headerlink" href="#dumper" title="Permalink to this headline">¶</a></h3>
 <p>A third-party lua table dumper module from
 <a class="reference external" href="http://lua-users.org/wiki/DataDumper">http://lua-users.org/wiki/DataDumper</a>. Defines one
 function:</p>
@@ -2158,7 +2198,7 @@ the other arguments see the original documentation link above.</p>
 </ul>
 </div>
 <div class="section" id="class">
-<h3><a class="toc-backref" href="#id43">class</a><a class="headerlink" href="#class" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id75">class</a><a class="headerlink" href="#class" title="Permalink to this headline">¶</a></h3>
 <p>Implements a trivial single-inheritance class system.</p>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">Foo</span> <span class="pre">=</span> <span class="pre">defclass(Foo[,</span> <span class="pre">ParentClass])</span></code></p>
@@ -2180,11 +2220,11 @@ from fields in the table used as the constructor argument. If omitted,
 they are initialized with the default values specified in this declaration.</p>
 <p>If the default value should be <em>nil</em>, use <code class="docutils literal"><span class="pre">ATTRS</span> <span class="pre">{</span> <span class="pre">foo</span> <span class="pre">=</span> <span class="pre">DEFAULT_NIL</span> <span class="pre">}</span></code>.</p>
 <p>Declaring an attribute is mostly the same as defining your <code class="docutils literal"><span class="pre">init</span></code> method like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>function Class.init(args)
-    self.attr1 = args.attr1 or default1
-    self.attr2 = args.attr2 or default2
-    ...
-end
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">function</span> <span class="n">Class</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">attr1</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">attr1</span> <span class="ow">or</span> <span class="n">default1</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">attr2</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">attr2</span> <span class="ow">or</span> <span class="n">default2</span>
+    <span class="o">...</span>
+<span class="n">end</span>
 </pre></div>
 </div>
 <p>The main difference is that attributes are processed as a separate
@@ -2228,12 +2268,12 @@ The arguments given to the closure are appended to these.</p>
 <p>Navigates the inheritance chain of the instance starting from the most specific
 class, and invokes the specified method with the arguments if it is defined in
 that specific class. Equivalent to the following definition in every class:</p>
-<div class="highlight-python"><div class="highlight"><pre>function Class:invoke_before(method, ...)
-  if rawget(Class, method) then
-    rawget(Class, method)(self, ...)
-  end
-  Class.super.invoke_before(method, ...)
-end
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">function</span> <span class="n">Class</span><span class="p">:</span><span class="n">invoke_before</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">rawget</span><span class="p">(</span><span class="n">Class</span><span class="p">,</span> <span class="n">method</span><span class="p">)</span> <span class="n">then</span>
+    <span class="n">rawget</span><span class="p">(</span><span class="n">Class</span><span class="p">,</span> <span class="n">method</span><span class="p">)(</span><span class="bp">self</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+  <span class="n">end</span>
+  <span class="n">Class</span><span class="o">.</span><span class="n">super</span><span class="o">.</span><span class="n">invoke_before</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<span class="n">end</span>
 </pre></div>
 </div>
 </li>
@@ -2249,7 +2289,30 @@ library itself uses them for constructors.</p>
 </div>
 </div>
 <div class="section" id="in-game-ui-library">
-<h2><a class="toc-backref" href="#id44">In-game UI Library</a><a class="headerlink" href="#in-game-ui-library" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id26">In-game UI Library</a><a class="headerlink" href="#in-game-ui-library" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id4">
+<ul class="simple">
+<li><a class="reference internal" href="#gui" id="id76">gui</a><ul>
+<li><a class="reference internal" href="#misc" id="id77">Misc</a></li>
+<li><a class="reference internal" href="#viewrect-class" id="id78">ViewRect class</a></li>
+<li><a class="reference internal" href="#painter-class" id="id79">Painter class</a></li>
+<li><a class="reference internal" href="#view-class" id="id80">View class</a></li>
+<li><a class="reference internal" href="#screen-class" id="id81">Screen class</a></li>
+<li><a class="reference internal" href="#framedscreen-class" id="id82">FramedScreen class</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#gui-widgets" id="id83">gui.widgets</a><ul>
+<li><a class="reference internal" href="#widget-class" id="id84">Widget class</a></li>
+<li><a class="reference internal" href="#panel-class" id="id85">Panel class</a></li>
+<li><a class="reference internal" href="#pages-class" id="id86">Pages class</a></li>
+<li><a class="reference internal" href="#editfield-class" id="id87">EditField class</a></li>
+<li><a class="reference internal" href="#label-class" id="id88">Label class</a></li>
+<li><a class="reference internal" href="#list-class" id="id89">List class</a></li>
+<li><a class="reference internal" href="#filteredlist-class" id="id90">FilteredList class</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <p>A number of lua modules with names starting with <code class="docutils literal"><span class="pre">gui</span></code> are dedicated
 to wrapping the natives of the <code class="docutils literal"><span class="pre">dfhack.screen</span></code> module in a way that
 is easy to use. This allows relatively easily and naturally creating
@@ -2258,12 +2321,12 @@ dialogs that integrate in the main game UI window.</p>
 things ranging from the basic <code class="docutils literal"><span class="pre">Painter</span></code>, <code class="docutils literal"><span class="pre">View</span></code> and <code class="docutils literal"><span class="pre">Screen</span></code>
 classes, to fully functional predefined dialogs.</p>
 <div class="section" id="gui">
-<h3><a class="toc-backref" href="#id45">gui</a><a class="headerlink" href="#gui" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id76">gui</a><a class="headerlink" href="#gui" title="Permalink to this headline">¶</a></h3>
 <p>This module defines the most important classes and functions for
 implementing interfaces. This documents those of them that are
 considered stable.</p>
 <div class="section" id="misc">
-<h4><a class="toc-backref" href="#id46">Misc</a><a class="headerlink" href="#misc" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id77">Misc</a><a class="headerlink" href="#misc" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">USE_GRAPHICS</span></code></p>
 <p>Contains the value of <code class="docutils literal"><span class="pre">dfhack.screen.inGraphicsMode()</span></code>, which cannot be
@@ -2302,7 +2365,7 @@ msec. This is intended for rendering blinking interface objects.</p>
 </ul>
 </div>
 <div class="section" id="viewrect-class">
-<h4><a class="toc-backref" href="#id47">ViewRect class</a><a class="headerlink" href="#viewrect-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id78">ViewRect class</a><a class="headerlink" href="#viewrect-class" title="Permalink to this headline">¶</a></h4>
 <p>This class represents an on-screen rectangle with an associated independent
 clip area rectangle. It is the base of the <code class="docutils literal"><span class="pre">Painter</span></code> class, and is used by
 <code class="docutils literal"><span class="pre">Views</span></code> to track their client area.</p>
@@ -2350,7 +2413,7 @@ it with the clip area of the original object.</p>
 </ul>
 </div>
 <div class="section" id="painter-class">
-<h4><a class="toc-backref" href="#id48">Painter class</a><a class="headerlink" href="#painter-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id79">Painter class</a><a class="headerlink" href="#painter-class" title="Permalink to this headline">¶</a></h4>
 <p>The painting natives in <code class="docutils literal"><span class="pre">dfhack.screen</span></code> apply to the whole screen, are
 completely stateless and don&#8217;t implement clipping.</p>
 <p>The Painter class inherits from ViewRect to provide clipping and local
@@ -2416,12 +2479,12 @@ The <code class="docutils literal"><span class="pre">char</span></code> argument
 </li>
 </ul>
 <p>As noted above, all painting methods return <em>self</em>, in order to allow chaining them like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>painter:pen(foo):seek(x,y):char(1):advance(1):string(&#39;bar&#39;)...
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">painter</span><span class="p">:</span><span class="n">pen</span><span class="p">(</span><span class="n">foo</span><span class="p">):</span><span class="n">seek</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span><span class="n">char</span><span class="p">(</span><span class="mi">1</span><span class="p">):</span><span class="n">advance</span><span class="p">(</span><span class="mi">1</span><span class="p">):</span><span class="n">string</span><span class="p">(</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span><span class="o">...</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="view-class">
-<h4><a class="toc-backref" href="#id49">View class</a><a class="headerlink" href="#view-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id80">View class</a><a class="headerlink" href="#view-class" title="Permalink to this headline">¶</a></h4>
 <p>This class is the common abstract base of both the stand-alone screens
 and common widgets to be used inside them. It defines the basic layout,
 rendering and event handling framework.</p>
@@ -2473,14 +2536,14 @@ in the list have <code class="docutils literal"><span class="pre">view_id</span>
 in <code class="docutils literal"><span class="pre">subviews</span></code>, also stores them under the string keys. Finally, copies any
 non-conflicting string keys from the <code class="docutils literal"><span class="pre">subviews</span></code> tables of the listed views.</p>
 <p>Thus, doing something like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>self:addviews{
-    Panel{
-        view_id = &#39;panel&#39;,
-        subviews = {
-            Label{ view_id = &#39;label&#39; }
-        }
-    }
-}
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="p">:</span><span class="n">addviews</span><span class="p">{</span>
+    <span class="n">Panel</span><span class="p">{</span>
+        <span class="n">view_id</span> <span class="o">=</span> <span class="s1">&#39;panel&#39;</span><span class="p">,</span>
+        <span class="n">subviews</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="n">Label</span><span class="p">{</span> <span class="n">view_id</span> <span class="o">=</span> <span class="s1">&#39;label&#39;</span> <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>Would make the label accessible as both <code class="docutils literal"><span class="pre">self.subviews.label</span></code> and
@@ -2545,7 +2608,7 @@ Returns <em>true</em> if any of the subviews handled the event.</p>
 </ul>
 </div>
 <div class="section" id="screen-class">
-<h4><a class="toc-backref" href="#id50">Screen class</a><a class="headerlink" href="#screen-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id81">Screen class</a><a class="headerlink" href="#screen-class" title="Permalink to this headline">¶</a></h4>
 <p>This is a View subclass intended for use as a stand-alone dialog or screen.
 It adds the following methods:</p>
 <ul>
@@ -2599,7 +2662,7 @@ the screen is removed by any means here.</p>
 </ul>
 </div>
 <div class="section" id="framedscreen-class">
-<h4><a class="toc-backref" href="#id51">FramedScreen class</a><a class="headerlink" href="#framedscreen-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id82">FramedScreen class</a><a class="headerlink" href="#framedscreen-class" title="Permalink to this headline">¶</a></h4>
 <p>A Screen subclass that paints a visible frame around its body.
 Most dialogs should inherit from this class.</p>
 <p>A framed screen has the following attributes:</p>
@@ -2637,10 +2700,10 @@ Most dialogs should inherit from this class.</p>
 </div>
 </div>
 <div class="section" id="gui-widgets">
-<h3><a class="toc-backref" href="#id52">gui.widgets</a><a class="headerlink" href="#gui-widgets" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id83">gui.widgets</a><a class="headerlink" href="#gui-widgets" title="Permalink to this headline">¶</a></h3>
 <p>This module implements some basic widgets based on the View infrastructure.</p>
 <div class="section" id="widget-class">
-<h4><a class="toc-backref" href="#id53">Widget class</a><a class="headerlink" href="#widget-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id84">Widget class</a><a class="headerlink" href="#widget-class" title="Permalink to this headline">¶</a></h4>
 <p>Base of all the widgets. Inherits from View and has the following attributes:</p>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">frame</span> <span class="pre">=</span> <span class="pre">{...}</span></code></p>
@@ -2706,7 +2769,7 @@ inset, or a table with the following fields:</p>
 </ul>
 </div>
 <div class="section" id="panel-class">
-<h4><a class="toc-backref" href="#id54">Panel class</a><a class="headerlink" href="#panel-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id85">Panel class</a><a class="headerlink" href="#panel-class" title="Permalink to this headline">¶</a></h4>
 <p>Inherits from Widget, and intended for grouping a number of subviews.</p>
 <p>Has attributes:</p>
 <ul>
@@ -2719,7 +2782,7 @@ inset, or a table with the following fields:</p>
 </ul>
 </div>
 <div class="section" id="pages-class">
-<h4><a class="toc-backref" href="#id55">Pages class</a><a class="headerlink" href="#pages-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id86">Pages class</a><a class="headerlink" href="#pages-class" title="Permalink to this headline">¶</a></h4>
 <p>Subclass of Panel; keeps exactly one child visible.</p>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">Pages{</span> <span class="pre">...,</span> <span class="pre">selected</span> <span class="pre">=</span> <span class="pre">...</span> <span class="pre">}</span></code></p>
@@ -2735,7 +2798,7 @@ It is permitted to use the subview object, or its <code class="docutils literal"
 </ul>
 </div>
 <div class="section" id="editfield-class">
-<h4><a class="toc-backref" href="#id56">EditField class</a><a class="headerlink" href="#editfield-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id87">EditField class</a><a class="headerlink" href="#editfield-class" title="Permalink to this headline">¶</a></h4>
 <p>Subclass of Widget; implements a simple edit field.</p>
 <p>Attributes:</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -2757,7 +2820,7 @@ If it returns false, the character is ignored.</td>
 </table>
 </div>
 <div class="section" id="label-class">
-<h4><a class="toc-backref" href="#id57">Label class</a><a class="headerlink" href="#label-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id88">Label class</a><a class="headerlink" href="#label-class" title="Permalink to this headline">¶</a></h4>
 <p>This Widget subclass implements flowing semi-static text.</p>
 <p>It has the following attributes:</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -2853,7 +2916,7 @@ this may be extended with mouse click support.</p>
 </ul>
 </div>
 <div class="section" id="list-class">
-<h4><a class="toc-backref" href="#id58">List class</a><a class="headerlink" href="#list-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id89">List class</a><a class="headerlink" href="#list-class" title="Permalink to this headline">¶</a></h4>
 <p>The List widget implements a simple list with paging.</p>
 <p>It has the following attributes:</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -2939,7 +3002,7 @@ with the following fields:</p>
 </ul>
 </div>
 <div class="section" id="filteredlist-class">
-<h4><a class="toc-backref" href="#id59">FilteredList class</a><a class="headerlink" href="#filteredlist-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id90">FilteredList class</a><a class="headerlink" href="#filteredlist-class" title="Permalink to this headline">¶</a></h4>
 <p>This widget combines List, EditField and Label into a combo-box like
 construction that allows filtering the list by subwords of its items.</p>
 <p>In addition to passing through all attributes supported by List, it
@@ -2992,14 +3055,39 @@ index <code class="docutils literal"><span class="pre">pos</span></code> in the 
 </div>
 </div>
 <div class="section" id="plugins">
-<h2><a class="toc-backref" href="#id60">Plugins</a><a class="headerlink" href="#plugins" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id29">Plugins</a><a class="headerlink" href="#plugins" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id5">
+<ul class="simple">
+<li><a class="reference internal" href="#burrows" id="id91">burrows</a></li>
+<li><a class="reference internal" href="#sort" id="id92">sort</a></li>
+<li><a class="reference internal" href="#eventful" id="id93">Eventful</a><ul>
+<li><a class="reference internal" href="#list-of-events" id="id94">List of events</a></li>
+<li><a class="reference internal" href="#events-from-eventmanager" id="id95">Events from EventManager</a></li>
+<li><a class="reference internal" href="#functions" id="id96">Functions</a></li>
+<li><a class="reference internal" href="#examples" id="id97">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#building-hacks" id="id98">Building-hacks</a><ul>
+<li><a class="reference internal" href="#id8" id="id99">Functions</a></li>
+<li><a class="reference internal" href="#id9" id="id100">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#luasocket" id="id101">Luasocket</a><ul>
+<li><a class="reference internal" href="#socket-class" id="id102">Socket class</a></li>
+<li><a class="reference internal" href="#client-class" id="id103">Client class</a></li>
+<li><a class="reference internal" href="#server-class" id="id104">Server class</a></li>
+<li><a class="reference internal" href="#tcp-class" id="id105">Tcp class</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <p>DFHack plugins may export native functions and events
 to lua contexts. They are automatically imported by
 <code class="docutils literal"><span class="pre">mkmodule('plugins.&lt;name&gt;')</span></code>; this means that a lua
 module file is still necessary for <code class="docutils literal"><span class="pre">require</span></code> to read.</p>
 <p>The following plugins have lua support.</p>
 <div class="section" id="burrows">
-<h3><a class="toc-backref" href="#id61">burrows</a><a class="headerlink" href="#burrows" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id91">burrows</a><a class="headerlink" href="#burrows" title="Permalink to this headline">¶</a></h3>
 <p>Implements extended burrow manipulations.</p>
 <p>Events:</p>
 <ul>
@@ -3037,16 +3125,16 @@ set is the same as used by the command line.</p>
 <p>The lua module file also re-exports functions from <code class="docutils literal"><span class="pre">dfhack.burrows</span></code>.</p>
 </div>
 <div class="section" id="sort">
-<h3><a class="toc-backref" href="#id62">sort</a><a class="headerlink" href="#sort" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id92">sort</a><a class="headerlink" href="#sort" title="Permalink to this headline">¶</a></h3>
 <p>Does not export any native functions as of now. Instead, it
 calls lua code to perform the actual ordering of list items.</p>
 </div>
 <div class="section" id="eventful">
-<span id="id1"></span><h3><a class="toc-backref" href="#id63">Eventful</a><a class="headerlink" href="#eventful" title="Permalink to this headline">¶</a></h3>
+<span id="id6"></span><h3><a class="toc-backref" href="#id93">Eventful</a><a class="headerlink" href="#eventful" title="Permalink to this headline">¶</a></h3>
 <p>This plugin exports some events to lua thus allowing to run lua functions
 on DF world events.</p>
 <div class="section" id="list-of-events">
-<h4><a class="toc-backref" href="#id64">List of events</a><a class="headerlink" href="#list-of-events" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id94">List of events</a><a class="headerlink" href="#list-of-events" title="Permalink to this headline">¶</a></h4>
 <ol class="arabic">
 <li><p class="first"><code class="docutils literal"><span class="pre">onReactionComplete(reaction,reaction_product,unit,input_items,input_reagents,output_items,call_native)</span></code></p>
 <p>Auto activates if detects reactions starting with <code class="docutils literal"><span class="pre">LUA_HOOK_</span></code>. Is called when reaction finishes.</p>
@@ -3076,7 +3164,7 @@ tweaking (e.g. adding custom reactions)</p>
 </ol>
 </div>
 <div class="section" id="events-from-eventmanager">
-<span id="eventmanager"></span><h4><a class="toc-backref" href="#id65">Events from EventManager</a><a class="headerlink" href="#events-from-eventmanager" title="Permalink to this headline">¶</a></h4>
+<span id="eventmanager"></span><h4><a class="toc-backref" href="#id95">Events from EventManager</a><a class="headerlink" href="#events-from-eventmanager" title="Permalink to this headline">¶</a></h4>
 <p>These events are straight from EventManager module. Each of them first needs to be enabled. See functions for more info. If you register a listener before the game is loaded, be aware that no events will be triggered immediately after loading, so you might need to add another event listener for when the game first loads in some cases.</p>
 <ol class="arabic">
 <li><p class="first"><code class="docutils literal"><span class="pre">onBuildingCreatedDestroyed(building_id)</span></code></p>
@@ -3121,7 +3209,7 @@ tweaking (e.g. adding custom reactions)</p>
 </ol>
 </div>
 <div class="section" id="functions">
-<h4><a class="toc-backref" href="#id66">Functions</a><a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id96">Functions</a><a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h4>
 <ol class="arabic">
 <li><p class="first"><code class="docutils literal"><span class="pre">registerReaction(reaction_name,callback)</span></code></p>
 <p>Simplified way of using onReactionComplete; the callback is function (same params as event).</p>
@@ -3142,99 +3230,143 @@ as callback. Best used with <code class="docutils literal"><span class="pre">gui
 </ol>
 </div>
 <div class="section" id="examples">
-<h4><a class="toc-backref" href="#id67">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id97">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h4>
 <p>Spawn dragon breath on each item attempt to contaminate wound:</p>
-<div class="highlight-python"><div class="highlight"><pre>b=require &quot;plugins.eventful&quot;
-b.onItemContaminateWound.one=function(item,unit,un_wound,x,y)
-    local flw=dfhack.maps.spawnFlow(unit.pos,6,0,0,50000)
-end
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">b</span><span class="o">=</span><span class="n">require</span> <span class="s2">&quot;plugins.eventful&quot;</span>
+<span class="n">b</span><span class="o">.</span><span class="n">onItemContaminateWound</span><span class="o">.</span><span class="n">one</span><span class="o">=</span><span class="n">function</span><span class="p">(</span><span class="n">item</span><span class="p">,</span><span class="n">unit</span><span class="p">,</span><span class="n">un_wound</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+    <span class="n">local</span> <span class="n">flw</span><span class="o">=</span><span class="n">dfhack</span><span class="o">.</span><span class="n">maps</span><span class="o">.</span><span class="n">spawnFlow</span><span class="p">(</span><span class="n">unit</span><span class="o">.</span><span class="n">pos</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">50000</span><span class="p">)</span>
+<span class="n">end</span>
 </pre></div>
 </div>
 <p>Reaction complete example:</p>
-<div class="highlight-python"><div class="highlight"><pre>b=require &quot;plugins.eventful&quot;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">b</span><span class="o">=</span><span class="n">require</span> <span class="s2">&quot;plugins.eventful&quot;</span>
 
-b.registerReaction(&quot;LUA_HOOK_LAY_BOMB&quot;,function(reaction,unit,in_items,in_reag,out_items,call_native)
-  local pos=copyall(unit.pos)
-  -- spawn dragonbreath after 100 ticks
-  dfhack.timeout(100,&quot;ticks&quot;,function() dfhack.maps.spawnFlow(pos,6,0,0,50000) end)
-  --do not call real item creation code
-  call_native.value=false
-end)
+<span class="n">b</span><span class="o">.</span><span class="n">registerReaction</span><span class="p">(</span><span class="s2">&quot;LUA_HOOK_LAY_BOMB&quot;</span><span class="p">,</span><span class="n">function</span><span class="p">(</span><span class="n">reaction</span><span class="p">,</span><span class="n">unit</span><span class="p">,</span><span class="n">in_items</span><span class="p">,</span><span class="n">in_reag</span><span class="p">,</span><span class="n">out_items</span><span class="p">,</span><span class="n">call_native</span><span class="p">)</span>
+  <span class="n">local</span> <span class="n">pos</span><span class="o">=</span><span class="n">copyall</span><span class="p">(</span><span class="n">unit</span><span class="o">.</span><span class="n">pos</span><span class="p">)</span>
+  <span class="o">--</span> <span class="n">spawn</span> <span class="n">dragonbreath</span> <span class="n">after</span> <span class="mi">100</span> <span class="n">ticks</span>
+  <span class="n">dfhack</span><span class="o">.</span><span class="n">timeout</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="s2">&quot;ticks&quot;</span><span class="p">,</span><span class="n">function</span><span class="p">()</span> <span class="n">dfhack</span><span class="o">.</span><span class="n">maps</span><span class="o">.</span><span class="n">spawnFlow</span><span class="p">(</span><span class="n">pos</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">50000</span><span class="p">)</span> <span class="n">end</span><span class="p">)</span>
+  <span class="o">--</span><span class="n">do</span> <span class="ow">not</span> <span class="n">call</span> <span class="n">real</span> <span class="n">item</span> <span class="n">creation</span> <span class="n">code</span>
+  <span class="n">call_native</span><span class="o">.</span><span class="n">value</span><span class="o">=</span><span class="n">false</span>
+<span class="n">end</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Grenade example:</p>
-<div class="highlight-python"><div class="highlight"><pre>b=require &quot;plugins.eventful&quot;
-b.onProjItemCheckImpact.one=function(projectile)
-  -- you can check if projectile.item e.g. has correct material
-  dfhack.maps.spawnFlow(projectile.cur_pos,6,0,0,50000)
-end
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">b</span><span class="o">=</span><span class="n">require</span> <span class="s2">&quot;plugins.eventful&quot;</span>
+<span class="n">b</span><span class="o">.</span><span class="n">onProjItemCheckImpact</span><span class="o">.</span><span class="n">one</span><span class="o">=</span><span class="n">function</span><span class="p">(</span><span class="n">projectile</span><span class="p">)</span>
+  <span class="o">--</span> <span class="n">you</span> <span class="n">can</span> <span class="n">check</span> <span class="k">if</span> <span class="n">projectile</span><span class="o">.</span><span class="n">item</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">has</span> <span class="n">correct</span> <span class="n">material</span>
+  <span class="n">dfhack</span><span class="o">.</span><span class="n">maps</span><span class="o">.</span><span class="n">spawnFlow</span><span class="p">(</span><span class="n">projectile</span><span class="o">.</span><span class="n">cur_pos</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">50000</span><span class="p">)</span>
+<span class="n">end</span>
 </pre></div>
 </div>
 <p>Integrated tannery:</p>
-<div class="highlight-python"><div class="highlight"><pre>b=require &quot;plugins.eventful&quot;
-b.addReactionToShop(&quot;TAN_A_HIDE&quot;,&quot;LEATHERWORKS&quot;)
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">b</span><span class="o">=</span><span class="n">require</span> <span class="s2">&quot;plugins.eventful&quot;</span>
+<span class="n">b</span><span class="o">.</span><span class="n">addReactionToShop</span><span class="p">(</span><span class="s2">&quot;TAN_A_HIDE&quot;</span><span class="p">,</span><span class="s2">&quot;LEATHERWORKS&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="building-hacks">
-<span id="id2"></span><h3><a class="toc-backref" href="#id68">Building-hacks</a><a class="headerlink" href="#building-hacks" title="Permalink to this headline">¶</a></h3>
+<span id="id7"></span><h3><a class="toc-backref" href="#id98">Building-hacks</a><a class="headerlink" href="#building-hacks" title="Permalink to this headline">¶</a></h3>
 <p>This plugin overwrites some methods in workshop df class so that mechanical workshops are possible. Although
 plugin export a function it&#8217;s recommended to use lua decorated function.</p>
-<div class="section" id="id3">
-<h4><a class="toc-backref" href="#id69">Functions</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
-<dl class="docutils">
-<dt><code class="docutils literal"><span class="pre">registerBuilding(table)</span></code> where table must contain name, as a workshop raw name, the rest are optional:</dt>
-<dd><ol class="first last arabic simple">
-<li>name &#8211; custom workshop id e.g. <code class="docutils literal"><span class="pre">SOAPMAKER</span></code></li>
-<li>fix_impassible &#8211; if true make impassible tiles impassible to liquids too</li>
-<li>consume &#8211; how much machine power is needed to work. Disables reactions if not supplied enough and needs_power=1</li>
-<li>produce &#8211; how much machine power is produced.</li>
-<li>needs_power &#8211; if produced in network &lt; consumed stop working, default true</li>
-<li>gears &#8211; a table or <code class="docutils literal"><span class="pre">{x=?,y=?}</span></code> of connection points for machines</li>
-<li>action &#8211; a table of number (how much ticks to skip) and a function which gets called on shop update</li>
-<li>animate &#8211; a table of frames which can be a table of:<ol class="loweralpha">
+<div class="section" id="id8">
+<h4><a class="toc-backref" href="#id99">Functions</a><a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal"><span class="pre">registerBuilding(table)</span></code> where table must contain name, as a workshop raw name, the rest are optional:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">name:</th><td class="field-body"><p class="first">custom workshop id e.g. <code class="docutils literal"><span class="pre">SOAPMAKER</span></code></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">this is the only mandatory field.</p>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">fix_impassible:</th><td class="field-body"><p class="first">if true make impassible tiles impassible to liquids too</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">consume:</th><td class="field-body"><p class="first">how much machine power is needed to work.
+Disables reactions if not supplied enough and <code class="docutils literal"><span class="pre">needs_power==1</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">produce:</th><td class="field-body"><p class="first">how much machine power is produced.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">needs_power:</th><td class="field-body"><p class="first">if produced in network &lt; consumed stop working, default true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">gears:</th><td class="field-body"><p class="first">a table or <code class="docutils literal"><span class="pre">{x=?,y=?}</span></code> of connection points for machines.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">action:</th><td class="field-body"><p class="first">a table of number (how much ticks to skip) and a function which
+gets called on shop update</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">animate:</th><td class="field-body"><p class="first">a table of frames which can be a table of:</p>
+<ol class="loweralpha simple">
 <li>tables of 4 numbers <code class="docutils literal"><span class="pre">{tile,fore,back,bright}</span></code> OR</li>
 <li>empty table (tile not modified) OR</li>
-<li><code class="docutils literal"><span class="pre">{x=&lt;number&gt;</span> <span class="pre">y=&lt;number&gt;</span> <span class="pre">+</span> <span class="pre">4</span> <span class="pre">numbers</span> <span class="pre">like</span> <span class="pre">in</span> <span class="pre">first</span> <span class="pre">case}</span></code>, this generates full frame useful for animations that change little (1-2 tiles)</li>
+<li><code class="docutils literal"><span class="pre">{x=&lt;number&gt;</span> <span class="pre">y=&lt;number&gt;</span> <span class="pre">+</span> <span class="pre">4</span> <span class="pre">numbers</span> <span class="pre">like</span> <span class="pre">in</span> <span class="pre">first</span> <span class="pre">case}</span></code>,
+this generates full frame useful for animations that change little (1-2 tiles)</li>
 </ol>
-</li>
-<li>canBeRoomSubset &#8211; a flag if this building can be counted in room. 1 means it can, 0 means it can&#8217;t and -1 default building behaviour</li>
-</ol>
-</dd>
-<dt>Animate table also might contain:</dt>
-<dd><ol class="first last arabic simple">
-<li>frameLenght &#8211; how many ticks does one frame take OR</li>
-<li>isMechanical &#8211; a bool that says to try to match to mechanical system (i.e. how gears are turning)</li>
-</ol>
-</dd>
-</dl>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">canBeRoomSubset:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><p class="first">a flag if this building can be counted in room. 1 means it can, 0 means it can&#8217;t and -1 default building behaviour</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">auto_gears:</th><td class="field-body"><p class="first last">a flag that automatically fills up gears and animate. It looks over building definition for gear icons and maps them.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Animate table also might contain:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">frameLength:</th><td class="field-body">how many ticks does one frame take OR</td>
+</tr>
+<tr class="field-even field"><th class="field-name">isMechanical:</th><td class="field-body">a bool that says to try to match to mechanical system (i.e. how gears are turning)</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
 <p><code class="docutils literal"><span class="pre">getPower(building)</span></code> returns two number - produced and consumed power if building can be modified and returns nothing otherwise</p>
 <p><code class="docutils literal"><span class="pre">setPower(building,produced,consumed)</span></code> sets current productiona and consumption for a building.</p>
 </div>
-<div class="section" id="id4">
-<h4><a class="toc-backref" href="#id70">Examples</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id9">
+<h4><a class="toc-backref" href="#id100">Examples</a><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
 <p>Simple mechanical workshop:</p>
-<div class="highlight-python"><div class="highlight"><pre>require(&#39;plugins.building-hacks&#39;).registerBuilding{name=&quot;BONE_GRINDER&quot;,
-  consume=15,
-  gears={x=0,y=0}, --connection point
-  animate={
-    isMechanical=true, --animate the same connection point as vanilla gear
-    frames={
-    {{x=0,y=0,42,7,0,0}}, --first frame, 1 changed tile
-    {{x=0,y=0,15,7,0,0}} -- second frame, same
-    }
-  }
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">require</span><span class="p">(</span><span class="s1">&#39;plugins.building-hacks&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">registerBuilding</span><span class="p">{</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;BONE_GRINDER&quot;</span><span class="p">,</span>
+  <span class="n">consume</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span>
+  <span class="n">gears</span><span class="o">=</span><span class="p">{</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">},</span> <span class="o">--</span><span class="n">connection</span> <span class="n">point</span>
+  <span class="n">animate</span><span class="o">=</span><span class="p">{</span>
+    <span class="n">isMechanical</span><span class="o">=</span><span class="n">true</span><span class="p">,</span> <span class="o">--</span><span class="n">animate</span> <span class="n">the</span> <span class="n">same</span> <span class="n">conn</span><span class="o">.</span> <span class="n">point</span> <span class="k">as</span> <span class="n">vanilla</span> <span class="n">gear</span>
+    <span class="n">frames</span><span class="o">=</span><span class="p">{</span>
+    <span class="p">{{</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">42</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">}},</span> <span class="o">--</span><span class="n">first</span> <span class="n">frame</span><span class="p">,</span> <span class="mi">1</span> <span class="n">changed</span> <span class="n">tile</span>
+    <span class="p">{{</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">}}</span> <span class="o">--</span> <span class="n">second</span> <span class="n">frame</span><span class="p">,</span> <span class="n">same</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+</div>
+<p>Or with auto_gears:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">require</span><span class="p">(</span><span class="s1">&#39;plugins.building-hacks&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">registerBuilding</span><span class="p">{</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;BONE_GRINDER&quot;</span><span class="p">,</span>
+  <span class="n">consume</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span>
+  <span class="n">auto_gears</span><span class="o">=</span><span class="n">true</span>
+  <span class="p">}</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="luasocket">
-<h3><a class="toc-backref" href="#id71">Luasocket</a><a class="headerlink" href="#luasocket" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id101">Luasocket</a><a class="headerlink" href="#luasocket" title="Permalink to this headline">¶</a></h3>
 <p>A way to access csocket from lua. The usage is made similar to luasocket in vanilla lua distributions. Currently
 only subset of functions exist and only tcp mode is implemented.</p>
 <div class="section" id="socket-class">
-<h4><a class="toc-backref" href="#id72">Socket class</a><a class="headerlink" href="#socket-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id102">Socket class</a><a class="headerlink" href="#socket-class" title="Permalink to this headline">¶</a></h4>
 <p>This is a base class for <code class="docutils literal"><span class="pre">client</span></code> and <code class="docutils literal"><span class="pre">server</span></code> sockets. You can not create it - it&#8217;s like a virtual
 base class in c++.</p>
 <ul>
@@ -3248,20 +3380,24 @@ a non-blocking socket.</p>
 </ul>
 </div>
 <div class="section" id="client-class">
-<h4><a class="toc-backref" href="#id73">Client class</a><a class="headerlink" href="#client-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id103">Client class</a><a class="headerlink" href="#client-class" title="Permalink to this headline">¶</a></h4>
 <p>Client is a connection socket to a server. You can get this object either from <code class="docutils literal"><span class="pre">tcp:connect(address,port)</span></code> or
 from <code class="docutils literal"><span class="pre">server:accept()</span></code>. It&#8217;s a subclass of <code class="docutils literal"><span class="pre">socket</span></code>.</p>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">client:receive(pattern)</span></code></p>
-<p>Receives data. If <code class="docutils literal"><span class="pre">pattern</span></code> is a number, it receives that much data. Other supported patterns:</p>
-<ul>
-<li><p class="first"><code class="docutils literal"><span class="pre">*a</span></code></p>
-<p>Read all available data.</p>
-</li>
-<li><p class="first"><code class="docutils literal"><span class="pre">*l</span></code></p>
-<p>Read one line. This is the default mode (if pattern is nil).</p>
-</li>
-</ul>
+<p>Receives data.  Pattern is one of:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name"><code class="docutils literal"><span class="pre">*l</span></code>:</th><td class="field-body">read one line (default, if pattern is <em>nil</em>)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">&lt;number&gt;:</th><td class="field-body">read specified number of bytes</td>
+</tr>
+<tr class="field-odd field"><th class="field-name"><code class="docutils literal"><span class="pre">*a</span></code>:</th><td class="field-body">read all available data</td>
+</tr>
+</tbody>
+</table>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">client:send(data)</span></code></p>
 <p>Sends data. Data is a string.</p>
@@ -3269,16 +3405,18 @@ from <code class="docutils literal"><span class="pre">server:accept()</span></co
 </ul>
 </div>
 <div class="section" id="server-class">
-<h4><a class="toc-backref" href="#id74">Server class</a><a class="headerlink" href="#server-class" title="Permalink to this headline">¶</a></h4>
-<p>Server is a socket that is waiting for clients. You can get this object from <code class="docutils literal"><span class="pre">tcp:bind(address,port)</span></code>.</p>
+<h4><a class="toc-backref" href="#id104">Server class</a><a class="headerlink" href="#server-class" title="Permalink to this headline">¶</a></h4>
+<p>Server is a socket that is waiting for clients.
+You can get this object from <code class="docutils literal"><span class="pre">tcp:bind(address,port)</span></code>.</p>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">server:accept()</span></code></p>
-<p>Accepts an incoming connection if it exists. Returns a <code class="docutils literal"><span class="pre">client</span></code> object representing that socket.</p>
+<p>Accepts an incoming connection if it exists.
+Returns a <code class="docutils literal"><span class="pre">client</span></code> object representing that socket.</p>
 </li>
 </ul>
 </div>
 <div class="section" id="tcp-class">
-<h4><a class="toc-backref" href="#id75">Tcp class</a><a class="headerlink" href="#tcp-class" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id105">Tcp class</a><a class="headerlink" href="#tcp-class" title="Permalink to this headline">¶</a></h4>
 <p>A class with all the tcp functionality.</p>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">tcp:bind(address,port)</span></code></p>
@@ -3292,18 +3430,29 @@ from <code class="docutils literal"><span class="pre">server:accept()</span></co
 </div>
 </div>
 <div class="section" id="scripts">
-<h2><a class="toc-backref" href="#id76">Scripts</a><a class="headerlink" href="#scripts" title="Permalink to this headline">¶</a></h2>
-<p>Any files with the .lua extension placed into hack/scripts/*
+<h2><a class="toc-backref" href="#id35">Scripts</a><a class="headerlink" href="#scripts" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id10">
+<ul class="simple">
+<li><a class="reference internal" href="#enabling-and-disabling-scripts" id="id106">Enabling and disabling scripts</a></li>
+<li><a class="reference internal" href="#save-init-script" id="id107">Save init script</a></li>
+</ul>
+</div>
+<p>Any files with the .lua extension placed into <code class="file docutils literal"><span class="pre">hack/scripts/*</span></code>
 are automatically used by the DFHack core as commands. The
 matching command name consists of the name of the file without
-the extension. First DFHack searches for the script in the save folder/raw/scripts folder. If it is not found there, it searches in the DF/raw/scripts folder. If it is not there, it searches in DF/hack/scripts. If it is not there, it gives up.</p>
+the extension. First DFHack searches for the script in the <code class="file docutils literal"><span class="pre">&lt;save_folder&gt;/raw/scripts/</span></code> folder. If it is not found there, it searches in the <code class="file docutils literal"><span class="pre">&lt;DF&gt;/raw/scripts/</span></code> folder. If it is not there, it searches in
+<code class="file docutils literal"><span class="pre">&lt;DF&gt;/hack/scripts/</span></code>. If it is not there, it gives up.</p>
 <p>If the first line of the script is a one-line comment, it is
-used by the built-in <code class="docutils literal"><span class="pre">ls</span></code> and <code class="docutils literal"><span class="pre">help</span></code> commands.</p>
-<p><strong>NOTE:</strong> Scripts placed in subdirectories still can be accessed, but
-do not clutter the <code class="docutils literal"><span class="pre">ls</span></code> command list; thus it is preferred
+used by the built-in <code class="docutils literal"><span class="pre">ls</span></code> and <code class="docutils literal"><span class="pre">help</span></code> commands.
+Such a comment is required for every script in the official DFHack repository.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Scripts placed in subdirectories still can be accessed, but
+do not clutter the <a class="reference internal" href="Core.html#ls"><span class="std std-ref">ls</span></a> command list (unless <code class="docutils literal"><span class="pre">ls</span> <span class="pre">-a</span></code>; thus it is preferred
 for obscure developer-oriented scripts and scripts used by tools.
 When calling such scripts, always use &#8216;/&#8217; as the separator for
 directories, e.g. <code class="docutils literal"><span class="pre">devel/lua-example</span></code>.</p>
+</div>
 <p>Scripts are re-read from disk if they have changed since the last time they were read.
 Global variable values persist in memory between calls, unless the file has changed.
 Every script gets its own separate environment for global
@@ -3325,19 +3474,19 @@ The <code class="docutils literal"><span class="pre">name</span></code> argument
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.script_environment(name)</span></code></p>
 <p>Run an Lua script and return its environment.
 This command allows you to use scripts like modules for increased portability.
-It is highly recommended that if you are a modder you put your custom modules in <code class="docutils literal"><span class="pre">raw/scripts</span></code> and use <code class="docutils literal"><span class="pre">script_environment</span></code> instead of <code class="docutils literal"><span class="pre">require</span></code> so that saves with your mod installed will be self-contained and can be transferred to people who do have DFHack but do not have your mod installed.
-You can say <code class="docutils literal"><span class="pre">dfhack.script_environment('add-thought').addEmotionToUnit([arguments</span> <span class="pre">go</span> <span class="pre">here])</span></code> and it will have the desired effect.
+It is highly recommended that if you are a modder you put your custom modules in <code class="docutils literal"><span class="pre">raw/scripts</span></code> and use <code class="docutils literal"><span class="pre">script_environment</span></code> instead of <code class="docutils literal"><span class="pre">require</span></code> so that saves with your mod installed will be self-contained and can be transferred to people who do have DFHack but do not have your mod installed.</p>
+<p>You can say <code class="docutils literal"><span class="pre">dfhack.script_environment('add-thought').addEmotionToUnit([arguments</span> <span class="pre">go</span> <span class="pre">here])</span></code> and it will have the desired effect.
 It will call the script in question with the global <code class="docutils literal"><span class="pre">moduleMode</span></code> set to <code class="docutils literal"><span class="pre">true</span></code> so that the script can return early.
 This is useful because if the script is called from the console it should deal with its console arguments and if it is called by <code class="docutils literal"><span class="pre">script_environment</span></code> it should only create its global functions and return.
-You can also access global variables with, for example <code class="docutils literal"><span class="pre">print(dfhack.script_environment('add-thought').validArgs)</span></code>
-The function <code class="docutils literal"><span class="pre">script_environment</span></code> is fast enough that it is recommended that you not store its result in a nonlocal variable, because your script might need to load a different version of that script if the save is unloaded and a save with a different mod that overrides the same script with a slightly different functionality is loaded.
-This will not be an issue in most cases.
-This function also permits circular dependencies of scripts.</p>
+You can also access global variables with, for example <code class="docutils literal"><span class="pre">print(dfhack.script_environment('add-thought').validArgs)</span></code></p>
+<p>The function <code class="docutils literal"><span class="pre">script_environment</span></code> is fast enough that it is recommended that you not store its result in a nonlocal variable, because your script might need to load a different version of that script if the save is unloaded and a save with a different mod that overrides the same script with a slightly different functionality is loaded.
+This will not be an issue in most cases.</p>
+<p>This function also permits circular dependencies of scripts.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">dfhack.reqscript(name)</span></code> or <code class="docutils literal"><span class="pre">reqscript(name)</span></code></p>
 <p>Nearly identical to script_environment() but requires scripts being loaded to
 include a line similar to:</p>
-<div class="highlight-python"><div class="highlight"><pre>--@ module = true
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">--@</span> <span class="n">module</span> <span class="o">=</span> <span class="n">true</span>
 </pre></div>
 </div>
 <p>This is intended to only allow scripts that take appropriate action when used
@@ -3345,10 +3494,10 @@ as a module to be loaded.</p>
 </li>
 </ul>
 <div class="section" id="enabling-and-disabling-scripts">
-<h3><a class="toc-backref" href="#id77">Enabling and disabling scripts</a><a class="headerlink" href="#enabling-and-disabling-scripts" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id106">Enabling and disabling scripts</a><a class="headerlink" href="#enabling-and-disabling-scripts" title="Permalink to this headline">¶</a></h3>
 <p>Scripts can choose to recognize the built-in <code class="docutils literal"><span class="pre">enable</span></code> and <code class="docutils literal"><span class="pre">disable</span></code> commands
 by including the following line anywhere in their file:</p>
-<div class="highlight-python"><div class="highlight"><pre>--@ enable = true
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">--@</span> <span class="n">enable</span> <span class="o">=</span> <span class="n">true</span>
 </pre></div>
 </div>
 <p>When the <code class="docutils literal"><span class="pre">enable</span></code> and <code class="docutils literal"><span class="pre">disable</span></code> commands are invoked, a <code class="docutils literal"><span class="pre">dfhack_flags</span></code>
@@ -3359,7 +3508,7 @@ table will be passed to the script with the following fields set:</p>
 </ul>
 </div>
 <div class="section" id="save-init-script">
-<h3><a class="toc-backref" href="#id78">Save init script</a><a class="headerlink" href="#save-init-script" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id107">Save init script</a><a class="headerlink" href="#save-init-script" title="Permalink to this headline">¶</a></h3>
 <p>If a save directory contains a file called <code class="docutils literal"><span class="pre">raw/init.lua</span></code>, it is
 automatically loaded and executed every time the save is loaded.
 The same applies to any files called <code class="docutils literal"><span class="pre">raw/init.d/*.lua</span></code>. Every
@@ -3395,6 +3544,8 @@ when this is called, the world is already completely unloaded.</p>
 
 
 
+
+
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
@@ -3412,9 +3563,6 @@ when this is called, the world is already completely unloaded.</p>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
   <h3><a href="../index.html">Table Of Contents</a></h3>
@@ -3451,7 +3599,12 @@ when this is called, the world is already completely unloaded.</p>
 <li><a class="reference internal" href="#items-module">Items module</a></li>
 <li><a class="reference internal" href="#maps-module">Maps module</a></li>
 <li><a class="reference internal" href="#burrows-module">Burrows module</a></li>
-<li><a class="reference internal" href="#buildings-module">Buildings module</a></li>
+<li><a class="reference internal" href="#buildings-module">Buildings module</a><ul>
+<li><a class="reference internal" href="#general">General</a></li>
+<li><a class="reference internal" href="#low-level">Low-level</a></li>
+<li><a class="reference internal" href="#high-level">High-level</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#constructions-module">Constructions module</a></li>
 <li><a class="reference internal" href="#screen-api">Screen API</a></li>
 <li><a class="reference internal" href="#penarray-class">PenArray class</a></li>
@@ -3505,8 +3658,8 @@ when this is called, the world is already completely unloaded.</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#building-hacks">Building-hacks</a><ul>
-<li><a class="reference internal" href="#id3">Functions</a></li>
-<li><a class="reference internal" href="#id4">Examples</a></li>
+<li><a class="reference internal" href="#id8">Functions</a></li>
+<li><a class="reference internal" href="#id9">Examples</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#luasocket">Luasocket</a><ul>
@@ -3535,8 +3688,8 @@ when this is called, the world is already completely unloaded.</p>
       &copy;2015, The DFHack Team.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
       <a href="../_sources/docs/Lua API.txt"

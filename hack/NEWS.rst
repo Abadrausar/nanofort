@@ -62,6 +62,7 @@ New Scripts
 New Features
 ------------
 - `buildingplan`: Support for floodgates, grates, and bars
+- `colonies`: new ``place`` subcommand and supports any vermin (default honey bees)
 - `confirm`: Added a confirmation for retiring locations
 - `exportlegends`: Exports more information (poetic/musical/dance forms, written/artifact content, landmasses, extra histfig information, and more)
 - `search-plugin`: Support for new screens:
@@ -76,7 +77,10 @@ New Features
     - ``tweak hide-priority``: Adds an option to hide designation priority indicators
     - ``tweak title-start-rename``: Adds a safe rename option to the title screen "Start Playing" menu
 
-- `colonies`: new ``place`` subcommand and supports any vermin (default honey bees)
+- `zone`:
+
+    - Added ``unassign`` subcommand
+    - Added ``only`` option to ``assign`` subcommand
 
 Fixes
 -----
@@ -84,6 +88,7 @@ Fixes
 - More plugins should recognize non-dwarf citizens
 - Fixed a possible crash from cloning jobs
 - moveToBuilding() now sets flags for items that aren't a structural part of the building properly
+- `autotrade`, `stocks`: Made trading work when multiple caravans are present but only some can trade
 - `confirm` note-delete: No longer interferes with name entry
 - `exportlegends`: Handles entities without specific races, and a few other fixes for things new to v0.42
 - `fastdwarf`: Fixed a bug involving teleporting mothers but not the babies they're holding.
@@ -111,10 +116,12 @@ Misc Improvements
 - `createitem`: Can now create items anywhere without specifying a unit, as long as a unit exists on the map
 - `devel/export-dt-ini`: Updated for 0.42.06
 - `devel/find-offsets`: Automated several more scans
+- `gui/gm-editor`: Now supports finding some items with a numeric ID (with ``i``)
 - `lua`: Now supports some built-in variables like `gui/gm-editor`, e.g. ``unit``, ``screen``
 - `remotefortressreader`: Can now trigger keyboard events
 - `stockflow`: Now offers better control over individual craft jobs
 - `weather`: now implemented by a script
+- `zone`: colored output
 
 Removed
 -------

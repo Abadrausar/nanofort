@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Compiling DFHack &mdash; DFHack 0.42.06- documentation</title>
+    <title>Compiling DFHack &mdash; DFHack 0.42.06-r1 documentation</title>
     
     <link rel="stylesheet" href="../_static/dfhack.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.42.06-',
+        VERSION:     '0.42.06-r1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,12 +24,12 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/dfhack-icon.ico"/>
-    <link rel="top" title="DFHack 0.42.06- documentation" href="../index.html" />
+    <link rel="top" title="DFHack 0.42.06-r1 documentation" href="../index.html" />
     <link rel="next" title="DFHack Lua API" href="Lua API.html" />
     <link rel="prev" title="How to contribute to DFHack" href="Contributing.html" />
    
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
   <body role="document">  
@@ -43,7 +43,7 @@
 <h1><a class="toc-backref" href="#id7">Compiling DFHack</a><a class="headerlink" href="#compiling-dfhack" title="Permalink to this headline">¶</a></h1>
 <p>You don&#8217;t need to compile DFHack unless you&#8217;re developing plugins or working on the core.</p>
 <p>For users, modders, and authors of scripts it&#8217;s better to download
-and <a class="reference internal" href="Introduction.html#installing"><span>install the latest release instead</span></a>.</p>
+and <a class="reference internal" href="Introduction.html#installing"><span class="std std-ref">install the latest release instead</span></a>.</p>
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
@@ -54,11 +54,7 @@ and <a class="reference internal" href="Introduction.html#installing"><span>inst
 <li><a class="reference internal" href="#linux" id="id11">Linux</a></li>
 <li><a class="reference internal" href="#mac-os-x" id="id12">Mac OS X</a></li>
 <li><a class="reference internal" href="#windows" id="id13">Windows</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#building-the-documentation" id="id14">Building the documentation</a><ul>
-<li><a class="reference internal" href="#enabling-documentation-building" id="id15">Enabling documentation building</a></li>
-<li><a class="reference internal" href="#required-dependencies" id="id16">Required dependencies</a></li>
+<li><a class="reference internal" href="#building-the-documentation" id="id14">Building the documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -69,15 +65,15 @@ and <a class="reference internal" href="Introduction.html#installing"><span>inst
 get code from the GitHub repository using Git.  How to get Git is described under
 the instructions for each platform.</p>
 <p>To get the latest release code (master branch):</p>
-<div class="highlight-python"><div class="highlight"><pre>git clone --recursive https://github.com/DFHack/dfhack
-cd dfhack
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="o">--</span><span class="n">recursive</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">DFHack</span><span class="o">/</span><span class="n">dfhack</span>
+<span class="n">cd</span> <span class="n">dfhack</span>
 </pre></div>
 </div>
 <p>If your version of Git does not support the <code class="docutils literal"><span class="pre">--recursive</span></code> flag, you will need to omit it and run
 <code class="docutils literal"><span class="pre">git</span> <span class="pre">submodule</span> <span class="pre">update</span> <span class="pre">--init</span></code> after entering the dfhack directory.</p>
 <p>To get the latest development code (develop branch), clone as above and then:</p>
-<div class="highlight-python"><div class="highlight"><pre>git checkout develop
-git submodule update
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">develop</span>
+<span class="n">git</span> <span class="n">submodule</span> <span class="n">update</span>
 </pre></div>
 </div>
 <p><strong>Important note regarding submodule update and changing branches</strong>:</p>
@@ -88,15 +84,15 @@ for example when switching between master and develop branches and back.</p>
 <h2><a class="toc-backref" href="#id9">Contributing to DFHack</a><a class="headerlink" href="#contributing-to-dfhack" title="Permalink to this headline">¶</a></h2>
 <p>If you want to get involved with the development, create an account on
 GitHub, make a clone there and then use that as your remote repository instead.</p>
-<p>We&#8217;d love that; join us on IRC (#dfhack channel on freenode) for discussion,
+<p>We&#8217;d love that; join us on <a class="reference external" href="https://webchat.freenode.net/?channels=dfhack">IRC</a> (#dfhack channel on freenode) for discussion,
 and whenever you need help.</p>
 <p>For lots more details on contributing to DFHack, including pull requests, code format,
-and more, please see <a class="reference internal" href="Contributing.html#contributing-code"><span>Contributing Code</span></a>.</p>
+and more, please see <a class="reference internal" href="Contributing.html#contributing-code"><span class="std std-ref">Contributing Code</span></a>.</p>
 </div>
 <div class="section" id="build-types">
 <h2><a class="toc-backref" href="#id10">Build types</a><a class="headerlink" href="#build-types" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal"><span class="pre">cmake</span></code> allows you to pick a build type by changing the <code class="docutils literal"><span class="pre">CMAKE_BUILD_TYPE</span></code> variable:</p>
-<div class="highlight-python"><div class="highlight"><pre>cmake .. -DCMAKE_BUILD_TYPE:string=BUILD_TYPE
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">..</span> <span class="o">-</span><span class="n">DCMAKE_BUILD_TYPE</span><span class="p">:</span><span class="n">string</span><span class="o">=</span><span class="n">BUILD_TYPE</span>
 </pre></div>
 </div>
 <p>Without specifying a build type or &#8216;None&#8217;, cmake uses the
@@ -137,40 +133,44 @@ to
 <code class="docutils literal"><span class="pre">ccmake</span></code> on distributions that split the cmake package into multiple parts.</p>
 <p>You also need perl and the XML::LibXML and XML::LibXSLT perl packages (for the code generation parts).
 You should be able to find them in your distro repositories.</p>
-<p>To build Stonesense, you&#8217;ll also need OpenGL headers.</p>
+<p>To build <a class="reference internal" href="../plugins/stonesense/docs/Stonesense.html#stonesense"><span class="std std-ref">Stonesense</span></a>, you&#8217;ll also need OpenGL headers.</p>
 <p>Here are some package install commands for various platforms:</p>
+<ul>
+<li><p class="first">On Arch linux:</p>
 <ul class="simple">
-<li>On Arch linux:<ul>
 <li>For the required Perl modules: <code class="docutils literal"><span class="pre">perl-xml-libxml</span></code> and <code class="docutils literal"><span class="pre">perl-xml-libxslt</span></code> (or through <code class="docutils literal"><span class="pre">cpan</span></code>)</li>
 </ul>
 </li>
-<li>On 64-bit Ubuntu:<ul>
-<li><code class="docutils literal"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">gcc</span> <span class="pre">cmake</span> <span class="pre">git</span> <span class="pre">gcc-multilib</span> <span class="pre">g++-multilib</span> <span class="pre">zlib1g-dev:i386</span> <span class="pre">libxml-libxml-perl</span> <span class="pre">libxml-libxslt-perl</span></code>.</li>
-</ul>
+<li><p class="first">On 64-bit Ubuntu:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">gcc</span> <span class="n">cmake</span> <span class="n">git</span> <span class="n">gcc</span><span class="o">-</span><span class="n">multilib</span> <span class="n">g</span><span class="o">++-</span><span class="n">multilib</span> <span class="n">zlib1g</span><span class="o">-</span><span class="n">dev</span><span class="p">:</span><span class="n">i386</span> <span class="n">libxml</span><span class="o">-</span><span class="n">libxml</span><span class="o">-</span><span class="n">perl</span> <span class="n">libxml</span><span class="o">-</span><span class="n">libxslt</span><span class="o">-</span><span class="n">perl</span>
+</pre></div>
+</div>
 </li>
-<li>On 32-bit Ubuntu:<ul>
-<li><code class="docutils literal"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">gcc</span> <span class="pre">cmake</span> <span class="pre">git</span> <span class="pre">gcc-multilib</span> <span class="pre">g++-multilib</span> <span class="pre">zlib1g-dev</span> <span class="pre">libxml-libxml-perl</span> <span class="pre">libxml-libxslt-perl</span></code>.</li>
-</ul>
+<li><p class="first">On 32-bit Ubuntu:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">gcc</span> <span class="n">cmake</span> <span class="n">git</span> <span class="n">gcc</span><span class="o">-</span><span class="n">multilib</span> <span class="n">g</span><span class="o">++-</span><span class="n">multilib</span> <span class="n">zlib1g</span><span class="o">-</span><span class="n">dev</span> <span class="n">libxml</span><span class="o">-</span><span class="n">libxml</span><span class="o">-</span><span class="n">perl</span> <span class="n">libxml</span><span class="o">-</span><span class="n">libxslt</span><span class="o">-</span><span class="n">perl</span>
+</pre></div>
+</div>
 </li>
-<li>Debian-derived distros should have similar requirements.</li>
+<li><p class="first">Debian and derived distros should have similar requirements to Ubuntu.</p>
+</li>
 </ul>
 </div>
 <div class="section" id="build">
 <h3>Build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h3>
 <p>Building is fairly straightforward. Enter the <code class="docutils literal"><span class="pre">build</span></code> folder (or create an
 empty folder in the DFHack directory to use instead) and start the build like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>cd build
-cmake .. -DCMAKE_BUILD_TYPE:string=Release -DCMAKE_INSTALL_PREFIX=&lt;path to DF&gt;
-make install # or make -jX install on multi-core systems to compile with X parallel processes
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">build</span>
+<span class="n">cmake</span> <span class="o">..</span> <span class="o">-</span><span class="n">DCMAKE_BUILD_TYPE</span><span class="p">:</span><span class="n">string</span><span class="o">=</span><span class="n">Release</span> <span class="o">-</span><span class="n">DCMAKE_INSTALL_PREFIX</span><span class="o">=&lt;</span><span class="n">path</span> <span class="n">to</span> <span class="n">DF</span><span class="o">&gt;</span>
+<span class="n">make</span> <span class="n">install</span> <span class="c1"># or make -jX install on multi-core systems to compile with X parallel processes</span>
 </pre></div>
 </div>
 <p>&lt;path to DF&gt; should be a path to a copy of Dwarf Fortress, of the appropriate
 version for the DFHack you are building. This will build the library along
 with the normal set of plugins and install them into your DF folder.</p>
 <p>Alternatively, you can use ccmake instead of cmake:</p>
-<div class="highlight-python"><div class="highlight"><pre>cd build
-ccmake ..
-make install
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">build</span>
+<span class="n">ccmake</span> <span class="o">..</span>
+<span class="n">make</span> <span class="n">install</span>
 </pre></div>
 </div>
 <p>This will show a curses-based interface that lets you set all of the
@@ -182,14 +182,14 @@ or the cmake-gui program.</p>
 When Dwarf Fortress runs, it uses a libstdc++ shipped with the binary, which
 comes from GCC 4.5 and is incompatible with code compiled with newer GCC versions.
 This manifests itself with an error message such as:</p>
-<div class="highlight-python"><div class="highlight"><pre>./libs/Dwarf_Fortress: /pathToDF/libs/libstdc++.so.6: version
+<div class="highlight-default"><div class="highlight"><pre><span></span>./libs/Dwarf_Fortress: /pathToDF/libs/libstdc++.so.6: version
     `GLIBCXX_3.4.15&#39; not found (required by ./hack/libdfhack.so)
 </pre></div>
 </div>
 <p>To fix this you can compile with GCC 4.5 or remove the libstdc++ shipped with
 DF, which causes DF to use your system libstdc++ instead:</p>
-<div class="highlight-python"><div class="highlight"><pre>cd /path/to/DF/
-rm libs/libstdc++.so.6
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">DF</span><span class="o">/</span>
+<span class="n">rm</span> <span class="n">libs</span><span class="o">/</span><span class="n">libstdc</span><span class="o">++.</span><span class="n">so</span><span class="o">.</span><span class="mi">6</span>
 </pre></div>
 </div>
 <p>Note that distributing binaries compiled with newer GCC versions requires end-
@@ -208,7 +208,7 @@ information above regarding the build process (cmake and make) applies here
 as well.</p>
 <p>If you have issues building on OS X 10.10 (Yosemite) or above, try definining the
 following environment variable:</p>
-<div class="highlight-python"><div class="highlight"><pre>export MACOSX_DEPLOYMENT_TARGET=10.9
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">MACOSX_DEPLOYMENT_TARGET</span><span class="o">=</span><span class="mf">10.9</span>
 </pre></div>
 </div>
 <div class="section" id="note-for-el-capitan-osx-10-11-and-xcode-7-x-users">
@@ -222,8 +222,8 @@ fail to install on OSX 10.11, or any older OSX that is using XCode 7.</p>
 <li><p class="first">Install GCC 5.x instead (<code class="docutils literal"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">gcc5</span></code>), and then after compile
 replace <code class="docutils literal"><span class="pre">hack/libstdc++.6.dylib</span></code> with a symlink to GCC 5&#8217;s i386
 version of this file:</p>
-<div class="highlight-python"><div class="highlight"><pre>cd &lt;path to df&gt;/hack &amp;&amp; mv libstdc++.6.dylib libstdc++.6.dylib.orig &amp;&amp;
-ln -s /usr/local/Cellar/gcc5/5.2.0/lib/gcc/5/i386/libstdc++.6.dylib .
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">&lt;</span><span class="n">path</span> <span class="n">to</span> <span class="n">df</span><span class="o">&gt;/</span><span class="n">hack</span> <span class="o">&amp;&amp;</span> <span class="n">mv</span> <span class="n">libstdc</span><span class="o">++.</span><span class="mf">6.</span><span class="n">dylib</span> <span class="n">libstdc</span><span class="o">++.</span><span class="mf">6.</span><span class="n">dylib</span><span class="o">.</span><span class="n">orig</span> <span class="o">&amp;&amp;</span>
+<span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">Cellar</span><span class="o">/</span><span class="n">gcc5</span><span class="o">/</span><span class="mf">5.2</span><span class="o">.</span><span class="mi">0</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">gcc</span><span class="o">/</span><span class="mi">5</span><span class="o">/</span><span class="n">i386</span><span class="o">/</span><span class="n">libstdc</span><span class="o">++.</span><span class="mf">6.</span><span class="n">dylib</span> <span class="o">.</span>
 </pre></div>
 </div>
 </li>
@@ -248,21 +248,21 @@ whenever you are compiling DFHack with GCC 4.5.</li>
 <li><p class="first">Install Xcode from Mac App Store</p>
 </li>
 <li><p class="first">Install the XCode Command Line Tools by running the following command:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">xcode</span><span class="o">-</span><span class="n">select</span> <span class="o">--</span><span class="n">install</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">xcode</span><span class="o">-</span><span class="n">select</span> <span class="o">--</span><span class="n">install</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">Install dependencies</p>
 <blockquote>
 <div><p>Using <a class="reference external" href="http://brew.sh/">Homebrew</a> (recommended):</p>
-<div class="highlight-python"><div class="highlight"><pre>brew tap homebrew/versions
-brew install git
-brew install cmake
-brew install gcc45
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">tap</span> <span class="n">homebrew</span><span class="o">/</span><span class="n">versions</span>
+<span class="n">brew</span> <span class="n">install</span> <span class="n">git</span>
+<span class="n">brew</span> <span class="n">install</span> <span class="n">cmake</span>
+<span class="n">brew</span> <span class="n">install</span> <span class="n">gcc45</span>
 </pre></div>
 </div>
 <p>Using <a class="reference external" href="https://www.macports.org">MacPorts</a>:</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo port install gcc45 +universal cmake +universal git-core +universal
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">gcc45</span> <span class="o">+</span><span class="n">universal</span> <span class="n">cmake</span> <span class="o">+</span><span class="n">universal</span> <span class="n">git</span><span class="o">-</span><span class="n">core</span> <span class="o">+</span><span class="n">universal</span>
 </pre></div>
 </div>
 <p>Macports will take some time - maybe hours.  At some point it may ask
@@ -286,7 +286,7 @@ Homebrew also doesn&#8217;t require constant use of sudo.</p>
 process. Just stick with the defaults for everything and you&#8217;ll be fine.</p>
 <p>If you are running OS X 10.6 (Snow Leopard) or earlier, good luck!
 You&#8217;ll need to open a separate Terminal window and run:</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo ln -s /usr/include/libxml2/libxml /usr/include/libxml
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">libxml2</span><span class="o">/</span><span class="n">libxml</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">libxml</span>
 </pre></div>
 </div>
 </li>
@@ -311,26 +311,26 @@ benefit of easy migration and insulation from OS issues and upgrades.</p>
 <div class="section" id="building">
 <h3>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h3>
 <ul>
-<li><p class="first">Get the DFHack source as per section <a class="reference internal" href="#compile-how-to-get-the-code"><span>How to get the code</span></a>, above.</p>
+<li><p class="first">Get the DFHack source as per section <a class="reference internal" href="#compile-how-to-get-the-code"><span class="std std-ref">How to get the code</span></a>, above.</p>
 </li>
 <li><p class="first">Set environment variables</p>
 <p>Homebrew (if installed elsewhere, replace /usr/local with <code class="docutils literal"><span class="pre">$(brew</span> <span class="pre">--prefix)</span></code>):</p>
-<div class="highlight-python"><div class="highlight"><pre>export CC=/usr/local/bin/gcc-4.5
-export CXX=/usr/local/bin/g++-4.5
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">CC</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="mf">4.5</span>
+<span class="n">export</span> <span class="n">CXX</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">g</span><span class="o">++-</span><span class="mf">4.5</span>
 </pre></div>
 </div>
 <p>Macports:</p>
-<div class="highlight-python"><div class="highlight"><pre>export CC=/opt/local/bin/gcc-mp-4.5
-export CXX=/opt/local/bin/g++-mp-4.5
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">CC</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="mf">4.5</span>
+<span class="n">export</span> <span class="n">CXX</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">g</span><span class="o">++-</span><span class="n">mp</span><span class="o">-</span><span class="mf">4.5</span>
 </pre></div>
 </div>
 <p>Change the version numbers appropriately if you installed a different version of GCC.</p>
 </li>
 <li><p class="first">Build dfhack:</p>
-<div class="highlight-python"><div class="highlight"><pre>mkdir build-osx
-cd build-osx
-cmake .. -DCMAKE_BUILD_TYPE:string=Release -DCMAKE_INSTALL_PREFIX=&lt;path to DF&gt;
-make install # or make -j X install on multi-core systems to compile with X parallel processes
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">build</span><span class="o">-</span><span class="n">osx</span>
+<span class="n">cd</span> <span class="n">build</span><span class="o">-</span><span class="n">osx</span>
+<span class="n">cmake</span> <span class="o">..</span> <span class="o">-</span><span class="n">DCMAKE_BUILD_TYPE</span><span class="p">:</span><span class="n">string</span><span class="o">=</span><span class="n">Release</span> <span class="o">-</span><span class="n">DCMAKE_INSTALL_PREFIX</span><span class="o">=&lt;</span><span class="n">path</span> <span class="n">to</span> <span class="n">DF</span><span class="o">&gt;</span>
+<span class="n">make</span> <span class="n">install</span> <span class="c1"># or make -j X install on multi-core systems to compile with X parallel processes</span>
 </pre></div>
 </div>
 <p>&lt;path to DF&gt; should be a path to a copy of Dwarf Fortress, of the appropriate
@@ -407,7 +407,7 @@ and choose Open As Administrator.</li>
 <li><p class="first">Close this <code class="docutils literal"><span class="pre">cmd.exe</span></code> window and open another Admin <code class="docutils literal"><span class="pre">cmd.exe</span></code> in the same way</p>
 </li>
 <li><p class="first">Run the following command:</p>
-<div class="highlight-python"><div class="highlight"><pre>choco install git cmake.portable strawberryperl -y
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">choco</span> <span class="n">install</span> <span class="n">git</span> <span class="n">cmake</span><span class="o">.</span><span class="n">portable</span> <span class="n">strawberryperl</span> <span class="o">-</span><span class="n">y</span>
 </pre></div>
 </div>
 </li>
@@ -545,9 +545,8 @@ or <code class="docutils literal"><span class="pre">RelWithDebInfo</span></code>
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="building-the-documentation">
-<h1><a class="toc-backref" href="#id14">Building the documentation</a><a class="headerlink" href="#building-the-documentation" title="Permalink to this headline">¶</a></h1>
+<h2><a class="toc-backref" href="#id14">Building the documentation</a><a class="headerlink" href="#building-the-documentation" title="Permalink to this headline">¶</a></h2>
 <p>DFHack documentation, like the file you are reading now, is created as .rst files,
 which are in <a class="reference external" href="http://sphinx-doc.org/rest.html">reStructuredText (reST)</a> format.
 This is a documenation format that has come from the Python community. It is very
@@ -565,15 +564,15 @@ compile the documentation in order to read it. Like Markdown, reST documents are
 designed to be just as readable in a plain-text editor as they are in HTML format.
 The main thing you lose in plain text format is hyperlinking.)</p>
 <div class="section" id="enabling-documentation-building">
-<h2><a class="toc-backref" href="#id15">Enabling documentation building</a><a class="headerlink" href="#enabling-documentation-building" title="Permalink to this headline">¶</a></h2>
+<h3>Enabling documentation building<a class="headerlink" href="#enabling-documentation-building" title="Permalink to this headline">¶</a></h3>
 <p>First, make sure you have followed all the necessary steps for your platform as
 outlined in the rest of this document.</p>
 <p>To compile documentation with DFHack, add the following flag to your <code class="docutils literal"><span class="pre">cmake</span></code> command:</p>
-<div class="highlight-python"><div class="highlight"><pre>-DBUILD_DOCS:bool=ON
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">DBUILD_DOCS</span><span class="p">:</span><span class="nb">bool</span><span class="o">=</span><span class="n">ON</span>
 </pre></div>
 </div>
 <p>For example:</p>
-<div class="highlight-python"><div class="highlight"><pre>cmake .. -DCMAKE_BUILD_TYPE:string=Release -DBUILD_DOCS:bool=ON -DCMAKE_INSTALL_PREFIX=&lt;path to DF&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">..</span> <span class="o">-</span><span class="n">DCMAKE_BUILD_TYPE</span><span class="p">:</span><span class="n">string</span><span class="o">=</span><span class="n">Release</span> <span class="o">-</span><span class="n">DBUILD_DOCS</span><span class="p">:</span><span class="nb">bool</span><span class="o">=</span><span class="n">ON</span> <span class="o">-</span><span class="n">DCMAKE_INSTALL_PREFIX</span><span class="o">=&lt;</span><span class="n">path</span> <span class="n">to</span> <span class="n">DF</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Alternatively you can use the CMake GUI which allows options to be changed easily.</p>
@@ -583,13 +582,14 @@ through the GUI, or else if you want to use an alternate file, such as
 Or you could just run <code class="docutils literal"><span class="pre">cmake</span></code> on the command line like in other platforms.</p>
 </div>
 <div class="section" id="required-dependencies">
-<h2><a class="toc-backref" href="#id16">Required dependencies</a><a class="headerlink" href="#required-dependencies" title="Permalink to this headline">¶</a></h2>
+<h3>Required dependencies<a class="headerlink" href="#required-dependencies" title="Permalink to this headline">¶</a></h3>
 <p>In order to build the documentation, you must have Python with Sphinx
 version 1.3.1 or later. Both Python 2.x and 3.x are supported.</p>
 <p>When installing Sphinx from OS package managers, be aware that there is
 another program called Sphinx, completely unrelated to documentation management.
 Be sure you are installing the right Sphinx; it may be called <code class="docutils literal"><span class="pre">python-sphinx</span></code>,
 for example. To avoid doubt, <code class="docutils literal"><span class="pre">pip</span></code> can be used instead as detailed below.</p>
+</div>
 <div class="section" id="id4">
 <h3>Linux<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Most Linux distributions will include Python as standard.</p>
@@ -598,11 +598,11 @@ but at the time of writing Ubuntu for example only has 1.2.x.</p>
 <p>You can instead install Sphinx with the pip package manager. This may need
 to be installed from your OS package manager; this is the case on Ubuntu.
 On Ubuntu/Debian, use the following to first install pip:</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo apt-get install python-pip
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">python</span><span class="o">-</span><span class="n">pip</span>
 </pre></div>
 </div>
 <p>Once pip is available, you can then install the Python Sphinx module with:</p>
-<div class="highlight-python"><div class="highlight"><pre>pip install sphinx
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span>
 </pre></div>
 </div>
 <p>If you run this as a normal user it will install a local copy for your user only.
@@ -616,12 +616,12 @@ install, find <code class="docutils literal"><span class="pre">sphinx-build</spa
 <p>OS X has Python 2.7 installed by default, but it does not have the pip package manager.</p>
 <p>You can install Homebrew&#8217;s Python 3, which includes pip, and then install the
 latest Sphinx using pip:</p>
-<div class="highlight-python"><div class="highlight"><pre>brew install python3
-pip3 install sphinx
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">python3</span>
+<span class="n">pip3</span> <span class="n">install</span> <span class="n">sphinx</span>
 </pre></div>
 </div>
 <p>Alternatively, you can simply install Sphinx 1.3.x directly from Homebrew:</p>
-<div class="highlight-python"><div class="highlight"><pre>brew install sphinx-doc
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">doc</span>
 </pre></div>
 </div>
 <p>This will install Sphinx for OS X&#8217;s system Python 2.7, without needing pip.</p>
@@ -634,12 +634,12 @@ If not, just installing sphinx-doc for OS X&#8217;s system Python 2.7 is fine.</
 <p>Use the Chocolatey package manager to install Python and pip,
 then use pip to install Sphinx.</p>
 <p>Run the following commands from an elevated (Admin) <code class="docutils literal"><span class="pre">cmd.exe</span></code>, after installing
-Chocolatey as outlined in the <a class="reference internal" href="#compile-windows"><span>Windows section</span></a>:</p>
-<div class="highlight-python"><div class="highlight"><pre>choco install python pip -y
+Chocolatey as outlined in the <a class="reference internal" href="#compile-windows"><span class="std std-ref">Windows section</span></a>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">choco</span> <span class="n">install</span> <span class="n">python</span> <span class="n">pip</span> <span class="o">-</span><span class="n">y</span>
 </pre></div>
 </div>
 <p>Then close that Admin <code class="docutils literal"><span class="pre">cmd.exe</span></code>, re-open another Admin <code class="docutils literal"><span class="pre">cmd.exe</span></code>, and run:</p>
-<div class="highlight-python"><div class="highlight"><pre>pip install sphinx
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span>
 </pre></div>
 </div>
 </div>
@@ -653,6 +653,8 @@ Chocolatey as outlined in the <a class="reference internal" href="#compile-windo
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
 <h1 class="logo"><a href="../index.html">DFHack</a></h1>
+
+
 
 
 
@@ -676,9 +678,6 @@ Chocolatey as outlined in the <a class="reference internal" href="#compile-windo
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
   <h3><a href="../index.html">Table Of Contents</a></h3>
@@ -720,11 +719,9 @@ Chocolatey as outlined in the <a class="reference internal" href="#compile-windo
 </li>
 </ul>
 </li>
-</ul>
-</li>
 <li><a class="reference internal" href="#building-the-documentation">Building the documentation</a><ul>
 <li><a class="reference internal" href="#enabling-documentation-building">Enabling documentation building</a></li>
-<li><a class="reference internal" href="#required-dependencies">Required dependencies</a><ul>
+<li><a class="reference internal" href="#required-dependencies">Required dependencies</a></li>
 <li><a class="reference internal" href="#id4">Linux</a></li>
 <li><a class="reference internal" href="#id5">Mac OS X</a></li>
 <li><a class="reference internal" href="#id6">Windows</a></li>
@@ -742,8 +739,8 @@ Chocolatey as outlined in the <a class="reference internal" href="#compile-windo
       &copy;2015, The DFHack Team.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
       <a href="../_sources/docs/Compile.txt"

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>DFHack Plugins &mdash; DFHack 0.42.06- documentation</title>
+    <title>DFHack Plugins &mdash; DFHack 0.42.06-r1 documentation</title>
     
     <link rel="stylesheet" href="../_static/dfhack.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.42.06-',
+        VERSION:     '0.42.06-r1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,12 +24,12 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/dfhack-icon.ico"/>
-    <link rel="top" title="DFHack 0.42.06- documentation" href="../index.html" />
+    <link rel="top" title="DFHack 0.42.06-r1 documentation" href="../index.html" />
     <link rel="next" title="DFHack Scripts" href="Scripts.html" />
     <link rel="prev" title="DFHack Core" href="Core.html" />
    
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
   <body role="document">  
@@ -40,7 +40,7 @@
           <div class="body" role="main">
             
   <div class="section" id="dfhack-plugins">
-<h1><a class="toc-backref" href="#id66">DFHack Plugins</a><a class="headerlink" href="#dfhack-plugins" title="Permalink to this headline">¶</a></h1>
+<h1><a class="toc-backref" href="#id94">DFHack Plugins</a><a class="headerlink" href="#dfhack-plugins" title="Permalink to this headline">¶</a></h1>
 <p>DFHack plugins are the commands, that are compiled with a specific version.
 They can provide anything from a small keybinding, to a complete overhaul of
 game subsystems or the entire renderer.</p>
@@ -49,151 +49,51 @@ hopefully organised in a way you will find useful.</p>
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#dfhack-plugins" id="id66">DFHack Plugins</a><ul>
-<li><a class="reference internal" href="#data-inspection-and-visualizers" id="id67">Data inspection and visualizers</a><ul>
-<li><a class="reference internal" href="#stonesense" id="id68">stonesense</a></li>
-<li><a class="reference internal" href="#blueprint" id="id69">blueprint</a></li>
-<li><a class="reference internal" href="#remotefortressreader" id="id70">remotefortressreader</a></li>
-<li><a class="reference internal" href="#cursecheck" id="id71">cursecheck</a></li>
-<li><a class="reference internal" href="#flows" id="id72">flows</a></li>
-<li><a class="reference internal" href="#probe" id="id73">probe</a></li>
-<li><a class="reference internal" href="#prospect" id="id74">prospect</a></li>
-<li><a class="reference internal" href="#revforget" id="id75">reveal</a></li>
-<li><a class="reference internal" href="#showmood" id="id76">showmood</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#bugfixes" id="id77">Bugfixes</a><ul>
-<li><a class="reference internal" href="#fixdiplomats" id="id78">fixdiplomats</a></li>
-<li><a class="reference internal" href="#fixmerchants" id="id79">fixmerchants</a></li>
-<li><a class="reference internal" href="#fix-unit-occupancy" id="id80">fix-unit-occupancy</a></li>
-<li><a class="reference internal" href="#fixveins" id="id81">fixveins</a></li>
-<li><a class="reference internal" href="#petcapremover" id="id82">petcapRemover</a></li>
-<li><a class="reference internal" href="#tweak" id="id83">tweak</a></li>
-<li><a class="reference internal" href="#fix-armory" id="id84">fix-armory</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#ui-upgrades" id="id85">UI Upgrades</a><ul>
-<li><a class="reference internal" href="#automelt" id="id86">automelt</a></li>
-<li><a class="reference internal" href="#autotrade" id="id87">autotrade</a></li>
-<li><a class="reference internal" href="#command-prompt" id="id88">command-prompt</a></li>
-<li><a class="reference internal" href="#hotkeys" id="id89">hotkeys</a></li>
-<li><a class="reference internal" href="#rb" id="id90">rb</a></li>
-<li><a class="reference internal" href="#manipulator" id="id91">manipulator</a></li>
-<li><a class="reference internal" href="#search" id="id92">search</a></li>
-<li><a class="reference internal" href="#nopause" id="id93">nopause</a></li>
-<li><a class="reference internal" href="#embark-tools" id="id94">embark-tools</a></li>
-<li><a class="reference internal" href="#automaterial" id="id95">automaterial</a></li>
-<li><a class="reference internal" href="#buildingplan" id="id96">buildingplan</a></li>
-<li><a class="reference internal" href="#confirm" id="id97">confirm</a></li>
-<li><a class="reference internal" href="#follow" id="id98">follow</a></li>
-<li><a class="reference internal" href="#mousequery" id="id99">mousequery</a></li>
-<li><a class="reference internal" href="#resume" id="id100">resume</a></li>
-<li><a class="reference internal" href="#trackstop" id="id101">trackstop</a></li>
-<li><a class="reference internal" href="#sort-items" id="id102">sort-items</a></li>
-<li><a class="reference internal" href="#sort-units" id="id103">sort-units</a></li>
-<li><a class="reference internal" href="#stocks" id="id104">stocks</a></li>
-<li><a class="reference internal" href="#stockpiles" id="id105">stocksettings</a></li>
-<li><a class="reference internal" href="#rename" id="id106">rename</a></li>
-<li><a class="reference internal" href="#rendermax" id="id107">rendermax</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#job-and-fortress-management" id="id108">Job and Fortress management</a><ul>
-<li><a class="reference internal" href="#autolabor" id="id109">autolabor</a></li>
-<li><a class="reference internal" href="#autohauler" id="id110">autohauler</a></li>
-<li><a class="reference internal" href="#job" id="id111">job</a></li>
-<li><a class="reference internal" href="#job-material" id="id112">job-material</a></li>
-<li><a class="reference internal" href="#job-duplicate" id="id113">job-duplicate</a></li>
-<li><a class="reference internal" href="#autogems" id="id114">autogems</a></li>
-<li><a class="reference internal" href="#stockflow" id="id115">stockflow</a></li>
-<li><a class="reference internal" href="#workflow" id="id116">workflow</a></li>
-<li><a class="reference internal" href="#clean" id="id117">clean</a></li>
-<li><a class="reference internal" href="#spotclean" id="id118">spotclean</a></li>
-<li><a class="reference internal" href="#autodump" id="id119">autodump</a></li>
-<li><a class="reference internal" href="#cleanowned" id="id120">cleanowned</a></li>
-<li><a class="reference internal" href="#dwarfmonitor" id="id121">dwarfmonitor</a></li>
-<li><a class="reference internal" href="#worknow" id="id122">workNow</a></li>
-<li><a class="reference internal" href="#seedwatch" id="id123">seedwatch</a></li>
-<li><a class="reference internal" href="#zone" id="id124">zone</a></li>
-<li><a class="reference internal" href="#autonestbox" id="id125">autonestbox</a></li>
-<li><a class="reference internal" href="#autobutcher" id="id126">autobutcher</a></li>
-<li><a class="reference internal" href="#autochop" id="id127">autochop</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#map-modification" id="id128">Map modification</a><ul>
-<li><a class="reference internal" href="#dveins" id="id129">3dveins</a></li>
-<li><a class="reference internal" href="#alltraffic" id="id130">alltraffic</a></li>
-<li><a class="reference internal" href="#burrow" id="id131">burrow</a></li>
-<li><a class="reference internal" href="#changelayer" id="id132">changelayer</a></li>
-<li><a class="reference internal" href="#changevein" id="id133">changevein</a></li>
-<li><a class="reference internal" href="#changeitem" id="id134">changeitem</a></li>
-<li><a class="reference internal" href="#cleanconst" id="id135">cleanconst</a></li>
-<li><a class="reference internal" href="#colonies" id="id136">colonies</a></li>
-<li><a class="reference internal" href="#deramp" id="id137">deramp</a></li>
-<li><a class="reference internal" href="#dig" id="id138">dig</a></li>
-<li><a class="reference internal" href="#digexp" id="id139">digexp</a></li>
-<li><a class="reference internal" href="#digcircle" id="id140">digcircle</a></li>
-<li><a class="reference internal" href="#digtype" id="id141">digtype</a></li>
-<li><a class="reference internal" href="#digflood" id="id142">digFlood</a></li>
-<li><a class="reference internal" href="#filltraffic" id="id143">filltraffic</a></li>
-<li><a class="reference internal" href="#fortplan" id="id144">fortplan</a></li>
-<li><a class="reference internal" href="#getplants" id="id145">getplants</a></li>
-<li><a class="reference internal" href="#infinitesky" id="id146">infiniteSky</a></li>
-<li><a class="reference internal" href="#liquids" id="id147">liquids</a></li>
-<li><a class="reference internal" href="#plant" id="id148">plant</a></li>
-<li><a class="reference internal" href="#regrass" id="id149">regrass</a></li>
-<li><a class="reference internal" href="#restrictice" id="id150">restrictice</a></li>
-<li><a class="reference internal" href="#restrictliquids" id="id151">restrictliquids</a></li>
-<li><a class="reference internal" href="#tiletypes" id="id152">tiletypes</a></li>
-<li><a class="reference internal" href="#tubefill" id="id153">tubefill</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#mods-and-cheating" id="id154">Mods and Cheating</a><ul>
-<li><a class="reference internal" href="#add-spatter" id="id155">add-spatter</a></li>
-<li><a class="reference internal" href="#adv-bodyswap" id="id156">adv-bodyswap</a></li>
-<li><a class="reference internal" href="#catsplosion" id="id157">catsplosion</a></li>
-<li><a class="reference internal" href="#createitem" id="id158">createitem</a></li>
-<li><a class="reference internal" href="#digginginvaders" id="id159">diggingInvaders</a></li>
-<li><a class="reference internal" href="#fastdwarf" id="id160">fastdwarf</a></li>
-<li><a class="reference internal" href="#forceequip" id="id161">forceequip</a></li>
-<li><a class="reference internal" href="#lair" id="id162">lair</a></li>
-<li><a class="reference internal" href="#mode" id="id163">mode</a></li>
-<li><a class="reference internal" href="#strangemood" id="id164">strangemood</a></li>
-<li><a class="reference internal" href="#siege-engine" id="id165">siege-engine</a></li>
-<li><a class="reference internal" href="#power-meter" id="id166">power-meter</a></li>
-<li><a class="reference internal" href="#steam-engine" id="id167">steam-engine</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#dfhack-plugins" id="id94">DFHack Plugins</a><ul>
+<li><a class="reference internal" href="#data-inspection-and-visualizers" id="id95">Data inspection and visualizers</a></li>
+<li><a class="reference internal" href="#bugfixes" id="id96">Bugfixes</a></li>
+<li><a class="reference internal" href="#ui-upgrades" id="id97">UI Upgrades</a></li>
+<li><a class="reference internal" href="#job-and-fortress-management" id="id98">Job and Fortress management</a></li>
+<li><a class="reference internal" href="#map-modification" id="id99">Map modification</a></li>
+<li><a class="reference internal" href="#mods-and-cheating" id="id100">Mods and Cheating</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="data-inspection-and-visualizers">
-<h2><a class="toc-backref" href="#id67">Data inspection and visualizers</a><a class="headerlink" href="#data-inspection-and-visualizers" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id95">Data inspection and visualizers</a><a class="headerlink" href="#data-inspection-and-visualizers" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id1">
+<ul class="simple">
+<li><a class="reference internal" href="#stonesense" id="id101">stonesense</a></li>
+<li><a class="reference internal" href="#blueprint" id="id102">blueprint</a></li>
+<li><a class="reference internal" href="#remotefortressreader" id="id103">remotefortressreader</a></li>
+<li><a class="reference internal" href="#cursecheck" id="id104">cursecheck</a></li>
+<li><a class="reference internal" href="#flows" id="id105">flows</a></li>
+<li><a class="reference internal" href="#probe" id="id106">probe</a></li>
+<li><a class="reference internal" href="#prospect" id="id107">prospect</a></li>
+<li><a class="reference internal" href="#revforget" id="id108">reveal</a></li>
+<li><a class="reference internal" href="#showmood" id="id109">showmood</a></li>
+</ul>
+</div>
 <div class="section" id="stonesense">
-<span id="id1"></span><h3><a class="toc-backref" href="#id68">stonesense</a><a class="headerlink" href="#stonesense" title="Permalink to this headline">¶</a></h3>
-<p>An isometric visualizer that runs in a second window. This requires working
-graphics acceleration and at least a dual core CPU (otherwise it will slow
-down DF). Usage:</p>
+<span id="plugin-stonesense"></span><h3><a class="toc-backref" href="#id101">stonesense</a><a class="headerlink" href="#stonesense" title="Permalink to this headline">¶</a></h3>
+<p>An isometric visualizer that runs in a second window. Usage:</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">stonesense:</th><td class="field-body">Open the visualiser in a new window.  Alias <code class="docutils literal"><span class="pre">ssense</span></code>.</td>
 </tr>
-<tr class="field-even field"><th class="field-name">ssense overlay:</th><td class="field-body">Overlay DF window, replacing the map area.
-<code class="docutils literal"><span class="pre">PRINT_MODE:2D</span></code> strongly recommended for stability.</td>
+<tr class="field-even field"><th class="field-name">ssense overlay:</th><td class="field-body">Overlay DF window, replacing the map area.</td>
 </tr>
 </tbody>
 </table>
-<p>Stonesense can be configured by editing the <code class="file docutils literal"><span class="pre">stonesense/init.txt</span></code>
-and <code class="file docutils literal"><span class="pre">stonesense/keybinds.txt</span></code> files. Additional content, such as sprites
-for modded creatures, is available from the content repository on the wiki.</p>
-<p>For detailed information, see the <a class="reference external" href="https://github.com/DFHack/stonesense/blob/master/README.md">stonesense readme</a>, the <a class="reference external" href="http://dwarffortresswiki.org/Utility:Stonesense">wiki page</a>, or the <a class="reference external" href="http://www.bay12forums.com/smf/index.php?topic=106497">Bay12 forums thread</a>.</p>
+<p>For more information, see <a class="reference internal" href="../plugins/stonesense/docs/Stonesense.html#stonesense"><span class="std std-ref">the full Stonesense README</span></a>.</p>
 </div>
 <div class="section" id="blueprint">
-<span id="id2"></span><h3><a class="toc-backref" href="#id69">blueprint</a><a class="headerlink" href="#blueprint" title="Permalink to this headline">¶</a></h3>
+<span id="id2"></span><h3><a class="toc-backref" href="#id102">blueprint</a><a class="headerlink" href="#blueprint" title="Permalink to this headline">¶</a></h3>
 <p>Exports a portion of your fortress into QuickFort style blueprint files.:</p>
-<div class="highlight-python"><div class="highlight"><pre>blueprint &lt;x&gt; &lt;y&gt; &lt;z&gt; &lt;name&gt; [dig] [build] [place] [query]
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">blueprint</span> <span class="o">&lt;</span><span class="n">x</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">y</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">z</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">dig</span><span class="p">]</span> <span class="p">[</span><span class="n">build</span><span class="p">]</span> <span class="p">[</span><span class="n">place</span><span class="p">]</span> <span class="p">[</span><span class="n">query</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>Options (If only region and name are given, export all):</p>
@@ -215,15 +115,15 @@ for modded creatures, is available from the content repository on the wiki.</p>
 </tr>
 </tbody>
 </table>
-<p>Goes very well with <a class="reference internal" href="#fortplan"><span>fortplan</span></a>, for re-importing.</p>
+<p>Goes very well with <a class="reference internal" href="#fortplan"><span class="std std-ref">fortplan</span></a>, for re-importing.</p>
 </div>
 <div class="section" id="remotefortressreader">
-<span id="id3"></span><h3><a class="toc-backref" href="#id70">remotefortressreader</a><a class="headerlink" href="#remotefortressreader" title="Permalink to this headline">¶</a></h3>
+<span id="id3"></span><h3><a class="toc-backref" href="#id103">remotefortressreader</a><a class="headerlink" href="#remotefortressreader" title="Permalink to this headline">¶</a></h3>
 <p>An in-development plugin for realtime fortress visualisation.
 See <a class="reference external" href="http://www.bay12forums.com/smf/index.php?topic=146473">Armok Vision</a>.</p>
 </div>
 <div class="section" id="cursecheck">
-<h3><a class="toc-backref" href="#id71">cursecheck</a><a class="headerlink" href="#cursecheck" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id104">cursecheck</a><a class="headerlink" href="#cursecheck" title="Permalink to this headline">¶</a></h3>
 <p>Checks a single map tile or the whole map/world for cursed creatures (ghosts,
 vampires, necromancers, werebeasts, zombies).</p>
 <p>With an active in-game cursor only the selected tile will be observed.
@@ -270,17 +170,17 @@ this is most likely with mods which introduce new types of curses.</p>
 </div>
 </div>
 <div class="section" id="flows">
-<h3><a class="toc-backref" href="#id72">flows</a><a class="headerlink" href="#flows" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id105">flows</a><a class="headerlink" href="#flows" title="Permalink to this headline">¶</a></h3>
 <p>A tool for checking how many tiles contain flowing liquids. If you suspect that
 your magma sea leaks into HFS, you can use this tool to be sure without
 revealing the map.</p>
 </div>
 <div class="section" id="probe">
-<h3><a class="toc-backref" href="#id73">probe</a><a class="headerlink" href="#probe" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id106">probe</a><a class="headerlink" href="#probe" title="Permalink to this headline">¶</a></h3>
 <p>Can be used to determine tile properties like temperature.</p>
 </div>
 <div class="section" id="prospect">
-<span id="id4"></span><h3><a class="toc-backref" href="#id74">prospect</a><a class="headerlink" href="#prospect" title="Permalink to this headline">¶</a></h3>
+<span id="id4"></span><h3><a class="toc-backref" href="#id107">prospect</a><a class="headerlink" href="#prospect" title="Permalink to this headline">¶</a></h3>
 <p>Prints a big list of all the present minerals and plants. By default, only
 the visible part of the map is scanned.</p>
 <p>Options:</p>
@@ -317,7 +217,7 @@ that is actually present.</p>
 </table>
 </div>
 <div class="section" id="revforget">
-<span id="revflood"></span><span id="revtoggle"></span><span id="unreveal"></span><span id="reveal"></span><span id="id5"></span><h3><a class="toc-backref" href="#id75">reveal</a><a class="headerlink" href="#revforget" title="Permalink to this headline">¶</a></h3>
+<span id="revflood"></span><span id="revtoggle"></span><span id="unreveal"></span><span id="reveal"></span><span id="id5"></span><h3><a class="toc-backref" href="#id108">reveal</a><a class="headerlink" href="#revforget" title="Permalink to this headline">¶</a></h3>
 <p>This reveals the map. By default, HFS will remain hidden so that the demons
 don&#8217;t spawn. You can use <code class="docutils literal"><span class="pre">reveal</span> <span class="pre">hell</span></code> to reveal everything. With hell revealed,
 you won&#8217;t be able to unpause until you hide the map again. If you really want
@@ -333,7 +233,7 @@ you move. When you use it this way, you don&#8217;t need to run <code class="doc
 </tr>
 <tr class="field-even field"><th class="field-name">reveal hell:</th><td class="field-body">Also show hell, but requires <code class="docutils literal"><span class="pre">unreveal</span></code> before unpausing</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">reveal demons:</th><td class="field-body">Reveals everything and allows unpausing - good luck!</td>
+<tr class="field-odd field"><th class="field-name">reveal demon:</th><td class="field-body">Reveals everything and allows unpausing - good luck!</td>
 </tr>
 <tr class="field-even field"><th class="field-name">unreveal:</th><td class="field-body">Reverts the effects of <code class="docutils literal"><span class="pre">reveal</span></code></td>
 </tr>
@@ -350,26 +250,37 @@ and no longer want the data.</td>
 </table>
 </div>
 <div class="section" id="showmood">
-<h3><a class="toc-backref" href="#id76">showmood</a><a class="headerlink" href="#showmood" title="Permalink to this headline">¶</a></h3>
+<span id="id6"></span><h3><a class="toc-backref" href="#id109">showmood</a><a class="headerlink" href="#showmood" title="Permalink to this headline">¶</a></h3>
 <p>Shows all items needed for the currently active strange mood.</p>
 </div>
 </div>
 <div class="section" id="bugfixes">
-<h2><a class="toc-backref" href="#id77">Bugfixes</a><a class="headerlink" href="#bugfixes" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id96">Bugfixes</a><a class="headerlink" href="#bugfixes" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id7">
+<ul class="simple">
+<li><a class="reference internal" href="#fixdiplomats" id="id110">fixdiplomats</a></li>
+<li><a class="reference internal" href="#fixmerchants" id="id111">fixmerchants</a></li>
+<li><a class="reference internal" href="#fix-unit-occupancy" id="id112">fix-unit-occupancy</a></li>
+<li><a class="reference internal" href="#fixveins" id="id113">fixveins</a></li>
+<li><a class="reference internal" href="#petcapremover" id="id114">petcapRemover</a></li>
+<li><a class="reference internal" href="#tweak" id="id115">tweak</a></li>
+<li><a class="reference internal" href="#fix-armory" id="id116">fix-armory</a></li>
+</ul>
+</div>
 <div class="section" id="fixdiplomats">
-<h3><a class="toc-backref" href="#id78">fixdiplomats</a><a class="headerlink" href="#fixdiplomats" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id110">fixdiplomats</a><a class="headerlink" href="#fixdiplomats" title="Permalink to this headline">¶</a></h3>
 <p>Adds a Diplomat position to all Elven civilizations, allowing them to negotiate
 tree cutting quotas - and you to violate them and start wars.
 This was vanilla behaviour until <code class="docutils literal"><span class="pre">0.31.12</span></code>, in which the &#8220;bug&#8221; was &#8220;fixed&#8221;.</p>
 </div>
 <div class="section" id="fixmerchants">
-<h3><a class="toc-backref" href="#id79">fixmerchants</a><a class="headerlink" href="#fixmerchants" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id111">fixmerchants</a><a class="headerlink" href="#fixmerchants" title="Permalink to this headline">¶</a></h3>
 <p>Adds the Guild Representative position to all Human civilizations,
 allowing them to make trade agreements.  This was the default behaviour in
 <code class="docutils literal"><span class="pre">0.28.181.40d</span></code> and earlier.</p>
 </div>
 <div class="section" id="fix-unit-occupancy">
-<span id="id6"></span><h3><a class="toc-backref" href="#id80">fix-unit-occupancy</a><a class="headerlink" href="#fix-unit-occupancy" title="Permalink to this headline">¶</a></h3>
+<span id="id8"></span><h3><a class="toc-backref" href="#id112">fix-unit-occupancy</a><a class="headerlink" href="#fix-unit-occupancy" title="Permalink to this headline">¶</a></h3>
 <p>This plugin fixes issues with unit occupancy, notably phantom
 &#8220;unit blocking tile&#8221; messages (<a class="reference external" href="http://www.bay12games.com/dwarves/mantisbt/view.php?id=3499">Bug 3499</a>). It can be run manually, or
 periodically when enabled with the built-in enable/disable commands:</p>
@@ -393,13 +304,13 @@ Ticks are only counted when the game is unpaused.</td>
 </table>
 </div>
 <div class="section" id="fixveins">
-<span id="id7"></span><h3><a class="toc-backref" href="#id81">fixveins</a><a class="headerlink" href="#fixveins" title="Permalink to this headline">¶</a></h3>
+<span id="id9"></span><h3><a class="toc-backref" href="#id113">fixveins</a><a class="headerlink" href="#fixveins" title="Permalink to this headline">¶</a></h3>
 <p>Removes invalid references to mineral inclusions and restores missing ones.
-Use this if you broke your embark with tools like <a class="reference internal" href="#tiletypes"><span>tiletypes</span></a>, or if you
+Use this if you broke your embark with tools like <a class="reference internal" href="#tiletypes"><span class="std std-ref">tiletypes</span></a>, or if you
 accidentally placed a construction on top of a valuable mineral floor.</p>
 </div>
 <div class="section" id="petcapremover">
-<h3><a class="toc-backref" href="#id82">petcapRemover</a><a class="headerlink" href="#petcapremover" title="Permalink to this headline">¶</a></h3>
+<span id="id10"></span><h3><a class="toc-backref" href="#id114">petcapRemover</a><a class="headerlink" href="#petcapremover" title="Permalink to this headline">¶</a></h3>
 <p>Allows you to remove or raise the pet population cap. In vanilla
 DF, pets will not reproduce unless the population is below 50 and the number of
 children of that species is below a certain percentage. This plugin allows
@@ -430,7 +341,7 @@ case of multiple births.</p>
 </table>
 </div>
 <div class="section" id="tweak">
-<span id="id8"></span><h3><a class="toc-backref" href="#id83">tweak</a><a class="headerlink" href="#tweak" title="Permalink to this headline">¶</a></h3>
+<span id="id11"></span><h3><a class="toc-backref" href="#id115">tweak</a><a class="headerlink" href="#tweak" title="Permalink to this headline">¶</a></h3>
 <p>Contains various tweaks for minor bugs.</p>
 <p>One-shot subcommands:</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -476,7 +387,7 @@ they are scuttled.</td>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name" colspan="2">adamantine-cloth-wear:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><p class="first">Prevents adamantine clothing from wearing out while being worn (bug 6481).</p>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><p class="first">Prevents adamantine clothing from wearing out while being worn (<a class="reference external" href="http://www.bay12games.com/dwarves/mantisbt/view.php?id=6481">Bug 6481</a>).</p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">advmode-contained:</th></tr>
@@ -582,13 +493,13 @@ screen from constantly resetting to the top.</p>
 </table>
 </div>
 <div class="section" id="fix-armory">
-<span id="id9"></span><h3><a class="toc-backref" href="#id84">fix-armory</a><a class="headerlink" href="#fix-armory" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="Binpatches.html#binpatches-needs-patch"><span>This plugin requires a binpatch</span></a>, which has not
+<span id="id12"></span><h3><a class="toc-backref" href="#id116">fix-armory</a><a class="headerlink" href="#fix-armory" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="Binpatches.html#binpatches-needs-patch"><span class="std std-ref">This plugin requires a binpatch</span></a>, which has not
 been available since DF 0.34.11</p>
 </div>
 </div>
 <div class="section" id="ui-upgrades">
-<h2><a class="toc-backref" href="#id85">UI Upgrades</a><a class="headerlink" href="#ui-upgrades" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id97">UI Upgrades</a><a class="headerlink" href="#ui-upgrades" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>In order to avoid user confusion, as a matter of policy all GUI tools
@@ -596,46 +507,73 @@ display the word <span class="guilabel">DFHack</span> on the screen somewhere wh
 <p class="last">When that is not appropriate because they merely add keybinding hints to
 existing DF screens, they deliberately use red instead of green for the key.</p>
 </div>
+<div class="contents local topic" id="id13">
+<ul class="simple">
+<li><a class="reference internal" href="#automelt" id="id117">automelt</a></li>
+<li><a class="reference internal" href="#autotrade" id="id118">autotrade</a></li>
+<li><a class="reference internal" href="#command-prompt" id="id119">command-prompt</a></li>
+<li><a class="reference internal" href="#hotkeys" id="id120">hotkeys</a></li>
+<li><a class="reference internal" href="#rb" id="id121">rb</a></li>
+<li><a class="reference internal" href="#manipulator" id="id122">manipulator</a></li>
+<li><a class="reference internal" href="#search" id="id123">search</a></li>
+<li><a class="reference internal" href="#nopause" id="id124">nopause</a></li>
+<li><a class="reference internal" href="#embark-tools" id="id125">embark-tools</a></li>
+<li><a class="reference internal" href="#automaterial" id="id126">automaterial</a></li>
+<li><a class="reference internal" href="#buildingplan" id="id127">buildingplan</a></li>
+<li><a class="reference internal" href="#confirm" id="id128">confirm</a></li>
+<li><a class="reference internal" href="#follow" id="id129">follow</a></li>
+<li><a class="reference internal" href="#mousequery" id="id130">mousequery</a></li>
+<li><a class="reference internal" href="#resume" id="id131">resume</a></li>
+<li><a class="reference internal" href="#title-version" id="id132">title-version</a></li>
+<li><a class="reference internal" href="#trackstop" id="id133">trackstop</a></li>
+<li><a class="reference internal" href="#sort-items" id="id134">sort-items</a></li>
+<li><a class="reference internal" href="#sort-units" id="id135">sort-units</a></li>
+<li><a class="reference internal" href="#stocks" id="id136">stocks</a></li>
+<li><a class="reference internal" href="#stockpiles" id="id137">stocksettings</a></li>
+<li><a class="reference internal" href="#rename" id="id138">rename</a></li>
+<li><a class="reference internal" href="#rendermax" id="id139">rendermax</a></li>
+</ul>
+</div>
 <div class="section" id="automelt">
-<span id="id10"></span><h3><a class="toc-backref" href="#id86">automelt</a><a class="headerlink" href="#automelt" title="Permalink to this headline">¶</a></h3>
+<span id="id14"></span><h3><a class="toc-backref" href="#id117">automelt</a><a class="headerlink" href="#automelt" title="Permalink to this headline">¶</a></h3>
 <p>When automelt is enabled for a stockpile, any meltable items placed
 in it will be designated to be melted.
-This plugin adds an option to the <code class="kbd docutils literal"><span class="pre">q</span></code> menu when <a class="reference internal" href="Core.html#enable"><span>enabled</span></a>.</p>
+This plugin adds an option to the <code class="kbd docutils literal"><span class="pre">q</span></code> menu when <a class="reference internal" href="Core.html#enable"><span class="std std-ref">enabled</span></a>.</p>
 </div>
 <div class="section" id="autotrade">
-<span id="id11"></span><h3><a class="toc-backref" href="#id87">autotrade</a><a class="headerlink" href="#autotrade" title="Permalink to this headline">¶</a></h3>
+<span id="id15"></span><h3><a class="toc-backref" href="#id118">autotrade</a><a class="headerlink" href="#autotrade" title="Permalink to this headline">¶</a></h3>
 <p>When autotrade is enabled for a stockpile, any items placed in it will be
 designated to be taken to the Trade Depot whenever merchants are on the map.
-This plugin adds an option to the <code class="kbd docutils literal"><span class="pre">q</span></code> menu when <a class="reference internal" href="Core.html#enable"><span>enabled</span></a>.</p>
+This plugin adds an option to the <code class="kbd docutils literal"><span class="pre">q</span></code> menu when <a class="reference internal" href="Core.html#enable"><span class="std std-ref">enabled</span></a>.</p>
 </div>
 <div class="section" id="command-prompt">
-<span id="id12"></span><h3><a class="toc-backref" href="#id88">command-prompt</a><a class="headerlink" href="#command-prompt" title="Permalink to this headline">¶</a></h3>
+<span id="id16"></span><h3><a class="toc-backref" href="#id119">command-prompt</a><a class="headerlink" href="#command-prompt" title="Permalink to this headline">¶</a></h3>
 <p>An in-game DFHack terminal, where you can enter other commands.
 Best used from a keybinding; by default <code class="kbd docutils literal"><span class="pre">Ctrl</span></code><code class="kbd docutils literal"><span class="pre">Shift</span></code><code class="kbd docutils literal"><span class="pre">P</span></code>.</p>
 <p>Usage: <code class="docutils literal"><span class="pre">command-prompt</span> <span class="pre">[entry]</span></code></p>
 <p>If called with an entry, it starts with that text filled in.
 Most useful for developers, who can set a keybinding to open
 a laungage interpreter for lua or Ruby by starting with the
-<a class="reference internal" href="_auto/base.html#lua"><span>:lua</span></a> or <a class="reference internal" href="#rb"><span>:rb</span></a> commands.</p>
-<p>Otherwise somewhat similar to <a class="reference internal" href="_auto/gui.html#gui-quickcmd"><span>gui/quickcmd</span></a>.</p>
+<a class="reference internal" href="_auto/base.html#lua"><span class="std std-ref">:lua</span></a> or <a class="reference internal" href="#rb"><span class="std std-ref">:rb</span></a> commands.</p>
+<p>Otherwise somewhat similar to <a class="reference internal" href="_auto/gui.html#gui-quickcmd"><span class="std std-ref">gui/quickcmd</span></a>.</p>
 <img alt="../_images/command-prompt.png" src="../_images/command-prompt.png" />
 </div>
 <div class="section" id="hotkeys">
-<span id="id13"></span><h3><a class="toc-backref" href="#id89">hotkeys</a><a class="headerlink" href="#hotkeys" title="Permalink to this headline">¶</a></h3>
+<span id="id17"></span><h3><a class="toc-backref" href="#id120">hotkeys</a><a class="headerlink" href="#hotkeys" title="Permalink to this headline">¶</a></h3>
 <p>Opens an in-game screen showing which DFHack keybindings are
 active in the current context.</p>
 <img alt="../_images/hotkeys.png" src="../_images/hotkeys.png" />
 <p>Type <code class="docutils literal"><span class="pre">hotkeys</span></code> into the DFHack console to open the screen,
 or bind the command to a globally active hotkey.  The default
-keybinding is <code class="kbd docutils literal"><span class="pre">Ctrl</span></code><code class="kbd docutils literal"><span class="pre">F1</span></code>.  See also <a class="reference internal" href="_auto/base.html#hotkey-notes"><span>hotkey-notes</span></a>.</p>
+keybinding is <code class="kbd docutils literal"><span class="pre">Ctrl</span></code><code class="kbd docutils literal"><span class="pre">F1</span></code>.  See also <a class="reference internal" href="_auto/base.html#hotkey-notes"><span class="std std-ref">hotkey-notes</span></a>.</p>
 </div>
 <div class="section" id="rb">
-<span id="id14"></span><h3><a class="toc-backref" href="#id90">rb</a><a class="headerlink" href="#rb" title="Permalink to this headline">¶</a></h3>
+<span id="id18"></span><h3><a class="toc-backref" href="#id121">rb</a><a class="headerlink" href="#rb" title="Permalink to this headline">¶</a></h3>
 <p>Ruby language plugin, which evaluates the following arguments as a ruby string.
 Best used as <code class="docutils literal"><span class="pre">:rb</span> <span class="pre">[string]</span></code>, for the special parsing mode.  Alias <code class="docutils literal"><span class="pre">rb_eval</span></code>.</p>
 </div>
 <div class="section" id="manipulator">
-<span id="id15"></span><h3><a class="toc-backref" href="#id91">manipulator</a><a class="headerlink" href="#manipulator" title="Permalink to this headline">¶</a></h3>
+<span id="id19"></span><h3><a class="toc-backref" href="#id122">manipulator</a><a class="headerlink" href="#manipulator" title="Permalink to this headline">¶</a></h3>
 <p>An in-game equivalent to the popular program Dwarf Therapist.</p>
 <p>To activate, open the unit screen and press <code class="kbd docutils literal"><span class="pre">l</span></code>.</p>
 <img alt="../_images/manipulator.png" src="../_images/manipulator.png" />
@@ -675,7 +613,7 @@ cursor onto that cell instead of toggling it.</li>
 directly to the main dwarf mode screen.</p>
 </div>
 <div class="section" id="search">
-<span id="search-plugin"></span><h3><a class="toc-backref" href="#id92">search</a><a class="headerlink" href="#search" title="Permalink to this headline">¶</a></h3>
+<span id="search-plugin"></span><h3><a class="toc-backref" href="#id123">search</a><a class="headerlink" href="#search" title="Permalink to this headline">¶</a></h3>
 <p>The search plugin adds search to the Stocks, Animals, Trading, Stockpile,
 Noble (assignment candidates), Military (position candidates), Burrows
 (unit list), Rooms, Announcements, Job List and Unit List screens.</p>
@@ -705,14 +643,14 @@ only fat or tallow by forbidding fats, then searching for fat/tallow, and
 using Permit Fats again while the list is filtered.</p>
 </div>
 <div class="section" id="nopause">
-<span id="id16"></span><h3><a class="toc-backref" href="#id93">nopause</a><a class="headerlink" href="#nopause" title="Permalink to this headline">¶</a></h3>
+<span id="id20"></span><h3><a class="toc-backref" href="#id124">nopause</a><a class="headerlink" href="#nopause" title="Permalink to this headline">¶</a></h3>
 <p>Disables pausing (both manual and automatic) with the exception of pause forced
-by <a class="reference internal" href="#reveal"><span>reveal</span></a> <code class="docutils literal"><span class="pre">hell</span></code>. This is nice for digging under rivers.</p>
+by <a class="reference internal" href="#reveal"><span class="std std-ref">reveal</span></a> <code class="docutils literal"><span class="pre">hell</span></code>. This is nice for digging under rivers.</p>
 </div>
 <div class="section" id="embark-tools">
-<span id="id17"></span><h3><a class="toc-backref" href="#id94">embark-tools</a><a class="headerlink" href="#embark-tools" title="Permalink to this headline">¶</a></h3>
+<span id="id21"></span><h3><a class="toc-backref" href="#id125">embark-tools</a><a class="headerlink" href="#embark-tools" title="Permalink to this headline">¶</a></h3>
 <p>A collection of embark-related tools. Usage and available tools:</p>
-<div class="highlight-python"><div class="highlight"><pre>embark-tools enable/disable tool [tool]...
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">embark</span><span class="o">-</span><span class="n">tools</span> <span class="n">enable</span><span class="o">/</span><span class="n">disable</span> <span class="n">tool</span> <span class="p">[</span><span class="n">tool</span><span class="p">]</span><span class="o">...</span>
 </pre></div>
 </div>
 <table class="docutils field-list" frame="void" rules="none">
@@ -733,7 +671,7 @@ area, similar to the default clay/stone indicators.</td>
 </table>
 </div>
 <div class="section" id="automaterial">
-<span id="id18"></span><h3><a class="toc-backref" href="#id95">automaterial</a><a class="headerlink" href="#automaterial" title="Permalink to this headline">¶</a></h3>
+<span id="id22"></span><h3><a class="toc-backref" href="#id126">automaterial</a><a class="headerlink" href="#automaterial" title="Permalink to this headline">¶</a></h3>
 <p>This makes building constructions (walls, floors, fortifications, etc) a little bit
 easier by saving you from having to trawl through long lists of materials each time
 you place one.</p>
@@ -760,18 +698,18 @@ materials, it returns you back to this screen. If you use this along with severa
 enabled materials, you should be able to place complex constructions more conveniently.</p>
 </div>
 <div class="section" id="buildingplan">
-<span id="id19"></span><h3><a class="toc-backref" href="#id96">buildingplan</a><a class="headerlink" href="#buildingplan" title="Permalink to this headline">¶</a></h3>
+<span id="id23"></span><h3><a class="toc-backref" href="#id127">buildingplan</a><a class="headerlink" href="#buildingplan" title="Permalink to this headline">¶</a></h3>
 <p>When active (via <code class="docutils literal"><span class="pre">enable</span> <span class="pre">buildingplan</span></code>), this plugin adds a planning mode for
 furniture placement.  You can then place furniture and other buildings before
 the required materials are available, and the job will be unsuspended when
 the item is created.</p>
-<p>Very useful when combined with <a class="reference internal" href="#workflow"><span>workflow</span></a> - you can set a constraint
+<p>Very useful when combined with <a class="reference internal" href="#workflow"><span class="std std-ref">workflow</span></a> - you can set a constraint
 to always have one or two doors/beds/tables/chairs/etc available, and place
 as many as you like.  The plugins then take over and fulfill the orders,
 with minimal space dedicated to stockpiles.</p>
 </div>
 <div class="section" id="confirm">
-<span id="id20"></span><h3><a class="toc-backref" href="#id97">confirm</a><a class="headerlink" href="#confirm" title="Permalink to this headline">¶</a></h3>
+<span id="id24"></span><h3><a class="toc-backref" href="#id128">confirm</a><a class="headerlink" href="#confirm" title="Permalink to this headline">¶</a></h3>
 <p>Implements several confirmation dialogs for potentially destructive actions
 (for example, seizing goods from traders or deleting hauling routes).</p>
 <p>Usage:</p>
@@ -791,13 +729,13 @@ Replace with <code class="docutils literal"><span class="pre">disable</span></co
 </table>
 </div>
 <div class="section" id="follow">
-<h3><a class="toc-backref" href="#id98">follow</a><a class="headerlink" href="#follow" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id129">follow</a><a class="headerlink" href="#follow" title="Permalink to this headline">¶</a></h3>
 <p>Makes the game view follow the currently highlighted unit after you exit from the
 current menu or cursor mode. Handy for watching dwarves running around. Deactivated
 by moving the view manually.</p>
 </div>
 <div class="section" id="mousequery">
-<span id="id21"></span><h3><a class="toc-backref" href="#id99">mousequery</a><a class="headerlink" href="#mousequery" title="Permalink to this headline">¶</a></h3>
+<span id="id25"></span><h3><a class="toc-backref" href="#id130">mousequery</a><a class="headerlink" href="#mousequery" title="Permalink to this headline">¶</a></h3>
 <p>Adds mouse controls to the DF interface, eg click-and-drag designations.</p>
 <p>Options:</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -819,59 +757,63 @@ by moving the view manually.</p>
 </tbody>
 </table>
 <p>Usage:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">mousequery</span> <span class="p">[</span><span class="n">plugin</span><span class="p">]</span> <span class="p">[</span><span class="n">rbutton</span><span class="p">]</span> <span class="p">[</span><span class="n">track</span><span class="p">]</span> <span class="p">[</span><span class="n">edge</span><span class="p">]</span> <span class="p">[</span><span class="n">live</span><span class="p">]</span> <span class="p">[</span><span class="n">enable</span><span class="o">|</span><span class="n">disable</span><span class="p">]</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mousequery</span> <span class="p">[</span><span class="n">plugin</span><span class="p">]</span> <span class="p">[</span><span class="n">rbutton</span><span class="p">]</span> <span class="p">[</span><span class="n">track</span><span class="p">]</span> <span class="p">[</span><span class="n">edge</span><span class="p">]</span> <span class="p">[</span><span class="n">live</span><span class="p">]</span> <span class="p">[</span><span class="n">enable</span><span class="o">|</span><span class="n">disable</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="resume">
-<span id="id22"></span><h3><a class="toc-backref" href="#id100">resume</a><a class="headerlink" href="#resume" title="Permalink to this headline">¶</a></h3>
+<span id="id26"></span><h3><a class="toc-backref" href="#id131">resume</a><a class="headerlink" href="#resume" title="Permalink to this headline">¶</a></h3>
 <p>Allows automatic resumption of suspended constructions, along with colored
 UI hints for construction status.</p>
 </div>
+<div class="section" id="title-version">
+<span id="id27"></span><h3><a class="toc-backref" href="#id132">title-version</a><a class="headerlink" href="#title-version" title="Permalink to this headline">¶</a></h3>
+<p>Displays the DFHack version on DF&#8217;s title screen when enabled.</p>
+</div>
 <div class="section" id="trackstop">
-<span id="id23"></span><h3><a class="toc-backref" href="#id101">trackstop</a><a class="headerlink" href="#trackstop" title="Permalink to this headline">¶</a></h3>
+<span id="id28"></span><h3><a class="toc-backref" href="#id133">trackstop</a><a class="headerlink" href="#trackstop" title="Permalink to this headline">¶</a></h3>
 <p>Adds a <code class="kbd docutils literal"><span class="pre">q</span></code> menu for track stops, which is completely blank by default.
 This allows you to view and/or change the track stop&#8217;s friction and dump
 direction settings, using the keybindings from the track stop building interface.</p>
 </div>
 <div class="section" id="sort-items">
-<span id="id24"></span><h3><a class="toc-backref" href="#id102">sort-items</a><a class="headerlink" href="#sort-items" title="Permalink to this headline">¶</a></h3>
+<span id="id29"></span><h3><a class="toc-backref" href="#id134">sort-items</a><a class="headerlink" href="#sort-items" title="Permalink to this headline">¶</a></h3>
 <p>Sort the visible item list:</p>
-<div class="highlight-python"><div class="highlight"><pre>sort-items order [order...]
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sort</span><span class="o">-</span><span class="n">items</span> <span class="n">order</span> <span class="p">[</span><span class="n">order</span><span class="o">...</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>Sort the item list using the given sequence of comparisons.
 The <code class="docutils literal"><span class="pre">&lt;</span></code> prefix for an order makes undefined values sort first.
 The <code class="docutils literal"><span class="pre">&gt;</span></code> prefix reverses the sort order for defined values.</p>
 <p>Item order examples:</p>
-<div class="highlight-python"><div class="highlight"><pre>description material wear type quality
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">description</span> <span class="n">material</span> <span class="n">wear</span> <span class="nb">type</span> <span class="n">quality</span>
 </pre></div>
 </div>
 <p>The orderings are defined in <code class="docutils literal"><span class="pre">hack/lua/plugins/sort/*.lua</span></code></p>
 </div>
 <div class="section" id="sort-units">
-<span id="id25"></span><h3><a class="toc-backref" href="#id103">sort-units</a><a class="headerlink" href="#sort-units" title="Permalink to this headline">¶</a></h3>
+<span id="id30"></span><h3><a class="toc-backref" href="#id135">sort-units</a><a class="headerlink" href="#sort-units" title="Permalink to this headline">¶</a></h3>
 <p>Sort the visible unit list:</p>
-<div class="highlight-python"><div class="highlight"><pre>sort-units order [order...]
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sort</span><span class="o">-</span><span class="n">units</span> <span class="n">order</span> <span class="p">[</span><span class="n">order</span><span class="o">...</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>Sort the unit list using the given sequence of comparisons.
 The <code class="docutils literal"><span class="pre">&lt;</span></code> prefix for an order makes undefined values sort first.
 The <code class="docutils literal"><span class="pre">&gt;</span></code> prefix reverses the sort order for defined values.</p>
 <p>Unit order examples:</p>
-<div class="highlight-python"><div class="highlight"><pre>name age arrival squad squad_position profession
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="n">age</span> <span class="n">arrival</span> <span class="n">squad</span> <span class="n">squad_position</span> <span class="n">profession</span>
 </pre></div>
 </div>
 <p>The orderings are defined in <code class="docutils literal"><span class="pre">hack/lua/plugins/sort/*.lua</span></code></p>
 </div>
 <div class="section" id="stocks">
-<span id="id26"></span><h3><a class="toc-backref" href="#id104">stocks</a><a class="headerlink" href="#stocks" title="Permalink to this headline">¶</a></h3>
+<span id="id31"></span><h3><a class="toc-backref" href="#id136">stocks</a><a class="headerlink" href="#stocks" title="Permalink to this headline">¶</a></h3>
 <p>Replaces the DF stocks screen with an improved version.</p>
 </div>
 <div class="section" id="stockpiles">
-<span id="stocksettings"></span><span id="id27"></span><h3><a class="toc-backref" href="#id105">stocksettings</a><a class="headerlink" href="#stockpiles" title="Permalink to this headline">¶</a></h3>
+<span id="stocksettings"></span><span id="id32"></span><h3><a class="toc-backref" href="#id137">stocksettings</a><a class="headerlink" href="#stockpiles" title="Permalink to this headline">¶</a></h3>
 <p>Offers the following commands to save and load stockpile settings.
-See <a class="reference internal" href="_auto/gui.html#gui-stockpiles"><span>gui/stockpiles</span></a> for an in-game interface.</p>
+See <a class="reference internal" href="_auto/gui.html#gui-stockpiles"><span class="std std-ref">gui/stockpiles</span></a> for an in-game interface.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -899,8 +841,8 @@ subfolder for easy access. Filenames should not have spaces.  Generated material
 divine metals, etc are not saved as they are different in every world.</p>
 </div>
 <div class="section" id="rename">
-<span id="id28"></span><h3><a class="toc-backref" href="#id106">rename</a><a class="headerlink" href="#rename" title="Permalink to this headline">¶</a></h3>
-<p>Allows renaming various things.  Use <a class="reference internal" href="_auto/gui.html#gui-rename"><span>gui/rename</span></a> for an in-game interface.</p>
+<span id="id33"></span><h3><a class="toc-backref" href="#id138">rename</a><a class="headerlink" href="#rename" title="Permalink to this headline">¶</a></h3>
+<p>Allows renaming various things.  Use <a class="reference internal" href="_auto/gui.html#gui-rename"><span class="std std-ref">gui/rename</span></a> for an in-game interface.</p>
 <p>Options:</p>
 <dl class="docutils">
 <dt><code class="docutils literal"><span class="pre">rename</span> <span class="pre">squad</span> <span class="pre">&lt;index&gt;</span> <span class="pre">&quot;name&quot;</span></code></dt>
@@ -919,7 +861,7 @@ siege engine or an activity zone.</dd>
 </dl>
 </div>
 <div class="section" id="rendermax">
-<span id="id29"></span><h3><a class="toc-backref" href="#id107">rendermax</a><a class="headerlink" href="#rendermax" title="Permalink to this headline">¶</a></h3>
+<span id="id34"></span><h3><a class="toc-backref" href="#id139">rendermax</a><a class="headerlink" href="#rendermax" title="Permalink to this headline">¶</a></h3>
 <p>A collection of renderer replacing/enhancing filters. For better effect try changing the
 black color in palette to non totally black. See <a class="reference external" href="http://www.bay12forums.com/smf/index.php?topic=128487">Bay12 forums thread 128487</a> for more info.</p>
 <p>Options:</p>
@@ -949,9 +891,45 @@ materials that color the light etc...</p>
 </div>
 </div>
 <div class="section" id="job-and-fortress-management">
-<h2><a class="toc-backref" href="#id108">Job and Fortress management</a><a class="headerlink" href="#job-and-fortress-management" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id98">Job and Fortress management</a><a class="headerlink" href="#job-and-fortress-management" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id35">
+<ul class="simple">
+<li><a class="reference internal" href="#autolabor" id="id140">autolabor</a></li>
+<li><a class="reference internal" href="#autohauler" id="id141">autohauler</a></li>
+<li><a class="reference internal" href="#job" id="id142">job</a></li>
+<li><a class="reference internal" href="#job-material" id="id143">job-material</a></li>
+<li><a class="reference internal" href="#job-duplicate" id="id144">job-duplicate</a></li>
+<li><a class="reference internal" href="#autogems" id="id145">autogems</a></li>
+<li><a class="reference internal" href="#stockflow" id="id146">stockflow</a></li>
+<li><a class="reference internal" href="#workflow" id="id147">workflow</a><ul>
+<li><a class="reference internal" href="#function" id="id148">Function</a></li>
+<li><a class="reference internal" href="#constraint-format" id="id149">Constraint format</a></li>
+<li><a class="reference internal" href="#constraint-examples" id="id150">Constraint examples</a></li>
+<li><a class="reference internal" href="#fix-job-postings" id="id151">fix-job-postings</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#clean" id="id152">clean</a></li>
+<li><a class="reference internal" href="#spotclean" id="id153">spotclean</a></li>
+<li><a class="reference internal" href="#autodump" id="id154">autodump</a></li>
+<li><a class="reference internal" href="#cleanowned" id="id155">cleanowned</a></li>
+<li><a class="reference internal" href="#dwarfmonitor" id="id156">dwarfmonitor</a></li>
+<li><a class="reference internal" href="#worknow" id="id157">workNow</a></li>
+<li><a class="reference internal" href="#seedwatch" id="id158">seedwatch</a></li>
+<li><a class="reference internal" href="#zone" id="id159">zone</a><ul>
+<li><a class="reference internal" href="#usage-with-single-units" id="id160">Usage with single units</a></li>
+<li><a class="reference internal" href="#usage-with-filters" id="id161">Usage with filters</a></li>
+<li><a class="reference internal" href="#mass-renaming" id="id162">Mass-renaming</a></li>
+<li><a class="reference internal" href="#cage-zones" id="id163">Cage zones</a></li>
+<li><a class="reference internal" href="#examples" id="id164">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#autonestbox" id="id165">autonestbox</a></li>
+<li><a class="reference internal" href="#autobutcher" id="id166">autobutcher</a></li>
+<li><a class="reference internal" href="#autochop" id="id167">autochop</a></li>
+</ul>
+</div>
 <div class="section" id="autolabor">
-<span id="id30"></span><h3><a class="toc-backref" href="#id109">autolabor</a><a class="headerlink" href="#autolabor" title="Permalink to this headline">¶</a></h3>
+<span id="id36"></span><h3><a class="toc-backref" href="#id140">autolabor</a><a class="headerlink" href="#autolabor" title="Permalink to this headline">¶</a></h3>
 <p>Automatically manage dwarf labors to efficiently complete jobs.
 Autolabor tries to keep as many dwarves as possible busy but
 also tries to have dwarves specialize in specific skills.</p>
@@ -1023,7 +1001,7 @@ and then assign additional dwarfs that meet any of these conditions:</p>
 </tr>
 </tbody>
 </table>
-<p>See <a class="reference internal" href="_auto/base.html#autolabor-artisans"><span>autolabor-artisans</span></a> for a differently-tuned setup.</p>
+<p>See <a class="reference internal" href="_auto/base.html#autolabor-artisans"><span class="std std-ref">autolabor-artisans</span></a> for a differently-tuned setup.</p>
 <p>Examples:</p>
 <dl class="docutils">
 <dt><code class="docutils literal"><span class="pre">autolabor</span> <span class="pre">MINE</span></code></dt>
@@ -1039,7 +1017,7 @@ and then assign additional dwarfs that meet any of these conditions:</p>
 </dl>
 </div>
 <div class="section" id="autohauler">
-<span id="id31"></span><h3><a class="toc-backref" href="#id110">autohauler</a><a class="headerlink" href="#autohauler" title="Permalink to this headline">¶</a></h3>
+<span id="id37"></span><h3><a class="toc-backref" href="#id141">autohauler</a><a class="headerlink" href="#autohauler" title="Permalink to this headline">¶</a></h3>
 <p>Autohauler is an autolabor fork.</p>
 <p>Rather than the all-of-the-above means of autolabor, autohauler will instead
 only manage hauling labors and leave skilled labors entirely to the user, who
@@ -1057,7 +1035,7 @@ being assigned when the skill is present. By default this is the unused
 ALCHEMIST labor but can be changed by the user.</p>
 </div>
 <div class="section" id="job">
-<span id="id32"></span><h3><a class="toc-backref" href="#id111">job</a><a class="headerlink" href="#job" title="Permalink to this headline">¶</a></h3>
+<span id="id38"></span><h3><a class="toc-backref" href="#id142">job</a><a class="headerlink" href="#job" title="Permalink to this headline">¶</a></h3>
 <p>Command for general job query and manipulation.</p>
 <p>Options:</p>
 <dl class="docutils">
@@ -1073,10 +1051,10 @@ in a workshop, or the unit/jobs screen.</dd>
 </dl>
 </div>
 <div class="section" id="job-material">
-<h3><a class="toc-backref" href="#id112">job-material</a><a class="headerlink" href="#job-material" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id143">job-material</a><a class="headerlink" href="#job-material" title="Permalink to this headline">¶</a></h3>
 <p>Alter the material of the selected job.  Similar to <code class="docutils literal"><span class="pre">job</span> <span class="pre">item-material</span> <span class="pre">...</span></code></p>
 <p>Invoked as:</p>
-<div class="highlight-python"><div class="highlight"><pre>job-material &lt;inorganic-token&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">job</span><span class="o">-</span><span class="n">material</span> <span class="o">&lt;</span><span class="n">inorganic</span><span class="o">-</span><span class="n">token</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Intended to be used as a keybinding:</p>
@@ -1089,20 +1067,20 @@ over the first available choice with the matching material.</li>
 </ul>
 </div>
 <div class="section" id="job-duplicate">
-<h3><a class="toc-backref" href="#id113">job-duplicate</a><a class="headerlink" href="#job-duplicate" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id144">job-duplicate</a><a class="headerlink" href="#job-duplicate" title="Permalink to this headline">¶</a></h3>
 <p>In <code class="kbd docutils literal"><span class="pre">q</span></code> mode, when a job is highlighted within a workshop or furnace
 building, calling <code class="docutils literal"><span class="pre">job-duplicate</span></code> instantly duplicates the job.</p>
 </div>
 <div class="section" id="autogems">
-<span id="id33"></span><h3><a class="toc-backref" href="#id114">autogems</a><a class="headerlink" href="#autogems" title="Permalink to this headline">¶</a></h3>
+<span id="id39"></span><h3><a class="toc-backref" href="#id145">autogems</a><a class="headerlink" href="#autogems" title="Permalink to this headline">¶</a></h3>
 <p>Creates a new Workshop Order setting, automatically cutting rough gems
-when <a class="reference internal" href="Core.html#enable"><span>enabled</span></a>.</p>
+when <a class="reference internal" href="Core.html#enable"><span class="std std-ref">enabled</span></a>.</p>
 </div>
 <div class="section" id="stockflow">
-<span id="id34"></span><h3><a class="toc-backref" href="#id115">stockflow</a><a class="headerlink" href="#stockflow" title="Permalink to this headline">¶</a></h3>
+<span id="id40"></span><h3><a class="toc-backref" href="#id146">stockflow</a><a class="headerlink" href="#stockflow" title="Permalink to this headline">¶</a></h3>
 <p>Allows the fortress bookkeeper to queue jobs through the manager,
 based on space or items available in stockpiles.</p>
-<p>Inspired by <a class="reference internal" href="#workflow"><span>workflow</span></a>.</p>
+<p>Inspired by <a class="reference internal" href="#workflow"><span class="std std-ref">workflow</span></a>.</p>
 <p>Usage:</p>
 <dl class="docutils">
 <dt><code class="docutils literal"><span class="pre">stockflow</span> <span class="pre">enable</span></code></dt>
@@ -1128,8 +1106,8 @@ number of identical orders already in the queue.</p>
 waiting for the bookkeeper.</p>
 </div>
 <div class="section" id="workflow">
-<span id="id35"></span><h3><a class="toc-backref" href="#id116">workflow</a><a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h3>
-<p>Manage control of repeat jobs.  <a class="reference internal" href="_auto/gui.html#gui-workflow"><span>gui/workflow</span></a> provides a simple
+<span id="id41"></span><h3><a class="toc-backref" href="#id147">workflow</a><a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h3>
+<p>Manage control of repeat jobs.  <a class="reference internal" href="_auto/gui.html#gui-workflow"><span class="std std-ref">gui/workflow</span></a> provides a simple
 front-end integrated in the game UI.</p>
 <p>Usage:</p>
 <dl class="docutils">
@@ -1159,7 +1137,7 @@ this list can be copied to a file, and then reloaded using the
 <dd>Delete all constraints.</dd>
 </dl>
 <div class="section" id="function">
-<h4>Function<a class="headerlink" href="#function" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id148">Function</a><a class="headerlink" href="#function" title="Permalink to this headline">¶</a></h4>
 <p>When the plugin is enabled, it protects all repeat jobs from removal.
 If they do disappear due to any cause, they are immediately re-added to their
 workshop and suspended.</p>
@@ -1170,9 +1148,9 @@ the amount has to drop before jobs are resumed; this is intended to reduce
 the frequency of jobs being toggled.</p>
 </div>
 <div class="section" id="constraint-format">
-<h4>Constraint format<a class="headerlink" href="#constraint-format" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id149">Constraint format</a><a class="headerlink" href="#constraint-format" title="Permalink to this headline">¶</a></h4>
 <p>The constraint spec consists of 4 parts, separated with <code class="docutils literal"><span class="pre">/</span></code> characters:</p>
-<div class="highlight-python"><div class="highlight"><pre>ITEM[:SUBTYPE]/[GENERIC_MAT,...]/[SPECIFIC_MAT:...]/[LOCAL,&lt;quality&gt;]
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ITEM</span><span class="p">[:</span><span class="n">SUBTYPE</span><span class="p">]</span><span class="o">/</span><span class="p">[</span><span class="n">GENERIC_MAT</span><span class="p">,</span><span class="o">...</span><span class="p">]</span><span class="o">/</span><span class="p">[</span><span class="n">SPECIFIC_MAT</span><span class="p">:</span><span class="o">...</span><span class="p">]</span><span class="o">/</span><span class="p">[</span><span class="n">LOCAL</span><span class="p">,</span><span class="o">&lt;</span><span class="n">quality</span><span class="o">&gt;</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>The first part is mandatory and specifies the item type and subtype,
@@ -1182,8 +1160,8 @@ For more information, see <a class="reference external" href="http://dwarffortre
 <ul>
 <li><p class="first">A generic material spec constrains the item material to one of
 the hard-coded generic classes, which currently include:</p>
-<div class="highlight-python"><div class="highlight"><pre>PLANT WOOD CLOTH SILK LEATHER BONE SHELL SOAP TOOTH HORN PEARL YARN
-METAL STONE SAND GLASS CLAY MILK
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">PLANT</span> <span class="n">WOOD</span> <span class="n">CLOTH</span> <span class="n">SILK</span> <span class="n">LEATHER</span> <span class="n">BONE</span> <span class="n">SHELL</span> <span class="n">SOAP</span> <span class="n">TOOTH</span> <span class="n">HORN</span> <span class="n">PEARL</span> <span class="n">YARN</span>
+<span class="n">METAL</span> <span class="n">STONE</span> <span class="n">SAND</span> <span class="n">GLASS</span> <span class="n">CLAY</span> <span class="n">MILK</span>
 </pre></div>
 </div>
 </li>
@@ -1198,61 +1176,61 @@ be used to ignore imported items or items below a certain quality.</p>
 </ul>
 </div>
 <div class="section" id="constraint-examples">
-<h4>Constraint examples<a class="headerlink" href="#constraint-examples" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id150">Constraint examples</a><a class="headerlink" href="#constraint-examples" title="Permalink to this headline">¶</a></h4>
 <p>Keep metal bolts within 900-1000, and wood/bone within 150-200:</p>
-<div class="highlight-python"><div class="highlight"><pre>workflow amount AMMO:ITEM_AMMO_BOLTS/METAL 1000 100
-workflow amount AMMO:ITEM_AMMO_BOLTS/WOOD,BONE 200 50
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">workflow</span> <span class="n">amount</span> <span class="n">AMMO</span><span class="p">:</span><span class="n">ITEM_AMMO_BOLTS</span><span class="o">/</span><span class="n">METAL</span> <span class="mi">1000</span> <span class="mi">100</span>
+<span class="n">workflow</span> <span class="n">amount</span> <span class="n">AMMO</span><span class="p">:</span><span class="n">ITEM_AMMO_BOLTS</span><span class="o">/</span><span class="n">WOOD</span><span class="p">,</span><span class="n">BONE</span> <span class="mi">200</span> <span class="mi">50</span>
 </pre></div>
 </div>
 <p>Keep the number of prepared food &amp; drink stacks between 90 and 120:</p>
-<div class="highlight-python"><div class="highlight"><pre>workflow count FOOD 120 30
-workflow count DRINK 120 30
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">workflow</span> <span class="n">count</span> <span class="n">FOOD</span> <span class="mi">120</span> <span class="mi">30</span>
+<span class="n">workflow</span> <span class="n">count</span> <span class="n">DRINK</span> <span class="mi">120</span> <span class="mi">30</span>
 </pre></div>
 </div>
 <p>Make sure there are always 25-30 empty bins/barrels/bags:</p>
-<div class="highlight-python"><div class="highlight"><pre>workflow count BIN 30
-workflow count BARREL 30
-workflow count BOX/CLOTH,SILK,YARN 30
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">workflow</span> <span class="n">count</span> <span class="n">BIN</span> <span class="mi">30</span>
+<span class="n">workflow</span> <span class="n">count</span> <span class="n">BARREL</span> <span class="mi">30</span>
+<span class="n">workflow</span> <span class="n">count</span> <span class="n">BOX</span><span class="o">/</span><span class="n">CLOTH</span><span class="p">,</span><span class="n">SILK</span><span class="p">,</span><span class="n">YARN</span> <span class="mi">30</span>
 </pre></div>
 </div>
 <p>Make sure there are always 15-20 coal and 25-30 copper bars:</p>
-<div class="highlight-python"><div class="highlight"><pre>workflow count BAR//COAL 20
-workflow count BAR//COPPER 30
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">workflow</span> <span class="n">count</span> <span class="n">BAR</span><span class="o">//</span><span class="n">COAL</span> <span class="mi">20</span>
+<span class="n">workflow</span> <span class="n">count</span> <span class="n">BAR</span><span class="o">//</span><span class="n">COPPER</span> <span class="mi">30</span>
 </pre></div>
 </div>
 <p>Produce 15-20 gold crafts:</p>
-<div class="highlight-python"><div class="highlight"><pre>workflow count CRAFTS//GOLD 20
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">workflow</span> <span class="n">count</span> <span class="n">CRAFTS</span><span class="o">//</span><span class="n">GOLD</span> <span class="mi">20</span>
 </pre></div>
 </div>
 <p>Collect 15-20 sand bags and clay boulders:</p>
-<div class="highlight-python"><div class="highlight"><pre>workflow count POWDER_MISC/SAND 20
-workflow count BOULDER/CLAY 20
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">workflow</span> <span class="n">count</span> <span class="n">POWDER_MISC</span><span class="o">/</span><span class="n">SAND</span> <span class="mi">20</span>
+<span class="n">workflow</span> <span class="n">count</span> <span class="n">BOULDER</span><span class="o">/</span><span class="n">CLAY</span> <span class="mi">20</span>
 </pre></div>
 </div>
 <p>Make sure there are always 80-100 units of dimple dye:</p>
-<div class="highlight-python"><div class="highlight"><pre>workflow amount POWDER_MISC//MUSHROOM_CUP_DIMPLE:MILL 100 20
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">workflow</span> <span class="n">amount</span> <span class="n">POWDER_MISC</span><span class="o">//</span><span class="n">MUSHROOM_CUP_DIMPLE</span><span class="p">:</span><span class="n">MILL</span> <span class="mi">100</span> <span class="mi">20</span>
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">In order for this to work, you have to set the material of the PLANT input
-on the Mill Plants job to MUSHROOM_CUP_DIMPLE using the <a class="reference internal" href="#job"><span>job item-material</span></a>
+on the Mill Plants job to MUSHROOM_CUP_DIMPLE using the <a class="reference internal" href="#job"><span class="std std-ref">job item-material</span></a>
 command. Otherwise the plugin won&#8217;t be able to deduce the output material.</p>
 </div>
 <p>Maintain 10-100 locally-made crafts of exceptional quality:</p>
-<div class="highlight-python"><div class="highlight"><pre>workflow count CRAFTS///LOCAL,EXCEPTIONAL 100 90
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">workflow</span> <span class="n">count</span> <span class="n">CRAFTS</span><span class="o">///</span><span class="n">LOCAL</span><span class="p">,</span><span class="n">EXCEPTIONAL</span> <span class="mi">100</span> <span class="mi">90</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="fix-job-postings">
-<span id="id36"></span><h4>fix-job-postings<a class="headerlink" href="#fix-job-postings" title="Permalink to this headline">¶</a></h4>
+<span id="id42"></span><h4><a class="toc-backref" href="#id151">fix-job-postings</a><a class="headerlink" href="#fix-job-postings" title="Permalink to this headline">¶</a></h4>
 <p>This command fixes crashes caused by previous versions of workflow, mostly in
 DFHack 0.40.24-r4, and should be run automatically when loading a world (but can
 also be run manually if desired).</p>
 </div>
 </div>
 <div class="section" id="clean">
-<span id="id37"></span><h3><a class="toc-backref" href="#id117">clean</a><a class="headerlink" href="#clean" title="Permalink to this headline">¶</a></h3>
+<span id="id43"></span><h3><a class="toc-backref" href="#id152">clean</a><a class="headerlink" href="#clean" title="Permalink to this headline">¶</a></h3>
 <p>Cleans all the splatter that get scattered all over the map, items and
 creatures. In an old fortress, this can significantly reduce FPS lag. It can
 also spoil your !!FUN!!, so think before you use it.</p>
@@ -1282,16 +1260,16 @@ also spoil your !!FUN!!, so think before you use it.</p>
 </table>
 </div>
 <div class="section" id="spotclean">
-<h3><a class="toc-backref" href="#id118">spotclean</a><a class="headerlink" href="#spotclean" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id153">spotclean</a><a class="headerlink" href="#spotclean" title="Permalink to this headline">¶</a></h3>
 <p>Works like <code class="docutils literal"><span class="pre">clean</span> <span class="pre">map</span> <span class="pre">snow</span> <span class="pre">mud</span></code>, but only for the tile under the cursor. Ideal
 if you want to keep that bloody entrance <code class="docutils literal"><span class="pre">clean</span> <span class="pre">map</span></code> would clean up.</p>
 </div>
 <div class="section" id="autodump">
-<span id="id38"></span><h3><a class="toc-backref" href="#id119">autodump</a><a class="headerlink" href="#autodump" title="Permalink to this headline">¶</a></h3>
-<p>This plugin adds an option to the <code class="kbd docutils literal"><span class="pre">q</span></code> menu for stckpiles when <a class="reference internal" href="Core.html#enable"><span>enabled</span></a>.
+<span id="id44"></span><h3><a class="toc-backref" href="#id154">autodump</a><a class="headerlink" href="#autodump" title="Permalink to this headline">¶</a></h3>
+<p>This plugin adds an option to the <code class="kbd docutils literal"><span class="pre">q</span></code> menu for stckpiles when <a class="reference internal" href="Core.html#enable"><span class="std std-ref">enabled</span></a>.
 When autodump is enabled for a stockpile, any items placed in the stockpile will
 automatically be designated to be dumped.</p>
-<p>ALternatively, you can use it to quickly move all items designated to be dumped.
+<p>Alternatively, you can use it to quickly move all items designated to be dumped.
 Items are instantly moved to the cursor position, the dump flag is unset,
 and the forbid flag is set, as if it had been dumped normally.
 Be aware that any active dump item tasks still point at the item.</p>
@@ -1318,7 +1296,7 @@ Alias <code class="docutils literal"><span class="pre">autodump-destroy-here</sp
 </table>
 </div>
 <div class="section" id="cleanowned">
-<h3><a class="toc-backref" href="#id120">cleanowned</a><a class="headerlink" href="#cleanowned" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id155">cleanowned</a><a class="headerlink" href="#cleanowned" title="Permalink to this headline">¶</a></h3>
 <p>Confiscates items owned by dwarfs. By default, owned food on the floor
 and rotten items are confistacted and dumped.</p>
 <p>Options:</p>
@@ -1347,7 +1325,7 @@ worn items with &#8216;X&#8217; damage and above.</dd>
 </dl>
 </div>
 <div class="section" id="dwarfmonitor">
-<span id="id39"></span><h3><a class="toc-backref" href="#id121">dwarfmonitor</a><a class="headerlink" href="#dwarfmonitor" title="Permalink to this headline">¶</a></h3>
+<span id="id45"></span><h3><a class="toc-backref" href="#id156">dwarfmonitor</a><a class="headerlink" href="#dwarfmonitor" title="Permalink to this headline">¶</a></h3>
 <p>Records dwarf activity to measure fort efficiency.</p>
 <p>Options:</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -1389,16 +1367,16 @@ can be displayed on the main fortress mode screen:</p>
 positions and settings of all widgets displayed. This file should contain a
 JSON object with the key <code class="docutils literal"><span class="pre">widgets</span></code> containing an array of objects - see the
 included file in the <code class="docutils literal"><span class="pre">dfhack-config</span></code> folder for an example:</p>
-<div class="highlight-python"><div class="highlight"><pre>{
-    &quot;widgets&quot;: [
-        {
-            &quot;type&quot;: &quot;widget type (weather, misery, etc.)&quot;,
-            &quot;x&quot;: X coordinate,
-            &quot;y&quot;: Y coordinate
-            &lt;...additional options...&gt;
-        }
-    ]
-}
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;widgets&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;widget type (weather, misery, etc.)&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="n">X</span> <span class="n">coordinate</span><span class="p">,</span>
+            <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="n">Y</span> <span class="n">coordinate</span>
+            <span class="o">&lt;...</span><span class="n">additional</span> <span class="n">options</span><span class="o">...&gt;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>X and Y coordinates begin at zero (in the upper left corner of the screen).
@@ -1421,7 +1399,7 @@ are replaced (all others, such as punctuation, are not modified)</p>
 <li><code class="docutils literal"><span class="pre">D</span></code>: The current day, zero-padded if necessary</li>
 <li><code class="docutils literal"><span class="pre">d</span></code>: The current day, <em>not</em> zero-padded</li>
 </ul>
-<p>The default date format is <code class="docutils literal"><span class="pre">Y-M-D</span></code>, per the ISO8601 standard.</p>
+<p>The default date format is <code class="docutils literal"><span class="pre">Y-M-D</span></code>, per the <a class="reference external" href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a> standard.</p>
 </li>
 </ul>
 </li>
@@ -1438,11 +1416,11 @@ nothing will be displayed.</li>
 </ul>
 </div>
 <div class="section" id="worknow">
-<h3><a class="toc-backref" href="#id122">workNow</a><a class="headerlink" href="#worknow" title="Permalink to this headline">¶</a></h3>
+<span id="id46"></span><h3><a class="toc-backref" href="#id157">workNow</a><a class="headerlink" href="#worknow" title="Permalink to this headline">¶</a></h3>
 <p>Force all dwarves to look for a job immediately, or as soon as the game is unpaused.</p>
 </div>
 <div class="section" id="seedwatch">
-<span id="id40"></span><h3><a class="toc-backref" href="#id123">seedwatch</a><a class="headerlink" href="#seedwatch" title="Permalink to this headline">¶</a></h3>
+<span id="id47"></span><h3><a class="toc-backref" href="#id158">seedwatch</a><a class="headerlink" href="#seedwatch" title="Permalink to this headline">¶</a></h3>
 <p>Watches the numbers of seeds available and enables/disables seed and plant cooking.</p>
 <p>Each plant type can be assigned a limit. If their number falls below that limit,
 the plants and seeds of that type will be excluded from cookery.
@@ -1477,7 +1455,7 @@ You have to reactivate with &#8216;seedwatch start&#8217; after you load the gam
 </dl>
 </div>
 <div class="section" id="zone">
-<span id="id41"></span><h3><a class="toc-backref" href="#id124">zone</a><a class="headerlink" href="#zone" title="Permalink to this headline">¶</a></h3>
+<span id="id48"></span><h3><a class="toc-backref" href="#id159">zone</a><a class="headerlink" href="#zone" title="Permalink to this headline">¶</a></h3>
 <p>Helps a bit with managing activity zones (pens, pastures and pits) and cages.</p>
 <p>Options:</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -1572,7 +1550,7 @@ for war/hunt). Negatable.</td>
 </tbody>
 </table>
 <div class="section" id="usage-with-single-units">
-<h4>Usage with single units<a class="headerlink" href="#usage-with-single-units" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id160">Usage with single units</a><a class="headerlink" href="#usage-with-single-units" title="Permalink to this headline">¶</a></h4>
 <p>One convenient way to use the zone tool is to bind the command &#8216;zone assign&#8217; to
 a hotkey, maybe also the command &#8216;zone set&#8217;. Place the in-game cursor over
 a pen/pasture or pit, use &#8216;zone set&#8217; to mark it. Then you can select units
@@ -1581,7 +1559,7 @@ and use &#8216;zone assign&#8217; to assign them to their new home. Allows pitti
 own dwarves, by the way.</p>
 </div>
 <div class="section" id="usage-with-filters">
-<h4>Usage with filters<a class="headerlink" href="#usage-with-filters" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id161">Usage with filters</a><a class="headerlink" href="#usage-with-filters" title="Permalink to this headline">¶</a></h4>
 <p>All filters can be used together with the &#8216;assign&#8217; command.</p>
 <p>Restrictions: It&#8217;s not possible to assign units who are inside built cages
 or chained because in most cases that won&#8217;t be desirable anyways.
@@ -1599,14 +1577,14 @@ are not properly added to your own stocks; slaughtering them should work).</p>
 <p>Most filters can be negated (e.g. &#8216;not grazer&#8217; -&gt; race is not a grazer).</p>
 </div>
 <div class="section" id="mass-renaming">
-<h4>Mass-renaming<a class="headerlink" href="#mass-renaming" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id162">Mass-renaming</a><a class="headerlink" href="#mass-renaming" title="Permalink to this headline">¶</a></h4>
 <p>Using the &#8216;nick&#8217; command you can set the same nickname for multiple units.
 If used without &#8216;assign&#8217;, &#8216;all&#8217; or &#8216;count&#8217; it will rename all units in the
 current default target zone. Combined with &#8216;assign&#8217;, &#8216;all&#8217; or &#8216;count&#8217; (and
 further optional filters) it will rename units matching the filter conditions.</p>
 </div>
 <div class="section" id="cage-zones">
-<h4>Cage zones<a class="headerlink" href="#cage-zones" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id163">Cage zones</a><a class="headerlink" href="#cage-zones" title="Permalink to this headline">¶</a></h4>
 <p>Using the &#8216;tocages&#8217; command you can assign units to a set of cages, for example
 a room next to your butcher shop(s). They will be spread evenly among available
 cages to optimize hauling to and butchering from them. For this to work you need
@@ -1617,7 +1595,7 @@ would make no sense, but can be used together with &#8216;nick&#8217; or &#8216;
 the usual filters.</p>
 </div>
 <div class="section" id="examples">
-<h4>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id164">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h4>
 <dl class="docutils">
 <dt><code class="docutils literal"><span class="pre">zone</span> <span class="pre">assign</span> <span class="pre">all</span> <span class="pre">own</span> <span class="pre">ALPACA</span> <span class="pre">minage</span> <span class="pre">3</span> <span class="pre">maxage</span> <span class="pre">10</span></code></dt>
 <dd>Assign all own alpacas who are between 3 and 10 years old to the selected
@@ -1643,7 +1621,7 @@ on the current default zone.</dd>
 </div>
 </div>
 <div class="section" id="autonestbox">
-<h3><a class="toc-backref" href="#id125">autonestbox</a><a class="headerlink" href="#autonestbox" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id165">autonestbox</a><a class="headerlink" href="#autonestbox" title="Permalink to this headline">¶</a></h3>
 <p>Assigns unpastured female egg-layers to nestbox zones. Requires that you create
 pen/pasture zones above nestboxes. If the pen is bigger than 1x1 the nestbox
 must be in the top left corner. Only 1 unit will be assigned per pen, regardless
@@ -1670,13 +1648,13 @@ frames between runs.</td>
 </table>
 </div>
 <div class="section" id="autobutcher">
-<span id="id42"></span><h3><a class="toc-backref" href="#id126">autobutcher</a><a class="headerlink" href="#autobutcher" title="Permalink to this headline">¶</a></h3>
+<span id="id49"></span><h3><a class="toc-backref" href="#id166">autobutcher</a><a class="headerlink" href="#autobutcher" title="Permalink to this headline">¶</a></h3>
 <p>Assigns lifestock for slaughter once it reaches a specific count. Requires that
 you add the target race(s) to a watch list. Only tame units will be processed.</p>
 <p>Units will be ignored if they are:</p>
 <ul class="simple">
-<li>Nicknamed (for custom protection; you can use the <a class="reference internal" href="#rename"><span>rename</span></a> <code class="docutils literal"><span class="pre">unit</span></code> tool
-individually, or <a class="reference internal" href="#zone"><span>zone</span></a> <code class="docutils literal"><span class="pre">nick</span></code> for groups)</li>
+<li>Nicknamed (for custom protection; you can use the <a class="reference internal" href="#rename"><span class="std std-ref">rename</span></a> <code class="docutils literal"><span class="pre">unit</span></code> tool
+individually, or <a class="reference internal" href="#zone"><span class="std std-ref">zone</span></a> <code class="docutils literal"><span class="pre">nick</span></code> for groups)</li>
 <li>Caged, if and only if the cage is defined as a room (to protect zoos)</li>
 <li>Trained for war or hunting</li>
 </ul>
@@ -1685,7 +1663,7 @@ opposite sex or have been gelded) will be butchered before those who will.
 Older adults and younger children will be butchered first if the population
 is above the target (default 1 male, 5 female kids and adults).  Note that
 you may need to set a target above 1 to have a reliable breeding population
-due to asexuality etc.  See <a class="reference internal" href="_auto/base.html#fix-ster"><span>fix-ster</span></a> if this is a problem.</p>
+due to asexuality etc.  See <a class="reference internal" href="_auto/base.html#fix-ster"><span class="std std-ref">fix-ster</span></a> if this is a problem.</p>
 <p>Options:</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -1750,18 +1728,18 @@ new save and run <code class="docutils literal"><span class="pre">script</span> 
 slaughtered. Excess kids will get slaughtered starting with the youngest
 to allow that the older ones grow into adults. Any unnamed cats will
 be slaughtered as soon as possible.</p>
-<div class="highlight-python"><div class="highlight"><pre>autobutcher target 4 3 2 1 ALPACA BIRD_TURKEY
-autobutcher target 0 0 0 0 CAT
-autobutcher watch ALPACA BIRD_TURKEY CAT
-autobutcher start
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">autobutcher</span> <span class="n">target</span> <span class="mi">4</span> <span class="mi">3</span> <span class="mi">2</span> <span class="mi">1</span> <span class="n">ALPACA</span> <span class="n">BIRD_TURKEY</span>
+<span class="n">autobutcher</span> <span class="n">target</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="n">CAT</span>
+<span class="n">autobutcher</span> <span class="n">watch</span> <span class="n">ALPACA</span> <span class="n">BIRD_TURKEY</span> <span class="n">CAT</span>
+<span class="n">autobutcher</span> <span class="n">start</span>
 </pre></div>
 </div>
 <p>Automatically put all new races onto the watchlist and mark unnamed tame units
 for slaughter as soon as they arrive in your fort. Settings already made
 for specific races will be left untouched.</p>
-<div class="highlight-python"><div class="highlight"><pre>autobutcher target 0 0 0 0 new
-autobutcher autowatch
-autobutcher start
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">autobutcher</span> <span class="n">target</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="n">new</span>
+<span class="n">autobutcher</span> <span class="n">autowatch</span>
+<span class="n">autobutcher</span> <span class="n">start</span>
 </pre></div>
 </div>
 <p>Stop watching the races alpaca and cat, but remember the target count
@@ -1770,16 +1748,16 @@ values again. Note: &#8216;autobutcher unwatch all&#8217; works, but only makes 
 if you want to keep the plugin running with the &#8216;autowatch&#8217; feature or manually
 add some new races with &#8216;watch&#8217;. If you simply want to stop it completely use
 &#8216;autobutcher stop&#8217; instead.</p>
-<div class="highlight-python"><div class="highlight"><pre>autobutcher unwatch ALPACA CAT
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">autobutcher</span> <span class="n">unwatch</span> <span class="n">ALPACA</span> <span class="n">CAT</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="autochop">
-<h3><a class="toc-backref" href="#id127">autochop</a><a class="headerlink" href="#autochop" title="Permalink to this headline">¶</a></h3>
+<span id="id50"></span><h3><a class="toc-backref" href="#id167">autochop</a><a class="headerlink" href="#autochop" title="Permalink to this headline">¶</a></h3>
 <p>Automatically manage tree cutting designation to keep available logs withing given
 quotas.</p>
 <p>Open the dashboard by running:</p>
-<div class="highlight-python"><div class="highlight"><pre>getplants autochop
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">getplants</span> <span class="n">autochop</span>
 </pre></div>
 </div>
 <p>The plugin must be activated (with <code class="docutils literal"><span class="pre">c</span></code>) before it can be used. You can then set logging quotas
@@ -1790,24 +1768,61 @@ open the dashboard from the chop designation menu.</p>
 </div>
 </div>
 <div class="section" id="map-modification">
-<h2><a class="toc-backref" href="#id128">Map modification</a><a class="headerlink" href="#map-modification" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id99">Map modification</a><a class="headerlink" href="#map-modification" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id51">
+<ul class="simple">
+<li><a class="reference internal" href="#dveins" id="id168">3dveins</a></li>
+<li><a class="reference internal" href="#alltraffic" id="id169">alltraffic</a></li>
+<li><a class="reference internal" href="#burrow" id="id170">burrow</a></li>
+<li><a class="reference internal" href="#changelayer" id="id171">changelayer</a></li>
+<li><a class="reference internal" href="#changevein" id="id172">changevein</a></li>
+<li><a class="reference internal" href="#changeitem" id="id173">changeitem</a></li>
+<li><a class="reference internal" href="#cleanconst" id="id174">cleanconst</a></li>
+<li><a class="reference internal" href="#deramp" id="id175">deramp</a></li>
+<li><a class="reference internal" href="#dig" id="id176">dig</a></li>
+<li><a class="reference internal" href="#digexp" id="id177">digexp</a></li>
+<li><a class="reference internal" href="#digcircle" id="id178">digcircle</a></li>
+<li><a class="reference internal" href="#digtype" id="id179">digtype</a></li>
+<li><a class="reference internal" href="#digflood" id="id180">digFlood</a></li>
+<li><a class="reference internal" href="#filltraffic" id="id181">filltraffic</a></li>
+<li><a class="reference internal" href="#fortplan" id="id182">fortplan</a></li>
+<li><a class="reference internal" href="#getplants" id="id183">getplants</a></li>
+<li><a class="reference internal" href="#infinitesky" id="id184">infiniteSky</a></li>
+<li><a class="reference internal" href="#liquids" id="id185">liquids</a><ul>
+<li><a class="reference internal" href="#commands" id="id186">Commands</a></li>
+<li><a class="reference internal" href="#liquids-here" id="id187">liquids-here</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#plant" id="id188">plant</a></li>
+<li><a class="reference internal" href="#regrass" id="id189">regrass</a></li>
+<li><a class="reference internal" href="#restrictice" id="id190">restrictice</a></li>
+<li><a class="reference internal" href="#restrictliquids" id="id191">restrictliquids</a></li>
+<li><a class="reference internal" href="#tiletypes" id="id192">tiletypes</a><ul>
+<li><a class="reference internal" href="#tiletypes-command" id="id193">tiletypes-command</a></li>
+<li><a class="reference internal" href="#tiletypes-here" id="id194">tiletypes-here</a></li>
+<li><a class="reference internal" href="#tiletypes-here-point" id="id195">tiletypes-here-point</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tubefill" id="id196">tubefill</a></li>
+</ul>
+</div>
 <div class="section" id="dveins">
-<span id="id43"></span><h3><a class="toc-backref" href="#id129">3dveins</a><a class="headerlink" href="#dveins" title="Permalink to this headline">¶</a></h3>
+<span id="id52"></span><h3><a class="toc-backref" href="#id168">3dveins</a><a class="headerlink" href="#dveins" title="Permalink to this headline">¶</a></h3>
 <p>Removes all existing veins from the map and generates new ones using
 3D Perlin noise, in order to produce a layout that smoothly flows between
 Z levels. The vein distribution is based on the world seed, so running
 the command for the second time should produce no change. It is best to
 run it just once immediately after embark.</p>
 <p>This command is intended as only a cosmetic change, so it takes
-care to exactly preserve the mineral counts reported by <a class="reference internal" href="#prospect"><span>prospect</span></a> <code class="docutils literal"><span class="pre">all</span></code>.
+care to exactly preserve the mineral counts reported by <a class="reference internal" href="#prospect"><span class="std std-ref">prospect</span></a> <code class="docutils literal"><span class="pre">all</span></code>.
 The amounts of different layer stones may slightly change in some cases
 if vein mass shifts between Z layers.</p>
 <p>The only undo option is to restore your save from backup.</p>
 </div>
 <div class="section" id="alltraffic">
-<span id="id44"></span><h3><a class="toc-backref" href="#id130">alltraffic</a><a class="headerlink" href="#alltraffic" title="Permalink to this headline">¶</a></h3>
+<span id="id53"></span><h3><a class="toc-backref" href="#id169">alltraffic</a><a class="headerlink" href="#alltraffic" title="Permalink to this headline">¶</a></h3>
 <p>Set traffic designations for every single tile of the map - useful for resetting
-traffic designations.  See also <a class="reference internal" href="#filltraffic"><span>filltraffic</span></a>, <a class="reference internal" href="#restrictice"><span>restrictice</span></a>, and <a class="reference internal" href="#restrictliquids"><span>restrictliquids</span></a>.</p>
+traffic designations.  See also <a class="reference internal" href="#filltraffic"><span class="std std-ref">filltraffic</span></a>, <a class="reference internal" href="#restrictice"><span class="std std-ref">restrictice</span></a>, and <a class="reference internal" href="#restrictliquids"><span class="std std-ref">restrictliquids</span></a>.</p>
 <p>Options:</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -1825,7 +1840,7 @@ traffic designations.  See also <a class="reference internal" href="#filltraffic
 </table>
 </div>
 <div class="section" id="burrow">
-<span id="id45"></span><h3><a class="toc-backref" href="#id131">burrow</a><a class="headerlink" href="#burrow" title="Permalink to this headline">¶</a></h3>
+<span id="id54"></span><h3><a class="toc-backref" href="#id170">burrow</a><a class="headerlink" href="#burrow" title="Permalink to this headline">¶</a></h3>
 <p>Miscellaneous burrow control. Allows manipulating burrows and automated burrow
 expansion while digging.</p>
 <p>Options:</p>
@@ -1892,7 +1907,7 @@ Digging 1-wide corridors with the miner inside the burrow is SLOW.</td>
 </table>
 </div>
 <div class="section" id="changelayer">
-<h3><a class="toc-backref" href="#id132">changelayer</a><a class="headerlink" href="#changelayer" title="Permalink to this headline">¶</a></h3>
+<span id="id55"></span><h3><a class="toc-backref" href="#id171">changelayer</a><a class="headerlink" href="#changelayer" title="Permalink to this headline">¶</a></h3>
 <p>Changes material of the geology layer under cursor to the specified inorganic
 RAW material. Can have impact on all surrounding regions, not only your embark!
 By default changing stone to soil and vice versa is not allowed. By default
@@ -1900,7 +1915,7 @@ changes only the layer at the cursor position. Note that one layer can stretch
 across lots of z levels. By default changes only the geology which is linked
 to the biome under the cursor. That geology might be linked to other biomes
 as well, though. Mineral veins and gem clusters will stay on the map. Use
-<a class="reference internal" href="#changevein"><span>changevein</span></a> for them.</p>
+<a class="reference internal" href="#changevein"><span class="std std-ref">changevein</span></a> for them.</p>
 <p>tl;dr: You will end up with changing quite big areas in one go, especially if
 you use it in lower z levels. Use with care.</p>
 <p>Options:</p>
@@ -1963,7 +1978,7 @@ You did save your game, right?</li>
 </div>
 </div>
 <div class="section" id="changevein">
-<span id="id46"></span><h3><a class="toc-backref" href="#id133">changevein</a><a class="headerlink" href="#changevein" title="Permalink to this headline">¶</a></h3>
+<span id="id56"></span><h3><a class="toc-backref" href="#id172">changevein</a><a class="headerlink" href="#changevein" title="Permalink to this headline">¶</a></h3>
 <p>Changes material of the vein under cursor to the specified inorganic RAW
 material. Only affects tiles within the current 16x16 block - for veins and
 large clusters, you will need to use this command multiple times.</p>
@@ -1974,7 +1989,7 @@ large clusters, you will need to use this command multiple times.</p>
 </dl>
 </div>
 <div class="section" id="changeitem">
-<h3><a class="toc-backref" href="#id134">changeitem</a><a class="headerlink" href="#changeitem" title="Permalink to this headline">¶</a></h3>
+<span id="id57"></span><h3><a class="toc-backref" href="#id173">changeitem</a><a class="headerlink" href="#changeitem" title="Permalink to this headline">¶</a></h3>
 <p>Allows changing item material and base quality. By default the item currently
 selected in the UI will be changed (you can select items in the &#8216;k&#8217; list
 or inside containers/inventory). By default change is only allowed if materials
@@ -2010,35 +2025,21 @@ crafters/haulers.</p>
 </dl>
 </div>
 <div class="section" id="cleanconst">
-<h3><a class="toc-backref" href="#id135">cleanconst</a><a class="headerlink" href="#cleanconst" title="Permalink to this headline">¶</a></h3>
+<span id="id58"></span><h3><a class="toc-backref" href="#id174">cleanconst</a><a class="headerlink" href="#cleanconst" title="Permalink to this headline">¶</a></h3>
 <p>Cleans up construction materials.</p>
 <p>This utility alters all constructions on the map so that they spawn their
 building component when they are disassembled, allowing their actual
 build items to be safely deleted.  This can improve FPS in extreme situations.</p>
 </div>
-<div class="section" id="colonies">
-<h3><a class="toc-backref" href="#id136">colonies</a><a class="headerlink" href="#colonies" title="Permalink to this headline">¶</a></h3>
-<p>Allows listing all the vermin colonies on the map and optionally turning
-them into honey bee colonies.</p>
-<p>Options:</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">bees:</th><td class="field-body">turn colonies into honey bee colonies</td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="section" id="deramp">
-<h3><a class="toc-backref" href="#id137">deramp</a><a class="headerlink" href="#deramp" title="Permalink to this headline">¶</a></h3>
+<span id="id59"></span><h3><a class="toc-backref" href="#id175">deramp</a><a class="headerlink" href="#deramp" title="Permalink to this headline">¶</a></h3>
 <p>Removes all ramps designated for removal from the map. This is useful for
 replicating the old channel digging designation.  It also removes any and
 all &#8216;down ramps&#8217; that can remain after a cave-in (you don&#8217;t have to designate
 anything for that to happen).</p>
 </div>
 <div class="section" id="dig">
-<span id="id47"></span><h3><a class="toc-backref" href="#id138">dig</a><a class="headerlink" href="#dig" title="Permalink to this headline">¶</a></h3>
+<span id="id60"></span><h3><a class="toc-backref" href="#id176">dig</a><a class="headerlink" href="#dig" title="Permalink to this headline">¶</a></h3>
 <p>This plugin makes many automated or complicated dig patterns easy.</p>
 <p>Basic commands:</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -2058,7 +2059,7 @@ to remove designations, for if you accidentally set 50 levels at once.</td>
 </table>
 </div>
 <div class="section" id="digexp">
-<h3><a class="toc-backref" href="#id139">digexp</a><a class="headerlink" href="#digexp" title="Permalink to this headline">¶</a></h3>
+<span id="id61"></span><h3><a class="toc-backref" href="#id177">digexp</a><a class="headerlink" href="#digexp" title="Permalink to this headline">¶</a></h3>
 <p>This command is for <a class="reference external" href="http://dwarffortresswiki.org/Exploratory_mining">exploratory mining</a>.</p>
 <p>There are two variables that can be set: pattern and filter.</p>
 <p>Patterns:</p>
@@ -2105,7 +2106,7 @@ to remove designations, for if you accidentally set 50 levels at once.</td>
 </dl>
 </div>
 <div class="section" id="digcircle">
-<h3><a class="toc-backref" href="#id140">digcircle</a><a class="headerlink" href="#digcircle" title="Permalink to this headline">¶</a></h3>
+<span id="id62"></span><h3><a class="toc-backref" href="#id178">digcircle</a><a class="headerlink" href="#digcircle" title="Permalink to this headline">¶</a></h3>
 <p>A command for easy designation of filled and hollow circles.
 It has several types of options.</p>
 <p>Shape:</p>
@@ -2164,7 +2165,7 @@ repeats with the last selected parameters.</p>
 </dl>
 </div>
 <div class="section" id="digtype">
-<h3><a class="toc-backref" href="#id141">digtype</a><a class="headerlink" href="#digtype" title="Permalink to this headline">¶</a></h3>
+<span id="id63"></span><h3><a class="toc-backref" href="#id179">digtype</a><a class="headerlink" href="#digtype" title="Permalink to this headline">¶</a></h3>
 <p>For every tile on the map of the same vein type as the selected tile,
 this command designates it to have the same designation as the
 selected tile. If the selected tile has no designation, they will be
@@ -2195,7 +2196,7 @@ designation.</p>
 </table>
 </div>
 <div class="section" id="digflood">
-<h3><a class="toc-backref" href="#id142">digFlood</a><a class="headerlink" href="#digflood" title="Permalink to this headline">¶</a></h3>
+<span id="id64"></span><h3><a class="toc-backref" href="#id180">digFlood</a><a class="headerlink" href="#digflood" title="Permalink to this headline">¶</a></h3>
 <p>Automatically digs out specified veins as they are discovered. It runs once
 every time a dwarf finishes a dig job. It will only dig out appropriate tiles
 that are adjacent to the finished dig job. To add a vein type, use <code class="docutils literal"><span class="pre">digFlood</span> <span class="pre">1</span> <span class="pre">[type]</span></code>.
@@ -2227,9 +2228,9 @@ to disable, then remove, then re-enable.</p>
 </table>
 </div>
 <div class="section" id="filltraffic">
-<span id="id48"></span><h3><a class="toc-backref" href="#id143">filltraffic</a><a class="headerlink" href="#filltraffic" title="Permalink to this headline">¶</a></h3>
+<span id="id65"></span><h3><a class="toc-backref" href="#id181">filltraffic</a><a class="headerlink" href="#filltraffic" title="Permalink to this headline">¶</a></h3>
 <p>Set traffic designations using flood-fill starting at the cursor.
-See also <a class="reference internal" href="#alltraffic"><span>alltraffic</span></a>, <a class="reference internal" href="#restrictice"><span>restrictice</span></a>, and <a class="reference internal" href="#restrictliquids"><span>restrictliquids</span></a>.  Options:</p>
+See also <a class="reference internal" href="#alltraffic"><span class="std std-ref">alltraffic</span></a>, <a class="reference internal" href="#restrictice"><span class="std std-ref">restrictice</span></a>, and <a class="reference internal" href="#restrictliquids"><span class="std std-ref">restrictliquids</span></a>.  Options:</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -2257,12 +2258,12 @@ See also <a class="reference internal" href="#alltraffic"><span>alltraffic</span
 </dl>
 </div>
 <div class="section" id="fortplan">
-<span id="id49"></span><h3><a class="toc-backref" href="#id144">fortplan</a><a class="headerlink" href="#fortplan" title="Permalink to this headline">¶</a></h3>
+<span id="id66"></span><h3><a class="toc-backref" href="#id182">fortplan</a><a class="headerlink" href="#fortplan" title="Permalink to this headline">¶</a></h3>
 <p>Usage: <code class="docutils literal"><span class="pre">fortplan</span> <span class="pre">[filename]</span></code></p>
 <p>Designates furniture for building according to a <code class="docutils literal"><span class="pre">.csv</span></code> file with
-quickfort-style syntax. Companion to <a class="reference internal" href="_auto/base.html#digfort"><span>digfort</span></a>.</p>
+quickfort-style syntax. Companion to <a class="reference internal" href="_auto/base.html#digfort"><span class="std std-ref">digfort</span></a>.</p>
 <p>The first line of the file must contain the following:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="c">#build start(X; Y; &lt;start location description&gt;)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1">#build start(X; Y; &lt;start location description&gt;)</span>
 </pre></div>
 </div>
 <p>...where X and Y are the offset from the top-left corner of the file&#8217;s area
@@ -2270,11 +2271,10 @@ where the in-game cursor should be located, and <code class="docutils literal"><
 is an optional description of where that is. You may also leave a description
 of the contents of the file itself following the closing parenthesis on the
 same line.</p>
-<p>The syntax of the file itself is similar to <a class="reference internal" href="_auto/base.html#digfort"><span>digfort</span></a> or
-<a class="reference external" href="http://www.bay12forums.com/smf/index.php?topic=35931">quickfort</a>. At present,
-only buildings constructed of an item with the same name as the building
+<p>The syntax of the file itself is similar to <a class="reference internal" href="_auto/base.html#digfort"><span class="std std-ref">digfort</span></a> or <a class="reference external" href="http://www.bay12forums.com/smf/index.php?topic=35931">quickfort</a>.
+At present, only buildings constructed of an item with the same name as the building
 are supported. All other characters are ignored. For example:</p>
-<div class="highlight-python"><div class="highlight"><pre>`,`,d,`,`
+<div class="highlight-default"><div class="highlight"><pre><span></span>`,`,d,`,`
 `,f,`,t,`
 `,s,b,c,`
 </pre></div>
@@ -2282,12 +2282,12 @@ are supported. All other characters are ignored. For example:</p>
 <p>This section of a file would designate for construction a door and some
 furniture inside a bedroom: specifically, clockwise from top left, a cabinet,
 a table, a chair, a bed, and a statue.</p>
-<p>All of the building designation uses <a class="reference internal" href="#buildingplan"><span>Planning Mode</span></a>, so you do not need to
+<p>All of the building designation uses <a class="reference internal" href="#buildingplan"><span class="std std-ref">buildingplan</span></a>, so you do not need to
 have the items available to construct all the buildings when you run
 fortplan with the .csv file.</p>
 </div>
 <div class="section" id="getplants">
-<h3><a class="toc-backref" href="#id145">getplants</a><a class="headerlink" href="#getplants" title="Permalink to this headline">¶</a></h3>
+<span id="id67"></span><h3><a class="toc-backref" href="#id183">getplants</a><a class="headerlink" href="#getplants" title="Permalink to this headline">¶</a></h3>
 <p>This tool allows plant gathering and tree cutting by RAW ID. Specify the types
 of trees to cut down and/or shrubs to gather by their plant names, separated
 by spaces.</p>
@@ -2313,7 +2313,7 @@ selection)</td>
 all valid plant IDs will be listed.</p>
 </div>
 <div class="section" id="infinitesky">
-<h3><a class="toc-backref" href="#id146">infiniteSky</a><a class="headerlink" href="#infinitesky" title="Permalink to this headline">¶</a></h3>
+<span id="id68"></span><h3><a class="toc-backref" href="#id184">infiniteSky</a><a class="headerlink" href="#infinitesky" title="Permalink to this headline">¶</a></h3>
 <p>Automatically allocates new z-levels of sky at the top of the map as you build up,
 or on request allocates many levels all at once.</p>
 <p>Usage:</p>
@@ -2327,7 +2327,7 @@ or on request allocates many levels all at once.</p>
 Saving and loading after creating new z-levels should fix the problem.</p>
 </div>
 <div class="section" id="liquids">
-<span id="id50"></span><h3><a class="toc-backref" href="#id147">liquids</a><a class="headerlink" href="#liquids" title="Permalink to this headline">¶</a></h3>
+<span id="id69"></span><h3><a class="toc-backref" href="#id185">liquids</a><a class="headerlink" href="#liquids" title="Permalink to this headline">¶</a></h3>
 <p>Allows adding magma, water and obsidian to the game. It replaces the normal
 dfhack command line and can&#8217;t be used from a hotkey. Settings will be remembered
 as long as dfhack runs. Intended for use in combination with the command
@@ -2337,13 +2337,13 @@ as long as dfhack runs. Intended for use in combination with the command
 <p class="last">Spawning and deleting liquids can mess up pathing data and
 temperatures (creating heat traps). You&#8217;ve been warned.</p>
 </div>
-<p>Settings will be remembered until you quit DF. You can call <a class="reference internal" href="#liquids-here"><span>liquids-here</span></a> to execute
+<p>Settings will be remembered until you quit DF. You can call <a class="reference internal" href="#liquids-here"><span class="std std-ref">liquids-here</span></a> to execute
 the last configured action, which is useful in combination with keybindings.</p>
 <p>Usage: point the DF cursor at a tile you want to modify and use the commands.</p>
 <p>If you only want to add or remove water or magma from one tile,
-<a class="reference internal" href="_auto/base.html#source"><span>source</span></a> may be easier to use.</p>
+<a class="reference internal" href="_auto/base.html#source"><span class="std std-ref">source</span></a> may be easier to use.</p>
 <div class="section" id="commands">
-<h4>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id186">Commands</a><a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h4>
 <p>Misc commands:</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -2431,14 +2431,14 @@ the last configured action, which is useful in combination with keybindings.</p>
 </table>
 </div>
 <div class="section" id="liquids-here">
-<span id="id51"></span><h4>liquids-here<a class="headerlink" href="#liquids-here" title="Permalink to this headline">¶</a></h4>
+<span id="id70"></span><h4><a class="toc-backref" href="#id187">liquids-here</a><a class="headerlink" href="#liquids-here" title="Permalink to this headline">¶</a></h4>
 <p>Run the liquid spawner with the current/last settings made in liquids (if no
 settings in liquids were made it paints a point of 7/7 magma by default).</p>
 <p>Intended to be used as keybinding. Requires an active in-game cursor.</p>
 </div>
 </div>
 <div class="section" id="plant">
-<h3><a class="toc-backref" href="#id148">plant</a><a class="headerlink" href="#plant" title="Permalink to this headline">¶</a></h3>
+<span id="id71"></span><h3><a class="toc-backref" href="#id188">plant</a><a class="headerlink" href="#plant" title="Permalink to this headline">¶</a></h3>
 <p>A tool for creating shrubs, growing, or getting rid of them.</p>
 <p>Subcommands:</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -2472,23 +2472,23 @@ or every sapling on the map if the cursor is hidden.</td>
 </table>
 </div>
 <div class="section" id="regrass">
-<h3><a class="toc-backref" href="#id149">regrass</a><a class="headerlink" href="#regrass" title="Permalink to this headline">¶</a></h3>
+<span id="id72"></span><h3><a class="toc-backref" href="#id189">regrass</a><a class="headerlink" href="#regrass" title="Permalink to this headline">¶</a></h3>
 <p>Regrows all the grass. Not much to it ;)</p>
 </div>
 <div class="section" id="restrictice">
-<span id="id52"></span><h3><a class="toc-backref" href="#id150">restrictice</a><a class="headerlink" href="#restrictice" title="Permalink to this headline">¶</a></h3>
+<span id="id73"></span><h3><a class="toc-backref" href="#id190">restrictice</a><a class="headerlink" href="#restrictice" title="Permalink to this headline">¶</a></h3>
 <p>Restrict traffic on all tiles on top of visible ice.
-See also <a class="reference internal" href="#alltraffic"><span>alltraffic</span></a>, <a class="reference internal" href="#filltraffic"><span>filltraffic</span></a>, and <a class="reference internal" href="#restrictliquids"><span>restrictliquids</span></a>.</p>
+See also <a class="reference internal" href="#alltraffic"><span class="std std-ref">alltraffic</span></a>, <a class="reference internal" href="#filltraffic"><span class="std std-ref">filltraffic</span></a>, and <a class="reference internal" href="#restrictliquids"><span class="std std-ref">restrictliquids</span></a>.</p>
 </div>
 <div class="section" id="restrictliquids">
-<span id="id53"></span><h3><a class="toc-backref" href="#id151">restrictliquids</a><a class="headerlink" href="#restrictliquids" title="Permalink to this headline">¶</a></h3>
+<span id="id74"></span><h3><a class="toc-backref" href="#id191">restrictliquids</a><a class="headerlink" href="#restrictliquids" title="Permalink to this headline">¶</a></h3>
 <p>Restrict traffic on all visible tiles with liquid.
-See also <a class="reference internal" href="#alltraffic"><span>alltraffic</span></a>, <a class="reference internal" href="#filltraffic"><span>filltraffic</span></a>, and <a class="reference internal" href="#restrictice"><span>restrictice</span></a>.</p>
+See also <a class="reference internal" href="#alltraffic"><span class="std std-ref">alltraffic</span></a>, <a class="reference internal" href="#filltraffic"><span class="std std-ref">filltraffic</span></a>, and <a class="reference internal" href="#restrictice"><span class="std std-ref">restrictice</span></a>.</p>
 </div>
 <div class="section" id="tiletypes">
-<span id="id54"></span><h3><a class="toc-backref" href="#id152">tiletypes</a><a class="headerlink" href="#tiletypes" title="Permalink to this headline">¶</a></h3>
+<span id="id75"></span><h3><a class="toc-backref" href="#id192">tiletypes</a><a class="headerlink" href="#tiletypes" title="Permalink to this headline">¶</a></h3>
 <p>Can be used for painting map tiles and is an interactive command, much like
-<a class="reference internal" href="#liquids"><span>liquids</span></a>.  If something goes wrong, <a class="reference internal" href="#fixveins"><span>fixveins</span></a> may help.</p>
+<a class="reference internal" href="#liquids"><span class="std std-ref">liquids</span></a>.  If something goes wrong, <a class="reference internal" href="#fixveins"><span class="std std-ref">fixveins</span></a> may help.</p>
 <p>The tool works with two set of options and a brush. The brush determines which
 tiles will be processed. First set of options is the filter, which can exclude
 some of the tiles from the brush by looking at the tile properties. The second
@@ -2500,20 +2500,20 @@ etc.), state of &#8216;designated&#8217;, &#8216;hidden&#8217; and &#8216;light&
 <p>The properties of filter and paint can be partially defined. This means that
 you can for example turn all stone fortifications into floors, preserving the
 material:</p>
-<div class="highlight-python"><div class="highlight"><pre>filter material STONE
-filter shape FORTIFICATION
-paint shape FLOOR
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">filter</span> <span class="n">material</span> <span class="n">STONE</span>
+<span class="nb">filter</span> <span class="n">shape</span> <span class="n">FORTIFICATION</span>
+<span class="n">paint</span> <span class="n">shape</span> <span class="n">FLOOR</span>
 </pre></div>
 </div>
 <p>Or turn mineral vein floors back into walls:</p>
-<div class="highlight-python"><div class="highlight"><pre>filter shape FLOOR
-filter material MINERAL
-paint shape WALL
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">filter</span> <span class="n">shape</span> <span class="n">FLOOR</span>
+<span class="nb">filter</span> <span class="n">material</span> <span class="n">MINERAL</span>
+<span class="n">paint</span> <span class="n">shape</span> <span class="n">WALL</span>
 </pre></div>
 </div>
 <p>The tool also allows tweaking some tile flags:</p>
-<div class="highlight-python"><div class="highlight"><pre>paint hidden 1
-paint hidden 0
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">paint</span> <span class="n">hidden</span> <span class="mi">1</span>
+<span class="n">paint</span> <span class="n">hidden</span> <span class="mi">0</span>
 </pre></div>
 </div>
 <p>This will hide previously revealed tiles (or show hidden with the 0 option).</p>
@@ -2521,28 +2521,28 @@ paint hidden 0
 an arbitrary stone from the raws, by creating new veins as required. Note
 that this mode paints under ice and constructions, instead of overwriting
 them. To enable, use:</p>
-<div class="highlight-python"><div class="highlight"><pre>paint stone MICROCLINE
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">paint</span> <span class="n">stone</span> <span class="n">MICROCLINE</span>
 </pre></div>
 </div>
 <p>This mode is incompatible with the regular <code class="docutils literal"><span class="pre">material</span></code> setting, so changing
 it cancels the specific stone selection:</p>
-<div class="highlight-python"><div class="highlight"><pre>paint material ANY
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">paint</span> <span class="n">material</span> <span class="n">ANY</span>
 </pre></div>
 </div>
 <p>Since different vein types have different drop rates, it is possible to choose
 which one to use in painting:</p>
-<div class="highlight-python"><div class="highlight"><pre>paint veintype CLUSTER_SMALL
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">paint</span> <span class="n">veintype</span> <span class="n">CLUSTER_SMALL</span>
 </pre></div>
 </div>
 <p>When the chosen type is <code class="docutils literal"><span class="pre">CLUSTER</span></code> (the default), the tool may automatically
 choose to use layer stone or lava stone instead of veins if its material matches
 the desired one.</p>
 <p>Any paint or filter option (or the entire paint or filter) can be disabled entirely by using the ANY keyword:</p>
-<div class="highlight-python"><div class="highlight"><pre>paint hidden ANY
-paint shape ANY
-filter material any
-filter shape any
-filter any
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">paint</span> <span class="n">hidden</span> <span class="n">ANY</span>
+<span class="n">paint</span> <span class="n">shape</span> <span class="n">ANY</span>
+<span class="nb">filter</span> <span class="n">material</span> <span class="nb">any</span>
+<span class="nb">filter</span> <span class="n">shape</span> <span class="nb">any</span>
+<span class="nb">filter</span> <span class="nb">any</span>
 </pre></div>
 </div>
 <p>You can use several different brushes for painting tiles:</p>
@@ -2561,7 +2561,7 @@ filter any
 </tbody>
 </table>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre>range 10 10 1
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">range</span> <span class="mi">10</span> <span class="mi">10</span> <span class="mi">1</span>
 </pre></div>
 </div>
 <p>This will change the brush to a rectangle spanning 10x10 tiles on one z-level.
@@ -2569,23 +2569,23 @@ The range starts at the position of the cursor and goes to the east, south and
 up.</p>
 <p>For more details, use <code class="docutils literal"><span class="pre">tiletypes</span> <span class="pre">help</span></code>.</p>
 <div class="section" id="tiletypes-command">
-<h4>tiletypes-command<a class="headerlink" href="#tiletypes-command" title="Permalink to this headline">¶</a></h4>
+<span id="id76"></span><h4><a class="toc-backref" href="#id193">tiletypes-command</a><a class="headerlink" href="#tiletypes-command" title="Permalink to this headline">¶</a></h4>
 <p>Runs tiletypes commands, separated by ;. This makes it possible to change
 tiletypes modes from a hotkey or via dfhack-run.</p>
 </div>
 <div class="section" id="tiletypes-here">
-<h4>tiletypes-here<a class="headerlink" href="#tiletypes-here" title="Permalink to this headline">¶</a></h4>
+<span id="id77"></span><h4><a class="toc-backref" href="#id194">tiletypes-here</a><a class="headerlink" href="#tiletypes-here" title="Permalink to this headline">¶</a></h4>
 <p>Apply the current tiletypes options at the in-game cursor position, including
 the brush. Can be used from a hotkey.</p>
 </div>
 <div class="section" id="tiletypes-here-point">
-<h4>tiletypes-here-point<a class="headerlink" href="#tiletypes-here-point" title="Permalink to this headline">¶</a></h4>
+<span id="id78"></span><h4><a class="toc-backref" href="#id195">tiletypes-here-point</a><a class="headerlink" href="#tiletypes-here-point" title="Permalink to this headline">¶</a></h4>
 <p>Apply the current tiletypes options at the in-game cursor position to a single
 tile. Can be used from a hotkey.</p>
 </div>
 </div>
 <div class="section" id="tubefill">
-<h3><a class="toc-backref" href="#id153">tubefill</a><a class="headerlink" href="#tubefill" title="Permalink to this headline">¶</a></h3>
+<span id="id79"></span><h3><a class="toc-backref" href="#id196">tubefill</a><a class="headerlink" href="#tubefill" title="Permalink to this headline">¶</a></h3>
 <p>Fills all the adamantine veins again. Veins that were hollow will be left
 alone.</p>
 <p>Options:</p>
@@ -2602,16 +2602,39 @@ your miner when you dig into the region that used to be hollow.</p>
 </div>
 </div>
 <div class="section" id="mods-and-cheating">
-<h2><a class="toc-backref" href="#id154">Mods and Cheating</a><a class="headerlink" href="#mods-and-cheating" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id100">Mods and Cheating</a><a class="headerlink" href="#mods-and-cheating" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id80">
+<ul class="simple">
+<li><a class="reference internal" href="#add-spatter" id="id197">add-spatter</a></li>
+<li><a class="reference internal" href="#adv-bodyswap" id="id198">adv-bodyswap</a></li>
+<li><a class="reference internal" href="#catsplosion" id="id199">catsplosion</a></li>
+<li><a class="reference internal" href="#createitem" id="id200">createitem</a></li>
+<li><a class="reference internal" href="#digginginvaders" id="id201">diggingInvaders</a></li>
+<li><a class="reference internal" href="#fastdwarf" id="id202">fastdwarf</a></li>
+<li><a class="reference internal" href="#forceequip" id="id203">forceequip</a></li>
+<li><a class="reference internal" href="#lair" id="id204">lair</a></li>
+<li><a class="reference internal" href="#mode" id="id205">mode</a></li>
+<li><a class="reference internal" href="#strangemood" id="id206">strangemood</a></li>
+<li><a class="reference internal" href="#siege-engine" id="id207">siege-engine</a></li>
+<li><a class="reference internal" href="#power-meter" id="id208">power-meter</a></li>
+<li><a class="reference internal" href="#steam-engine" id="id209">steam-engine</a><ul>
+<li><a class="reference internal" href="#construction" id="id210">Construction</a></li>
+<li><a class="reference internal" href="#operation" id="id211">Operation</a></li>
+<li><a class="reference internal" href="#explosions" id="id212">Explosions</a></li>
+<li><a class="reference internal" href="#save-files" id="id213">Save files</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="section" id="add-spatter">
-<span id="id55"></span><h3><a class="toc-backref" href="#id155">add-spatter</a><a class="headerlink" href="#add-spatter" title="Permalink to this headline">¶</a></h3>
+<span id="id81"></span><h3><a class="toc-backref" href="#id197">add-spatter</a><a class="headerlink" href="#add-spatter" title="Permalink to this headline">¶</a></h3>
 <p>This plugin makes reactions with names starting with <code class="docutils literal"><span class="pre">SPATTER_ADD_</span></code>
 produce contaminants on the items instead of improvements.  The plugin is
 intended to give some use to all those poisons that can be bought from caravans,
-so they&#8217;re immune to being washed away by water or destroyed by <a class="reference internal" href="#clean"><span>clean</span></a>.</p>
+so they&#8217;re immune to being washed away by water or destroyed by <a class="reference internal" href="#clean"><span class="std std-ref">clean</span></a>.</p>
 </div>
 <div class="section" id="adv-bodyswap">
-<span id="id56"></span><h3><a class="toc-backref" href="#id156">adv-bodyswap</a><a class="headerlink" href="#adv-bodyswap" title="Permalink to this headline">¶</a></h3>
+<span id="id82"></span><h3><a class="toc-backref" href="#id198">adv-bodyswap</a><a class="headerlink" href="#adv-bodyswap" title="Permalink to this headline">¶</a></h3>
 <p>This allows taking control over your followers and other creatures in adventure
 mode. For example, you can make them pick up new arms and armor and equip them
 properly.</p>
@@ -2622,12 +2645,12 @@ properly.</p>
 </ul>
 </div>
 <div class="section" id="catsplosion">
-<span id="id57"></span><h3><a class="toc-backref" href="#id157">catsplosion</a><a class="headerlink" href="#catsplosion" title="Permalink to this headline">¶</a></h3>
+<span id="id83"></span><h3><a class="toc-backref" href="#id199">catsplosion</a><a class="headerlink" href="#catsplosion" title="Permalink to this headline">¶</a></h3>
 <p>Makes cats just <em>multiply</em>. It is not a good idea to run this more than once or
 twice.</p>
 </div>
 <div class="section" id="createitem">
-<span id="id58"></span><h3><a class="toc-backref" href="#id158">createitem</a><a class="headerlink" href="#createitem" title="Permalink to this headline">¶</a></h3>
+<span id="id84"></span><h3><a class="toc-backref" href="#id200">createitem</a><a class="headerlink" href="#createitem" title="Permalink to this headline">¶</a></h3>
 <p>Allows creating new items of arbitrary types and made of arbitrary materials.
 By default, items created are spawned at the feet of the selected unit.</p>
 <p>Specify the item and material information as you would indicate them in custom reaction raws, with the following differences:</p>
@@ -2639,10 +2662,10 @@ specify a CREATURE:CASTE pair instead of a material token.</li>
 </ul>
 <p>Corpses, body parts, and prepared meals cannot be created using this tool.</p>
 <p>Examples:</p>
-<div class="highlight-python"><div class="highlight"><pre>createitem GLOVES:ITEM_GLOVES_GAUNTLETS INORGANIC:STEEL 2
-        Create 2 pairs of steel gauntlets.
-createitem WOOD PLANT_MAT:TOWER_CAP:WOOD
-        Create tower-cap logs.
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">createitem</span> <span class="n">GLOVES</span><span class="p">:</span><span class="n">ITEM_GLOVES_GAUNTLETS</span> <span class="n">INORGANIC</span><span class="p">:</span><span class="n">STEEL</span> <span class="mi">2</span>
+        <span class="n">Create</span> <span class="mi">2</span> <span class="n">pairs</span> <span class="n">of</span> <span class="n">steel</span> <span class="n">gauntlets</span><span class="o">.</span>
+<span class="n">createitem</span> <span class="n">WOOD</span> <span class="n">PLANT_MAT</span><span class="p">:</span><span class="n">TOWER_CAP</span><span class="p">:</span><span class="n">WOOD</span>
+        <span class="n">Create</span> <span class="n">tower</span><span class="o">-</span><span class="n">cap</span> <span class="n">logs</span><span class="o">.</span>
 </pre></div>
 </div>
 <p>To change where new items are placed, first run the command with a destination type while an appropriate destination is selected.</p>
@@ -2662,7 +2685,7 @@ Good for loading traps; do not use with workshops (or deconstruct to use the ite
 </table>
 </div>
 <div class="section" id="digginginvaders">
-<span id="id59"></span><h3><a class="toc-backref" href="#id159">diggingInvaders</a><a class="headerlink" href="#digginginvaders" title="Permalink to this headline">¶</a></h3>
+<span id="id85"></span><h3><a class="toc-backref" href="#id201">diggingInvaders</a><a class="headerlink" href="#digginginvaders" title="Permalink to this headline">¶</a></h3>
 <p>Makes invaders dig or destroy constructions to get to your dwarves.</p>
 <p>To enable/disable the pluging, use: <code class="docutils literal"><span class="pre">diggingInvaders</span> <span class="pre">(1|enable)|(0|disable)</span></code></p>
 <p>Basic usage:</p>
@@ -2730,7 +2753,7 @@ Costs and delays are per-tile, and the table shows default values.</p>
 </table>
 </div>
 <div class="section" id="fastdwarf">
-<span id="id60"></span><h3><a class="toc-backref" href="#id160">fastdwarf</a><a class="headerlink" href="#fastdwarf" title="Permalink to this headline">¶</a></h3>
+<span id="id86"></span><h3><a class="toc-backref" href="#id202">fastdwarf</a><a class="headerlink" href="#fastdwarf" title="Permalink to this headline">¶</a></h3>
 <p>Controls speedydwarf and teledwarf. Speedydwarf makes dwarves move quickly
 and perform tasks quickly. Teledwarf makes dwarves move instantaneously,
 but do jobs at the same speed.</p>
@@ -2751,20 +2774,20 @@ even more aggressive version of speedydwarf.</td>
 </tr>
 </tbody>
 </table>
-<p>See <a class="reference internal" href="_auto/base.html#superdwarf"><span>superdwarf</span></a> for a per-creature version.</p>
+<p>See <a class="reference internal" href="_auto/base.html#superdwarf"><span class="std std-ref">superdwarf</span></a> for a per-creature version.</p>
 </div>
 <div class="section" id="forceequip">
-<span id="id61"></span><h3><a class="toc-backref" href="#id161">forceequip</a><a class="headerlink" href="#forceequip" title="Permalink to this headline">¶</a></h3>
+<span id="id87"></span><h3><a class="toc-backref" href="#id203">forceequip</a><a class="headerlink" href="#forceequip" title="Permalink to this headline">¶</a></h3>
 <p>Forceequip moves local items into a unit&#8217;s inventory.  It is typically used to
 equip specific clothing/armor items onto a dwarf, but can also be used to put
 armor onto a war animal or to add unusual items (such as crowns) to any unit.</p>
-<p>For more information run <code class="docutils literal"><span class="pre">forceequip</span> <span class="pre">help</span></code>.  See also <a class="reference internal" href="_auto/modtools.html#modtools-equip-item"><span>modtools/equip-item</span></a>.</p>
+<p>For more information run <code class="docutils literal"><span class="pre">forceequip</span> <span class="pre">help</span></code>.  See also <a class="reference internal" href="_auto/modtools.html#modtools-equip-item"><span class="std std-ref">modtools/equip-item</span></a>.</p>
 </div>
 <div class="section" id="lair">
-<h3><a class="toc-backref" href="#id162">lair</a><a class="headerlink" href="#lair" title="Permalink to this headline">¶</a></h3>
+<span id="id88"></span><h3><a class="toc-backref" href="#id204">lair</a><a class="headerlink" href="#lair" title="Permalink to this headline">¶</a></h3>
 <p>This command allows you to mark the map as a monster lair, preventing item
 scatter on abandon. When invoked as <code class="docutils literal"><span class="pre">lair</span> <span class="pre">reset</span></code>, it does the opposite.</p>
-<p>Unlike <a class="reference internal" href="#reveal"><span>reveal</span></a>, this command doesn&#8217;t save the information about tiles - you
+<p>Unlike <a class="reference internal" href="#reveal"><span class="std std-ref">reveal</span></a>, this command doesn&#8217;t save the information about tiles - you
 won&#8217;t be able to restore state of real monster lairs using <code class="docutils literal"><span class="pre">lair</span> <span class="pre">reset</span></code>.</p>
 <p>Options:</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -2779,7 +2802,7 @@ won&#8217;t be able to restore state of real monster lairs using <code class="do
 </table>
 </div>
 <div class="section" id="mode">
-<h3><a class="toc-backref" href="#id163">mode</a><a class="headerlink" href="#mode" title="Permalink to this headline">¶</a></h3>
+<span id="id89"></span><h3><a class="toc-backref" href="#id205">mode</a><a class="headerlink" href="#mode" title="Permalink to this headline">¶</a></h3>
 <p>This command lets you see and change the game mode directly.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
@@ -2801,7 +2824,7 @@ You just lost a fortress and gained an adventurer.  Alternatively:</li>
 </div></blockquote>
 </div>
 <div class="section" id="strangemood">
-<span id="id62"></span><h3><a class="toc-backref" href="#id164">strangemood</a><a class="headerlink" href="#strangemood" title="Permalink to this headline">¶</a></h3>
+<span id="id90"></span><h3><a class="toc-backref" href="#id206">strangemood</a><a class="headerlink" href="#strangemood" title="Permalink to this headline">¶</a></h3>
 <p>Creates a strange mood job the same way the game itself normally does it.</p>
 <p>Options:</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -2828,24 +2851,26 @@ Valid values are &#8220;miner&#8221;, &#8220;carpenter&#8221;, &#8220;engraver&#
 <p>Known limitations: if the selected unit is currently performing a job, the mood will not be started.</p>
 </div>
 <div class="section" id="siege-engine">
-<span id="id63"></span><h3><a class="toc-backref" href="#id165">siege-engine</a><a class="headerlink" href="#siege-engine" title="Permalink to this headline">¶</a></h3>
+<span id="id91"></span><h3><a class="toc-backref" href="#id207">siege-engine</a><a class="headerlink" href="#siege-engine" title="Permalink to this headline">¶</a></h3>
 <p>Siege engines in DF haven&#8217;t been updated since the game was 2D, and can
-only aim in four directions.  This plugin allows you to:</p>
+only aim in four directions.  To make them useful above-ground,
+this plugin allows you to:</p>
 <ul class="simple">
 <li>link siege engines to stockpiles</li>
+<li>restrict operator skill levels (like workshops)</li>
 <li>load any object into a catapult, not just stones</li>
 <li>aim at a rectangular area in any direction, and across Z-levels</li>
 </ul>
-<p>The front-end is implemented by <a class="reference internal" href="_auto/gui.html#gui-siege-engine"><span>gui/siege-engine</span></a>.</p>
+<p>The front-end is implemented by <a class="reference internal" href="_auto/gui.html#gui-siege-engine"><span class="std std-ref">gui/siege-engine</span></a>.</p>
 </div>
 <div class="section" id="power-meter">
-<span id="id64"></span><h3><a class="toc-backref" href="#id166">power-meter</a><a class="headerlink" href="#power-meter" title="Permalink to this headline">¶</a></h3>
+<span id="id92"></span><h3><a class="toc-backref" href="#id208">power-meter</a><a class="headerlink" href="#power-meter" title="Permalink to this headline">¶</a></h3>
 <p>The power-meter plugin implements a modified pressure plate that detects power being
 supplied to gear boxes built in the four adjacent N/S/W/E tiles.</p>
-<p>The configuration front-end is implemented by <a class="reference internal" href="_auto/gui.html#gui-power-meter"><span>gui/power-meter</span></a>.</p>
+<p>The configuration front-end is implemented by <a class="reference internal" href="_auto/gui.html#gui-power-meter"><span class="std std-ref">gui/power-meter</span></a>.</p>
 </div>
 <div class="section" id="steam-engine">
-<span id="id65"></span><h3><a class="toc-backref" href="#id167">steam-engine</a><a class="headerlink" href="#steam-engine" title="Permalink to this headline">¶</a></h3>
+<span id="id93"></span><h3><a class="toc-backref" href="#id209">steam-engine</a><a class="headerlink" href="#steam-engine" title="Permalink to this headline">¶</a></h3>
 <p>The steam-engine plugin detects custom workshops with STEAM_ENGINE in
 their token, and turns them into real steam engines.</p>
 <p>The vanilla game contains only water wheels and windmills as sources of
@@ -2855,7 +2880,7 @@ limited in supply, or actually flowing and thus laggy.</p>
 <p>Compared to the <a class="reference external" href="http://dwarffortresswiki.org/Water_wheel#Dwarven_Water_Reactor">water reactor</a>
 exploit, steam engines make a lot of sense!</p>
 <div class="section" id="construction">
-<h4>Construction<a class="headerlink" href="#construction" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id210">Construction</a><a class="headerlink" href="#construction" title="Permalink to this headline">¶</a></h4>
 <p>The workshop needs water as its input, which it takes via a
 passable floor tile below it, like usual magma workshops do.
 The magma version also needs magma.</p>
@@ -2870,7 +2895,7 @@ This also means that engines cannot be chained without intermediate
 axles built after both engines.</p>
 </div>
 <div class="section" id="operation">
-<h4>Operation<a class="headerlink" href="#operation" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id211">Operation</a><a class="headerlink" href="#operation" title="Permalink to this headline">¶</a></h4>
 <p>In order to operate the engine, queue the Stoke Boiler job (optionally
 on repeat). A furnace operator will come, possibly bringing a bar of fuel,
 and perform it. As a result, a &#8220;boiling water&#8221; item will appear
@@ -2901,7 +2926,7 @@ decrease it by further 4%, and also decrease the whole steam
 use rate by 10%.</p>
 </div>
 <div class="section" id="explosions">
-<h4>Explosions<a class="headerlink" href="#explosions" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id212">Explosions</a><a class="headerlink" href="#explosions" title="Permalink to this headline">¶</a></h4>
 <p>The engine must be constructed using barrel, pipe and piston
 from fire-safe, or in the magma version magma-safe metals.</p>
 <p>During operation weak parts get gradually worn out, and
@@ -2910,7 +2935,7 @@ toppled during operation by a building destroyer, or a
 tantruming dwarf.</p>
 </div>
 <div class="section" id="save-files">
-<h4>Save files<a class="headerlink" href="#save-files" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id213">Save files</a><a class="headerlink" href="#save-files" title="Permalink to this headline">¶</a></h4>
 <p>It should be safe to load and view engine-using fortresses
 from a DF version without DFHack installed, except that in such
 case the engines won&#8217;t work. However actually making modifications
@@ -2936,6 +2961,8 @@ being generated.</p>
 
 
 
+
+
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
@@ -2953,9 +2980,6 @@ being generated.</p>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
   <h3><a href="../index.html">Table Of Contents</a></h3>
@@ -2999,6 +3023,7 @@ being generated.</p>
 <li><a class="reference internal" href="#follow">follow</a></li>
 <li><a class="reference internal" href="#mousequery">mousequery</a></li>
 <li><a class="reference internal" href="#resume">resume</a></li>
+<li><a class="reference internal" href="#title-version">title-version</a></li>
 <li><a class="reference internal" href="#trackstop">trackstop</a></li>
 <li><a class="reference internal" href="#sort-items">sort-items</a></li>
 <li><a class="reference internal" href="#sort-units">sort-units</a></li>
@@ -3051,7 +3076,6 @@ being generated.</p>
 <li><a class="reference internal" href="#changevein">changevein</a></li>
 <li><a class="reference internal" href="#changeitem">changeitem</a></li>
 <li><a class="reference internal" href="#cleanconst">cleanconst</a></li>
-<li><a class="reference internal" href="#colonies">colonies</a></li>
 <li><a class="reference internal" href="#deramp">deramp</a></li>
 <li><a class="reference internal" href="#dig">dig</a></li>
 <li><a class="reference internal" href="#digexp">digexp</a></li>
@@ -3114,8 +3138,8 @@ being generated.</p>
       &copy;2015, The DFHack Team.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
       <a href="../_sources/docs/Plugins.txt"

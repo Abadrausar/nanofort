@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Updating DF-structures for a new DF version &mdash; DFHack 0.42.06- documentation</title>
+    <title>Updating DF-structures for a new DF version &mdash; DFHack 0.42.06-r1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/dfhack.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '0.42.06-',
+        VERSION:     '0.42.06-r1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,12 +24,12 @@
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../../_static/dfhack-icon.ico"/>
-    <link rel="top" title="DFHack 0.42.06- documentation" href="../../index.html" />
+    <link rel="top" title="DFHack 0.42.06-r1 documentation" href="../../index.html" />
     <link rel="next" title="Patching the DF binary" href="../../docs/Binpatches.html" />
     <link rel="prev" title="Data Structure Definition Syntax" href="SYNTAX.html" />
    
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
   <body role="document">  
@@ -62,16 +62,16 @@
 <h2><a class="toc-backref" href="#id2">General Process</a><a class="headerlink" href="#general-process" title="Permalink to this headline">¶</a></h2>
 <p>Download the new versions. The scripts expect the following
 directory layout:</p>
-<div class="highlight-python"><div class="highlight"><pre>~userhome/
-    Games/
-        DF/
-            df_linux/    - Current DF for linux
-            df_windows/  - Current DF for windows
-            df_osx/      - Current DF for osx
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">~</span><span class="n">userhome</span><span class="o">/</span>
+    <span class="n">Games</span><span class="o">/</span>
+        <span class="n">DF</span><span class="o">/</span>
+            <span class="n">df_linux</span><span class="o">/</span>    <span class="o">-</span> <span class="n">Current</span> <span class="n">DF</span> <span class="k">for</span> <span class="n">linux</span>
+            <span class="n">df_windows</span><span class="o">/</span>  <span class="o">-</span> <span class="n">Current</span> <span class="n">DF</span> <span class="k">for</span> <span class="n">windows</span>
+            <span class="n">df_osx</span><span class="o">/</span>      <span class="o">-</span> <span class="n">Current</span> <span class="n">DF</span> <span class="k">for</span> <span class="n">osx</span>
 
-            metasm/      - Checkout of the library for ruby scripts
-            df_misc/     - Checkout of the ruby scripts
-            dfhack/      - DFHack checkout
+            <span class="n">metasm</span><span class="o">/</span>      <span class="o">-</span> <span class="n">Checkout</span> <span class="n">of</span> <span class="n">the</span> <span class="n">library</span> <span class="k">for</span> <span class="n">ruby</span> <span class="n">scripts</span>
+            <span class="n">df_misc</span><span class="o">/</span>     <span class="o">-</span> <span class="n">Checkout</span> <span class="n">of</span> <span class="n">the</span> <span class="n">ruby</span> <span class="n">scripts</span>
+            <span class="n">dfhack</span><span class="o">/</span>      <span class="o">-</span> <span class="n">DFHack</span> <span class="n">checkout</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -102,12 +102,12 @@ objects ALIGNED.</li>
 <p>The lisp tool expects that the game is started in a mode where all
 allocated memory is automatically filled with a certain byte value.</p>
 <p>On linux this is achieved by simply starting the game like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>MALLOC_PERTURB_=45 ./df
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">MALLOC_PERTURB_</span><span class="o">=</span><span class="mi">45</span> <span class="o">./</span><span class="n">df</span>
 </pre></div>
 </div>
 <p>Windows requires applying a patch to a copy of the executable like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>cp -f &#39;Dwarf Fortress.exe&#39; &#39;Dwarf_Fortress_malloc.exe&#39;
-ruby -I ~/Games/DF/metasm ~/Games/DF/df_patchmalloc.rb &#39;Dwarf_Fortress_malloc.exe&#39;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="o">-</span><span class="n">f</span> <span class="s1">&#39;Dwarf Fortress.exe&#39;</span> <span class="s1">&#39;Dwarf_Fortress_malloc.exe&#39;</span>
+<span class="n">ruby</span> <span class="o">-</span><span class="n">I</span> <span class="o">~/</span><span class="n">Games</span><span class="o">/</span><span class="n">DF</span><span class="o">/</span><span class="n">metasm</span> <span class="o">~/</span><span class="n">Games</span><span class="o">/</span><span class="n">DF</span><span class="o">/</span><span class="n">df_patchmalloc</span><span class="o">.</span><span class="n">rb</span> <span class="s1">&#39;Dwarf_Fortress_malloc.exe&#39;</span>
 </pre></div>
 </div>
 </div>
@@ -478,6 +478,8 @@ instructions see linux primitive globals.</p>
 
 
 
+
+
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
@@ -495,9 +497,6 @@ instructions see linux primitive globals.</p>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
   <h3><a href="../../index.html">Table Of Contents</a></h3>
@@ -558,8 +557,8 @@ instructions see linux primitive globals.</p>
       &copy;2015, The DFHack Team.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
       <a href="../../_sources/library/xml/how-to-update.txt"

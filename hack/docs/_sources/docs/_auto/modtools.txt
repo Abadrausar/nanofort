@@ -43,6 +43,13 @@ Scripts for Modders
    :end-before: =end
 
 
+.. _modtools/extra-gamelog:
+
+.. include:: /scripts/modtools/extra-gamelog.lua
+   :start-after: =begin
+   :end-before: =end
+
+
 .. _modtools/force:
 
 .. include:: /scripts/modtools/force.lua

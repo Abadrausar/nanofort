@@ -85,6 +85,13 @@ Basic Scripts
    :end-before: =end
 
 
+.. _colonies:
+
+.. include:: /scripts/colonies.lua
+   :start-after: =begin
+   :end-before: =end
+
+
 .. _combine-drinks:
 
 .. include:: /scripts/3rdparty/kane-t/combine_drinks.lua
@@ -130,13 +137,6 @@ Basic Scripts
 .. _deterioratefood:
 
 .. include:: /scripts/deterioratefood.rb
-   :start-after: =begin
-   :end-before: =end
-
-
-.. _dfusion:
-
-.. include:: /scripts/dfusion.lua
    :start-after: =begin
    :end-before: =end
 
@@ -284,13 +284,6 @@ Basic Scripts
 .. _locate-ore:
 
 .. include:: /scripts/locate-ore.rb
-   :start-after: =begin
-   :end-before: =end
-
-
-.. _log-region:
-
-.. include:: /scripts/log-region.lua
    :start-after: =begin
    :end-before: =end
 
@@ -452,13 +445,6 @@ Basic Scripts
 .. _siren:
 
 .. include:: /scripts/siren.lua
-   :start-after: =begin
-   :end-before: =end
-
-
-.. _soundsense-season:
-
-.. include:: /scripts/soundsense-season.lua
    :start-after: =begin
    :end-before: =end
 

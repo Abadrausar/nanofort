@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Data Structure Definition Syntax &mdash; DFHack 0.42.06- documentation</title>
+    <title>Data Structure Definition Syntax &mdash; DFHack 0.42.06-r1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/dfhack.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '0.42.06-',
+        VERSION:     '0.42.06-r1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,12 +24,12 @@
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../../_static/dfhack-icon.ico"/>
-    <link rel="top" title="DFHack 0.42.06- documentation" href="../../index.html" />
+    <link rel="top" title="DFHack 0.42.06-r1 documentation" href="../../index.html" />
     <link rel="next" title="Updating DF-structures for a new DF version" href="how-to-update.html" />
     <link rel="prev" title="DFHack Lua API" href="../../docs/Lua API.html" />
    
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
   <body role="document">  
@@ -153,11 +153,11 @@ is not allowed.</p>
 <div class="section" id="enum-type-definition">
 <h3><a class="toc-backref" href="#id4">Enum type definition</a><a class="headerlink" href="#enum-type-definition" title="Permalink to this headline">¶</a></h3>
 <p>Global enum types are defined as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;enum-type type-name=&#39;name&#39; [base-type=&#39;int32_t&#39;]&gt;
-    &lt;enum-item [name=&#39;key1&#39;] [value=&#39;0&#39;]/&gt;
-    &lt;enum-item [name=&#39;key2&#39;] [value=&#39;1&#39;]/&gt;
-    ...
-&lt;/enum-type&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">enum</span><span class="o">-</span><span class="nb">type</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;name&#39;</span> <span class="p">[</span><span class="n">base</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;int32_t&#39;</span><span class="p">]</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">enum</span><span class="o">-</span><span class="n">item</span> <span class="p">[</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;key1&#39;</span><span class="p">]</span> <span class="p">[</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">]</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">enum</span><span class="o">-</span><span class="n">item</span> <span class="p">[</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;key2&#39;</span><span class="p">]</span> <span class="p">[</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;1&#39;</span><span class="p">]</span><span class="o">/&gt;</span>
+    <span class="o">...</span>
+<span class="o">&lt;/</span><span class="n">enum</span><span class="o">-</span><span class="nb">type</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Every enum has an integer base type, which defaults to <em>int32_t</em> if omitted.</p>
@@ -172,11 +172,11 @@ generator would produce a random identifier to satisfy C++ language requirements
 <p>The XML syntax allows associating attributes with enum items,
 thus embedding lookup tables for use in C++ or lua code.</p>
 <p>Every attribute must be declared at the top level of the enum:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;enum-attr name=&#39;attr&#39;
-          [type-name=&#39;primitive-or-enum&#39;]
-          [default-value=&#39;...&#39;]
-          [use-key-name=&#39;true/false&#39;]
-          [is-list=&#39;true/false&#39;]/&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">enum</span><span class="o">-</span><span class="n">attr</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;attr&#39;</span>
+          <span class="p">[</span><span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;primitive-or-enum&#39;</span><span class="p">]</span>
+          <span class="p">[</span><span class="n">default</span><span class="o">-</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;...&#39;</span><span class="p">]</span>
+          <span class="p">[</span><span class="n">use</span><span class="o">-</span><span class="n">key</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;true/false&#39;</span><span class="p">]</span>
+          <span class="p">[</span><span class="ow">is</span><span class="o">-</span><span class="nb">list</span><span class="o">=</span><span class="s1">&#39;true/false&#39;</span><span class="p">]</span><span class="o">/&gt;</span>
 </pre></div>
 </div>
 <p>The declaration allows specifying a numeric, or other enum type for the
@@ -190,10 +190,10 @@ In this case, the default is an empty list.</p>
 representing the enum item key.</p>
 <p>For every declared attribute, every enum-item tag may contain an attribute
 value definition:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;enum-item name=&#39;key&#39;&gt;
-    &lt;item-attr name=&#39;attr&#39; value=&#39;...&#39;/&gt;
-    ...
-&lt;/enum-item&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">enum</span><span class="o">-</span><span class="n">item</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;key&#39;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">item</span><span class="o">-</span><span class="n">attr</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;attr&#39;</span> <span class="n">value</span><span class="o">=</span><span class="s1">&#39;...&#39;</span><span class="o">/&gt;</span>
+    <span class="o">...</span>
+<span class="o">&lt;/</span><span class="n">enum</span><span class="o">-</span><span class="n">item</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>For list attributes, multiple <code class="docutils literal"><span class="pre">item-attr</span></code> entries may be used to define the
@@ -203,11 +203,11 @@ list contents.</p>
 <div class="section" id="bitfield-type-definition">
 <h3><a class="toc-backref" href="#id6">Bitfield type definition</a><a class="headerlink" href="#bitfield-type-definition" title="Permalink to this headline">¶</a></h3>
 <p>Global bitfield types are defined as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;bitfield-type type-name=&#39;name&#39; [base-type=&#39;uint32_t&#39;]&gt;
-    &lt;flag-bit [name=&#39;bit1&#39;] [count=&#39;1&#39;] [type-name=&#39;enum&#39;]/&gt;
-    &lt;flag-bit [name=&#39;bit2&#39;] [count=&#39;1&#39;] [type-name=&#39;enum&#39;]/&gt;
-    ...
-&lt;/bitfield-type&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">bitfield</span><span class="o">-</span><span class="nb">type</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;name&#39;</span> <span class="p">[</span><span class="n">base</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;uint32_t&#39;</span><span class="p">]</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">flag</span><span class="o">-</span><span class="n">bit</span> <span class="p">[</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;bit1&#39;</span><span class="p">]</span> <span class="p">[</span><span class="n">count</span><span class="o">=</span><span class="s1">&#39;1&#39;</span><span class="p">]</span> <span class="p">[</span><span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;enum&#39;</span><span class="p">]</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">flag</span><span class="o">-</span><span class="n">bit</span> <span class="p">[</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;bit2&#39;</span><span class="p">]</span> <span class="p">[</span><span class="n">count</span><span class="o">=</span><span class="s1">&#39;1&#39;</span><span class="p">]</span> <span class="p">[</span><span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;enum&#39;</span><span class="p">]</span><span class="o">/&gt;</span>
+    <span class="o">...</span>
+<span class="o">&lt;/</span><span class="n">bitfield</span><span class="o">-</span><span class="nb">type</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Like enums, bitfields have an integer base type, which defaults to <em>uint32_t</em>.
@@ -219,15 +219,15 @@ enum must be exactly the same as the bitfield itself.</p>
 <div class="section" id="structure-type-definition">
 <h3><a class="toc-backref" href="#id7">Structure type definition</a><a class="headerlink" href="#structure-type-definition" title="Permalink to this headline">¶</a></h3>
 <p>Structures without virtual methods are defined as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;struct-type type-name=&#39;name&#39;
-            [is-union=&#39;true/false&#39;]
-            [inherits-from=&#39;struct_type&#39;]
-            [instance-vector=&#39;expr&#39;]
-            [key-field=&#39;identifier&#39;]&gt;
-    ...
-    fields
-    ...
-&lt;/struct-type&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">struct</span><span class="o">-</span><span class="nb">type</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;name&#39;</span>
+            <span class="p">[</span><span class="ow">is</span><span class="o">-</span><span class="n">union</span><span class="o">=</span><span class="s1">&#39;true/false&#39;</span><span class="p">]</span>
+            <span class="p">[</span><span class="n">inherits</span><span class="o">-</span><span class="n">from</span><span class="o">=</span><span class="s1">&#39;struct_type&#39;</span><span class="p">]</span>
+            <span class="p">[</span><span class="n">instance</span><span class="o">-</span><span class="n">vector</span><span class="o">=</span><span class="s1">&#39;expr&#39;</span><span class="p">]</span>
+            <span class="p">[</span><span class="n">key</span><span class="o">-</span><span class="n">field</span><span class="o">=</span><span class="s1">&#39;identifier&#39;</span><span class="p">]</span><span class="o">&gt;</span>
+    <span class="o">...</span>
+    <span class="n">fields</span>
+    <span class="o">...</span>
+<span class="o">&lt;/</span><span class="n">struct</span><span class="o">-</span><span class="nb">type</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>The <em>instance-vector</em> attribute may be used to specify a global
@@ -272,13 +272,13 @@ be used on the <code class="docutils literal"><span class="pre">struct-type</spa
 <p>Primitive fields can be classified as following:</p>
 <ol class="arabic">
 <li><p class="first">Unmarked area:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;padding name=&#39;id&#39; size=&#39;bytes&#39; [alignment=&#39;1/2/4&#39;] .../&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">padding</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;id&#39;</span> <span class="n">size</span><span class="o">=</span><span class="s1">&#39;bytes&#39;</span> <span class="p">[</span><span class="n">alignment</span><span class="o">=</span><span class="s1">&#39;1/2/4&#39;</span><span class="p">]</span> <span class="o">.../&gt;</span>
 </pre></div>
 </div>
 <p>This tag defines an area of raw bytes with unknown contents.</p>
 </li>
 <li><p class="first">Numbers:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;int32_t name=&#39;id&#39;.../&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">int32_t</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="o">.../&gt;</span>
 </pre></div>
 </div>
 <p>Supported number types are: <code class="docutils literal"><span class="pre">int8_t</span></code>, <code class="docutils literal"><span class="pre">uint8_t</span></code>, <code class="docutils literal"><span class="pre">int16_t</span></code>,
@@ -286,14 +286,14 @@ be used on the <code class="docutils literal"><span class="pre">struct-type</spa
 <code class="docutils literal"><span class="pre">s-float</span></code> (single float), <code class="docutils literal"><span class="pre">d-float</span></code> (double float).</p>
 </li>
 <li><p class="first">Boolean:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;bool name=&#39;id&#39;.../&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nb">bool</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="o">.../&gt;</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">String:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;static-string name=&#39;id&#39; size=&#39;bytes&#39;.../&gt;
-&lt;ptr-string name=&#39;id&#39;.../&gt;
-&lt;stl-string name=&#39;id&#39;.../&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">static</span><span class="o">-</span><span class="n">string</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;id&#39;</span> <span class="n">size</span><span class="o">=</span><span class="s1">&#39;bytes&#39;</span><span class="o">.../&gt;</span>
+<span class="o">&lt;</span><span class="n">ptr</span><span class="o">-</span><span class="n">string</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="o">.../&gt;</span>
+<span class="o">&lt;</span><span class="n">stl</span><span class="o">-</span><span class="n">string</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="o">.../&gt;</span>
 </pre></div>
 </div>
 <p>These tags correspond to <code class="docutils literal"><span class="pre">char[bytes]</span></code>, <code class="docutils literal"><span class="pre">char*</span></code>, and <code class="docutils literal"><span class="pre">std::string</span></code>.</p>
@@ -301,7 +301,7 @@ be used on the <code class="docutils literal"><span class="pre">struct-type</spa
 </ol>
 <ol class="arabic" start="4">
 <li><p class="first">File Stream:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;stl-fstream name=&#39;id&#39;/&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">stl</span><span class="o">-</span><span class="n">fstream</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="o">/&gt;</span>
 </pre></div>
 </div>
 <p>This is not really a primitive type, but classified as such since it is
@@ -333,13 +333,13 @@ of the field is already implicitly passed to <em>find-instance</em>.</p>
 <div class="section" id="substructure-fields">
 <h4><a class="toc-backref" href="#id10">Substructure fields</a><a class="headerlink" href="#substructure-fields" title="Permalink to this headline">¶</a></h4>
 <p>Nested structures are defined via the <code class="docutils literal"><span class="pre">compound</span></code> tag:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;compound name=&#39;id&#39; type-name=&#39;struct_type&#39;/&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">compound</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;id&#39;</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;struct_type&#39;</span><span class="o">/&gt;</span>
 
-&lt;compound [name=&#39;id&#39;] [is-union=&#39;true/false&#39;] [key-field=&#39;id&#39;]&gt;
-    ...
-    field
-    ...
-&lt;/compound&gt;
+<span class="o">&lt;</span><span class="n">compound</span> <span class="p">[</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="p">[</span><span class="ow">is</span><span class="o">-</span><span class="n">union</span><span class="o">=</span><span class="s1">&#39;true/false&#39;</span><span class="p">]</span> <span class="p">[</span><span class="n">key</span><span class="o">-</span><span class="n">field</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="o">&gt;</span>
+    <span class="o">...</span>
+    <span class="n">field</span>
+    <span class="o">...</span>
+<span class="o">&lt;/</span><span class="n">compound</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>As seen above, a nested structure may either use a global type
@@ -350,12 +350,12 @@ of defining an anonymous nested struct or union.</p>
 <div class="section" id="enum-fields">
 <h4><a class="toc-backref" href="#id11">Enum fields</a><a class="headerlink" href="#enum-fields" title="Permalink to this headline">¶</a></h4>
 <p>Fields of enum types are defined as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;enum name=&#39;id&#39; type-name=&#39;enum_type&#39; [base-type=&#39;int32_t&#39;]/&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">enum</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;id&#39;</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;enum_type&#39;</span> <span class="p">[</span><span class="n">base</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;int32_t&#39;</span><span class="p">]</span><span class="o">/&gt;</span>
 
-&lt;enum name=&#39;id&#39; [base-type=&#39;int32_t&#39;]&gt;
-    &lt;enum-item name=&#39;key1&#39;.../&gt;
-    ...
-&lt;/enum&gt;
+<span class="o">&lt;</span><span class="n">enum</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;id&#39;</span> <span class="p">[</span><span class="n">base</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;int32_t&#39;</span><span class="p">]</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">enum</span><span class="o">-</span><span class="n">item</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;key1&#39;</span><span class="o">.../&gt;</span>
+    <span class="o">...</span>
+<span class="o">&lt;/</span><span class="n">enum</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Like with substructures, enums may be either referenced globals, or ad-hoc definitions.</p>
@@ -369,10 +369,10 @@ definition has complete precedence. This is not recommended.</p>
 <div class="section" id="nested-bitfields">
 <h4><a class="toc-backref" href="#id12">Nested bitfields</a><a class="headerlink" href="#nested-bitfields" title="Permalink to this headline">¶</a></h4>
 <p>Ad-hoc bitfields are defined as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;bitfield name=&#39;id&#39; [base-type=&#39;uint32_t&#39;]&gt;
-    &lt;flag-bit name=&#39;key1&#39;.../&gt;
-    ...
-&lt;/bitfield&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">bitfield</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;id&#39;</span> <span class="p">[</span><span class="n">base</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;uint32_t&#39;</span><span class="p">]</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">flag</span><span class="o">-</span><span class="n">bit</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;key1&#39;</span><span class="o">.../&gt;</span>
+    <span class="o">...</span>
+<span class="o">&lt;/</span><span class="n">bitfield</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>In order to reference a global type, use <code class="docutils literal"><span class="pre">&lt;compound&gt;</span></code>.</p>
@@ -387,9 +387,9 @@ arrays or vectors.</p>
 <h5><a class="toc-backref" href="#id14">Abstract container</a><a class="headerlink" href="#abstract-container" title="Permalink to this headline">¶</a></h5>
 <p>The basic syntactic property of a container is that it requires
 exactly one nested field tag in order to specify the contained item:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;container&gt;
-    &lt;field .../&gt;
-&lt;/container&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">container</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">field</span> <span class="o">.../&gt;</span>
+<span class="o">&lt;/</span><span class="n">container</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p><strong>NOTE:</strong> The <code class="docutils literal"><span class="pre">container</span></code> tag is used here as a placeholder for any real
@@ -397,54 +397,54 @@ tag following the container syntax.</p>
 <p>For convenience, the following automatic rewrite rules are applied:</p>
 <ol class="arabic">
 <li><p class="first">The <code class="docutils literal"><span class="pre">type-name</span></code> attribute:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;container type-name=&#39;foo&#39; .../&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">container</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;foo&#39;</span> <span class="o">.../&gt;</span>
 </pre></div>
 </div>
 <p>is rewritten into:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;container ...&gt;
-    &lt;compound type-name=&#39;foo&#39; .../&gt;
-&lt;/container&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">container</span> <span class="o">...&gt;</span>
+    <span class="o">&lt;</span><span class="n">compound</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;foo&#39;</span> <span class="o">.../&gt;</span>
+<span class="o">&lt;/</span><span class="n">container</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>or, if <em>foo</em> is a primitive type:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;container ...&gt;
-    &lt;foo .../&gt;
-&lt;/container&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">container</span> <span class="o">...&gt;</span>
+    <span class="o">&lt;</span><span class="n">foo</span> <span class="o">.../&gt;</span>
+<span class="o">&lt;/</span><span class="n">container</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">The <code class="docutils literal"><span class="pre">pointer-type</span></code> attribute:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;container pointer-type=&#39;foo&#39; .../&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">container</span> <span class="n">pointer</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;foo&#39;</span> <span class="o">.../&gt;</span>
 </pre></div>
 </div>
 <p>is rewritten into:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;container ...&gt;
-    &lt;pointer type-name=&#39;foo&#39; .../&gt;
-&lt;/container&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">container</span> <span class="o">...&gt;</span>
+    <span class="o">&lt;</span><span class="n">pointer</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;foo&#39;</span> <span class="o">.../&gt;</span>
+<span class="o">&lt;/</span><span class="n">container</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">Multiple nested fields:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;container ...&gt;
-    &lt;field1 .../&gt;
-    &lt;field2 .../&gt;
-&lt;/container&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">container</span> <span class="o">...&gt;</span>
+    <span class="o">&lt;</span><span class="n">field1</span> <span class="o">.../&gt;</span>
+    <span class="o">&lt;</span><span class="n">field2</span> <span class="o">.../&gt;</span>
+<span class="o">&lt;/</span><span class="n">container</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>are aggregated together:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;container ...&gt;
-    &lt;compound ...&gt;
-        &lt;field1 .../&gt;
-        &lt;field2 .../&gt;
-    &lt;/compound&gt;
-&lt;/container&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">container</span> <span class="o">...&gt;</span>
+    <span class="o">&lt;</span><span class="n">compound</span> <span class="o">...&gt;</span>
+        <span class="o">&lt;</span><span class="n">field1</span> <span class="o">.../&gt;</span>
+        <span class="o">&lt;</span><span class="n">field2</span> <span class="o">.../&gt;</span>
+    <span class="o">&lt;/</span><span class="n">compound</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">container</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">If no item is specified, <code class="docutils literal"><span class="pre">padding</span></code> is assumed:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;container&gt;
-    &lt;padding size=&#39;4&#39;/&gt;
-&lt;/container&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">container</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">padding</span> <span class="n">size</span><span class="o">=</span><span class="s1">&#39;4&#39;</span><span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="n">container</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </li>
@@ -457,15 +457,15 @@ the following attributes are copied to it from the container tag, if
 applicable: <code class="docutils literal"><span class="pre">key-field</span></code>, <code class="docutils literal"><span class="pre">refers-to</span></code>, <code class="docutils literal"><span class="pre">ref-target</span></code>, <code class="docutils literal"><span class="pre">aux-value</span></code>.
 They otherwise have no effect on the container itself.</p>
 <p>This means that:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;container pointer-type=&#39;int32_t&#39; ref-target=&#39;foo&#39;/&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">container</span> <span class="n">pointer</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;int32_t&#39;</span> <span class="n">ref</span><span class="o">-</span><span class="n">target</span><span class="o">=</span><span class="s1">&#39;foo&#39;</span><span class="o">/&gt;</span>
 </pre></div>
 </div>
 <p>eventually rewrites to:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;container pointer-type=&#39;int32_t&#39; ref-target=&#39;foo&#39;&gt;
-    &lt;pointer type-name=&#39;int32_t&#39; ref-target=&#39;foo&#39;&gt;
-        &lt;int32_t ref-target=&#39;foo&#39;/&gt;
-    &lt;/pointer&gt;
-&lt;/container&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">container</span> <span class="n">pointer</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;int32_t&#39;</span> <span class="n">ref</span><span class="o">-</span><span class="n">target</span><span class="o">=</span><span class="s1">&#39;foo&#39;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">pointer</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;int32_t&#39;</span> <span class="n">ref</span><span class="o">-</span><span class="n">target</span><span class="o">=</span><span class="s1">&#39;foo&#39;</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">int32_t</span> <span class="n">ref</span><span class="o">-</span><span class="n">target</span><span class="o">=</span><span class="s1">&#39;foo&#39;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;/</span><span class="n">pointer</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">container</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Abstract containers allow the following attributes:</p>
@@ -539,7 +539,7 @@ is rendered into C++ as <code class="docutils literal"><span class="pre">vector&
 <p><code class="docutils literal"><span class="pre">&lt;df-linked-list</span> <span class="pre">name='id'</span> <span class="pre">type-name='foo_link'/&gt;</span></code></p>
 <blockquote>
 <div><p>Defines an ad-hoc DF-style linked list. In C++ actually equivalent to:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;compound type-name=&#39;foo_link&#39;/&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">compound</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;foo_link&#39;</span><span class="o">/&gt;</span>
 </pre></div>
 </div>
 <p>but allows the GUI to display it as a list.</p>
@@ -550,19 +550,19 @@ is rendered into C++ as <code class="docutils literal"><span class="pre">vector&
 <div class="section" id="class-type-definition">
 <h3><a class="toc-backref" href="#id19">Class type definition</a><a class="headerlink" href="#class-type-definition" title="Permalink to this headline">¶</a></h3>
 <p>In the context of these XML definitions, class denotes types with virtual methods:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;class-type type-name=&#39;name&#39;
-           [inherits-from=&#39;class_type&#39;]
-           [original-name=&#39;vtable_name&#39;]
-           ...&gt;
-    ...
-    fields
-    ...
-    &lt;virtual-methods&gt;
-        ...
-        vmethods
-        ...
-    &lt;/virtual-methods&gt;
-&lt;/class-type&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">class</span><span class="o">-</span><span class="nb">type</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;name&#39;</span>
+           <span class="p">[</span><span class="n">inherits</span><span class="o">-</span><span class="n">from</span><span class="o">=</span><span class="s1">&#39;class_type&#39;</span><span class="p">]</span>
+           <span class="p">[</span><span class="n">original</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;vtable_name&#39;</span><span class="p">]</span>
+           <span class="o">...&gt;</span>
+    <span class="o">...</span>
+    <span class="n">fields</span>
+    <span class="o">...</span>
+    <span class="o">&lt;</span><span class="n">virtual</span><span class="o">-</span><span class="n">methods</span><span class="o">&gt;</span>
+        <span class="o">...</span>
+        <span class="n">vmethods</span>
+        <span class="o">...</span>
+    <span class="o">&lt;/</span><span class="n">virtual</span><span class="o">-</span><span class="n">methods</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">class</span><span class="o">-</span><span class="nb">type</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Classes are generally the same as <code class="docutils literal"><span class="pre">&lt;struct-type&gt;</span></code>, including support for <em>instance-vector</em>.
@@ -575,16 +575,16 @@ should only contain items added to the table of the superclass.</p>
 section of a class type. No other tag may be placed within that section,
 including <em>comment</em>.</p>
 <p>A virtual destructor is defined as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;vmethod is-destructor=&#39;true&#39;/&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">vmethod</span> <span class="ow">is</span><span class="o">-</span><span class="n">destructor</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="o">/&gt;</span>
 </pre></div>
 </div>
 <p>Ordinary virtual methods use the following syntax:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;vmethod [name=&#39;id&#39;] [ret-type=&#39;type&#39;]&gt;
-    [&lt;ret-type .../&gt;]
-    &lt;field1.../&gt;
-    &lt;field2.../&gt;
-    ...
-&lt;/vmethod&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">vmethod</span> <span class="p">[</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="p">[</span><span class="n">ret</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;type&#39;</span><span class="p">]</span><span class="o">&gt;</span>
+    <span class="p">[</span><span class="o">&lt;</span><span class="n">ret</span><span class="o">-</span><span class="nb">type</span> <span class="o">.../&gt;</span><span class="p">]</span>
+    <span class="o">&lt;</span><span class="n">field1</span><span class="o">.../&gt;</span>
+    <span class="o">&lt;</span><span class="n">field2</span><span class="o">.../&gt;</span>
+    <span class="o">...</span>
+<span class="o">&lt;/</span><span class="n">vmethod</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>The return type may be specified either as an attribute, or via a <code class="docutils literal"><span class="pre">ret-type</span></code> sub-tag.
@@ -602,11 +602,11 @@ for completely unknown slots in the vtable.</p>
 <p>Global objects are global pointers that are initialized from symbols.xml at runtime.
 Therefore, the tag itself is identical in syntax to <code class="docutils literal"><span class="pre">&lt;pointer&gt;</span></code>, except that it
 doesn&#8217;t allow <em>is-array</em>:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;global-object name=&#39;id&#39; type-name=&#39;...&#39;/&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="k">global</span><span class="o">-</span><span class="nb">object</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;id&#39;</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;...&#39;</span><span class="o">/&gt;</span>
 
-&lt;global-object name=&#39;id&#39;&gt;
-    &lt;field.../&gt;
-&lt;/global-object&gt;
+<span class="o">&lt;</span><span class="k">global</span><span class="o">-</span><span class="nb">object</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">field</span><span class="o">.../&gt;</span>
+<span class="o">&lt;/</span><span class="k">global</span><span class="o">-</span><span class="nb">object</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>C++ generation places them in the <code class="docutils literal"><span class="pre">df::global</span></code> namespace.</p>
@@ -618,17 +618,17 @@ address. As noted above, it may only be used in files intended for the GUI.</p>
 <p>Symbol tables are defined in symbols.xml and loaded at runtime.
 They define locations of global objects and virtual tables.</p>
 <p>The definition syntax is as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;symbol-table name=&#39;...&#39; os-type=&#39;...&#39;&gt;
-    &lt;md5-hash value=&#39;...&#39;/&gt;
-    &lt;binary-timestamp value=&#39;0x...&#39;/&gt;
-    ...
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">symbol</span><span class="o">-</span><span class="n">table</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;...&#39;</span> <span class="n">os</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;...&#39;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">md5</span><span class="o">-</span><span class="nb">hash</span> <span class="n">value</span><span class="o">=</span><span class="s1">&#39;...&#39;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">binary</span><span class="o">-</span><span class="n">timestamp</span> <span class="n">value</span><span class="o">=</span><span class="s1">&#39;0x...&#39;</span><span class="o">/&gt;</span>
+    <span class="o">...</span>
 
-    &lt;global-address name=&#39;...&#39; [value=&#39;0x...&#39;]/&gt;
-    ...
+    <span class="o">&lt;</span><span class="k">global</span><span class="o">-</span><span class="n">address</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;...&#39;</span> <span class="p">[</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;0x...&#39;</span><span class="p">]</span><span class="o">/&gt;</span>
+    <span class="o">...</span>
 
-    &lt;vtable-address name=&#39;...&#39; [value=&#39;0x...&#39;]/&gt;
-    ...
-&lt;/symbol-table&gt;
+    <span class="o">&lt;</span><span class="n">vtable</span><span class="o">-</span><span class="n">address</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;...&#39;</span> <span class="p">[</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;0x...&#39;</span><span class="p">]</span><span class="o">/&gt;</span>
+    <span class="o">...</span>
+<span class="o">&lt;/</span><span class="n">symbol</span><span class="o">-</span><span class="n">table</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>The <em>name</em> attribute specifies an unique name of the symbol table.
@@ -744,7 +744,7 @@ this: <code class="docutils literal"><span class="pre">$$$(...)...</span></code>
 <p>As described above, dereference is actually implemented by two generic functions,
 <code class="docutils literal"><span class="pre">&#64;</span></code> and <code class="docutils literal"><span class="pre">$</span></code>, which implement l-value and r-value dereference.</p>
 <p>They are defined as such:</p>
-<div class="highlight-python"><div class="highlight"><pre>(defgeneric @ (obj key))
+<div class="highlight-default"><div class="highlight"><pre><span></span>(defgeneric @ (obj key))
 (defgeneric $ (obj key))
 (defgeneric (setf $) (obj key))
 </pre></div>
@@ -918,7 +918,7 @@ as <code class="docutils literal"><span class="pre">$</span></code>, and the ref
 equal to <code class="docutils literal"><span class="pre">$$[t]</span></code>).</p>
 <p>The <code class="docutils literal"><span class="pre">(describe-obj</span> <span class="pre">object)</span></code> function can be used to call the same
 describe mechanism on another object, e.g.:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;code-helper name=&#39;describe&#39;&gt; (describe-obj $.name) &lt;/code-helper&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span>&lt;code-helper name=&#39;describe&#39;&gt; (describe-obj $.name) &lt;/code-helper&gt;
 </pre></div>
 </div>
 </li>
@@ -931,7 +931,7 @@ and its <code class="docutils literal"><span class="pre">aux-value</span></code>
 <p>Other than via <code class="docutils literal"><span class="pre">ref-target</span></code>, you can invoke this mechanism explicitly using
 the <code class="docutils literal"><span class="pre">(find-instance</span> <span class="pre">class</span> <span class="pre">key</span> <span class="pre">aux-key)</span></code> function, even from a <code class="docutils literal"><span class="pre">find-instance</span></code>
 helper for another type:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;code-helper name=&#39;find-instance&#39;&gt;$(find-instance $art_image_chunk $$).images[$]&lt;/code-helper&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span>&lt;code-helper name=&#39;find-instance&#39;&gt;$(find-instance $art_image_chunk $$).images[$]&lt;/code-helper&gt;
 </pre></div>
 </div>
 <p>This finds an instance of the <code class="docutils literal"><span class="pre">art_image_chunk</span></code> type using the aux-value <code class="docutils literal"><span class="pre">$$</span></code>,
@@ -951,7 +951,7 @@ of refs, and is not that useful.</p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">$global.world.units.all[0].id</span></code></p>
 <p>This expression is syntactically parsed into the following sequence:</p>
-<div class="highlight-python"><div class="highlight"><pre>tmp = global
+<div class="highlight-default"><div class="highlight"><pre><span></span>tmp = global
 tmp = @tmp.world  ; the world global ref
 tmp = @tmp.units  ; the units field ref
 tmp = @tmp.all    ; the all vector ref
@@ -963,13 +963,13 @@ $tmp.id
 tmp is a reference to a pointer, and as described above, it delegates
 anything it does not directly understand to its target, adding an
 implicit step at runtime:</p>
-<div class="highlight-python"><div class="highlight"><pre>unit = @tmp._target
+<div class="highlight-default"><div class="highlight"><pre><span></span>unit = @tmp._target
 $unit.id
 </pre></div>
 </div>
 <p>A unit object does not define <code class="docutils literal"><span class="pre">$unit.id</span></code> directly either, so the
 final step falls back to:</p>
-<div class="highlight-python"><div class="highlight"><pre>idref = @unit.id
+<div class="highlight-default"><div class="highlight"><pre><span></span>idref = @unit.id
 ($ idref t)
 </pre></div>
 </div>
@@ -982,8 +982,8 @@ the last step, which would have skipped the <code class="docutils literal"><span
 returned a reference to the field.</p>
 </li>
 <li><p class="first">A simple <code class="docutils literal"><span class="pre">index-refers-to</span></code> example:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;stl-vector name=&#39;created_weapons&#39; type-name=&#39;int32_t&#39;
-            index-refers-to=&#39;$global.world.raws.itemdefs.weapons[$]&#39;/&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">stl</span><span class="o">-</span><span class="n">vector</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;created_weapons&#39;</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;int32_t&#39;</span>
+            <span class="n">index</span><span class="o">-</span><span class="n">refers</span><span class="o">-</span><span class="n">to</span><span class="o">=</span><span class="s1">&#39;$global.world.raws.itemdefs.weapons[$]&#39;</span><span class="o">/&gt;</span>
 </pre></div>
 </div>
 <p>This is used to define a vector with counts of created weapons.</p>
@@ -995,10 +995,10 @@ global vector and return one of its elements. It is then used by the
 GUI to add additional information to the info column.</p>
 </li>
 <li><p class="first">An example of <code class="docutils literal"><span class="pre">refers-to</span></code> and <code class="docutils literal"><span class="pre">_parent</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;compound name=&#39;burrows&#39;&gt;
-    &lt;stl-vector name=&#39;list&#39; pointer-type=&#39;burrow&#39;/&gt;
-    &lt;int32_t name=&#39;sel_index&#39; refers-to=&#39;$$._parent.list[$]&#39;/&gt;
-&lt;/compound&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">compound</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;burrows&#39;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">stl</span><span class="o">-</span><span class="n">vector</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;list&#39;</span> <span class="n">pointer</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;burrow&#39;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">int32_t</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;sel_index&#39;</span> <span class="n">refers</span><span class="o">-</span><span class="n">to</span><span class="o">=</span><span class="s1">&#39;$$._parent.list[$]&#39;</span><span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="n">compound</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>This fragment of XML defines a compound with two fields, a vector and an int,
@@ -1006,7 +1006,7 @@ which has a <code class="docutils literal"><span class="pre">refers-to</span></c
 it evaluates the expression in the attribute, giving it the <em>integer value</em>
 as <code class="docutils literal"><span class="pre">$</span></code>, and a <em>reference</em> to the integer field as <code class="docutils literal"><span class="pre">$$</span></code>.</p>
 <p>The expression parses as:</p>
-<div class="highlight-python"><div class="highlight"><pre>tmp = $$            ; reference to the int32_t field
+<div class="highlight-default"><div class="highlight"><pre><span></span>tmp = $$            ; reference to the int32_t field
 tmp = @tmp._parent
 tmp = @tmp.list
 $tmp[$]
@@ -1017,8 +1017,8 @@ $tmp[$]
 list, and <code class="docutils literal"><span class="pre">&#64;tmp._parent</span></code> retrieves it. After that everything is simple.</p>
 </li>
 <li><p class="first">An example of <code class="docutils literal"><span class="pre">ref-target</span></code> with <code class="docutils literal"><span class="pre">aux-value</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;int32_t name=&#39;race&#39; ref-target=&#39;creature_raw&#39;/&gt;
-&lt;int16_t name=&#39;caste&#39; ref-target=&#39;caste_raw&#39; aux-value=&#39;$$.race&#39;/&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">int32_t</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;race&#39;</span> <span class="n">ref</span><span class="o">-</span><span class="n">target</span><span class="o">=</span><span class="s1">&#39;creature_raw&#39;</span><span class="o">/&gt;</span>
+<span class="o">&lt;</span><span class="n">int16_t</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;caste&#39;</span> <span class="n">ref</span><span class="o">-</span><span class="n">target</span><span class="o">=</span><span class="s1">&#39;caste_raw&#39;</span> <span class="n">aux</span><span class="o">-</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;$$.race&#39;</span><span class="o">/&gt;</span>
 </pre></div>
 </div>
 <p>The <code class="docutils literal"><span class="pre">race</span></code> field just specifies a type as <code class="docutils literal"><span class="pre">ref-target</span></code>, so the
@@ -1034,31 +1034,31 @@ This means that <code class="docutils literal"><span class="pre">$$.race</span><
 to <code class="docutils literal"><span class="pre">$$._parent.race</span></code> in the context of <code class="docutils literal"><span class="pre">refers-to</span></code>.</p>
 </li>
 <li><p class="first">A complex example of cross-references between arrays:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;struct-type type-name=&#39;caste_raw&#39;&gt;
-    &lt;compound name=&#39;body_info&#39;&gt;
-        &lt;stl-vector name=&#39;body_parts&#39; pointer-type=&#39;body_part_raw&#39;/&gt;
-    &lt;/compound&gt;
-    &lt;compound name=&#39;bp_appearance&#39;&gt;
-        &lt;stl-vector name=&#39;modifiers&#39; pointer-type=&#39;bp_appearance_modifier&#39;/&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">struct</span><span class="o">-</span><span class="nb">type</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;caste_raw&#39;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">compound</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;body_info&#39;</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">stl</span><span class="o">-</span><span class="n">vector</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;body_parts&#39;</span> <span class="n">pointer</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;body_part_raw&#39;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;/</span><span class="n">compound</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">compound</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;bp_appearance&#39;</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">stl</span><span class="o">-</span><span class="n">vector</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;modifiers&#39;</span> <span class="n">pointer</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;bp_appearance_modifier&#39;</span><span class="o">/&gt;</span>
 
-        &lt;stl-vector name=&#39;modifier_idx&#39; type-name=&#39;int32_t&#39;
-                    refers-to=&#39;$$._parent._parent.modifiers[$]&#39;
-                    index-refers-to=&#39;$$._parent.part_idx[$].refers-to&#39;/&gt;
-        &lt;stl-vector name=&#39;part_idx&#39; type-name=&#39;int16_t&#39;
-                    refers-to=&#39;$$._global.body_info.body_parts[$]&#39;/&gt;
-        &lt;stl-vector name=&#39;layer_idx&#39; type-name=&#39;int16_t&#39;
-                    refers-to=&#39;$$._parent._parent.part_idx[$$._key].refers-to.layers[$]&#39;
-                    index-refers-to=&#39;$$._parent.part_idx[$].refers-to&#39;/&gt;
-    &lt;/compound&gt;
-&lt;/struct-type&gt;
+        <span class="o">&lt;</span><span class="n">stl</span><span class="o">-</span><span class="n">vector</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;modifier_idx&#39;</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;int32_t&#39;</span>
+                    <span class="n">refers</span><span class="o">-</span><span class="n">to</span><span class="o">=</span><span class="s1">&#39;$$._parent._parent.modifiers[$]&#39;</span>
+                    <span class="n">index</span><span class="o">-</span><span class="n">refers</span><span class="o">-</span><span class="n">to</span><span class="o">=</span><span class="s1">&#39;$$._parent.part_idx[$].refers-to&#39;</span><span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="n">stl</span><span class="o">-</span><span class="n">vector</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;part_idx&#39;</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;int16_t&#39;</span>
+                    <span class="n">refers</span><span class="o">-</span><span class="n">to</span><span class="o">=</span><span class="s1">&#39;$$._global.body_info.body_parts[$]&#39;</span><span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="n">stl</span><span class="o">-</span><span class="n">vector</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;layer_idx&#39;</span> <span class="nb">type</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;int16_t&#39;</span>
+                    <span class="n">refers</span><span class="o">-</span><span class="n">to</span><span class="o">=</span><span class="s1">&#39;$$._parent._parent.part_idx[$$._key].refers-to.layers[$]&#39;</span>
+                    <span class="n">index</span><span class="o">-</span><span class="n">refers</span><span class="o">-</span><span class="n">to</span><span class="o">=</span><span class="s1">&#39;$$._parent.part_idx[$].refers-to&#39;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;/</span><span class="n">compound</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">struct</span><span class="o">-</span><span class="nb">type</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>In order to understand this example it is first necessary to understand
 that <code class="docutils literal"><span class="pre">refers-to</span></code> specified on a vector is actually transplanted onto the
 implicitly constructed element tag:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;stl-vector name=&#39;part_idx&#39;&gt;
-    &lt;int16_t refers-to=&#39;$$._global.body_info.body_parts[$]&#39;/&gt;
-&lt;/stl-vector&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">stl</span><span class="o">-</span><span class="n">vector</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;part_idx&#39;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">int16_t</span> <span class="n">refers</span><span class="o">-</span><span class="n">to</span><span class="o">=</span><span class="s1">&#39;$$._global.body_info.body_parts[$]&#39;</span><span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="n">stl</span><span class="o">-</span><span class="n">vector</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Therefore, <code class="docutils literal"><span class="pre">$$</span></code> is a reference to the <code class="docutils literal"><span class="pre">&lt;int16_t&gt;</span></code> field,
@@ -1086,14 +1086,14 @@ at the vector, and only one <code class="docutils literal"><span class="pre">_pa
 in other expressions by accessing the target of the <code class="docutils literal"><span class="pre">refers-to</span></code>
 link inside <code class="docutils literal"><span class="pre">part_idx</span></code>. When the <code class="docutils literal"><span class="pre">part_idx</span></code> vector is accessed
 simply as <code class="docutils literal"><span class="pre">$xxx.part_idx[foo]</span></code>, it evaluates as:</p>
-<div class="highlight-python"><div class="highlight"><pre>tmp = @xxx.part_idx
+<div class="highlight-default"><div class="highlight"><pre><span></span>tmp = @xxx.part_idx
 tmp = @tmp[foo]
 ($ tmp t)
 </pre></div>
 </div>
 <p>thus returning just an integer value. However, if an additional
 dereference step is added, it turns to:</p>
-<div class="highlight-python"><div class="highlight"><pre>tmp = @xxx.part_idx
+<div class="highlight-default"><div class="highlight"><pre><span></span>tmp = @xxx.part_idx
 tmp = @tmp[foo]
 obj = @tmp.refers-to
 ($ obj t)
@@ -1103,7 +1103,7 @@ obj = @tmp.refers-to
 <p>Finally, the <code class="docutils literal"><span class="pre">layer_idx</span></code> vector, in addition to specifying the same
 <code class="docutils literal"><span class="pre">index-refers-to</span></code> link as <code class="docutils literal"><span class="pre">modifier_idx</span></code>, uses the link in <code class="docutils literal"><span class="pre">part_idx</span></code>
 to access other objects at its end:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">refers</span><span class="o">-</span><span class="n">to</span><span class="o">=</span><span class="s">&#39;$$._parent._parent.part_idx[$$._key].refers-to.layers[$]&#39;</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">refers</span><span class="o">-</span><span class="n">to</span><span class="o">=</span><span class="s1">&#39;$$._parent._parent.part_idx[$$._key].refers-to.layers[$]&#39;</span>
 </pre></div>
 </div>
 <p>Note how this link has to use two <code class="docutils literal"><span class="pre">_parent</span></code> steps again due to being
@@ -1130,6 +1130,8 @@ element value.</p>
 
 
 
+
+
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
@@ -1147,9 +1149,6 @@ element value.</p>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
   <h3><a href="../../index.html">Table Of Contents</a></h3>
@@ -1216,8 +1215,8 @@ element value.</p>
       &copy;2015, The DFHack Team.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
       <a href="../../_sources/library/xml/SYNTAX.txt"
