@@ -588,3 +588,130 @@ SMALL_HLG:Unrecognized Entity Token: ADVENTURE_TIER
 undefined local creature material set to default: BANK_VOLE_HLG MUSCLE
 *** Error(s) finalizing the creature TIT_HLG
 undefined local creature material set to default: TIT_HLG MUSCLE
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+*** Error(s) found in the file "raw/objects/creature_VANILLA_insects.txt"
+BEETLE_MAN:Unrecognized Creature Copy (Order is important!): BEETLE
+BEETLE_MAN:Caste Selection Fails: MALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Caste Selection Fails: FEMALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Attack PUNCH seems to have correct format but could not find proper BPs in any caste, so not added
+BEETLE_MAN:Attack KICK seems to have correct format but could not find proper BPs in any caste, so not added
+GIANT_BEETLE:Unrecognized Creature Copy (Order is important!): BEETLE
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+*** Error(s) found in the file "raw/objects/creature_VANILLA_insects.txt"
+BEETLE_MAN:Unrecognized Creature Copy (Order is important!): BEETLE
+BEETLE_MAN:Caste Selection Fails: MALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Caste Selection Fails: FEMALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Attack PUNCH seems to have correct format but could not find proper BPs in any caste, so not added
+BEETLE_MAN:Attack KICK seems to have correct format but could not find proper BPs in any caste, so not added
+GIANT_BEETLE:Unrecognized Creature Copy (Order is important!): BEETLE
+*** Error(s) found in the file "raw/objects/creature_VANILLA_insects.txt"
+BEETLE_MAN:Unrecognized Creature Copy (Order is important!): BEETLE
+BEETLE_MAN:Caste Selection Fails: MALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Caste Selection Fails: FEMALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Attack PUNCH seems to have correct format but could not find proper BPs in any caste, so not added
+BEETLE_MAN:Attack KICK seems to have correct format but could not find proper BPs in any caste, so not added
+GIANT_BEETLE:Unrecognized Creature Copy (Order is important!): BEETLE
+*** Error(s) found in the file "raw/objects/creature_VANILLA_insects.txt"
+BEETLE_MAN:Unrecognized Creature Copy (Order is important!): BEETLE
+BEETLE_MAN:Caste Selection Fails: MALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Caste Selection Fails: FEMALE
+BEETLE_MAN:Unrecognized Creature Token: CASTE_NAME
+BEETLE_MAN:Attack PUNCH seems to have correct format but could not find proper BPs in any caste, so not added
+BEETLE_MAN:Attack KICK seems to have correct format but could not find proper BPs in any caste, so not added
+GIANT_BEETLE:Unrecognized Creature Copy (Order is important!): BEETLE
+Unrecognized Announcement Token: TRAVEL_ADVISORY
+*** Error(s) found in the file "raw/objects/creature_SCRATCH_halfling.txt"
+HALFLING_HLG:Unrecognized Creature Token: SWIM_SPEED
+HOUND_HLG:Unrecognized Creature Token: SWIM_SPEED
+MALLARD_HLG:Unrecognized Creature Token: SWIM_SPEED
+MAN-EATER_HLG:Unrecognized Creature Token: SWIM_SPEED
+QUETZALCOATLUS_HLG:Unrecognized Creature Token: SWIM_SPEED
+*** Error(s) found in the file "raw/objects/entity_SCRATCH_halfling.txt"
+SMALL_HLG:Unrecognized Entity Token: ADVENTURE_TIER
+SMALL_HLG:Unrecognized Entity Token: ADVENTURE_TIER
+*** Error(s) finalizing the creature BANK_VOLE_HLG
+undefined local creature material set to default: BANK_VOLE_HLG MUSCLE
+*** Error(s) finalizing the creature TIT_HLG
+undefined local creature material set to default: TIT_HLG MUSCLE
+Cannot generate random creatures -- missing body RCP_3_EYELIDS
+Cannot generate random creatures -- missing body RCP_2_EYELIDS
+Cannot generate random creatures -- missing body RCP_1_EYELID
+Cannot generate random creatures -- missing body RCP_UPPER_SPINE
+Cannot generate random creatures -- missing body RCP_SIMPLE_FRONT_LEGS_GRASP
+Cannot generate random creatures -- missing body RCP_FIRST_SIMPLE_LEGS_GRASP
+Cannot generate random creatures -- missing body gloss RCP_GLOSS_PAW
+Cannot generate random creatures -- missing creature variation STANDARD_WALK_CRAWL_GAITS
+Cannot generate random creatures -- missing creature variation STANDARD_FLYING_GAITS
+Cannot generate random creatures -- missing creature variation STANDARD_CRAWLING_GAITS
+Cannot generate random creatures -- missing creature variation STANDARD_SWIMMING_GAITS
+Cannot generate random creatures -- missing creature variation STANDARD_CLIMBING_GAITS
+Cannot generate random creatures -- missing creature variation STANDARD_WALKING_GAITS
+Cannot generate random creatures -- missing creature variation STANDARD_QUADRUPED_GAITS
+Cannot generate random creatures -- missing creature variation STANDARD_BIPED_GAITS
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+Impoverished Word Selector
+*** Error(s) found in the file "data/save/region1/raw/objects/creature_SCRATCH_halfling.txt"
+HALFLING_HLG:Unrecognized Creature Token: SWIM_SPEED
+HOUND_HLG:Unrecognized Creature Token: SWIM_SPEED
+MALLARD_HLG:Unrecognized Creature Token: SWIM_SPEED
+MAN-EATER_HLG:Unrecognized Creature Token: SWIM_SPEED
+QUETZALCOATLUS_HLG:Unrecognized Creature Token: SWIM_SPEED
+*** Error(s) found in the file "data/save/region1/raw/objects/entity_SCRATCH_halfling.txt"
+SMALL_HLG:Unrecognized Entity Token: ADVENTURE_TIER
+SMALL_HLG:Unrecognized Entity Token: ADVENTURE_TIER
+*** Error(s) finalizing the creature BANK_VOLE_HLG
+undefined local creature material set to default: BANK_VOLE_HLG MUSCLE
+*** Error(s) finalizing the creature TIT_HLG
+undefined local creature material set to default: TIT_HLG MUSCLE
