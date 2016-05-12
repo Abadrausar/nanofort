@@ -34,7 +34,7 @@ cleardir("out/modules")
 if rubble.configvar("_RUBBLE_NO_CLEAR_GRAPHICS_") == "true" then
 	print "    _RUBBLE_NO_CLEAR_GRAPHICS_ is set, skipping graphics directory."
 else
-	cleardir("out:graphics")
+	cleardir("out/graphics")
 end
 
 -- Now clear out the various junk that has accumulated in the raw directory itself.

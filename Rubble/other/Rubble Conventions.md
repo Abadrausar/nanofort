@@ -22,7 +22,7 @@ include any "tags", a version number, an author name, etc since the addon name i
 and author should be put in the proper fields in your addon.meta file anyway. By convention addon names should be written
 in Title Case, don't forget that "the" and "of" should not be capitalized unless they are the first word of the title!
 
-In addition to your addon name you should pick a "mod ID" for your addon or addon pack. This ID should be a short (2-8
+In addition to your addon name you should pick a "mod ID" for your addon or addon pack. This ID should be a short (2-5
 character) acronym or abbreviation that is used to uniquely identify your mod or mod pack. Small addons (those with only
 3-4 files) can probably share an ID, but this ID should be unique to you. Rubble does not care about the ID, it is
 intended to be used to identify files and templates belonging to the addon or addon pack, mostly as a way to prevent name
@@ -41,13 +41,15 @@ addon contained in the root of the zip file. Generally you should not include th
 file, as including the version number either prevents you from using the auto-update feature or makes it nonsensical (you
 end up with the actual version not matching the version number in the name).
 
+Speaking of version numbers: Make sure you set the addon pack version fields in your pack.meta file properly! If these
+fields are not set (or worse, set improperly), auto-update may not work properly or at all.
+
 You should always use DFFD for addon uploads, as most other file hosting sites do not support the direct downloads needed
 for the automatic update system to work.
 
-If you include a pack.meta file in your addon pack do not set the "Name" field unless the pack is intended as a modders
-resource. Setting a canonical name for your pack will make it so that Rubble will refuse to load if the pack is installed
-under any other name (this is intended to prevent multiple copies from being loaded inadvertently, which is only likely
-to be a problem with libraries).
+If you include a pack.meta file in your addon pack do not set the "Name" field unless the pack will be listed on a content
+server. Setting a canonical name for your pack will make it so that Rubble will refuse to load if the pack is installed
+under any other name (this is intended to prevent multiple copies from being loaded inadvertently).
 
 
 Addon Descriptions
@@ -124,8 +126,8 @@ personal preference of the addon author. Conventionally this suffix is related t
 that is clear and understandable will do.
 
 The "core file name" is a string differentiating the file from the others like it in the same addon. This is generally
-required, and should be all lowercase with spaces replaced by underscores. Sometimes it is possible to leave this off,
-but only if the child addon suffix takes it's place.
+required, and should be all lowercase with spaces replaced by underscores. Sometimes it is possible to leave this off if
+there is only one file of a particular type in an addon.
 
 Finally the "extension" is used by Rubble to decide how to handle the file. It is very important to get this part right!
 Many files use "two part extensions" with a "first part extension", a dot, and the "last part extension". Rubble Basics
@@ -189,7 +191,7 @@ Script registry keys should use the following format:
 
 If applicable "template name" should be the full name of the primary template that uses the key. If one template writes
 data to a key and another reads the data back use the name of the writing template. If multiple templates write to the
-key use the name of the one used most commonly. If the primary interface to the key is script functions rather than
-templates use the function name.
+key use the name of the one used most commonly. If the primary interface to the key is a script function rather than a
+template use the function name.
 
 The "extra" field is set if a template needs multiple keys, in this case set this field to something descriptive.

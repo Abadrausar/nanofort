@@ -75,9 +75,8 @@ the browser startup script (comments in the default script list some options).
 If anyone who knows Linux shell script can write a more universal startup script
 let me know!
 
-Keep in mind that I have never actually played DF on Linux, and Rubble testing on
-that platform was limited to some simple generation tests a long time ago. I would
-love to hear from someone who uses Rubble on Linux.
+I have never played DF on Linux, but now that I run Linux on my laptop I do
+semi-regular testing on that platform. Everything seems to work fine.
 
 * * *
 
@@ -879,17 +878,55 @@ of the archive* to provide several powerful features.
 	{
 	# This file is JSON, just like addon.meta.
 	
-	# DO NOT provide a name for general addon packs, this is for use by library packs and other modders resources!
-	# More on this later.
+	# The canonical name for this addon pack, more details below.
+	# You should probably set this if you intend to list your addon pack on a content server.
 	"Name": "Example Pack",
 	
-	# A URL to a direct HTTP download of your addon. Used for automatic updates.
-	"Update": "http://www.example.com/somefile.zip",
+	# Unused right now. Will be used later once I add an interface for downloading addons from the web UI.
+	"Desc": "A short description of this pack.",
 	
-	# A list of other addon packs that this one requires and the download URLs for them.
-	"Dependencies": {
-		"Example Library": "http://www.example.com/Library.zip"
+	# Unused right now. Will be used later once I add an interface for downloading addons from the web UI.
+	"Tags": {
+		"DFHack": false,
+		"TileSet": false
 	},
+	
+	# Set this to the DFFD ID of your addon pack to allow Rubble to download information directly from DFFD if
+	# it cannot find your addon pack on a content server.
+	"DFFDID": -1,
+	
+	# It is *critical* that you fill out these fields if you want to be able to list your addon pack on a content server
+	# and have it work properly.
+	# VersionStr is what is used most of the time. There are no restrictions on how this string is formed.
+	# The three numbers are used for determining which pack is newer (and nothing else).
+	"VersionStr": "1.0",
+	"VerMajor": 1,
+	"VerMinor": 0,
+	"VerPatch": 0,
+	
+	# Compatible DF and Rubble versions.
+	# The addon loader enforces this!
+	"HostVer": {
+		# If -1 then this does not require any particular DF version, else must be equal.
+		"DFMajor": -1,
+		
+		# Must be equal or greater.
+		"DFPatch": 0,
+		
+		# If -1 then any Rubble version will do, else must be equal.
+		"RblRewrite": -1,
+		
+		# Must be equal or greater.
+		"RblMajor": 0,
+		
+		# Must be equal or greater (unless major is greater).
+		"RblPatch": 0
+	},
+	
+	# A list of other addon packs that this one requires. These packs need to be listed on a content server for this to work.
+	"Dependencies": [
+		"Example Library"
+	],
 	
 	# Custom first part extensions for this pack. These do not apply to any other packs.
 	"TagsFirst": {
@@ -949,26 +986,13 @@ of the archive* to provide several powerful features.
 	}
 
 Addon packs may have "canonical names" by specifying a "Name" field. If any attempt is made to load the pack under a
-different name (for example if the local zip file has a different name or a different addon pack lists it in their
-"Dependencies" under a different name) then Rubble will abort loading and exit. For this reason names should only be set
-for addon packs that are intended for use as libraries. By forcing your pack to have a certain name you can prevent users
-from accidentally loading multiple copies of the same addons (which will also cause Rubble to abort). Loading multiple
-copies is not worth worrying about unless your pack is intended for loading via addon pack "Dependencies" keys.
+different name (for example if the local zip file has a different name) then Rubble will abort loading and exit. For this
+reason names should only be set for addon packs where using the proper name matters. By forcing your pack to have a
+certain name you can prevent users from accidentally loading multiple copies of the same addons (which will also cause
+Rubble to abort). You should set this if your pack will be listed on a content server.
 
-URLs for the "Update" and "Dependencies" keys needs to be direct HTTP downloads and they *must* be complete. For example
-`www.example.com/somefile.zip` will not work, use `http://www.example.com/somefile.zip`.
-
-1. The URL *must* always remain *constant* to enable the automatic update of your addon. This makes it a very bad idea
-   to include the addon version in the download URL (by, for example, including it in the addon pack file name).
-2. The URL must be to a direct download of the file, this effectively rules out most file upload services.
-3. You must be able to upload a new version of the file without changing the URL, this rules out most of the upload
-   services that point 2 doesn't rule out.
-
-Luckily DFFD is compatible with all three of these points, so use that. After all DFFD is dedicated entirely to Dwarf
-Fortress and has no annoying advertisements (a massive plus considering the state of most other file hosts now-days).
-
-Currently the only valid protocol is HTTP (HTTPS should also work). I have never personally tested this with anything
-other than a server running on local host.
+It is very important that you include version information for your addon pack if you want it to work properly with content
+servers. This information is used to decide which listing is newer if you have more than one for a particular addon pack.
 
 If you want to prevent an addon pack from updating it is possible to list it in "addons/update_blacklist.txt".
 
@@ -983,10 +1007,10 @@ bit at the top of the file giving its source and a warning that it was automatic
 extension on write), and other advanced actions.
 
 There is a special pack.meta file named "addons/global.meta" that Rubble uses to store global writers and file tagger
-rules. This file is just like any other pack.meta file except that the "Name" and "Update" keys are ignored and the tagger
-rules loaded from this file apply to all addon packs. Modders should not touch this file, that said it may be useful if
-someone wants to create a special Rubble dialect for some specific purpose. If you change this file Rubble may not work
-as some addons expect, leading to strange bugs!
+rules. This file is just like any other pack.meta file except that most of the keys are ignored and the tagger rules
+loaded from this file apply to all addon packs. Modders should not touch this file, that said it may be useful if someone
+wants to create a special Rubble dialect for some specific purpose. If you change this file Rubble may not work as some
+addons expect, leading to strange bugs!
 
 <div id="DocPack"></div>
 Doc Packs:

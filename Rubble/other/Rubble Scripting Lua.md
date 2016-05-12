@@ -612,6 +612,77 @@ Calling `rubble.rparse.format({rubble.rparse.newtag()})` will return `"[]"`.
 
 * * *
 
+	function rubble.rparse.maketree(raws, rules)
+
+Parses `raws` into a tree based on the raw merger rules given in `rules`.
+
+If you want a shortcut for making rules look at the rules for the raw consistency checker, they will work for
+this with only minor modification.
+
+Any tags that do not match the rules are discarded. Make sure your rules cover all the tags you care about!
+Rules for complicated raw objects (such as reactions or creatures) can run to hundreds of lines. Have fun!
+
+Don't try to feed the returned tree into `rubble.rparse.format`, it won't like it :) If you want to turn
+a tree back into a string you may use `rubble.rparse.formattree`.
+
+Example:
+
+The following call:
+
+	rubble.rparse.maketree("[A][B][C][D]", [[
+		A|{
+			B|C
+			D
+		}
+	]])
+
+Will return the following table structure (tag references are displayed as strings):
+
+	tree = {
+		me = nil,
+		parent = nil,
+		
+		1 = {
+			me = "[A]",
+			parent = tree,
+			
+			1 = {
+				me = "[B]",
+				parent = tree[1],
+				
+				1 = {
+					me = "[C]",
+					parent = tree[1][1],
+				},
+			},
+			2 = {
+				me = "[D]",
+				parent = tree,
+			},
+		}
+	}
+
+* * *
+
+	function rubble.rparse.formattree(tree, depth, i)
+
+Formats a tree returned by `rubble.rparse.maketree` as a string. Output is indented, but proper indentation depends
+on having proper rules.
+
+This function has special rules for inserting extra lines around tags with children (and some extra special rules to
+prevent it from inserting too many), plus a rule to prevent children of an `OBJECT` tag from being indented. This results
+in very nicely formated output.
+
+In most cases `depth` should not be provided (leave it nil). If you are formating an object that needs more indentation
+pass it in as depth.
+
+*Never* specify a value for `i`! This parameter is used internally to allow a leaf of the tree to access it's neighbors
+for special purposes.
+
+This function is implemented in Lua as part of the Rubble standard library.
+
+* * *
+
 	function rubble.rparse.walk(raws, action)
 
 Parses the given `raws`, calling `action` for each tag. Once finished the result is fed to `rubble.rparse.format` and
@@ -649,7 +720,7 @@ On error this returns `false, msg`, where "msg" is an error message.
 
 * * *
 
-	function axis.exits(path)
+	function axis.exists(path)
 
 Returns true if an AXIS DataSource exists at the given path.
 

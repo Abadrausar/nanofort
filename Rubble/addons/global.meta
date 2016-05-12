@@ -4,9 +4,9 @@
 # This file is critical to proper operation!
 
 {
-"Dependencies": {
+"Dependencies": [
 	#  Yes, this works. No, you should not use it. (unless you REALLY know what you are doing!)
-},
+],
 
 "TagsFirst": {
 	# Rubble Scripts

@@ -1,0 +1,6 @@
+[AUX_FILE:INIT.TXT]
+	[PRINT_MODE:2D]
+{@COPY_FILE_BANK;ADVFORT_gui;df/hack/scripts/gui}
+{@COPY_FILE_BANK;ADVFORT_raw;df/raw}
+#	keybinding add Ctrl-T "gui/advfort" 
+#	added to dfhack.init file

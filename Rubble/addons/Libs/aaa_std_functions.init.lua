@@ -17,6 +17,40 @@ function rubble.rparse.walk(raws, action)
 	return rubble.rparse.format(tags)
 end
 
+function rubble.rparse.formattree(tree, depth, i)
+	if depth == nil then
+		depth = ""
+	end
+	
+	local out = ""
+	local ndepth = depth
+	
+	-- Ad a blank line before ever tag with children, but not if the previous tag on this level had children.
+	-- Each table has non-integer keys, so length may not be reliable.
+	if tree[1] ~= nil and (tree.parent == nil or i == nil or i <= 1 or tree.parent[i-1][1] == nil) then
+		out = out..depth.."\n"
+	end
+	
+	if tree.me ~= nil then
+		-- Add one more tab before every group of tags, but not if they have no parent or their parent is a OBJECT tag.
+		if tree.me.ID ~= "OBJECT" then
+			ndepth = ndepth.."\t"
+		end
+		out = out..depth..tostring(tree.me).."\n"
+	end
+	
+	for k, v in ipairs(tree) do
+		out = out..rubble.rparse.formattree(v, ndepth, k)
+		
+		-- Add a blank line after the last child in every group.
+		if tree[k+1] == nil then
+			out = out..depth.."\n"
+		end
+	end
+	
+	return out
+end
+
 -- Default handling of template arguments.
 function rubble.targs(args, defaults, noexpand)
 	if type(noexpand) == "table" then

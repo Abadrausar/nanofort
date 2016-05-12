@@ -1,0 +1,6 @@
+{"Tags": {"Library": false, "DocPack": false, "TileSet": false, "HasTests": false, "SaveSafe": false, "DFHack": false, "Dev": true, "NotNormal": false},
+"LoadPriority": 5100, "Name": "Adventure___Warmist", "Version": "0.44", "Author": "Warmist", "Header": "Advfort is a tool in dfhack that allows for FULL* experience of fort mode jobs in adventure mode.",
+	"DescFile": "addon.md",
+	"Activates": [
+		"Libs/Base",
+		"ADVFORT"]}
